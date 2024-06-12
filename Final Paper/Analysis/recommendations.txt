@@ -12,4 +12,4 @@ Improve Customer Service: Invest in customer service training and support to ens
 Targeted Marketing and Retention Strategies: Develop targeted campaigns and strategies for colleges with higher churn rates, such as CABE and COS.
 The EDA revealed that certain colleges tend to have higher churn rates, indicating the need for college-specific retention approaches.
 Proactive Churn Prevention: Utilize the predictive models to identify students at high risk of churn and offer tailored solutions or incentives to retain their services.
-The high accuracy of the models can be leveraged to proactively address churn before it occurs.
+The high accuracy of the models can be leveraged to proactively address churn before it occurs.a 
