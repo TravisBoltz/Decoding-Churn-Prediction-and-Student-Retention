@@ -1,0 +1,218 @@
+\documentclass[12pt]{report}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\begin{document}
+
+\chapter{Methodology}
+
+\section{Introduction}
+This chapter discusses the building of these models and how they were applied to predict student churn at Vodafone (Telecel) in KNUST. In this third chapter, the methodologies employed in the modeling process are delved into focusing on data processing and analysis techniques. An in-depth exploration of the mathematical concepts and theorems central to our research will be examined. The primary methodology used is survival analysis and this chapter elaborates on its underlying concepts, assumptions, theorems, and relevant techniques.
+
+The chapter describes survival analysis in general, steps in survival analysis, the concept of censoring, and the specific models—the Kaplan-Meier Estimator, the Cox Proportional Hazards Model, and the Random Survival Forest—are discussed in detail. These models are applied to predict student churn at Vodafone (Telecel) within the context of KNUST.
+
+The chapter structure includes a discussion on data collection methods followed by data pre-processing and analysis techniques. We then provide comprehensive explanations of the Kaplan-Meier Estimator, the Cox Proportional Hazards Model, and the Random Survival Forest. Mathematical formulations and interpretations are presented. Finally, we compare model performance using the Concordance Index shedding light on their predictive capabilities and practical applications in student churn prediction.
+
+\section{Data Collection}
+
+The data used in this study comes from the telecommunication domain in KNUST. The primary data source for this research was a survey conducted among students at Kwame Nkrumah University of Science and Technology (KNUST). During the annual college elections, the survey targeted students across different academic levels (from levels 100 to 600). The dataset comprises 18 variables each capturing specific aspects relevant to our study.
+
+The data collection process involved obtaining relevant information while ensuring confidentiality and ethical considerations.
+
+For further details please refer to the figure below.
+
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Variable} & \textbf{Description} \\
+\hline
+Gender & The students' gender. \\
+College & The specific college within the university. \\
+Churn status & Is the student still using the sim
+ \\
+Level & The academic level of the student. \\
+Residence & Campus or off-campus residence. \\
+SIM usage & Whether the student uses a Vodafone SIM card. \\
+Usage frequency & Frequency of SIM usage. \\
+Network strength & Quality of the network (on a scale). \\
+Voice calls &  The student's voice calls usage. \\
+Mobile data usage &  The student's mobile data usage. \\
+SMS text messaging & The student's SMS usage. \\
+Data exhaustion & The student's data exhaustion experience. \\
+Other networks & Usage of multiple networks. \\
+Poor network coverage & Network signal experience \\
+Insufficient data allowance & The student's data allocation satisfaction. \\
+ Dislike of Customer service & Satisfaction with customer service. \\
+High costs and pricing &  The student's pricing review. \\
+Monthly data usage & Amount of data used monthly. \\
+\hline
+\end{tabular}
+
+\section{Sample Size Calculation}
+The sample size of the research was determined through cluster sampling. Cluster sampling is employed to determine the optimal sample size as it is a robust method that allows us to efficiently estimate population parameters by selecting entire clusters (colleges within KNUST) rather than individual students.
+
+Here is the calculation of the sample size of the study:
+
+\[
+n = \left( \frac{z^2 \cdot p \cdot (1-p) \cdot DEFF}{e^2} \right)
+\]
+
+Where:
+\begin{itemize}
+    \item \( n \) is the required sample size.
+    \item \( z \) represents the critical value corresponding to the desired confidence.
+    \item \( p \) is the estimated proportion of the population with a specific characteristic (e.g. proportion of students with a certain behavior or likeness).
+    \item \( DEFF \) is the design effect that accounts for the correlation among observations within the same cluster.
+    \item \( e \) is the desired margin of error (expressed as a proportion).
+\end{itemize}
+
+Parameter Justification:
+\begin{itemize}
+    \item Confidence Level (\( z \)): We choose a confidence level of 95\% to determine the range within which our estimate is likely to fall.
+    \item Estimated Proportion (\( p \)): If you don’t have an estimate you can use \( p = 0.5 \) for maximum variability (which yields the largest sample size).
+    \item Margin of Error (\( e \)): We use 5\% since our confidence Level is 95\%.
+    \item Design Effect (\( DEFF \)): This accounts for the clustering effect. For simplicity, we assume a design effect of 2 since our population is not too massive.
+\end{itemize}
+
+Calculation:
+\[
+n = \frac{1.96^2 \cdot 0.5 \cdot 0.5 \cdot 2}{0.05^2} = 768
+\]
+
+Where:
+\begin{itemize}
+    \item \( n \) = sample size
+    \item \( z \) = z-score (1.96 for 95\% confidence level)
+    \item \( p \) = estimated proportion (0.5 maximizing sample size)
+    \item \( DEFF \) = design effect (2 accounting for cluster sampling)
+    \item \( e \) = margin of error (0.05 or 5\%)
+\end{itemize}
+
+We therefore obtain a sample size of 768 students from our population of about 85,000.
+
+Cluster Size:
+Since there are 6 clusters the sample size is evenly allocated across clusters. Each cluster would have approximately 128 students.
+
+\section{Data Preprocessing}
+In the realm of data analysis ensuring the quality and suitability of data is paramount for deriving meaningful insights and making informed decisions. The initial phase of the study involved a thorough examination of the dataset to identify and handle missing data appropriately. Missing values were only encountered in the feedback column as it was the only open question. This step ensures that subsequent analyses are conducted on a complete and representative dataset.
+
+One of the crucial pre-processing tasks involved the transformation of categorical variables into numeric format. This was achieved using label encoding, a technique that assigns unique integer labels to each category within a variable. By converting categorical data into a numeric form, we enabled the application of statistical and machine-learning models that require numerical inputs. The `LabelEncoder` package from Python's `sklearn.preprocessing` module facilitated this transformation.
+
+The transformation structured the dataset to facilitate survival analysis. Then the data was organized to include essential components such as survival time, event indicators, and relevant covariates to the variables.
+
+\section{Survival Analysis}
+Survival analysis is a branch of statistics used to analyze time-to-event data where the primary interest lies in the time until the occurrence of an event of interest. This could be anything from the failure of a mechanical part, the occurrence of a disease, to the death of a patient. Here are some key terminologies used in survival analysis:
+
+\begin{itemize}
+    \item \textbf{Survival Time (T)}: The time from a well-defined starting point (such as diagnosis or treatment) to the occurrence of the event of interest (like death or failure).
+    \item \textbf{Censoring}: In survival analysis, not all subjects may experience the event of interest within the study period. Censoring occurs when the survival time of a subject is not fully observed. There are two main types:
+    \begin{itemize}
+        \item \textbf{Right-censoring}: This occurs when a subject is lost to follow-up or the study ends before the event occurs. The exact survival time is known only to be greater than a certain value.
+        \item \textbf{Left-censoring}: Occurs when the event of interest has occurred before the study starts and thus the exact survival time is known only to be less than a certain value.
+    \end{itemize}
+    \item \textbf{Survival Function (S(t))}: Also known as the survival probability function, it gives the probability that a subject survives beyond a specified time \( t \).
+    \item \textbf{Hazard Function (h(t))}: Represents the instantaneous rate of failure at time \( t \) given survival up to that time. It is defined as the probability that an event occurs at time \( t \) given that the subject has survived up to time \( t \).
+    \item \textbf{Cumulative Hazard Function (H(t))}: The cumulative hazard at time \( t \) is the integral of the hazard function up to time \( t \). It represents the total hazard experienced up to time \( t \).
+\end{itemize}
+
+\section{Types of Survival Analysis}
+\subsection{Parametric Methods}
+These methods assume that the survival times follow a specific statistical distribution. Common parametric survival models are exponential, Weibull, log-normal, and gamma models.
+
+\subsection{Semi-Parametric Methods}
+These methods are primarily represented by the Cox Proportional Hazards Model, which is the most widely used semi-parametric method in survival analysis. The term "semi-parametric" refers to the fact that this model combines parametric elements (the effect of covariates) with non-parametric elements (the baseline hazard function).
+
+\subsection{Non-Parametric Methods}
+These methods include approaches that make minimal assumptions about the form of the survival distribution. Common non-parametric methods in survival analysis are:
+\begin{itemize}
+    \item \textbf{Kaplan-Meier Estimator}: Used to estimate the survival function from observed survival times.
+    \item \textbf{Nelson-Aalen Estimator}: Used to estimate the cumulative hazard function.
+    \item \textbf{Log-Rank Test}: Used to compare the survival distributions of two or more groups.
+\end{itemize}
+
+\section{Kaplan-Meier Estimator}
+The Kaplan-Meier estimator is employed in survival analysis to analyze the time until an event occurs. The Kaplan-Meier estimator calculates the survival probability at a specific time step by multiplying the probability of surviving each previous time step.
+
+\[
+S(t) = \prod_{i:t_i \leq t} \left(1 - \frac{d_i}{n_i} \right)
+\]
+
+Where:
+\begin{itemize}
+    \item \( t \) is a time point
+    \item \( d_i \) the number of events (churn) at time \( t_i \)
+    \item \( S(t) \) is the survival probability at time \( t \)
+    \item \( n_i \) is the number of individuals at risk just before time \( t_i \)
+\end{itemize}
+
+The estimator essentially calculates the probability of surviving from one time step to the next and the product of these probabilities gives the overall survival probability up to time \( t \). Here \( t_1 \) would be the time at which the first churn event occurred, \( d_1 \) would be 1 (since one churn event occurred), and \( n_1 \) would be the total number of students at that time.
+
+\section{Cox Proportional Hazards Model}
+The Cox Proportional Hazards model (Cox PH) is a popular semi-parametric model for survival analysis. It models the relationship between the survival time and a set of predictor variables, assuming a proportional hazard rate.
+
+\[
+h(t|x) = h_0(t) \exp(\beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_p x_p)
+\]
+
+Where:
+\begin{itemize}
+    \item \( h(t|x) \) is the hazard function, i.e., the instantaneous rate of the event occurring at time \( t \) given the predictor variables \( x \).
+    \item \( h_0(t) \) is the baseline hazard function representing the hazard for individuals with all predictor variables equal to zero.
+    \item \( \beta_1, \beta_2, \ldots, \beta_p \) are the coefficients for the predictor variables.
+\end{itemize}
+
+The coefficients are estimated using maximum likelihood estimation and the model assumes a proportional hazard ratio, meaning the effect of the predictors on the hazard is constant over time.
+
+\section{Random Survival Forests}
+Random Survival Forests extend the traditional random forest algorithm to the survival analysis setting. They are an ensemble method that combines multiple decision trees to improve predictive performance and handle censored data.
+
+Random Survival Forests use a similar structure to traditional random forests but with modifications to handle right-censored data and to predict survival probabilities. The predicted survival probability at a specific time for a new instance can be computed as:
+
+\[
+\hat{S}(t) = \frac{1}{B} \sum_{b=1}^B \hat{S}_b(t)
+\]
+
+Where:
+\begin{itemize}
+    \item \( \hat{S}(t) \) is the predicted survival probability.
+    \item \( B \) is the total number of trees in the forest.
+    \item \( \hat{S}_b(t) \) is the predicted survival probability from the \( b \)-th tree.
+\end{itemize}
+
+Each tree is constructed using a bootstrapped sample of the data, and the splitting criteria are based on survival-specific metrics like the log-rank statistic or the log-rank score.
+
+\section{Concordance Index in Survival Analysis}
+The Concordance Index, often referred to as the C-index or Harrell's C-index, is a statistical metric used to evaluate the performance of models in survival analysis. It assesses how well a model discriminates between subjects in terms of their event times and predicted risks.
+
+The Concordance Index measures the model's ability to correctly order or rank the predicted risks of individuals based on their actual event times. In survival analysis, the goal is often to predict the time until a specific event occurs, such as death, relapse, or failure. The Concordance Index evaluates whether the model's predicted risks align with the observed event times.
+
+\textbf{Mathematical Computation:}
+\begin{enumerate}
+    \item Define Pairs of Individuals: Create all possible pairs of individuals from the dataset. For each pair, compare their predicted risk scores and event times.
+    \item Calculate Concordant and Discordant Pairs:
+    \begin{itemize}
+        \item A pair of individuals \( (i, j) \) is concordant if the ordering of their predicted risks aligns with the ordering of their event times:
+        \item A pair is discordant if the ordering of predicted risks is opposite to the ordering of event times.
+        \item Pairs where event times are equal \( T_i = T_j \)
+    \end{itemize}
+    \item Compute the Concordance Index:
+    \[
+    C = \frac{\text{Number of Concordant Pairs}}{\text{Number of Concordant Pairs} + \text{Number of Discordant Pairs}}
+    \]
+\end{enumerate}
+
+\textbf{Interpretation:}
+\begin{itemize}
+    \item \( C \) ranges from 0 to 1 where:
+    \item 0.5 indicates random guessing (no predictive ability).
+    \item 1 indicates perfect discrimination (perfect predictive ability).
+    \item A \( C \) value above 0.5 suggests that the model has predictive ability better than random chance.
+    \item Higher \( C \) values indicate better model performance and more accurate risk predictions.
+\end{itemize}
+
+\chapter{Analysis}
+
+\section{Introduction}
+
+% Continue with the rest of your content in a similar structure...
+
+\end{document}
