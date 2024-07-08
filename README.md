@@ -44,6 +44,9 @@ Make changes to the dataset description
 
 Data preprocessing steps include handling missing values, encoding categorical variables, and normalizing numerical features to prepare the dataset for model training.
 
+### Survival Analysis
+
+
 ### Model Training
 
 The following machine learning models are utilized for churn prediction:
@@ -56,7 +59,7 @@ The following machine learning models are utilized for churn prediction:
 - Multi-Layer Perceptron (MLP)
 - LightGBM Classifier
 
-### Hyperparameter Tuning
+### Hyperparameter Tuning 
 
 Hyperparameter tuning is performed using `RandomizedSearchCV` to identify the best parameters for each model. The hyperparameters for each model are defined as follows:
 
