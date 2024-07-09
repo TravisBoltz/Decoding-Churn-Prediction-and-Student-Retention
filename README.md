@@ -18,7 +18,7 @@ The primary objectives of this research are:
 ## Dataset Description
 
 The dataset used for this research includes the following features:
-
+Make changes to the dataset description
 - **Gender**: The customer's gender.
 - **College**: The specific college within the university.
 - **Churn**: Indicates whether the student has churned ("Yes" or "No").
@@ -44,6 +44,9 @@ The dataset used for this research includes the following features:
 
 Data preprocessing steps include handling missing values, encoding categorical variables, and normalizing numerical features to prepare the dataset for model training.
 
+### Survival Analysis
+
+
 ### Model Training
 
 The following machine learning models are utilized for churn prediction:
@@ -56,7 +59,7 @@ The following machine learning models are utilized for churn prediction:
 - Multi-Layer Perceptron (MLP)
 - LightGBM Classifier
 
-### Hyperparameter Tuning
+### Hyperparameter Tuning 
 
 Hyperparameter tuning is performed using `RandomizedSearchCV` to identify the best parameters for each model. The hyperparameters for each model are defined as follows:
 
