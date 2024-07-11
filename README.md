@@ -133,4 +133,3 @@ The results of the model evaluations will be presented, highlighting the perform
 
 ## Conclusion
 
-This research project provides a comprehensive approach to predicting student churn using various machine learning models. The insights gained from this study can help university administrations and service providers to identify at-risk students and take proactive measures to improve retention rates.
