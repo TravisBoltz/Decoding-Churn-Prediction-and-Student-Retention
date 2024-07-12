@@ -1,0 +1,769 @@
+Gender,College,Churn,Level,Education_Level,Residence,SIM_Usage,Usage_Freq,Network_Strength,Voice_Calls,Mobile_Data_Internet,SMS_Text_Messaging,Data_Exhaustion,Multiple_Networks,Other_Networks_Better_Services,Poor_Network_Quality_Coverage,Insufficient_Data_Allowance,Unsatisfactory_Customer_Service,High_Costs_Pricing,Monthly_Data_Usage
+Female,College of Engineering,No,300,Undergraduate,On-campus,Yes,Several times a week,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Engineering,No,200,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Engineering,No,100,Undergraduate,Off-campus,Yes,Several times a week,4,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Male,College of Engineering,No,100,Undergraduate,Off-campus,Yes,Daily,1,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Engineering,No,200,Undergraduate,Off-campus,Yes,Occasionally,1,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,No,200,Undergraduate,Off-campus,Yes,Daily,3,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,No,100,Undergraduate,On-campus,No,Daily,3,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,0-2
+Male,College of Engineering,No,100,Undergraduate,On-campus,No,Daily,4,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Engineering,No,100,Undergraduate,On-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Engineering,No,200,Undergraduate,Off-campus,Yes,Occasionally,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Female,College of Engineering,No,300,Undergraduate,On-campus,Yes,Occasionally,3,Yes,No,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,6-8
+Female,College of Engineering,No,100,Undergraduate,On-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Engineering,No,300,Undergraduate,Off-campus,No,Rarely,2,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Engineering,No,100,Undergraduate,On-campus,Yes,Daily,1,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Male,College of Engineering,No,200,Undergraduate,On-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,0-2
+Female,College of Engineering,No,100,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Engineering,No,300,Undergraduate,On-campus,Yes,Occasionally,1,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,No,400,Undergraduate,Off-campus,Yes,Several times a week,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Engineering,No,100,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,No,No,No,Yes,Yes,Yes,Yes,6-8
+Male,College of Engineering,Yes,200,Undergraduate,Off-campus,Yes,Daily,1,No,Yes,No,Yes,Yes,Yes,Yes,No,No,Yes,8 and more
+Female,College of Engineering,No,100,Undergraduate,On-campus,Yes,Daily,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Engineering,No,100,Undergraduate,Off-campus,Yes,Never,1,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,No,300,Undergraduate,On-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,No,300,Undergraduate,Off-campus,Yes,Daily,4,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,No,100,Undergraduate,On-campus,Yes,Rarely,5,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Engineering,No,100,Undergraduate,On-campus,Yes,Daily,1,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Engineering,No,100,Undergraduate,Off-campus,Yes,Daily,3,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Engineering,No,200,Undergraduate,On-campus,Yes,Never,2,Yes,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,No,100,Undergraduate,Off-campus,Yes,Several times a week,4,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Female,College of Engineering,No,200,Undergraduate,On-campus,Yes,Never,4,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Engineering,Yes,200,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,2-4
+Female,College of Engineering,No,400,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,No,200,Undergraduate,On-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,No,300,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Engineering,No,200,Undergraduate,Off-campus,No,Occasionally,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Female,College of Engineering,Yes,300,Undergraduate,Off-campus,Yes,Never,3,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,8 and more
+Male,College of Engineering,Yes,100,Undergraduate,On-campus,Yes,Daily,2,Yes,Yes,No,Yes,No,Yes,Yes,No,No,Yes,8 and more
+Male,College of Engineering,No,200,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,0-2
+Male,College of Engineering,No,200,Undergraduate,Off-campus,Yes,Occasionally,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,0-2
+Male,College of Engineering,No,200,Undergraduate,Off-campus,Yes,Occasionally,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Male,College of Engineering,No,200,Undergraduate,Off-campus,Yes,Daily,3,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,No,300,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Engineering,No,300,Undergraduate,On-campus,Yes,Daily,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Engineering,No,300,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Engineering,Yes,300,Undergraduate,Off-campus,Yes,Daily,4,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,No,No,4-6
+Female,College of Engineering,No,200,Undergraduate,On-campus,Yes,Occasionally,1,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,Yes,200,Undergraduate,Off-campus,Yes,Occasionally,4,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,0-2
+Male,College of Engineering,No,300,Undergraduate,On-campus,Yes,Daily,5,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,No,200,Undergraduate,On-campus,Yes,Daily,4,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Engineering,No,200,Undergraduate,Off-campus,Yes,Occasionally,3,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Engineering,Yes,300,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,2-4
+Male,College of Engineering,No,100,Undergraduate,Off-campus,Yes,Daily,4,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Engineering,No,400,Undergraduate,Off-campus,Yes,Occasionally,3,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Engineering,No,100,Undergraduate,On-campus,Yes,Occasionally,3,No,No,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,4-6
+Male,College of Engineering,No,200,Undergraduate,Off-campus,Yes,Several times a week,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,No,100,Undergraduate,Off-campus,Yes,Occasionally,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Engineering,No,400,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,0-2
+Female,College of Engineering,No,200,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,0-2
+Female,College of Engineering,No,100,Undergraduate,On-campus,Yes,Daily,5,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Engineering,No,200,Undergraduate,On-campus,Yes,Occasionally,3,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Engineering,No,300,Undergraduate,Off-campus,Yes,Daily,2,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,No,200,Undergraduate,On-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Engineering,Yes,200,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,Yes,Yes,Yes,No,No,Yes,Yes,Yes,8 and more
+Female,College of Engineering,Yes,300,Undergraduate,Off-campus,Yes,Daily,1,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,No,100,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Engineering,No,100,Undergraduate,On-campus,Yes,Occasionally,1,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Engineering,No,300,Undergraduate,On-campus,Yes,Daily,4,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,2-4
+Female,College of Engineering,No,300,Undergraduate,On-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Female,College of Engineering,No,200,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Engineering,No,200,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,No,300,Undergraduate,On-campus,Yes,Several times a week,3,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Engineering,No,300,Undergraduate,Off-campus,Yes,Daily,4,No,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,Yes,400,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,8 and more
+Female,College of Engineering,Yes,300,Undergraduate,Off-campus,Yes,Never,3,Yes,Yes,Yes,No,No,Yes,No,No,No,Yes,6-8
+Male,College of Engineering,Yes,300,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,Yes,No,Yes,No,No,No,No,6-8
+Male,College of Engineering,No,100,Undergraduate,Off-campus,Yes,Occasionally,3,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Engineering,Yes,300,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,No,No,No,8 and more
+Female,College of Engineering,No,100,Undergraduate,On-campus,Yes,Rarely,2,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Engineering,No,200,Undergraduate,Off-campus,Yes,Occasionally,3,No,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,4-6
+Female,College of Engineering,No,100,Undergraduate,Off-campus,Yes,Daily,3,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Male,College of Engineering,No,300,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,No,100,Undergraduate,On-campus,Yes,Never,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Engineering,No,100,Undergraduate,Off-campus,Yes,Several times a week,1,No,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,No,300,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Engineering,Yes,100,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,No,No,8 and more
+Female,College of Engineering,No,400,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Engineering,No,200,Undergraduate,Off-campus,Yes,Daily,5,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Engineering,No,100,Undergraduate,Off-campus,Yes,Several times a week,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Engineering,No,300,Undergraduate,Off-campus,Yes,Several times a week,2,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Engineering,No,200,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,No,200,Undergraduate,On-campus,Yes,Daily,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Engineering,No,300,Undergraduate,Off-campus,Yes,Never,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,No,100,Undergraduate,On-campus,Yes,Daily,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Engineering,No,300,Undergraduate,On-campus,Yes,Rarely,1,No,Yes,No,Yes,No,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Engineering,No,200,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Engineering,No,100,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Engineering,No,200,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,No,200,Undergraduate,Off-campus,Yes,Never,3,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,0-2
+Male,College of Engineering,No,400,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Engineering,Yes,100,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,2-4
+Male,College of Engineering,No,100,Undergraduate,On-campus,Yes,Never,1,No,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,Yes,400,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,No,6-8
+Male,College of Engineering,No,100,Undergraduate,Off-campus,Yes,Occasionally,3,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Engineering,No,200,Undergraduate,Off-campus,Yes,Several times a week,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Engineering,No,200,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,Yes,400,Undergraduate,Off-campus,Yes,Occasionally,4,Yes,Yes,No,Yes,No,No,Yes,No,Yes,Yes,8 and more
+Male,College of Engineering,No,300,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,No,No,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,Yes,200,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,No,No,Yes,8 and more
+Male,College of Engineering,No,200,Undergraduate,On-campus,Yes,Occasionally,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,No,300,Undergraduate,Off-campus,Yes,Daily,2,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Engineering,Yes,300,Undergraduate,On-campus,Yes,Daily,2,Yes,Yes,Yes,No,Yes,No,Yes,No,Yes,No,8 and more
+Male,College of Engineering,Yes,300,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,Yes,Yes,No,Yes,Yes,No,No,Yes,8 and more
+Female,College of Engineering,No,100,Undergraduate,On-campus,No,Daily,3,No,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Female,College of Engineering,No,100,Undergraduate,On-campus,Yes,Several times a week,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Engineering,No,300,Undergraduate,On-campus,Yes,Rarely,2,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,No,100,Undergraduate,Off-campus,Yes,Occasionally,3,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Engineering,No,200,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Male,College of Engineering,Yes,400,Undergraduate,On-campus,Yes,Several times a week,1,Yes,No,No,Yes,Yes,No,No,Yes,No,No,8 and more
+Female,College of Engineering,No,300,Undergraduate,On-campus,Yes,Daily,1,No,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Male,College of Engineering,No,100,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,No,300,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,No,200,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,0-2
+Male,College of Engineering,Yes,100,Undergraduate,Off-campus,Yes,Never,3,Yes,Yes,No,Yes,Yes,Yes,No,Yes,No,Yes,4-6
+Female,College of Engineering,No,200,Undergraduate,Off-campus,Yes,Occasionally,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Engineering,No,100,Undergraduate,Off-campus,Yes,Daily,4,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Engineering,No,300,Undergraduate,Off-campus,Yes,Never,4,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,No,200,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Engineering,No,100,Undergraduate,On-campus,Yes,Several times a week,1,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,0-2
+Female,College of Humanities and Social Sciences,No,300,Undergraduate,On-campus,Yes,Never,3,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,No,200,Undergraduate,Off-campus,Yes,Daily,4,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Female,College of Humanities and Social Sciences,No,200,Undergraduate,Off-campus,Yes,Never,2,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,0-2
+Male,College of Humanities and Social Sciences,No,300,Undergraduate,On-campus,Yes,Daily,3,No,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Humanities and Social Sciences,No,100,Undergraduate,On-campus,Yes,Several times a week,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Humanities and Social Sciences,No,200,Undergraduate,On-campus,Yes,Daily,2,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Humanities and Social Sciences,Yes,100,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,No,8 and more
+Male,College of Humanities and Social Sciences,No,100,Undergraduate,On-campus,Yes,Several times a week,4,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Humanities and Social Sciences,No,400,Undergraduate,Off-campus,Yes,Daily,2,No,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Humanities and Social Sciences,No,400,Undergraduate,On-campus,No,Daily,1,Yes,Yes,Yes,No,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Male,College of Humanities and Social Sciences,No,300,Undergraduate,On-campus,Yes,Several times a week,1,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,6-8
+Female,College of Humanities and Social Sciences,No,100,Undergraduate,Off-campus,Yes,Occasionally,4,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,No,200,Undergraduate,Off-campus,Yes,Never,4,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Humanities and Social Sciences,No,200,Undergraduate,Off-campus,Yes,Never,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,0-2
+Male,College of Humanities and Social Sciences,Yes,300,Undergraduate,On-campus,Yes,Never,3,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,4-6
+Female,College of Humanities and Social Sciences,No,100,Undergraduate,Off-campus,Yes,Daily,3,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Humanities and Social Sciences,Yes,200,Undergraduate,On-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,2-4
+Female,College of Humanities and Social Sciences,No,300,Undergraduate,On-campus,Yes,Several times a week,3,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Humanities and Social Sciences,No,200,Undergraduate,On-campus,Yes,Several times a week,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,No,200,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,6-8
+Female,College of Humanities and Social Sciences,No,200,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Humanities and Social Sciences,No,200,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Male,College of Humanities and Social Sciences,No,200,Undergraduate,On-campus,Yes,Several times a week,2,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Humanities and Social Sciences,No,200,Undergraduate,On-campus,Yes,Daily,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,Yes,200,Undergraduate,Off-campus,Yes,Occasionally,3,Yes,No,Yes,No,Yes,Yes,Yes,No,Yes,Yes,8 and more
+Male,College of Humanities and Social Sciences,No,100,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Humanities and Social Sciences,No,100,Undergraduate,Off-campus,Yes,Daily,3,No,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,Yes,200,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,No,Yes,No,No,No,6-8
+Female,College of Humanities and Social Sciences,No,200,Undergraduate,Off-campus,Yes,Daily,2,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,No,400,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Humanities and Social Sciences,No,200,Undergraduate,Off-campus,Yes,Several times a week,1,Yes,Yes,No,No,No,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Humanities and Social Sciences,No,200,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,Yes,200,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,No,Yes,No,Yes,Yes,No,Yes,No,8 and more
+Male,College of Humanities and Social Sciences,No,300,Undergraduate,On-campus,Yes,Several times a week,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Humanities and Social Sciences,No,100,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Humanities and Social Sciences,No,200,Undergraduate,On-campus,Yes,Daily,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,0-2
+Male,College of Humanities and Social Sciences,Yes,200,Undergraduate,Off-campus,Yes,Daily,3,No,Yes,No,Yes,Yes,Yes,Yes,No,Yes,No,8 and more
+Female,College of Humanities and Social Sciences,No,200,Undergraduate,On-campus,Yes,Daily,1,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,No,200,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,No,100,Undergraduate,Off-campus,Yes,Daily,2,Yes,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,Yes,100,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,Yes,No,Yes,Yes,Yes,Yes,No,No,Yes,8 and more
+Male,College of Humanities and Social Sciences,No,200,Undergraduate,Off-campus,Yes,Occasionally,3,No,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Male,College of Humanities and Social Sciences,No,200,Undergraduate,Off-campus,Yes,Several times a week,3,No,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,No,200,Undergraduate,Off-campus,Yes,Occasionally,1,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,No,200,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,0-2
+Female,College of Humanities and Social Sciences,No,300,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Humanities and Social Sciences,Yes,300,Undergraduate,Off-campus,Yes,Occasionally,3,Yes,No,Yes,No,Yes,Yes,Yes,No,No,No,8 and more
+Male,College of Humanities and Social Sciences,No,200,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Humanities and Social Sciences,No,400,Undergraduate,On-campus,Yes,Several times a week,3,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Humanities and Social Sciences,No,100,Undergraduate,Off-campus,Yes,Occasionally,3,Yes,No,No,Yes,No,Yes,Yes,Yes,Yes,Yes,2-4
+Male,College of Humanities and Social Sciences,No,300,Undergraduate,On-campus,Yes,Daily,1,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Female,College of Humanities and Social Sciences,No,300,Undergraduate,Off-campus,Yes,Several times a week,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Male,College of Humanities and Social Sciences,No,300,Undergraduate,Off-campus,Yes,Several times a week,5,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,4-6
+Male,College of Humanities and Social Sciences,No,400,Undergraduate,On-campus,Yes,Daily,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Humanities and Social Sciences,No,300,Undergraduate,On-campus,Yes,Daily,2,No,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,6-8
+Male,College of Humanities and Social Sciences,No,200,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Male,College of Humanities and Social Sciences,No,100,Undergraduate,Off-campus,Yes,Occasionally,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Humanities and Social Sciences,No,400,Undergraduate,Off-campus,Yes,Daily,4,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,No,300,Undergraduate,On-campus,Yes,Daily,1,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Humanities and Social Sciences,No,100,Undergraduate,On-campus,Yes,Daily,1,No,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Humanities and Social Sciences,No,200,Undergraduate,Off-campus,Yes,Occasionally,1,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,No,400,Undergraduate,Off-campus,Yes,Daily,4,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,No,100,Undergraduate,Off-campus,Yes,Several times a week,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,No,400,Undergraduate,On-campus,No,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,No,400,Undergraduate,Off-campus,Yes,Occasionally,1,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Humanities and Social Sciences,No,100,Undergraduate,Off-campus,No,Occasionally,3,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Humanities and Social Sciences,No,200,Undergraduate,On-campus,Yes,Never,1,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,No,200,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,Yes,No,Yes,Yes,Yes,Yes,Yes,2-4
+Female,College of Humanities and Social Sciences,No,200,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,No,300,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,No,300,Undergraduate,Off-campus,Yes,Several times a week,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Humanities and Social Sciences,No,400,Undergraduate,On-campus,Yes,Occasionally,1,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Humanities and Social Sciences,No,500,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Humanities and Social Sciences,No,200,Undergraduate,Off-campus,Yes,Daily,3,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Humanities and Social Sciences,Yes,200,Undergraduate,On-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,No,8 and more
+Male,College of Humanities and Social Sciences,No,300,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,No,No,Yes,No,Yes,Yes,Yes,Yes,0-2
+Female,College of Humanities and Social Sciences,No,100,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Humanities and Social Sciences,No,300,Undergraduate,On-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Humanities and Social Sciences,No,300,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Humanities and Social Sciences,No,400,Undergraduate,On-campus,Yes,Occasionally,3,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,2-4
+Male,College of Humanities and Social Sciences,Yes,100,Undergraduate,Off-campus,Yes,Never,3,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,8 and more
+Male,College of Humanities and Social Sciences,No,200,Undergraduate,Off-campus,No,Daily,3,Yes,Yes,Yes,No,No,No,Yes,Yes,Yes,Yes,8 and more
+Male,College of Humanities and Social Sciences,Yes,300,Undergraduate,On-campus,Yes,Several times a week,3,No,Yes,Yes,No,Yes,Yes,Yes,No,No,No,8 and more
+Male,College of Humanities and Social Sciences,No,300,Undergraduate,Off-campus,Yes,Daily,2,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Humanities and Social Sciences,No,100,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,No,Yes,No,Yes,Yes,Yes,Yes,2-4
+Female,College of Humanities and Social Sciences,No,500,Undergraduate,On-campus,Yes,Daily,3,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Humanities and Social Sciences,No,300,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Male,College of Humanities and Social Sciences,No,300,Undergraduate,On-campus,Yes,Daily,3,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Humanities and Social Sciences,No,100,Undergraduate,Off-campus,Yes,Never,5,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Humanities and Social Sciences,Yes,200,Undergraduate,On-campus,Yes,Several times a week,2,Yes,Yes,No,Yes,Yes,Yes,Yes,No,Yes,Yes,6-8
+Male,College of Humanities and Social Sciences,No,200,Undergraduate,On-campus,Yes,Occasionally,1,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,No,300,Undergraduate,Off-campus,Yes,Never,3,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,No,300,Undergraduate,Off-campus,Yes,Occasionally,3,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,No,100,Undergraduate,Off-campus,Yes,Daily,1,No,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,0-2
+Female,College of Humanities and Social Sciences,No,500,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Humanities and Social Sciences,No,300,Undergraduate,Off-campus,Yes,Occasionally,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,0-2
+Female,College of Humanities and Social Sciences,No,300,Undergraduate,Off-campus,Yes,Daily,2,Yes,No,No,No,Yes,No,Yes,Yes,Yes,Yes,2-4
+Male,College of Humanities and Social Sciences,No,100,Undergraduate,On-campus,Yes,Daily,2,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,4-6
+Female,College of Humanities and Social Sciences,No,200,Undergraduate,Off-campus,Yes,Several times a week,1,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Humanities and Social Sciences,No,300,Undergraduate,Off-campus,Yes,Never,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,No,100,Undergraduate,On-campus,Yes,Occasionally,4,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,No,100,Undergraduate,On-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,No,200,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,No,300,Undergraduate,Off-campus,Yes,Daily,1,No,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Humanities and Social Sciences,No,100,Undergraduate,Off-campus,Yes,Daily,5,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,Yes,100,Undergraduate,Off-campus,Yes,Occasionally,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more
+Male,College of Humanities and Social Sciences,No,300,Undergraduate,Off-campus,No,Several times a week,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Male,College of Humanities and Social Sciences,No,100,Undergraduate,On-campus,Yes,Occasionally,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Female,College of Humanities and Social Sciences,No,100,Undergraduate,Off-campus,Yes,Occasionally,2,No,Yes,No,Yes,No,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Humanities and Social Sciences,No,400,Undergraduate,On-campus,Yes,Daily,3,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,No,200,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Humanities and Social Sciences,No,400,Undergraduate,Off-campus,No,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Humanities and Social Sciences,No,100,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,Yes,200,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,No,6-8
+Male,College of Humanities and Social Sciences,No,200,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,Yes,100,Undergraduate,Off-campus,Yes,Rarely,5,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,No,6-8
+Male,College of Humanities and Social Sciences,No,200,Undergraduate,Off-campus,Yes,Rarely,3,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Humanities and Social Sciences,No,400,Undergraduate,On-campus,Yes,Occasionally,2,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,Yes,100,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,No,No,6-8
+Female,College of Humanities and Social Sciences,No,500,Undergraduate,Off-campus,Yes,Occasionally,4,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,No,300,Undergraduate,On-campus,Yes,Daily,3,No,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Male,College of Humanities and Social Sciences,No,400,Undergraduate,On-campus,Yes,Daily,2,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,4-6
+Female,College of Humanities and Social Sciences,No,200,Undergraduate,Off-campus,Yes,Daily,4,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,0-2
+Male,College of Humanities and Social Sciences,No,300,Undergraduate,Off-campus,Yes,Daily,4,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Humanities and Social Sciences,No,400,Undergraduate,Off-campus,Yes,Daily,3,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Humanities and Social Sciences,No,100,Undergraduate,Off-campus,Yes,Rarely,1,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Humanities and Social Sciences,No,300,Undergraduate,Off-campus,Yes,Daily,2,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Humanities and Social Sciences,No,100,Undergraduate,On-campus,No,Daily,2,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Agriculture and Natural Resources,No,300,Undergraduate,On-campus,Yes,Daily,1,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Agriculture and Natural Resources,No,400,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,200,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Female,College of Agriculture and Natural Resources,No,100,Undergraduate,Off-campus,Yes,Occasionally,1,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Agriculture and Natural Resources,No,400,Undergraduate,On-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,200,Undergraduate,On-campus,Yes,Daily,3,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Agriculture and Natural Resources,No,100,Undergraduate,On-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Male,College of Agriculture and Natural Resources,No,300,Undergraduate,On-campus,Yes,Daily,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Agriculture and Natural Resources,No,100,Undergraduate,On-campus,Yes,Never,1,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Agriculture and Natural Resources,No,100,Undergraduate,Off-campus,Yes,Occasionally,2,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Agriculture and Natural Resources,No,200,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,300,Undergraduate,Off-campus,Yes,Rarely,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,200,Undergraduate,On-campus,Yes,Occasionally,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,200,Undergraduate,On-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Agriculture and Natural Resources,No,300,Undergraduate,On-campus,Yes,Occasionally,3,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Male,College of Agriculture and Natural Resources,No,100,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,6-8
+Female,College of Agriculture and Natural Resources,Yes,300,Undergraduate,On-campus,Yes,Never,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes,8 and more
+Male,College of Agriculture and Natural Resources,No,200,Undergraduate,Off-campus,Yes,Daily,5,Yes,No,No,Yes,Yes,No,Yes,Yes,Yes,Yes,0-2
+Male,College of Agriculture and Natural Resources,Yes,200,Undergraduate,On-campus,Yes,Several times a week,1,Yes,Yes,Yes,No,Yes,Yes,Yes,No,Yes,Yes,8 and more
+Male,College of Agriculture and Natural Resources,No,100,Undergraduate,On-campus,No,Several times a week,1,No,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,6-8
+Female,College of Agriculture and Natural Resources,No,100,Undergraduate,On-campus,Yes,Daily,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Agriculture and Natural Resources,No,300,Undergraduate,On-campus,Yes,Occasionally,3,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,4-6
+Female,College of Agriculture and Natural Resources,No,100,Undergraduate,Off-campus,Yes,Daily,2,Yes,No,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,6-8
+Female,College of Agriculture and Natural Resources,No,100,Undergraduate,Off-campus,Yes,Daily,3,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,200,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,100,Undergraduate,On-campus,Yes,Daily,1,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,Yes,300,Undergraduate,On-campus,Yes,Never,1,Yes,Yes,No,No,Yes,Yes,No,No,Yes,No,8 and more
+Male,College of Agriculture and Natural Resources,No,200,Undergraduate,On-campus,Yes,Daily,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,200,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Agriculture and Natural Resources,No,300,Undergraduate,Off-campus,Yes,Daily,2,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Agriculture and Natural Resources,Yes,100,Undergraduate,On-campus,Yes,Daily,3,No,Yes,Yes,Yes,No,Yes,No,No,No,Yes,2-4
+Female,College of Agriculture and Natural Resources,No,100,Undergraduate,Off-campus,Yes,Occasionally,5,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,300,Undergraduate,Off-campus,Yes,Daily,2,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Male,College of Agriculture and Natural Resources,Yes,400,Undergraduate,On-campus,Yes,Several times a week,3,Yes,Yes,No,Yes,Yes,Yes,Yes,No,No,Yes,8 and more
+Male,College of Agriculture and Natural Resources,No,100,Undergraduate,Off-campus,No,Occasionally,4,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Agriculture and Natural Resources,No,300,Undergraduate,On-campus,Yes,Daily,1,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Agriculture and Natural Resources,No,100,Undergraduate,Off-campus,Yes,Daily,1,Yes,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,300,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,200,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Agriculture and Natural Resources,No,100,Undergraduate,On-campus,Yes,Several times a week,2,Yes,Yes,Yes,No,Yes,No,Yes,Yes,Yes,Yes,4-6
+Male,College of Agriculture and Natural Resources,No,100,Undergraduate,On-campus,Yes,Occasionally,3,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,0-2
+Male,College of Agriculture and Natural Resources,Yes,300,Undergraduate,On-campus,Yes,Occasionally,3,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,No,No,8 and more
+Male,College of Agriculture and Natural Resources,No,200,Undergraduate,Off-campus,No,Daily,3,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,200,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,200,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,300,Undergraduate,On-campus,Yes,Occasionally,3,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Agriculture and Natural Resources,No,200,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Agriculture and Natural Resources,No,300,Undergraduate,On-campus,Yes,Occasionally,2,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,100,Undergraduate,Off-campus,Yes,Several times a week,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Agriculture and Natural Resources,No,100,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Agriculture and Natural Resources,No,200,Undergraduate,Off-campus,Yes,Daily,1,Yes,No,Yes,No,Yes,No,Yes,Yes,Yes,Yes,4-6
+Female,College of Agriculture and Natural Resources,No,200,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,200,Undergraduate,Off-campus,Yes,Never,5,Yes,Yes,No,No,Yes,No,Yes,Yes,Yes,Yes,4-6
+Female,College of Agriculture and Natural Resources,No,200,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,2-4
+Male,College of Agriculture and Natural Resources,No,400,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Agriculture and Natural Resources,No,300,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,4-6
+Female,College of Agriculture and Natural Resources,Yes,100,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,300,Undergraduate,Off-campus,Yes,Rarely,2,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,200,Undergraduate,On-campus,Yes,Daily,2,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,300,Undergraduate,On-campus,Yes,Occasionally,3,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Agriculture and Natural Resources,No,100,Undergraduate,On-campus,Yes,Daily,3,No,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Agriculture and Natural Resources,No,300,Undergraduate,Off-campus,Yes,Daily,3,Yes,No,No,Yes,No,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Agriculture and Natural Resources,No,300,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Agriculture and Natural Resources,No,100,Undergraduate,On-campus,Yes,Rarely,4,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,2-4
+Female,College of Agriculture and Natural Resources,No,100,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Agriculture and Natural Resources,No,100,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Agriculture and Natural Resources,No,300,Undergraduate,On-campus,Yes,Several times a week,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,100,Undergraduate,Off-campus,Yes,Rarely,3,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,200,Undergraduate,On-campus,Yes,Occasionally,5,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Agriculture and Natural Resources,No,200,Undergraduate,Off-campus,Yes,Rarely,3,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,Yes,100,Undergraduate,Off-campus,Yes,Never,2,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes,No,8 and more
+Female,College of Agriculture and Natural Resources,No,100,Undergraduate,Off-campus,No,Several times a week,4,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,Yes,200,Undergraduate,On-campus,Yes,Daily,3,Yes,No,Yes,Yes,Yes,Yes,No,No,No,Yes,6-8
+Male,College of Agriculture and Natural Resources,No,200,Undergraduate,Off-campus,Yes,Occasionally,3,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,6-8
+Male,College of Agriculture and Natural Resources,No,100,Undergraduate,Off-campus,Yes,Daily,3,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,Yes,300,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,No,Yes,Yes,Yes,Yes,No,No,No,8 and more
+Female,College of Agriculture and Natural Resources,No,400,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Female,College of Agriculture and Natural Resources,No,100,Undergraduate,Off-campus,Yes,Never,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Agriculture and Natural Resources,No,200,Undergraduate,On-campus,Yes,Daily,1,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,200,Undergraduate,Off-campus,Yes,Occasionally,3,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Male,College of Agriculture and Natural Resources,No,100,Undergraduate,Off-campus,Yes,Daily,2,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Agriculture and Natural Resources,No,300,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,200,Undergraduate,Off-campus,Yes,Daily,4,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Agriculture and Natural Resources,No,300,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,Yes,300,Undergraduate,On-campus,Yes,Daily,2,Yes,Yes,No,Yes,Yes,Yes,Yes,No,No,Yes,8 and more
+Male,College of Agriculture and Natural Resources,No,100,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Agriculture and Natural Resources,No,300,Undergraduate,On-campus,Yes,Several times a week,5,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Agriculture and Natural Resources,No,100,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,No,No,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Male,College of Agriculture and Natural Resources,No,400,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Female,College of Agriculture and Natural Resources,Yes,400,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,No,Yes,Yes,Yes,Yes,No,No,Yes,4-6
+Male,College of Agriculture and Natural Resources,No,200,Undergraduate,On-campus,Yes,Several times a week,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,200,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Agriculture and Natural Resources,No,200,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Agriculture and Natural Resources,No,400,Undergraduate,Off-campus,Yes,Several times a week,4,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Male,College of Agriculture and Natural Resources,No,200,Undergraduate,Off-campus,Yes,Daily,2,No,No,No,Yes,No,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,Yes,300,Undergraduate,Off-campus,Yes,Daily,2,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,4-6
+Male,College of Agriculture and Natural Resources,Yes,200,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,8 and more
+Female,College of Agriculture and Natural Resources,No,200,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,Yes,No,Yes,No,Yes,Yes,Yes,Yes,4-6
+Female,College of Agriculture and Natural Resources,No,300,Undergraduate,Off-campus,Yes,Several times a week,2,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,100,Undergraduate,Off-campus,Yes,Several times a week,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Agriculture and Natural Resources,No,200,Undergraduate,Off-campus,Yes,Several times a week,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,200,Undergraduate,On-campus,Yes,Occasionally,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Agriculture and Natural Resources,No,100,Undergraduate,Off-campus,Yes,Occasionally,3,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,Yes,100,Undergraduate,Off-campus,Yes,Daily,2,No,Yes,No,No,No,Yes,Yes,No,Yes,Yes,6-8
+Female,College of Agriculture and Natural Resources,No,100,Undergraduate,Off-campus,Yes,Occasionally,4,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,Yes,200,Undergraduate,On-campus,Yes,Daily,2,Yes,Yes,No,Yes,Yes,Yes,Yes,No,No,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,100,Undergraduate,On-campus,Yes,Daily,1,Yes,No,No,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,300,Undergraduate,Off-campus,Yes,Never,5,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Agriculture and Natural Resources,Yes,100,Undergraduate,Off-campus,Yes,Rarely,1,Yes,No,No,Yes,Yes,Yes,Yes,Yes,No,No,4-6
+Female,College of Agriculture and Natural Resources,No,100,Undergraduate,Off-campus,Yes,Daily,2,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Agriculture and Natural Resources,Yes,300,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,No,Yes,Yes,No,Yes,No,No,Yes,6-8
+Male,College of Agriculture and Natural Resources,No,300,Undergraduate,Off-campus,Yes,Never,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,200,Undergraduate,On-campus,Yes,Daily,2,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Female,College of Agriculture and Natural Resources,No,100,Undergraduate,On-campus,Yes,Daily,3,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Agriculture and Natural Resources,No,100,Undergraduate,On-campus,Yes,Several times a week,1,No,Yes,No,Yes,No,No,Yes,Yes,Yes,Yes,6-8
+Female,College of Agriculture and Natural Resources,No,200,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Agriculture and Natural Resources,No,300,Undergraduate,Off-campus,Yes,Daily,3,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,300,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,200,Undergraduate,Off-campus,Yes,Occasionally,1,No,Yes,No,Yes,No,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,200,Undergraduate,On-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Agriculture and Natural Resources,No,100,Undergraduate,On-campus,Yes,Daily,2,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,0-2
+Female,College of Agriculture and Natural Resources,No,200,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Male,College of Agriculture and Natural Resources,No,300,Undergraduate,Off-campus,Yes,Occasionally,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,100,Undergraduate,On-campus,Yes,Daily,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,200,Undergraduate,Off-campus,Yes,Several times a week,3,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,100,Undergraduate,Off-campus,Yes,Rarely,3,No,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,4-6
+Female,College of Agriculture and Natural Resources,Yes,100,Undergraduate,Off-campus,Yes,Occasionally,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more
+Female,College of Agriculture and Natural Resources,No,200,Undergraduate,On-campus,Yes,Never,4,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,300,Undergraduate,On-campus,Yes,Daily,1,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Art and Built Environment,No,100,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,Yes,200,Undergraduate,On-campus,Yes,Daily,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Art and Built Environment,No,300,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Art and Built Environment,No,400,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,100,Undergraduate,Off-campus,Yes,Rarely,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Art and Built Environment,No,300,Undergraduate,On-campus,Yes,Never,2,Yes,No,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,300,Undergraduate,On-campus,Yes,Daily,3,Yes,No,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Art and Built Environment,No,100,Undergraduate,Off-campus,Yes,Daily,3,No,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,100,Undergraduate,On-campus,Yes,Daily,3,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,100,Undergraduate,On-campus,Yes,Several times a week,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Art and Built Environment,No,200,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,300,Undergraduate,On-campus,Yes,Daily,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Art and Built Environment,Yes,100,Undergraduate,Off-campus,Yes,Several times a week,3,No,Yes,No,Yes,Yes,Yes,No,No,Yes,No,8 and more
+Female,College of Art and Built Environment,No,100,Undergraduate,Off-campus,Yes,Occasionally,1,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Art and Built Environment,Yes,200,Undergraduate,Off-campus,Yes,Daily,4,Yes,Yes,Yes,No,Yes,Yes,Yes,No,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,100,Undergraduate,On-campus,Yes,Daily,2,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Female,College of Art and Built Environment,No,300,Undergraduate,On-campus,Yes,Several times a week,4,Yes,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Male,College of Art and Built Environment,No,300,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,100,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Art and Built Environment,Yes,100,Undergraduate,Off-campus,Yes,Daily,3,No,Yes,No,No,Yes,Yes,Yes,No,No,Yes,8 and more
+Male,College of Art and Built Environment,Yes,100,Undergraduate,On-campus,Yes,Daily,3,Yes,Yes,Yes,No,Yes,Yes,Yes,No,Yes,Yes,4-6
+Female,College of Art and Built Environment,No,200,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Art and Built Environment,No,300,Undergraduate,On-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,Yes,300,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,No,Yes,0-2
+Male,College of Art and Built Environment,No,100,Undergraduate,Off-campus,Yes,Daily,1,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Art and Built Environment,No,100,Undergraduate,Off-campus,Yes,Daily,4,Yes,No,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,2-4
+Male,College of Art and Built Environment,No,100,Undergraduate,Off-campus,Yes,Daily,1,No,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Art and Built Environment,No,300,Undergraduate,Off-campus,Yes,Never,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Art and Built Environment,No,200,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,300,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Art and Built Environment,Yes,100,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,Yes,No,Yes,Yes,Yes,Yes,No,No,No,8 and more
+Male,College of Art and Built Environment,No,200,Undergraduate,Off-campus,Yes,Daily,2,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,300,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Art and Built Environment,No,300,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Male,College of Art and Built Environment,No,200,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,200,Undergraduate,Off-campus,Yes,Occasionally,1,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Art and Built Environment,No,100,Undergraduate,On-campus,Yes,Daily,4,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,0-2
+Female,College of Art and Built Environment,No,200,Undergraduate,On-campus,Yes,Daily,3,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Female,College of Art and Built Environment,Yes,200,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,Yes,No,Yes,Yes,Yes,No,No,Yes,6-8
+Female,College of Art and Built Environment,Yes,200,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,No,Yes,8 and more
+Female,College of Art and Built Environment,No,200,Undergraduate,Off-campus,Yes,Daily,2,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Art and Built Environment,No,200,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Art and Built Environment,No,200,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Art and Built Environment,No,300,Undergraduate,Off-campus,Yes,Daily,1,No,No,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Art and Built Environment,Yes,400,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,No,Yes,No,Yes,Yes,No,Yes,8 and more
+Female,College of Art and Built Environment,Yes,300,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,No,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more
+Female,College of Art and Built Environment,No,200,Undergraduate,Off-campus,Yes,Occasionally,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Female,College of Art and Built Environment,No,400,Undergraduate,On-campus,Yes,Daily,1,No,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Art and Built Environment,No,300,Undergraduate,Off-campus,Yes,Never,1,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Art and Built Environment,No,300,Undergraduate,Off-campus,Yes,Daily,1,No,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Art and Built Environment,No,100,Undergraduate,Off-campus,Yes,Daily,2,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Art and Built Environment,No,100,Undergraduate,On-campus,Yes,Daily,3,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Art and Built Environment,No,100,Undergraduate,On-campus,Yes,Daily,4,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Art and Built Environment,No,400,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Art and Built Environment,No,300,Undergraduate,Off-campus,No,Daily,4,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,300,Undergraduate,Off-campus,Yes,Occasionally,4,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Art and Built Environment,No,200,Undergraduate,Off-campus,Yes,Daily,3,No,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Male,College of Art and Built Environment,No,300,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Art and Built Environment,No,100,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Art and Built Environment,No,100,Undergraduate,On-campus,Yes,Daily,1,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,0-2
+Female,College of Art and Built Environment,No,100,Undergraduate,Off-campus,Yes,Several times a week,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Art and Built Environment,No,300,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,200,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Art and Built Environment,No,200,Undergraduate,On-campus,Yes,Never,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,100,Undergraduate,On-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Art and Built Environment,No,400,Undergraduate,On-campus,Yes,Never,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,200,Undergraduate,Off-campus,Yes,Daily,5,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Art and Built Environment,No,300,Undergraduate,On-campus,Yes,Daily,3,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Art and Built Environment,No,300,Undergraduate,On-campus,Yes,Daily,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,100,Undergraduate,Off-campus,Yes,Never,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,100,Undergraduate,On-campus,Yes,Occasionally,3,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Art and Built Environment,No,100,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Art and Built Environment,No,100,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,200,Undergraduate,Off-campus,Yes,Daily,2,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Art and Built Environment,No,300,Undergraduate,Off-campus,Yes,Occasionally,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,300,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Art and Built Environment,No,100,Undergraduate,On-campus,Yes,Daily,2,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Art and Built Environment,No,300,Undergraduate,On-campus,Yes,Daily,3,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,300,Undergraduate,Off-campus,Yes,Daily,5,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Male,College of Art and Built Environment,No,100,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,200,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Art and Built Environment,No,100,Undergraduate,On-campus,Yes,Daily,1,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Male,College of Art and Built Environment,No,300,Undergraduate,On-campus,Yes,Never,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,100,Undergraduate,On-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Art and Built Environment,No,300,Undergraduate,On-campus,Yes,Never,3,No,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,300,Undergraduate,On-campus,Yes,Daily,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Art and Built Environment,No,100,Undergraduate,On-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Art and Built Environment,Yes,400,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,No,Yes,Yes,Yes,No,Yes,Yes,8 and more
+Female,College of Art and Built Environment,No,100,Undergraduate,Off-campus,Yes,Daily,2,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,200,Undergraduate,Off-campus,Yes,Several times a week,1,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Art and Built Environment,No,300,Undergraduate,Off-campus,Yes,Never,1,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Male,College of Art and Built Environment,No,100,Undergraduate,Off-campus,Yes,Rarely,2,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Art and Built Environment,No,300,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Male,College of Art and Built Environment,No,200,Undergraduate,On-campus,Yes,Occasionally,3,No,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,400,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Male,College of Art and Built Environment,No,300,Undergraduate,On-campus,Yes,Several times a week,1,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,0-2
+Female,College of Art and Built Environment,No,100,Undergraduate,On-campus,Yes,Occasionally,1,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Art and Built Environment,No,200,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,Yes,No,Yes,Yes,Yes,Yes,Yes,2-4
+Female,College of Art and Built Environment,No,200,Undergraduate,On-campus,Yes,Several times a week,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Female,College of Art and Built Environment,No,300,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,Yes,100,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,300,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Art and Built Environment,Yes,400,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,Yes,8 and more
+Female,College of Art and Built Environment,No,100,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Art and Built Environment,Yes,300,Undergraduate,On-campus,Yes,Occasionally,1,No,Yes,Yes,Yes,Yes,No,Yes,No,No,No,2-4
+Male,College of Art and Built Environment,No,200,Undergraduate,On-campus,Yes,Daily,1,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,6-8
+Female,College of Art and Built Environment,No,100,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,4-6
+Female,College of Art and Built Environment,No,200,Undergraduate,Off-campus,Yes,Several times a week,3,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Art and Built Environment,No,100,Undergraduate,Off-campus,Yes,Several times a week,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,Yes,100,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,Yes,8 and more
+Male,College of Art and Built Environment,No,300,Undergraduate,Off-campus,Yes,Several times a week,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Art and Built Environment,No,200,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,100,Undergraduate,Off-campus,Yes,Daily,4,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Art and Built Environment,No,200,Undergraduate,On-campus,Yes,Daily,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Art and Built Environment,No,300,Undergraduate,Off-campus,Yes,Occasionally,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,100,Undergraduate,Off-campus,Yes,Several times a week,3,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,200,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Male,College of Art and Built Environment,Yes,300,Undergraduate,On-campus,Yes,Occasionally,4,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,No,No,8 and more
+Female,College of Art and Built Environment,No,300,Undergraduate,On-campus,Yes,Several times a week,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Art and Built Environment,Yes,300,Undergraduate,Off-campus,Yes,Never,2,Yes,Yes,No,Yes,Yes,No,Yes,No,No,Yes,6-8
+Female,College of Art and Built Environment,No,300,Undergraduate,Off-campus,Yes,Daily,1,Yes,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,100,Undergraduate,Off-campus,Yes,Several times a week,3,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Art and Built Environment,No,400,Undergraduate,On-campus,Yes,Daily,2,Yes,No,No,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Art and Built Environment,No,200,Undergraduate,Off-campus,Yes,Occasionally,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Art and Built Environment,No,100,Undergraduate,Off-campus,Yes,Rarely,1,Yes,No,No,Yes,Yes,No,Yes,Yes,Yes,Yes,6-8
+Male,College of Art and Built Environment,No,100,Undergraduate,Off-campus,Yes,Never,3,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Art and Built Environment,No,100,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,No,Yes,No,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,400,Undergraduate,Off-campus,Yes,Occasionally,3,No,No,No,Yes,Yes,No,Yes,Yes,Yes,Yes,4-6
+Female,College of Science,Yes,400,Undergraduate,Off-campus,Yes,Occasionally,3,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Science,No,100,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,100,Undergraduate,On-campus,Yes,Occasionally,3,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Science,No,400,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Female,College of Science,No,100,Undergraduate,Off-campus,Yes,Several times a week,2,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,100,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Science,No,200,Undergraduate,Off-campus,Yes,Never,2,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,100,Undergraduate,On-campus,Yes,Occasionally,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,200,Undergraduate,On-campus,Yes,Daily,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,Yes,300,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,No,Yes,Yes,Yes,Yes,No,Yes,No,0-2
+Female,College of Science,No,100,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Science,No,200,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Science,No,200,Undergraduate,Off-campus,Yes,Rarely,2,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Male,College of Science,No,100,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,100,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,100,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,0-2
+Female,College of Science,No,100,Undergraduate,On-campus,Yes,Daily,4,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,Yes,300,Undergraduate,Off-campus,Yes,Several times a week,1,Yes,Yes,No,Yes,No,Yes,No,Yes,No,Yes,2-4
+Male,College of Science,Yes,100,Undergraduate,Off-campus,Yes,Occasionally,3,Yes,Yes,No,No,Yes,No,Yes,Yes,No,No,0-2
+Male,College of Science,No,100,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Science,Yes,400,Undergraduate,Off-campus,Yes,Daily,2,No,Yes,Yes,No,Yes,Yes,Yes,No,No,Yes,6-8
+Female,College of Science,No,400,Undergraduate,On-campus,Yes,Daily,3,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,100,Undergraduate,Off-campus,Yes,Daily,3,Yes,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Science,No,400,Undergraduate,Off-campus,Yes,Occasionally,3,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Science,No,200,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Science,Yes,300,Undergraduate,Off-campus,No,Several times a week,2,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,6-8
+Female,College of Science,No,200,Undergraduate,On-campus,Yes,Daily,1,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,2-4
+Male,College of Science,Yes,200,Undergraduate,On-campus,Yes,Daily,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,No,8 and more
+Female,College of Science,No,200,Undergraduate,On-campus,Yes,Daily,1,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,400,Undergraduate,Off-campus,Yes,Never,3,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Science,No,400,Undergraduate,Off-campus,Yes,Occasionally,1,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,6-8
+Female,College of Science,Yes,100,Undergraduate,Off-campus,Yes,Several times a week,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,No,No,6-8
+Female,College of Science,No,400,Undergraduate,Off-campus,Yes,Several times a week,2,Yes,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Science,No,400,Undergraduate,Off-campus,Yes,Occasionally,3,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,400,Undergraduate,Off-campus,Yes,Never,3,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,2-4
+Male,College of Science,No,100,Undergraduate,On-campus,Yes,Never,1,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,300,Undergraduate,Off-campus,Yes,Rarely,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Science,No,200,Undergraduate,Off-campus,Yes,Daily,2,No,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,Yes,200,Undergraduate,Off-campus,Yes,Daily,3,Yes,No,No,Yes,Yes,Yes,Yes,Yes,No,No,8 and more
+Female,College of Science,No,400,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Science,Yes,200,Undergraduate,Off-campus,Yes,Several times a week,1,Yes,Yes,Yes,No,Yes,Yes,Yes,No,Yes,No,8 and more
+Female,College of Science,Yes,200,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,No,Yes,Yes,Yes,Yes,No,No,No,6-8
+Male,College of Science,Yes,100,Undergraduate,Off-campus,Yes,Several times a week,4,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes,Yes,2-4
+Male,College of Science,No,100,Undergraduate,Off-campus,Yes,Occasionally,2,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Science,No,100,Undergraduate,On-campus,Yes,Rarely,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,200,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,300,Undergraduate,On-campus,Yes,Never,3,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,400,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Science,Yes,200,Undergraduate,Off-campus,Yes,Several times a week,1,Yes,No,No,Yes,Yes,Yes,No,Yes,Yes,No,8 and more
+Male,College of Science,No,300,Undergraduate,Off-campus,Yes,Never,2,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Science,Yes,300,Undergraduate,On-campus,Yes,Occasionally,2,Yes,Yes,No,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more
+Female,College of Science,Yes,100,Undergraduate,On-campus,Yes,Occasionally,2,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,Yes,4-6
+Female,College of Science,No,200,Undergraduate,On-campus,Yes,Several times a week,3,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Science,No,200,Undergraduate,Off-campus,Yes,Occasionally,3,Yes,No,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,6-8
+Male,College of Science,Yes,100,Undergraduate,On-campus,Yes,Occasionally,4,No,Yes,Yes,No,Yes,Yes,Yes,No,Yes,No,8 and more
+Female,College of Science,No,200,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Science,No,300,Undergraduate,Off-campus,Yes,Occasionally,1,No,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,2-4
+Male,College of Science,No,100,Undergraduate,On-campus,Yes,Daily,2,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,300,Undergraduate,Off-campus,Yes,Several times a week,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Science,No,300,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,4-6
+Female,College of Science,No,300,Undergraduate,Off-campus,Yes,Never,3,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,300,Undergraduate,On-campus,Yes,Occasionally,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Science,No,200,Undergraduate,Off-campus,Yes,Occasionally,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,0-2
+Female,College of Science,No,200,Undergraduate,Off-campus,Yes,Occasionally,3,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,6-8
+Male,College of Science,Yes,100,Undergraduate,Off-campus,Yes,Rarely,2,Yes,Yes,No,Yes,Yes,Yes,No,No,Yes,No,8 and more
+Female,College of Science,No,200,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Science,No,500,Undergraduate,Off-campus,Yes,Rarely,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,200,Undergraduate,Off-campus,Yes,Several times a week,1,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,300,Undergraduate,Off-campus,Yes,Occasionally,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Male,College of Science,No,300,Undergraduate,On-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,Yes,300,Undergraduate,Off-campus,Yes,Daily,4,Yes,No,No,Yes,Yes,Yes,Yes,No,No,No,8 and more
+Female,College of Science,No,100,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Science,Yes,300,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,Yes,No,Yes,Yes,Yes,No,No,Yes,Yes,8 and more
+Male,College of Science,No,300,Undergraduate,On-campus,Yes,Daily,2,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Science,No,200,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Science,No,300,Undergraduate,Off-campus,Yes,Daily,2,No,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,4-6
+Male,College of Science,No,100,Undergraduate,On-campus,Yes,Daily,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,0-2
+Female,College of Science,No,300,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,300,Undergraduate,Off-campus,Yes,Daily,3,Yes,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Science,No,300,Undergraduate,On-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,200,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Science,No,200,Undergraduate,Off-campus,Yes,Daily,4,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,Yes,100,Undergraduate,Off-campus,Yes,Occasionally,1,Yes,Yes,No,No,Yes,Yes,Yes,No,No,No,8 and more
+Female,College of Science,No,100,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Science,Yes,300,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,No,No,Yes,Yes,Yes,Yes,No,No,Yes,6-8
+Male,College of Science,No,200,Undergraduate,Off-campus,Yes,Never,1,No,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,200,Undergraduate,On-campus,Yes,Several times a week,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,Yes,300,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,No,Yes,Yes,Yes,Yes,No,Yes,No,8 and more
+Female,College of Science,No,100,Undergraduate,On-campus,Yes,Never,2,Yes,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,300,Undergraduate,Off-campus,Yes,Several times a week,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,200,Undergraduate,Off-campus,Yes,Never,1,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Science,No,100,Undergraduate,Off-campus,Yes,Several times a week,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,200,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Male,College of Science,No,100,Undergraduate,Off-campus,Yes,Daily,2,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Science,No,200,Undergraduate,On-campus,Yes,Occasionally,3,Yes,Yes,No,Yes,No,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,Yes,400,Undergraduate,On-campus,Yes,Never,1,Yes,No,No,No,Yes,No,No,No,No,Yes,8 and more
+Male,College of Science,No,100,Undergraduate,On-campus,Yes,Occasionally,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,200,Undergraduate,Off-campus,Yes,Daily,3,No,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,6-8
+Female,College of Science,No,300,Undergraduate,Off-campus,Yes,Several times a week,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Science,Yes,100,Undergraduate,Off-campus,Yes,Several times a week,1,No,Yes,No,Yes,Yes,Yes,No,Yes,Yes,Yes,4-6
+Male,College of Science,No,400,Undergraduate,On-campus,Yes,Several times a week,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Female,College of Science,No,200,Undergraduate,Off-campus,Yes,Daily,1,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,300,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,300,Undergraduate,Off-campus,Yes,Several times a week,2,Yes,Yes,No,No,No,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,300,Undergraduate,Off-campus,Yes,Daily,1,No,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,300,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Science,No,100,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Science,No,400,Undergraduate,On-campus,Yes,Several times a week,3,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Science,Yes,100,Undergraduate,Off-campus,Yes,Occasionally,1,Yes,Yes,No,Yes,Yes,Yes,No,No,No,Yes,8 and more
+Female,College of Science,No,400,Undergraduate,Off-campus,Yes,Several times a week,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,200,Undergraduate,On-campus,Yes,Several times a week,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,100,Undergraduate,On-campus,Yes,Several times a week,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Science,Yes,300,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,No,Yes,0-2
+Female,College of Science,No,300,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,100,Undergraduate,On-campus,Yes,Several times a week,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,200,Undergraduate,Off-campus,Yes,Daily,5,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Science,No,200,Undergraduate,Off-campus,Yes,Daily,3,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,200,Undergraduate,Off-campus,Yes,Daily,2,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Science,No,100,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Male,College of Science,No,100,Undergraduate,On-campus,Yes,Daily,1,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,300,Undergraduate,Off-campus,Yes,Occasionally,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,200,Undergraduate,On-campus,Yes,Daily,3,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Science,No,300,Undergraduate,Off-campus,Yes,Daily,3,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Science,No,200,Undergraduate,Off-campus,Yes,Several times a week,2,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Science,No,500,Undergraduate,On-campus,Yes,Daily,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Science,No,100,Undergraduate,On-campus,Yes,Never,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,0-2
+Female,College of Science,No,100,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Health Sciences,Yes,300,Undergraduate,On-campus,Yes,Daily,4,Yes,Yes,No,Yes,Yes,Yes,Yes,No,No,Yes,6-8
+Male,College of Health Sciences,No,100,Undergraduate,On-campus,Yes,Occasionally,4,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Female,College of Health Sciences,No,100,Undergraduate,On-campus,Yes,Never,1,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Health Sciences,No,200,Undergraduate,On-campus,Yes,Daily,1,Yes,Yes,Yes,No,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Male,College of Health Sciences,No,100,Undergraduate,Off-campus,Yes,Several times a week,2,Yes,Yes,No,No,Yes,No,Yes,Yes,Yes,Yes,4-6
+Female,College of Health Sciences,No,300,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Male,College of Health Sciences,No,300,Undergraduate,On-campus,Yes,Occasionally,2,Yes,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,No,300,Undergraduate,Off-campus,Yes,Daily,4,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Health Sciences,No,100,Undergraduate,On-campus,Yes,Daily,1,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Health Sciences,No,200,Undergraduate,On-campus,Yes,Several times a week,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,No,200,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,No,300,Undergraduate,On-campus,Yes,Rarely,2,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Health Sciences,No,300,Undergraduate,On-campus,Yes,Daily,2,Yes,No,No,Yes,Yes,No,Yes,Yes,Yes,Yes,6-8
+Male,College of Health Sciences,No,100,Undergraduate,Off-campus,Yes,Daily,2,No,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Health Sciences,No,300,Undergraduate,Off-campus,Yes,Rarely,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Health Sciences,Yes,400,Undergraduate,On-campus,Yes,Several times a week,3,Yes,No,Yes,No,Yes,Yes,Yes,No,Yes,Yes,8 and more
+Female,College of Health Sciences,No,300,Undergraduate,On-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,Yes,200,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,No,Yes,Yes,Yes,No,No,No,No,4-6
+Male,College of Health Sciences,No,300,Undergraduate,Off-campus,Yes,Several times a week,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Health Sciences,No,100,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Health Sciences,No,100,Undergraduate,Off-campus,Yes,Occasionally,3,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,0-2
+Female,College of Health Sciences,No,100,Undergraduate,Off-campus,Yes,Several times a week,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Health Sciences,No,300,Undergraduate,Off-campus,Yes,Never,4,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Female,College of Health Sciences,Yes,100,Undergraduate,On-campus,Yes,Never,3,Yes,No,Yes,Yes,No,Yes,Yes,No,Yes,No,8 and more
+Female,College of Health Sciences,No,200,Undergraduate,Off-campus,Yes,Several times a week,4,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Health Sciences,No,100,Undergraduate,On-campus,Yes,Occasionally,2,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,No,100,Undergraduate,On-campus,Yes,Daily,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,No,300,Undergraduate,On-campus,Yes,Daily,3,Yes,Yes,No,Yes,No,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Health Sciences,No,300,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Health Sciences,No,100,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,No,100,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,No,300,Undergraduate,On-campus,Yes,Occasionally,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Health Sciences,No,200,Undergraduate,On-campus,Yes,Several times a week,1,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,Yes,300,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,8 and more
+Male,College of Health Sciences,No,100,Undergraduate,On-campus,Yes,Never,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Health Sciences,Yes,100,Undergraduate,Off-campus,Yes,Rarely,4,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,8 and more
+Male,College of Health Sciences,No,200,Undergraduate,On-campus,Yes,Occasionally,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Male,College of Health Sciences,No,300,Undergraduate,Off-campus,Yes,Daily,2,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Health Sciences,No,400,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,No,300,Undergraduate,Off-campus,Yes,Daily,5,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Health Sciences,Yes,300,Undergraduate,Off-campus,Yes,Occasionally,1,Yes,Yes,No,Yes,Yes,Yes,No,No,Yes,Yes,8 and more
+Male,College of Health Sciences,No,200,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,No,300,Undergraduate,Off-campus,Yes,Daily,3,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Health Sciences,No,400,Undergraduate,Off-campus,Yes,Rarely,1,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,No,100,Undergraduate,On-campus,Yes,Several times a week,4,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Female,College of Health Sciences,No,100,Undergraduate,On-campus,Yes,Daily,3,Yes,Yes,No,Yes,No,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,No,300,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,No,300,Undergraduate,Off-campus,Yes,Rarely,2,Yes,Yes,No,No,Yes,No,Yes,Yes,Yes,Yes,6-8
+Male,College of Health Sciences,No,300,Undergraduate,Off-campus,Yes,Occasionally,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,No,100,Undergraduate,Off-campus,Yes,Never,3,No,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,Yes,200,Undergraduate,On-campus,Yes,Daily,1,Yes,Yes,No,Yes,No,No,No,No,Yes,No,4-6
+Female,College of Health Sciences,No,400,Undergraduate,On-campus,Yes,Occasionally,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,No,200,Undergraduate,On-campus,Yes,Occasionally,4,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Health Sciences,No,100,Undergraduate,On-campus,Yes,Daily,4,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,No,200,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Male,College of Health Sciences,No,300,Undergraduate,On-campus,Yes,Occasionally,3,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Health Sciences,No,300,Undergraduate,On-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,No,200,Undergraduate,Off-campus,Yes,Never,1,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,0-2
+Male,College of Health Sciences,Yes,300,Undergraduate,Off-campus,Yes,Several times a week,1,No,Yes,Yes,No,Yes,No,Yes,No,No,No,8 and more
+Male,College of Health Sciences,No,100,Undergraduate,Off-campus,Yes,Occasionally,3,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Health Sciences,No,200,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Male,College of Health Sciences,No,100,Undergraduate,Off-campus,Yes,Rarely,3,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Health Sciences,No,200,Undergraduate,On-campus,Yes,Occasionally,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Health Sciences,No,400,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,6-8
+Male,College of Health Sciences,No,100,Undergraduate,On-campus,Yes,Several times a week,2,Yes,Yes,No,Yes,No,No,Yes,Yes,Yes,Yes,2-4
+Male,College of Health Sciences,No,200,Undergraduate,Off-campus,Yes,Occasionally,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,No,200,Undergraduate,Off-campus,Yes,Daily,4,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,0-2
+Female,College of Health Sciences,No,300,Undergraduate,On-campus,Yes,Daily,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,No,100,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Health Sciences,No,300,Undergraduate,On-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,No,200,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,No,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,No,200,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,Yes,No,No,No,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Health Sciences,No,100,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Female,College of Health Sciences,Yes,100,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,Yes,No,Yes,Yes,Yes,No,No,No,8 and more
+Male,College of Health Sciences,No,400,Undergraduate,Off-campus,Yes,Occasionally,3,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Health Sciences,Yes,300,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,No,8 and more
+Female,College of Health Sciences,No,100,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Health Sciences,No,200,Undergraduate,On-campus,Yes,Occasionally,1,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Health Sciences,No,200,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Health Sciences,No,100,Undergraduate,On-campus,Yes,Daily,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,No,100,Undergraduate,On-campus,Yes,Daily,2,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Health Sciences,No,200,Undergraduate,On-campus,Yes,Occasionally,3,Yes,Yes,No,No,Yes,No,Yes,Yes,Yes,Yes,4-6
+Female,College of Health Sciences,No,200,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,No,300,Undergraduate,Off-campus,Yes,Daily,1,No,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Health Sciences,No,100,Undergraduate,On-campus,Yes,Several times a week,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Health Sciences,No,300,Undergraduate,Off-campus,No,Rarely,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Health Sciences,No,200,Undergraduate,Off-campus,Yes,Daily,1,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Health Sciences,No,300,Undergraduate,On-campus,Yes,Never,4,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,Yes,400,Undergraduate,Off-campus,Yes,Daily,3,No,Yes,Yes,Yes,No,No,No,Yes,Yes,No,0-2
+Female,College of Health Sciences,No,300,Undergraduate,On-campus,Yes,Daily,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Health Sciences,Yes,100,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,No,Yes,No,Yes,Yes,No,No,No,6-8
+Female,College of Health Sciences,Yes,400,Undergraduate,On-campus,No,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes,8 and more
+Female,College of Health Sciences,No,300,Undergraduate,Off-campus,Yes,Daily,4,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Health Sciences,Yes,200,Undergraduate,On-campus,Yes,Daily,3,Yes,No,Yes,Yes,Yes,Yes,No,Yes,Yes,No,8 and more
+Female,College of Health Sciences,No,200,Undergraduate,Off-campus,Yes,Daily,4,Yes,Yes,Yes,No,Yes,No,Yes,Yes,Yes,Yes,0-2
+Male,College of Health Sciences,Yes,300,Undergraduate,Off-campus,No,Daily,1,Yes,No,Yes,Yes,Yes,Yes,Yes,No,No,Yes,8 and more
+Male,College of Health Sciences,No,200,Undergraduate,Off-campus,Yes,Daily,2,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Male,College of Health Sciences,No,300,Undergraduate,Off-campus,Yes,Occasionally,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Health Sciences,No,300,Undergraduate,Off-campus,Yes,Daily,3,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Male,College of Health Sciences,No,200,Undergraduate,Off-campus,Yes,Never,3,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Health Sciences,No,200,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Health Sciences,No,100,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,No,100,Undergraduate,On-campus,Yes,Daily,2,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,0-2
+Male,College of Health Sciences,No,100,Undergraduate,Off-campus,Yes,Rarely,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Health Sciences,No,200,Undergraduate,Off-campus,Yes,Never,2,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Health Sciences,No,200,Undergraduate,On-campus,Yes,Occasionally,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Health Sciences,No,400,Undergraduate,Off-campus,Yes,Several times a week,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,No,200,Undergraduate,On-campus,Yes,Occasionally,2,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Health Sciences,No,300,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,No,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,No,300,Undergraduate,Off-campus,Yes,Occasionally,2,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Health Sciences,Yes,100,Undergraduate,Off-campus,No,Occasionally,1,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Male,College of Health Sciences,No,200,Undergraduate,Off-campus,Yes,Occasionally,1,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Health Sciences,No,300,Undergraduate,Off-campus,Yes,Occasionally,2,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Male,College of Health Sciences,No,300,Undergraduate,On-campus,Yes,Daily,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Health Sciences,No,200,Undergraduate,Off-campus,Yes,Daily,1,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Health Sciences,No,100,Undergraduate,Off-campus,Yes,Daily,1,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Health Sciences,No,300,Undergraduate,Off-campus,Yes,Daily,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,Yes,400,Undergraduate,On-campus,Yes,Several times a week,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes,6-8
+Male,College of Health Sciences,No,200,Undergraduate,Off-campus,Yes,Occasionally,5,Yes,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,2-4
+Female,College of Health Sciences,No,200,Undergraduate,Off-campus,No,Never,3,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more
+Male,College of Health Sciences,No,300,Undergraduate,Off-campus,Yes,Several times a week,3,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8
+Female,College of Health Sciences,No,200,Undergraduate,Off-campus,Yes,Rarely,2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Female,College of Health Sciences,No,300,Undergraduate,Off-campus,Yes,Daily,1,No,Yes,Yes,Yes,No,No,Yes,Yes,Yes,Yes,8 and more
+Female,College of Health Sciences,No,100,Undergraduate,On-campus,Yes,Occasionally,3,No,No,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,2-4
+Male,College of Health Sciences,No,100,Undergraduate,Off-campus,Yes,Several times a week,1,Yes,Yes,No,No,Yes,No,Yes,Yes,Yes,Yes,2-4
+Female,College of Health Sciences,No,100,Undergraduate,Off-campus,Yes,Daily,3,No,No,No,Yes,Yes,No,Yes,Yes,Yes,Yes,6-8
+Female,College of Health Sciences,No,400,Undergraduate,Off-campus,Yes,Occasionally,3,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6
+Male,College of Health Sciences,Yes,400,Undergraduate,Off-campus,Yes,Never,2,Yes,No,No,Yes,Yes,Yes,Yes,No,Yes,No,8 and more
