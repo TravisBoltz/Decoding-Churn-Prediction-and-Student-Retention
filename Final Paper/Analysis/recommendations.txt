@@ -1,0 +1,15 @@
+Recommendations
+
+Based on the findings and insights from the feature analysis and model evaluation, the following recommendations are provided to Vodafone:
+
+
+Enhance Network Infrastructure: Focus on improving network quality and coverage to address poor network issues, which have a significant impact on churn.
+"Poor_Network_Quality_Coverage" is highly correlated with churn, suggesting that improving network infrastructure can effectively reduce churn rates.
+Review Data Plans: Analyze and adjust data allowances to meet the needs of students with higher usage requirements.
+"Insufficient_Data_Allowance" is strongly associated with churn, indicating that providing more flexible and sufficient data plans can improve retention.
+Improve Customer Service: Invest in customer service training and support to ensure prompt and satisfactory responses.
+"Unsatisfactory_Customer_Service" has a high correlation with churn, suggesting that enhancing customer service can lead to higher retention rates.
+Targeted Marketing and Retention Strategies: Develop targeted campaigns and strategies for colleges with higher churn rates, such as CABE and COS.
+The EDA revealed that certain colleges tend to have higher churn rates, indicating the need for college-specific retention approaches.
+Proactive Churn Prevention: Utilize the predictive models to identify students at high risk of churn and offer tailored solutions or incentives to retain their services.
+The high accuracy of the models can be leveraged to proactively address churn before it occurs.a 
