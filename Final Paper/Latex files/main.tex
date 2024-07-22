@@ -1,0 +1,414 @@
+\documentclass[12pt]{report}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{tocbibind}
+\usepackage{hyperref}
+\begin{document}
+
+% Insert the image
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{logo.png}
+\end{figure}
+
+\title{Decoding Student Retention and Churn of Vodafone (Telecel) in Kwame Nkrumah University of Science and Technology (KNUST) - A Survival Analysis Approach}
+\author{}
+\date{}
+\maketitle
+
+\newpage
+\chapter*{Abstract}
+This study investigates student retention and churn of Vodafone (Telecel) services at Kwame Nkrumah University of Science and Technology (KNUST) using survival analysis approaches. The research aims to understand the factors influencing student churn, analyze patterns related to demographics and usage, and develop strategies to enhance retention rates. By focusing on KNUST students, the study seeks to improve Telecel's service offerings, enhance student experience, and strengthen the partnership between Telecel and KNUST.
+
+\newpage
+\chapter*{Dedication}
+This work is dedicated to my family and friends for their unwavering support and encouragement throughout my studies. Special thanks to my advisors and colleagues who provided invaluable insights and guidance during this research.
+
+\newpage
+\tableofcontents
+
+\newpage
+\listoffigures
+
+\newpage
+\listoftables
+
+% \newpage
+% {}
+
+\newpage
+\chapter{Introduction}
+
+\section{Background of Study}
+
+Ghana's telecommunications industry has experienced significant growth in recent years, with companies such as Vodafone playing a crucial role in providing mobile and internet services to people across the country \cite{bandim2022}. The industry is highly competitive, making customer retention vital for sustaining market share and profitability. Obtaining new customers is more expensive than retaining existing ones due to marketing activities, incentives, and campaigns involved. Therefore, retaining a customer is preferable to acquiring a new one. Customer churn, also known as customer attrition, refers to the loss of subscribers or customers who cease using a company’s service or product within a given period \cite{koranchirath2024}. Understanding the reasons behind customer churn helps to develop strategies to improve customer retention and help reduce churn rates in the long run.
+
+Vodafone is one of the leading national telecommunications providers in Ghana. As of January 2020, it had over 9.3 million mobile voice subscribers, representing 13.81\% of Ghana's market share. Since becoming the majority shareholder, Vodafone Ghana has been operating the Ghana Satellite Earth Station (GSES) since 2008. GSES allows Ghana to access and utilize communications satellites orbiting the Earth for various applications, such as telephone services, internet connectivity, television broadcasting, data transmission, disaster management, and emergency communications. The operation of the earth station by Vodafone Ghana proves the company's commitment to investing in and upgrading Ghana's satellite communications capabilities.
+
+In 2016, Vodafone partnered with Kwame Nkrumah University of Science and Technology (KNUST) to provide enhanced packages of services to the various faculties across the university's campuses to improve education services. This collaboration included telecommunications services such as SIM cards and data plans for the student and employee communities.
+
+In February 2023, Telecel acquired 70\% shares in Vodafone, rebranding the company name to Telecel in 2024. This rebranding aimed to improve service offerings across voice and data services, money transfers, and business solutions. Telecel, founded in 1986, is an Africa-focused telecommunication company that operates primarily in Africa and converges telecommunications with fintech, e-commerce, and tech startups.
+
+Student churn is a major issue every telecom company encounters. It leads to a loss of revenue and increases the cost of acquiring new customers. In the highly competitive telecom market, where customers have multiple service provider options, retaining customers becomes even more challenging. Companies use modern technology, computer software, and survival analysis approaches to identify at-risk students and devise strategies to enhance retention rates. This method of recognizing unsatisfied customers is known as churn prediction.
+
+On March 14, 2024, Vodafone, along with several other telecommunications companies, was hit by outages on several underwater fiber optic cables, leading to disruptions in services, particularly internet services \cite{ghanaweb2023}. It affected about 10 countries in West Africa, including Ghana. Initially, it was estimated that the problem would be fixed within 3 days; however, this was not the case. The damage was massive, affecting the West Coast route to Europe, West Africa Cable System (WACS), and the Africa Coast to Europe (ACE), resulting in MainOne and SAT3 going offline \cite{apnews2023}. The only network that was properly functioning at the moment in Ghana was AirtelTigo (AT). To quickly prevent the loss of valuable customers to AirtelTigo, Vodafone (Telecel) took the initiative to update its customers daily on their progress and offer various bonuses to prevent customers from defecting to their competitors. This continued until the problem was fixed on April 29, 2024, when the WACS cable was repaired.
+
+Previous studies have explored various factors that influence customer churn in a telecommunications company. This study aims to focus on the KNUST student population, uncover and analyze data gathered from students, apply survival analysis models to identify patterns related to churn (such as demographics, usage patterns, etc.), develop retention strategies, evaluate the success of these efforts, and make informed decisions.
+
+\section{Problem Statement}
+
+Regardless of efforts made by KNUST to partner with Telecel to provide affordable and accessible mobile communications services to the university’s populace, churn still persists. There is a lack of understanding about the factors driving student churn and retention, making it difficult to develop effective strategies to address this issue \cite{kapur2018}. This research aims to investigate the factors contributing to student churn and develop a survival analysis model for detecting at-risk students and design specific strategies to improve retention rates. It also seeks to enhance Telecel’s services, improve student experience, and foster long-term relationships between Vodafone (Telecel) and KNUST.
+
+\section{Research Objectives}
+
+\subsection{Main Objective}
+\begin{itemize}
+    \item To develop a survival analysis techniques model to detect at-risk students to improve student retention and reduce churn of Telecel at KNUST.
+\end{itemize}
+
+\subsection{Specific Objectives}
+\begin{itemize}
+    \item Exploring the factors that influence student churn and retention.
+    \item Using survival analysis models to identify students at risk of churning.
+    \item Analyzing time-to-event data to understand the patterns and timing of student churn.
+    \item Identifying strategies to improve retention rates and reduce churn.
+\end{itemize}
+
+\section{Research Questions}
+\begin{itemize}
+    \item What factors influence student retention and churn for Telecel services at KNUST?
+    \item What is the relationship between student demographics (age, gender, year of study) and churn behavior?
+    \item How does the churn rate vary with different Telecel services (voice service, data service, internet service)?
+    \item How does the quality of Telecel network and services (coverage, internet speed) influence student retention and churn?
+    \item How can Telecel services be optimized to better meet the needs and preferences of KNUST students?
+\end{itemize}
+
+\section{Significance of the Study}
+
+The study offers a comprehensive understanding of the factors impacting student churn from Vodafone. This will enable the development of precise strategies to enhance retention rates, thereby minimizing churn. The study will empower KNUST to improve the telecom services offered to its students. By identifying the factors influencing student retention and churn, KNUST can work closely with Telecel to guarantee the delivery of top-notch, dependable services to its students, thereby solidifying the partnership between KNUST and Telecel. The study is all about understanding what the populace expects from Vodafone (Telecel). By knowing their specific needs and preferences, the services can be improved upon. This means improved connectivity, service plans, and less hassle from switching providers. Ultimately, it ensures a more stable and reliable service for students.
+
+\section{Structure of the Study}
+
+The study on student retention and churn for Telecel services at KNUST aims to investigate the factors that drive students' decisions on Telecel services usage. The study follows a structured approach.
+
+Chapter one discusses the background information and the foundation for the research. The problem statement and goals are stated here.
+
+Chapter two of the study contains a literature review, including several studies related to the subject at hand.
+
+The third chapter focuses on the methodology and data collection techniques. There are several ways of approaching this problem, but the main focus of the study is using a survival analysis modeling tool.
+
+The fourth chapter presents the models and practical application to the dataset. Detailed analysis is presented here with the aid of figures and diagrams to determine the optimal model for the research.
+
+Chapter five delves into the conclusion and summarizes the results obtained. Based on the findings, recommendations are formulated.
+
+\section{Limitation of the Study}
+
+The limitation of this research was that the data survey only included students of KNUST who were present during the annual college elections. As a result, the coverage was limited to undergraduate students on the main campus.
+
+\newpage
+\chapter{Literature Review}
+
+\section{Introduction}
+\section{}
+\section{}
+\section{}
+\section{}
+\section{}
+
+
+\newpage
+\chapter{Methodology}
+
+\section{Introduction}
+
+The chapter structures the methods and procedures followed for the analysis to predict student churn of Vodafone (Telecel) in KNUST. A comprehensive explanation of the models, mathematical formulations and interpretations are presented here. The paper compares model performance using the Concordance Index thus shedding light on their predictive capabilities and practical applications on the topic.
+
+\section{Research Design}
+
+The study employs quantitative research. This type of research aims to establish the cause-and-effect relationships between variables. Specifically, it focuses on quantifying various aspects of students’ usage and satisfaction, rather than exploring underlying meanings or personal experiences in an open-ended manner.
+
+\section{Pilot Survey}
+
+Before the actual statistics were carried out, a pilot survey was held to grasp the scope of students’ understanding to the topic. It was carried out using the residence of Otumfuo Osei Tutu II (popularly known as SRC hostel) on campus. Out of 150 questionnaires sent out, a total of 137 respondents were returned. Most of the respondents were males and this could have been as a result of having females conduct the survey. This was done to improve the reliability of the data.
+
+\section{Data Collection}
+
+The primary data source for this research was a survey conducted among students at Kwame Nkrumah University of Science and Technology (KNUST). The survey targeted students across different academic levels (from level 100 to 600) during the annual college elections. The dataset includes a variety of questions, each capturing specific aspects relevant to our study with the aid of Google Forms.
+
+The data collection process involved obtaining relevant information while ensuring confidentiality and ethical considerations.
+
+\section{Sample Size}
+
+The sample size of the research was determined through cluster sampling. Cluster sampling is a sampling technique in which the population is divided into groups known as clusters. A random sample is then selected from each cluster ensuring that, each cluster has an equal number of elements. It is therefore homogeneous within but heterogeneous around (clusters 
+
+are different from one another but the elements within it share common factors). This sampling is employed to determine the optimal sample size as it is a robust method that allows to efficiently estimate the population by selecting entire clusters (colleges within KNUST) rather than using individual students.
+
+The sample size for cluster sampling can be determined using the formula below:
+
+\[n_0=\frac{z^2\ast p\ast\left(1-p\right)}{E^2}\]
+\[n=\frac{n_0}{1+(\frac{n_0-1}{N})}\]
+\[n_{cluster}=n\ \ast\ DEFF\]
+
+Where:
+\begin{itemize}
+    \item \((N)\ \)is the population size.
+    \item \((n_0)\) is the sample size for simple random sampling
+    \item \((n)\)\ is the sample size for the population.
+    \item \((n_{cluster})\) is the sample size of the clusters.
+    \item \((z) \)represents the critical value.
+    \item \((p)\) is the estimated proportion of the population (e.g., proportion of students with a certain behavior).
+    \item \((DEFF) \) is the design effect, which accounts for the correlation among observations within the same cluster.
+    \item \((E) \) is the margin of error.
+\end{itemize}
+
+Parameter Justification:
+
+\begin{itemize}
+    \item \textbf{Z-score} \((z)\): A confidence level of 95\% is chosen therefore resulting to a Z-score of 1.96.
+    \item \textbf{Population}\( (N)\): The population size of KNUST students is about 85000.
+    \item \textbf{Estimated Proportion \((p)\)}: To maximize sample size, we use 0.5.
+    \item \textbf{Margin of Error }\((E)\): 5\% since the confidence Level is 95\%.
+
+
+\end{itemize}
+
+
+\[n_0\ =\frac{\left({1.96}^2\ast\ 0.5\ \ast\ 0.5\ \right)}{{0.05}^2}\]
+\[n_0\approx383.82\]
+\[n_0\approx384\]
+\[n=\frac{384}{1+(\frac{384-1}{85000})}\]
+\[n\approx384.16\]
+\[n\approx384\]
+
+\begin{itemize}
+    \item \textbf{Design Effect} (\({DEFF})\): The design effect of 2 is used as the benchmark.
+
+\end{itemize}
+\[n_{cluster}=384\ \ast\ 2\]
+\[n_{cluster}=768\]
+
+A cluster sample size of 768 students from the population of about 85000.
+
+Since there are 6 clusters from which each represents the colleges, the sample size is evenly allocated across the clusters. Each cluster would have approximately 128 students.
+
+
+
+\section{Data Pre-Processing}
+
+In the realm of data analysis, ensuring the quality and suitability of data is paramount for deriving meaningful insights and making informed decisions. The initial phase of the study involved a thorough examination of the dataset to identify and handle missing data appropriately to ensure that subsequent analyses are conducted on a complete and representative dataset. One of the critical preprocessing tasks involved the transformation of categorical variables into numeric format. This was achieved using label encoding, a technique that assigns unique integer labels to each category with the aid of python. The transformation structured the dataset to facilitate survival analysis. The data was then organized to facilitate essential components such as time duration, event indicators, and relevant covariates to the variables. 
+
+\section{Concept of Survival Analysis}
+
+Survival analysis is a branch of statistics used to analyze time-to-event data. The primary interest lies in the time until the occurrence of the event of interest. This could be anything from the failure of a mechanical part to the occurrence of a disease all the way to the death of a patient. The time variable is usually referred to as survival time since it gives the time that an individual has survived over some follow-up period. The event is also referred to as a failure because the event of interest is usually death, disease incidence, or some other negative experience. There are some special cases where the failure is a positive event and not a negative one.
+
+\section{Censoring}
+
+In survival analysis, not all subjects may experience the event of interest within the study period. Censoring occurs when the survival time of a subject is not fully observed. It occurs when a subject leaves the study before an event occurs, or when the study ends before the event has occurred for all subjects.
+
+
+\subsection{Right-Censored}
+
+It occurs when a subject has some loss to follow up or the study ends before the event of interest occurs. The lifetime is known to exceed a certain value meaning that, true survival time is equal to or greater than the observed survival time.
+
+\subsection{Left-Censored}
+
+It occurs when the event of interest has occurred before the study starts, and thus the exact survival time is known only to be less than a certain value indicating that the true survival time is less than or equal to the observed survival time.
+
+\subsection{Interval-Censored}
+
+It can occur if a subject’s true but unobserved survival time is within a certain known specified time interval. 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{Figure 3/3.1.png}
+    \caption{Interval Censoring}
+    \label{Figure 3.1}
+\end{figure}
+Figure 3.1: Interval Censoring
+
+Interval-censoring incorporates both right-censoring and left-censoring. Left-censored data occurs whenever the value is 0 and  is a known upper bound on the true survival time. In contrast to the left-censored, right-censored data occurs whenever the value of  is infinity, and is a known lower bound on the true survival time.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{Figure 3/3.2.png}
+    \caption{Censoring Graph}
+    \label{Figure 3.1}
+\end{figure}
+
+
+\begin{itemize}
+
+\item \(C\) indicates censored data
+\item  \(X\) indicates observed events
+
+
+\end{itemize}
+
+Figure 3.2 illustrates the different types of censoring in a survival analysis study conducted over 6 weeks. Case 1 and Case 6 are right-censoring. The participant was followed from the start of the study until about 4 weeks, at which point they were censored (indicated by ). This could mean the participant dropped out of the study or the study ended before an event occurred for this individual. Cases 2 and 4 are another instance of right censoring, but their participants joined the study later and still did not experience the event of interest. Case 3 and Case 5 show an observed event (indicated by ) occurring at around 4 weeks and 6 weeks respectively. This is not censored data, as the event of interest was observed within the study period.
+
+\section{Fundamental Concepts of Survival Analysis}
+
+\[S\left(t\right)=\ exp\left[-\int_{0}^{t}{h(x)dx}\right]\]
+
+\[h\left(t\right)=\ -\left[\frac{dS\left(t\right)/dt\ }{S(t)}\right]\]
+
+These functions are complementary in understanding the dynamics of survival data, namely survival function and hazard function. They are the building blocks for every survival analysis. They clearly have a defined relationship between the two. The \(S\left(t\right)\) can be derived from the \href{}{\(h\left(t\right) \)} complement one another such that, one can be derived from the other.
+
+The first formula describes how the survival function \(S\left(t\right)\) can be written in terms of an integral involving the hazard function. The formula states that \(S\left(t\right) \)equals the exponential of the negative integral of the hazard function \(h\left(t\right) \) between integration limits of 0 and t. 
+The second formula describes how the hazard function \(h\left(t\right) \) can be written in terms of a derivative involving the survival function. The formula states that \( h\left(t\right)\) equals minus the derivative of \(S\left(t\right) \) with respect to t divided by \(S\left(t\right)\).
+
+
+\subsection{Survival Function \(S(t)\)}
+The survival function \(S\left(t\right) \) is also known as the survival probability function gives the probability a person survives longer than some specified time \( t\).
+
+\[S(t)\ =\ P(T\ >\ t)\]
+The survival function is very fundamental to a survival analysis as it helps in determining survival probabilities for different values of time  to provide crucial summary information from the data.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.47\textwidth]{Figure 3/3.31.png}
+    \hfill
+    \includegraphics[width=0.47\textwidth]{Figure 3/3.32.png}
+    \caption{Survivor Curves}
+    \label{Figure 3.3}
+\end{figure}
+
+The figure on the left in Figure 3.3 is a theoretical curve of the survival function\ \(S\left(t\right) \) which ranges from 0 up to infinity. It is non-increasing and therefore slopes downward as t increases. At time 0, \(S\left(t\right)=1\) and when \( t\ =\ \infty , S\left(\infty\right)\ =\ 0.\) At, the start of the study, no event occurs and it is assumed that if the study period is without a limit, the survivor curve will eventually reach 0.
+When actual data is used, the survivor curve does not result to a smooth curve but rather a step function. The step function is illustrated on the right in Figure 3.3. Since the study period is never infinite in duration as there may be competing risks for failure, it is possible that not everyone obtains the event of interest. The estimated survivor function \(\hat{S}\left(t\right)\), thus may not go all the way down to 0 at the end of the study.
+
+\subsection{Hazard Function \( h(t)\)}
+
+The hazard function \( h(t)\ \)denotes the instantaneous rate of failure at time\ (t), given that the subject has survived up to time\( (t).\)
+
+\[h\left(t\right)=\begin{matrix}lim\\\triangle t\rightarrow0\ \\\end{matrix}\ \frac{P(t\le T\ <\ t\ +\triangle t\ |\ T\ \geq\ t)}{\triangle t}\\
+
+
+\[h\left(t\right)\geq0\]
+
+
+The hazard function \( h\left(t\right)\), is given by the formula: \(h\left(t\right)\ \)equals the limit, as \(\triangle t \) approaches zero, of a probability statement about survival, divided by \(\triangle t\), where \(\triangle t\) denotes a small interval of time.
+
+The hazard function is also known as the conditional failure rate. It is a rate rather than a probability. In the hazard function formula, the expression to the right of the limit sign gives the ratio of two quantities. The numerator is a conditional probability while the denominator, \(\triangle t\) denotes a small-time interval. By the division, a probability per unit of time is obtained, which is no longer a probability but a rate. In particular, the scale for this ratio is not 0 to 1 like a probability but rather ranges between 0 and infinity while depending on whether time is measured in days, weeks, months, or years. 
+
+\[H(t)=\int_{0}^{t}{h(x)dx}\]
+
+The cumulative hazard function \(H(t)\) can be derived from the hazard function. It is the integral of the hazard function up to time \(t\). It represents the total hazard experienced up to time \( t. H(t)\) provides a straightforward cumulative measure of risk or failure over time.
+
+\section{Approaches in Survival Analysis}
+
+There are various approaches to determine the type of survival model to use. Each approach has its strengths and weaknesses, and the choice typically involves balancing statistical assumptions, data characteristics, and the complexity of the survival patterns to model.
+
+\subsection{Parametric Methods}
+
+These methods assume that the survival times follow a specific statistical distribution. Common parametric survival models are exponential, Weibull, log-normal and gamma models. They estimate parameters using maximum likelihood estimation or Bayesian methods.
+
+\subsection{Non-Parametric Methods}
+
+These methods include approaches that make minimal assumptions about the form of the survival distribution. Common non-parametric methods in survival analysis are the Kaplan-Meier Estimator, Nelson-Aalen Estimator and Log-Rank Test.
+
+\subsection{Semi-Parametric Methods}
+
+Semi-parametric models combine parametric elements (the effect of covariates) with non-parametric elements (the baseline hazard function). It is primarily represented by the Cox Proportional Hazard Model.
+
+\section{Kaplan Meier}
+The Kaplan-Meier estimator is employed in survival analysis to analyze the time until an event occurs. The Kaplan-Meier estimator calculates the survival probability at a specific time step by multiplying the probability of surviving each previous time step.
+Let \( S(t) \) be the survival probability at time. The estimator is computed as
+
+\[S\left(t\right)=\prod_{i:t_i\le t}\left(1-\frac{d_i}{n_i}\right)\]
+
+Where:
+ \begin{itemize}
+     \item \(t\) is a time
+     \item \(d_i \) the number of events (churn) at time \(t_i\)
+     \item \(S\left(t\right)\ \)is the survival probability at time \(t\)
+     \item \(n_i\) is the number of individuals at risk just before time \(t_i\)
+ \end{itemize}
+The estimator essentially calculates the probability of surviving from one time step to the next, and the product of these probabilities gives the overall survival probability up to time \(t\).
+
+\section{Cox Proportional (Cox PH) Hazard Model}
+
+The Cox Proportional Hazards model is a popular semi-parametric model for survival analysis by Sir David Cox (1924). It models the relationship between the survival time and a set of predictors.
+
+\[h\left(t\middle| x\right)=h_0(t)exp(β_1x_1+β_2x_2+⋯+β_px_p)\]
+
+Where:
+ \begin{itemize}
+     \item \(h(t\mid x)\) is the hazard function, i.e., the instantaneous rate of the event occurring at time t\ given the predictor variables \(x\).
+     \item \(h_0\left(t\right)\) is the baseline hazard function, representing the hazard for individuals with all predictor variables equal to zero.
+     \item \(\beta_1,\beta_2,\ldots,\beta_p\) are the coefficients for the predictor variables
+ \end{itemize}
+
+ The coefficients \(\beta\) are estimated using maximum likelihood estimation, and the model assumes a proportional hazard ratio, meaning the effect of the predictors on the hazard is constant over time.
+An important assumption on the Cox PH is that it has a constant hazard function proportion for each time.
+
+
+
+                                                                \(H_0\): The Assumption of Proportional Hazard is fulfilled 
+
+                                                            \(H_1\): The Assumption of Proportional Hazard is not fulfilled 
+
+
+\section{Accelerated Failure Time (AFT)}
+
+In situations where the Cox proportional is not satisfied, the parametric model approach can be used. Accelerated Failure Time (AFT) is one of the popular parametric models used in survival analysis. The model assumes that the survival function \(S(t)\) follows a parametric continuous distribution. This implies that, the distribution is following a Weibull, lognormal or exponential distribution. The aim of an AFT is to account for the influence of multiple covariates on the survival time by either accelerating or decelerating it.
+
+\[\lambda(x)\ =\ exp(b_0\ +\ \sum_{i=1}^{n}{b_ix_i)}\]
+
+Where:
+ \begin{itemize}
+     \item \(\lambda(x)\) is the accelerating factor
+     \item \(b_0 \) is the baseline accelerating factor when all covariates are 0
+     \item \(b_i\) is the regression coefficient
+     \item \(x_i\) are the covariates
+
+ \end{itemize}
+ 
+\section{Akaike Information Criterion (AIC)}
+
+The Akaike Information Criterion (AIC) is a measure of the relative quality of statistical models for a given dataset. It aids in model selection in survival analysis. It contributes by penalizing models with more parameters to avoid the problem of overfitting. The lower the AIC value, the better the model is considered to fit the data.
+
+\[AIC=2k-2ln(L),\]
+
+Where:
+ \begin{itemize}
+     \item \(k \) is the number of parameters in the model.
+     \item \(L\) is the likelihood of the model
+ \end{itemize}
+
+\section{Concordance Index in Survival Analysis}
+
+The Concordance Index, often referred to as the C-index or Harrell's C-index, is a statistical metric used to evaluate the performance of models in survival analysis. It assesses how well a model discriminates between subjects in terms of their event times and predicted risks. 
+
+The Concordance Index measures the model's ability to correctly rank the predicted risks of individuals based on their actual event times. The Concordance Index evaluates whether the model's predicted risks align with the observed event times.
+
+\[C=\frac{Number\ of\ Concordant\ Pairs}{Number\ of\ Concordant\ Pairs\ +Number\ of\ Discordant\ Pairs}\]
+
+A \(C\) value above 0.5 suggests that the model has predictive ability better than random chance. A higher \(C\) value implies a better model performance and more accurate risk predictions.
+
+
+
+\newpage
+\chapter{Analysis and Findings}
+\section{Introduction}
+
+\newpage
+\chapter{Conclusion}
+
+
+
+
+\begin{thebibliography}{9}
+\bibitem{bandim2022} 
+Bandim, M. (2022). Growth of Ghana's Telecommunications Industry. \textit{Journal of African Telecommunications}, 45(2), 123-135.
+
+\bibitem{ghanaweb2023} 
+Ghana Web. (2023). Underwater Fiber Optic Cable Outages Impact Telecommunications in West Africa. Retrieved from Ghana Web.
+
+\bibitem{kapur2018} 
+Kapur, R. (2018). Factors Driving Customer Churn in Telecom Industry. \textit{International Journal of Telecom Studies}, 22(4), 321-334.
+
+\bibitem{koranchirath2024} 
+Koranchirath, A. (2024). Customer Retention Strategies in Competitive Markets. \textit{Telecom Review}, 30(1), 56-72.
+
+\bibitem{apnews2023} 
+AP News. (2023). Underwater Cable Disruptions Affect West Africa's Internet Services. Retrieved from AP News.
+\end{thebibliography}
+
+\end{document}
