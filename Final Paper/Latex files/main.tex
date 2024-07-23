@@ -9,17 +9,82 @@
 \usepackage{geometry}
 \begin{document}
 
-% Insert the image
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=\textwidth]{logo.png}
-\end{figure}
+\pagenumbering{gobble} % No page numbers on the title page% Insert the image
+\begin{titlepage}
+\centering
+    \vspace{0.2cm}
+    \Large\textbf{KWAME NKRUMAH UNIVERSITY OF SCIENCE AND TECHNOLOGY}
+    
+    %\Huge\textbf{(KNUST)}
+    \vspace{0.2cm}
+    
+    \medium{DEPARTMENT OF STATISTICS AND ACTUARIAL SCIENCE}
+    \vspace{0.2cm}
+    
+  
+     \begin{center}
+\includegraphics[width=0.5\textwidth]{logo.png}\end{center}
+    %\vspace{0.05cm}
+%    \Huge\textbf{University Name}
+%    \vspace{0.5cm}
+%    
+%    \LARGE Department Name
+%    \vspace{1.5cm}
+    \Large{\textbf{Decoding Student Retention and Churn of
+Vodafone (Telecel) in Kwame Nkrumah University
+of Science and Technology (KNUST) - A Survival
+Analysis Approach}
+    \vspace{0.2cm}
+    
+     {Musah Faridu Oubda
+    
+    Kassim Asana
 
-\title{Decoding Student Retention and Churn of Vodafone (Telecel) in Kwame Nkrumah University of Science and Technology (KNUST) - A Survival Analysis Approach}
-\author{}
-\date{}
-\maketitle
+    Sarpong Linda
 
+    Torsi Edmond Collins
+ \\
+    Asiamah Ezekiel
+    
+    \vspace{1cm}  
+    \small{DISSERTATION SUBMITTED TO THE DEPARTMENT OF STATISTICS AND ACTUARIAL SCIENCE, KWAME NKRUMAH UNIVERSITY OF SCIENCE AND TECHNOLOGY IN PARTIAL FULFILMENT OF THE REQUIREMENT FOR THE AWARD OF THE DEGREE OF BACHELOR OF SCIENCE IN ACTUARIAL SCIENCE}\\
+\vspace{0.2cm}
+\end{titlepage}
+
+
+\section*{Declaration}
+
+I hereby declare that this submission is my own work towards the award of undergraduate degree and that, to the best of my knowledge, it contains no material previously published by another person nor material which had been accepted for the award of any other degree of the university, except where due acknowledgment had been made in the text.
+
+\vspace{1cm}
+
+\begin{tabbing}
+Samuel Bentum \hspace{5cm} \= \dotfill \\
+\> Student Signature \hspace{1cm} Date \\
+Jane Forson \hspace{5cm} \= \dotfill \\
+\> Student Signature \hspace{1cm} Date \\
+Missah Ampofo Benjamin \hspace{5cm} \= \dotfill \\
+\> Student Signature \hspace{1cm} Date \\
+Vivian Adonle Quarm \hspace{5cm} \= \dotfill \\
+\> Student Signature \hspace{1cm} Date \\
+\end{tabbing}
+
+\vspace{1cm}
+
+Certified by:
+
+\vspace{1cm}
+
+\begin{tabbing}
+Miss Sandra Addai-Henne \hspace{5cm} \= \dotfill \\
+\> Supervisor Signature \hspace{1cm} Date \\
+Prof. Atinuke Adebanji \hspace{5cm} \= \dotfill \\
+\> Head of Department Signature \hspace{1cm} Date \\
+\end{tabbing}
+
+
+
+ 
 \newpage
 \chapter*{Abstract}
 This study investigates student retention and churn of Vodafone (Telecel) services at Kwame Nkrumah University of Science and Technology (KNUST) using survival analysis approaches. The research aims to understand the factors influencing student churn, analyze patterns related to demographics and usage, and develop strategies to enhance retention rates. By focusing on KNUST students, the study seeks to improve Telecel's service offerings, enhance student experience, and strengthen the partnership between Telecel and KNUST.
@@ -27,6 +92,10 @@ This study investigates student retention and churn of Vodafone (Telecel) servic
 \newpage
 \chapter*{Dedication}
 This work is dedicated to my family and friends for their unwavering support and encouragement throughout my studies. Special thanks to my advisors and colleagues who provided invaluable insights and guidance during this research.
+
+\newpage
+\chapter*{Acknowledgement}
+% Acknowlege lectures and Mrs. Sandra
 
 \newpage
 \tableofcontents
@@ -400,9 +469,9 @@ The dataset has a shape consisting of 768 rows and 18 columns from a sample in K
 
 \begin{table}[h!]
 \centering
-\begin{tabular}{|>{\raggedright\arraybackslash}p{4cm}|p{9cm}|} \hline 
+\begin{tabular}{|>{\raggedright\arraybackslash}p{4cm}|p{9cm}|} \hline  
 
-\textbf{Field Name} & \textbf{Description} \\ \hline 
+\textbf{Field Name} & \textbf{Description} \\ \hline  
 
 Gender & Gender of the student \\ \hline  
 College & College the student belongs to \\ \hline  
@@ -421,7 +490,7 @@ Poor Network Coverage& Whether the student experiences poor network coverage \\ 
 Insufficient Data Allowance& Whether the student finds data allowance insufficient \\ \hline  
 Unsatisfactory Customer Service& Whether the student is dissatisfied with customer service \\ \hline  
 High Costs Pricing& Whether the student finds Vodafone's pricing high \\ \hline  
-Monthly Data Usage& Monthly data usage of a student in gigabytes \\ \hline
+Monthly Data Usage& Monthly data usage of a student in gigabytes \\ \hline 
 
 \end{tabular}
 \caption{Field Names and Descriptions}
