@@ -7,67 +7,66 @@
 \usepackage{array}
 \usepackage{booktabs}
 \usepackage{geometry}
+\usepackage{float}
+\usepackage{lmodern}
 \begin{document}
 
-\pagenumbering{gobble} % No page numbers on the title page% Insert the image
+\pagenumbering{gobble} % No page numbers 
 \begin{titlepage}
 \centering
     \vspace{0.2cm}
     \Large\textbf{KWAME NKRUMAH UNIVERSITY OF SCIENCE AND TECHNOLOGY}
     
     %\Huge\textbf{(KNUST)}
-    \vspace{0.2cm}
+    %\vspace{0.2cm}
+      \vspace{0.2cm}
+   \large{DEPARTMENT OF STATISTICS AND ACTUARIAL SCIENCE}
+    \vspace{0.4cm}
     
-    \medium{DEPARTMENT OF STATISTICS AND ACTUARIAL SCIENCE}
-    \vspace{0.2cm}
-    
-  
      \begin{center}
 \includegraphics[width=0.5\textwidth]{logo.png}\end{center}
-    %\vspace{0.05cm}
-%    \Huge\textbf{University Name}
-%    \vspace{0.5cm}
-%    
-%    \LARGE Department Name
-%    \vspace{1.5cm}
-    \Large{\textbf{Decoding Student Retention and Churn of
+
+    \large{\textbf{Decoding Student Retention and Churn of
 Vodafone (Telecel) in Kwame Nkrumah University
-of Science and Technology (KNUST) - A Survival
-Analysis Approach}}
-    \vspace{0.2cm}
-    
-     {Musah Faridu Oubda
-    
-    Kassim Asana
-
-    Sarpong Linda
-
-    Torsi Edmond Collins
- \\
-    Asiamah Ezekiel
-    
-    \vspace{1cm}  
-    \small{DISSERTATION SUBMITTED TO THE DEPARTMENT OF STATISTICS AND ACTUARIAL SCIENCE, KWAME NKRUMAH UNIVERSITY OF SCIENCE AND TECHNOLOGY IN PARTIAL FULFILMENT OF THE REQUIREMENT FOR THE AWARD OF THE DEGREE OF BACHELOR OF SCIENCE IN ACTUARIAL SCIENCE}\\
+of Science and Technology (KNUST) - }}
 \vspace{0.2cm}
+   \large{\textbf{A Survival Analysis Approach}}
+    \vspace{0.4cm}
+    
+\large{Musah Faridu Oubda
+
+Kassim Asana
+
+Sarpong Linda
+
+Torsi Edmond Collins
+
+Asiamah Ezekiel}
+
+    \vspace{0.8cm}  
+    \small{DISSERTATION SUBMITTED TO THE DEPARTMENT OF STATISTICS AND ACTUARIAL SCIENCE, KWAME NKRUMAH UNIVERSITY OF SCIENCE AND TECHNOLOGY IN PARTIAL FULFILMENT OF THE REQUIREMENT FOR THE AWARD OF THE DEGREE OF BACHELOR OF SCIENCE IN ACTUARIAL SCIENCE}\\
+
+
 \end{titlepage}
 
-
-\section*{Declaration}
+% Start numbering with Roman numerals for the Declaration
+\pagenumbering{roman}
+\chapter*{Declaration}
 
 I hereby declare that this submission is my own work towards the award of undergraduate degree and that, to the best of my knowledge, it contains no material previously published by another person nor material which had been accepted for the award of any other degree of the university, except where due acknowledgment had been made in the text.
 
 \vspace{1cm}
 
-\begin{tabbing}
-Samuel Bentum \hspace{5cm} \= \dotfill \\
-\> Student Signature \hspace{1cm} Date \\
-Jane Forson \hspace{5cm} \= \dotfill \\
-\> Student Signature \hspace{1cm} Date \\
-Missah Ampofo Benjamin \hspace{5cm} \= \dotfill \\
-\> Student Signature \hspace{1cm} Date \\
-Vivian Adonle Quarm \hspace{5cm} \= \dotfill \\
-\> Student Signature \hspace{1cm} Date \\
-\end{tabbing}
+
+\begin{tabular}{>{\bfseries}l >{\bfseries}l >{\bfseries}l}
+Name & Signature & Date \\
+\\
+Musah Faridu Oubda & \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ & \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \\
+Kassim Asana & \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ & \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \\
+Sarpong Linda & \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ & \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \\
+Torsi Edmond Collins & \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ & \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \\
+Asiamah Ezekiel & \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ & \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \\
+\end{tabular}
 
 \vspace{1cm}
 
@@ -106,11 +105,15 @@ This work is dedicated to my family and friends for their unwavering support and
 \newpage
 \listoftables
 
-% \newpage
-% {}
+
+
+
 
 \newpage
 \chapter{Introduction}
+
+% Start numbering from here
+\pagenumbering{arabic}
 
 \section{Background of Study}
 
@@ -181,12 +184,35 @@ The limitation of this research was that the data survey only included students 
 \newpage
 \chapter{Literature Review}
 
+
 \section{Introduction}
-\section{}
-\section{}
-\section{}
-\section{}
-\section{}
+Mobile technology has become widely used, changing how students interact, communicate, and obtain information \cite{Alqatani2020}. Student retention and churn are critical issues for universities and telecom companies alike. In the context of Vodafone's services offered to students, understanding student behavior and preferences is crucial for effective retention strategies. This project addresses this gap using survival analysis, a statistical method for examining data over time \cite{BoxSteffensmeier2020}. In this context, the event of interest is student churn, defined as the discontinuation or cessation of Vodafone SIM cards. By applying survival analysis, this project will provide valuable insights into student retention and churn factors.
+
+\subsection{Telecommunication Industry and Customer Behavior}
+The telecommunication industry is highly competitive, with customer acquisition and retention being pivotal to a company's success. Research indicates that factors such as service, pricing, customer support, and competitive offerings significantly influence customer churn \cite{Lai2021}.
+
+\subsection{Student Retention and Telecom Services}
+Students, as a demographic, exhibit unique usage patterns and service expectations. Studies show that reliable connectivity, affordable pricing, and additional benefits like educational resources influence their choice of telecom services \cite{SmithBrown2020}. For telecom companies, understanding these factors is crucial to tailoring services that meet students’ needs and enhance retention.
+
+\subsection{History of Survival Analysis (SA)}
+The origins of SA and its history spread far back to the early work on mortality by John Graunt, who published the book \textit{Natural and Political Observations on the Bills of Mortality} in 1662. The concept of “Life Tables” was introduced in this book. A new, modern era in SA started during World War II in the USA, where the reliability of military equipment was tested using SA. After World War II, SA became popular and spread to various other disciplines \cite{Jerenz2008}. The most influential papers on SA were published by Kaplan and Meier \cite{Kaplan1958} and Cox \cite{Cox1972}, in which the Kaplan-Meier product limit estimator and Cox proportional hazard model were introduced, respectively.
+
+\subsection{Application of Survival Analysis}
+Survival analysis (SA) has been successfully applied in diverse fields, including medical research, engineering (reliability analysis), finance, and economics. In finance, SA has been used to analyze a firm's vulnerability to global financial crises and identify firms at risk of failure, enabling timely interventions \cite{Lee2014, Pereira2014, Kumar2015, Iwasaki2014}. SA has also been employed to predict the optimal time to buy or sell stocks within the stock market \cite{Kumar2015}. In the banking sector, SA is utilized to assess banks' survival during financial crises, measure their strength when entering new markets \cite{Leung2010, Evrensel2008}, and conduct credit risk analysis \cite{Tsujitani2012, Baesens2005}. The widespread adoption of SA across these domains underscores its versatility and effectiveness in modeling time-to-event data and identifying the factors that influence outcomes of interest.
+
+\section{Conceptual Review}
+
+\subsubsection{Customer Retention and Churn}
+Customer retention refers to a company's capacity or ability to maintain or retain their customer base over a specific period. High retention rates are crucial for maintaining revenue streams, reducing marketing costs associated with acquiring new customers, and fostering a positive brand reputation. Customer churn, also known as customer attrition, is the rate at which customers stop using a company's product or service. It can be caused by various factors such as dissatisfaction with the service, better offers from competitors, or changes in personal circumstances. In the telecommunications industry, market competitiveness is measured by churn rate. Telephone, internet, and mobile services are all part of telecommunications.
+
+\section{Empirical Studies}
+
+Imani, M. (2020) \textit{Customer Churn Prediction in Telecommunication Using Machine Learning: A Comparison Study}. The paper tackles customer churn in telecoms, emphasizing that retaining customers is cheaper than acquiring new ones. It evaluates various machine learning methods for predicting churn by comparing classifiers, target detectors, feature extraction, and feature selection techniques. The study finds that Random Forest and Feed-Forward Neural Networks with Genetic Algorithm showed high accuracy. Effective target detectors included Spectral Angle Mapper and Adaptive Subspace Detector. Clustering-Based Feature Extraction and Advanced Binary Ant Colony Optimization excelled in improving classification and feature selection. The study recommends implementing Random Forest and Neural Networks for effective churn prediction.
+
+Melik Masarifoglu and Ali Hakan Buyuklu \textit{Applying Survival Analysis to Telecom Churn Data}. This paper emphasizes the importance of customer retention in telecoms, noting that retaining customers is more cost-effective than acquiring new ones. It employs survival analysis to estimate customer survival and hazard functions, focusing on factors like campaigns, tariffs, tenure, age, and auto-payment. The paper introduces survival analysis (SA) as a statistical method to analyze time-to-event data. It describes the Cox Proportional Hazard Model (CPHM), a widely used technique for quantifying the risk of an event occurring during the observation period. The paper uses Kaplan-Meier estimates and the Cox model to analyze the impact of various predictors on customer churn. The results show how different factors, such as campaigns and tariffs, affect customer survival probabilities. The study finds that survival analysis is effective for predicting churn and recommends its use for targeting at-risk customers and improving retention strategies.
+
+Kavitha, V., Kumar, G. H., Kumar, S. M., \& Harish, M. (2020) \textit{Churn prediction of customer in telecom industry using machine learning algorithms}. This paper highlights the importance of customer churn in the telecommunications industry, noting its impact on revenue and customer lifetime value. It stresses the need for predictive models to identify potential churners and improve retention by enhancing service offerings. The methodology involves collecting data from Kaggle, preprocessing it by filtering and standardizing, and selecting relevant features. The prediction and classification phase uses Random Forest, Logistic Regression, and XGBoost algorithms, with each trained and tested to evaluate performance. The results reveal that Random Forest outperforms Logistic Regression and XGBoost in accuracy and performance. Visualizations, including confusion matrices and accuracy graphs, support these findings. The paper concludes by emphasizing that churn prediction is crucial for telecoms and suggests exploring lazy learning and AI techniques for future research.
+
 
 
 \newpage
@@ -299,11 +325,11 @@ It can occur if a subject’s true but unobserved survival time is within a cert
 
 Interval-censoring incorporates both right-censoring and left-censoring. Left-censored data occurs whenever the value is 0 and  is a known upper bound on the true survival time. In contrast to the left-censored, right-censored data occurs whenever the value of  is infinity, and is a known lower bound on the true survival time.
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \includegraphics[width=01\linewidth]{Figure 3/3.2.png}
     \caption{Censoring Graph}
-    \label{Figure 3.1}
+    \label{Figure 3.2}
 \end{figure}
 
 
@@ -319,22 +345,24 @@ Figure 3.2 illustrates the different types of censoring in a survival analysis s
 
 \section{Fundamental Concepts of Survival Analysis}
 
+These functions are complementary in understanding the dynamics of survival data, namely survival function and hazard function. They are the building blocks for every survival analysis. They clearly have a defined relationship between the two. The \(S\left(t\right)\) can be derived from the \(h\left(t\right)\) complement one another such that, one can be derived from the other.
+
 \[S\left(t\right)=\ exp\left[-\int_{0}^{t}{h(x)dx}\right]\]
 
 \[h\left(t\right)=\ -\left[\frac{dS\left(t\right)/dt\ }{S(t)}\right]\]
 
-These functions are complementary in understanding the dynamics of survival data, namely survival function and hazard function. They are the building blocks for every survival analysis. They clearly have a defined relationship between the two. The \(S\left(t\right)\) can be derived from the \href{}{\(h\left(t\right) \)} complement one another such that, one can be derived from the other.
+
 
 The first formula describes how the survival function \(S\left(t\right)\) can be written in terms of an integral involving the hazard function. The formula states that \(S\left(t\right) \)equals the exponential of the negative integral of the hazard function \(h\left(t\right) \) between integration limits of 0 and t. 
 The second formula describes how the hazard function \(h\left(t\right) \) can be written in terms of a derivative involving the survival function. The formula states that \( h\left(t\right)\) equals minus the derivative of \(S\left(t\right) \) with respect to t divided by \(S\left(t\right)\).
 
 
-\subsection{Survival Function \(S(t)\)}
+\subsection{\texorpdfstring{Survival Function \( S(t) \)}{Survival Function S(t)}}
 The survival function \(S\left(t\right) \) is also known as the survival probability function gives the probability a person survives longer than some specified time \( t\).
 
 \[S(t)\ =\ P(T\ >\ t)\]
 The survival function is very fundamental to a survival analysis as it helps in determining survival probabilities for different values of time  to provide crucial summary information from the data.
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.47\textwidth]{Figure 3/3.31.png}
     \hfill
@@ -346,12 +374,13 @@ The survival function is very fundamental to a survival analysis as it helps in 
 The figure on the left in Figure 3.3 is a theoretical curve of the survival function\ \(S\left(t\right) \) which ranges from 0 up to infinity. It is non-increasing and therefore slopes downward as t increases. At time 0, \(S\left(t\right)=1\) and when \( t\ =\ \infty , S\left(\infty\right)\ =\ 0.\) At, the start of the study, no event occurs and it is assumed that if the study period is without a limit, the survivor curve will eventually reach 0.
 When actual data is used, the survivor curve does not result to a smooth curve but rather a step function. The step function is illustrated on the right in Figure 3.3. Since the study period is never infinite in duration as there may be competing risks for failure, it is possible that not everyone obtains the event of interest. The estimated survivor function \(\hat{S}\left(t\right)\), thus may not go all the way down to 0 at the end of the study.
 
-\subsection{Hazard Function \( h(t)\)}
+\subsection{\texorpdfstring{Hazard Function \( h(t) \)}{Hazard Function h(t)}}
 
 The hazard function \( h(t)\ \)denotes the instantaneous rate of failure at time\ (t), given that the subject has survived up to time\( (t).\)
 
-\[h\left(t\right)=\begin{matrix}lim\\\Delta t\rightarrow0\ \\\end{matrix}\ \frac{P(t\le T\ <\ t\ +\Delta t\ |\ T\ \geq\ t)}{\Delta t}\\
-
+\[
+h(t) = \lim_{\Delta t \to 0} \frac{P(t \le T < t + \Delta t \mid T \geq t)}{\Delta t}
+\]
 
 \[h\left(t\right)\geq0\]
 
@@ -399,11 +428,13 @@ The estimator essentially calculates the probability of surviving from one time 
 
 The Cox Proportional Hazards model is a popular semi-parametric model for survival analysis by Sir David Cox (1924). It models the relationship between the survival time and a set of predictors.
 
-\[h\left(t\middle| x\right)=h_0(t)exp(β_1x_1+β_2x_2+⋯+β_px_p)\]
+\[
+h\left(t \mid x\right) = h_0(t) \exp(\beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_p x_p)
+\]
 
 Where:
  \begin{itemize}
-     \item \(h(t\mid x)\) is the hazard function, i.e., the instantaneous rate of the event occurring at time t\ given the predictor variables \(x\).
+     \item \(h(t\mid x)\) is the hazard function, i.e., the instantaneous rate of the event occurring at time \(t\) given the predictor variables \(x\).
      \item \(h_0\left(t\right)\) is the baseline hazard function, representing the hazard for individuals with all predictor variables equal to zero.
      \item \(\beta_1,\beta_2,\ldots,\beta_p\) are the coefficients for the predictor variables
  \end{itemize}
@@ -467,7 +498,7 @@ This section presents the study's findings and discusses what each output means 
 
 The dataset has a shape consisting of 768 rows and 18 columns from a sample in KNUST.
 
-\begin{table}[h!]
+\begin{table}[H]
 \centering
 \begin{tabular}{|>{\raggedright\arraybackslash}p{4cm}|p{9cm}|} \hline  
 
@@ -505,7 +536,7 @@ The lifelines package played a pivotal role in this section by providing essenti
 \subsection{Kaplan Meier (KM) Curve}
 
 A Kaplan-Meier curve, also known as a survival curve, is a statistical tool used in survival analysis to estimate the survival function from timeline data. It provides a way to visualize the proportion of individuals surviving over time, taking into account censored data (individuals who have not experienced the event by the end of the observation period).
-\begin{figure}
+\begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Figure 4/4.1.png}
     \caption{Kaplan Meier Curve of students from levels 100–500}
@@ -524,7 +555,7 @@ In churn prediction, this curve helps identify critical time points where studen
 
 The provided Kaplan-Meier estimator output in Table 4.2 below summarizes the survival curve in table 4.1 over level in KNUST.
 
-\begin{table}[h!]
+\begin{table}[H]
 \centering
 \begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|} \hline 
 
@@ -552,8 +583,7 @@ The analysis was continued by doing the Cox Proportional Hazard modeling. In the
 The Cox Proportional hazards regression model can be expressed as follows:
 
 
-
-\[\begin{align*}
+\begin{align*}
 h(t,x) = h_0(t) \exp(&-0.56 \cdot \text{Gender} - 0.03 \cdot \text{College} - 0.09 \cdot \text{Residence} \\
 &- 0 \cdot \text{Usage\_Freq} + 0.23 \cdot \text{Network\_Strength} \\
 &+ 0.16 \cdot \text{Voice\_Calls} \\
@@ -561,22 +591,21 @@ h(t,x) = h_0(t) \exp(&-0.56 \cdot \text{Gender} - 0.03 \cdot \text{College} - 0.
 &+ 0.41 \cdot \text{Data\_Exhaustion} - 0.21 \cdot \text{Multiple\_Networks} \\
 &+ 0.13 \cdot \text{Other\_Networks\_Better\_Services} \\
 &- 0.17 \cdot \text{Poor\_Network\_Quality\_Coverage} \\
-&- 0.12 \cdot \text{Insufficient\_Data\_Allowance}\\ 
+&- 0.12 \cdot \text{Insufficient\_Data\_Allowance} \\
 &- 0.15 \cdot \text{Unsatisfactory\_Customer\_Service} \\
 &+ 0.16 \cdot \text{High\_Costs\_Pricing} - 0.06 \cdot \text{Monthly\_Data\_Usage})
 \end{align*}
-\]
 
+ 
 Furthermore, the results of parameter estimation and partial testing are presented in the Table below.
 
 % Insert another Table
 
-\begin{table}[h!]
+\begin{table}[H]
 \centering
 \begin{tabular}{|p{4cm}|p{2cm}|p{2.5cm}|p{2.5cm}|p{1.5cm}|} \hline 
 
-\textbf{Variable} & \textbf{Coefficient} & \textbf{EXP (Coefficient)}& \textbf{SE (Coefficient)}& \textbf{P} \\ \hline 
-
+\textbf{Variable} & \textbf{Coefficient} & \textbf{EXP (Coefficient)}& \textbf{SE (Coefficient)}& \textbf{P} \\ \hline
 Gender & -0.56 & 0.57 & 0.20 & \(<\)0.005 \\ \hline  
 College & -0.03 & 0.97 & 0.05 & 0.51 \\ \hline  
 Residence & -0.09 & 0.91 & 0.20 & 0.65 \\ \hline  
@@ -602,7 +631,7 @@ The coefficient and exp(coefficient) columns provide information about the relat
 Conversely, a negative coefficient or exp(coefficient)  \(<\) 1 (such as Poor Network Quality Coverage and Unsatisfactory Customer Service) suggests a decrease in the odds of the outcome. These decrease the hazard (risk) of churn. A higher value of these variables is associated with a lower likelihood of churn.
 The p-value column helps assess the statistical significance of each independent variable. A low p-value (typically  \(<\) 0.05) indicates that the variable is likely to have a meaningful impact on the outcome. This can be seen in Network Strength and Gender.
 
-\begin{figure}
+\begin{figure}{H}
     \centering
     \includegraphics[width=1\linewidth]{Figure 4/4.2.png}
     \caption{Coefficients of Cox PH}
@@ -621,7 +650,7 @@ The alternative hypothesis suggests that there is no significant association bet
 
 %insert table
 
-\begin{table}[h!]
+\begin{table}[H]
 \centering
 \begin{tabular}{lcc}
 \toprule
@@ -658,7 +687,7 @@ Despite all covariates having p-values above 0.05, indicating no strong evidence
 
 Schoenfeld residuals are a diagnostic tool used in survival analysis to test the proportional hazards assumption of the Cox Proportional Hazards model. They are the differences between observed event times and the expected event times, under the model, at each event time.
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.4\linewidth]{Figure 4/4.3.png}
     \caption{Schoenfeld residuals of High Costs Pricing}
@@ -685,7 +714,7 @@ Among these models, the Weibull AFT Fitter has the lowest AIC value with 815.516
 \subsection{Weibull Model}
 % Table here
 
-\begin{table}[h!]
+\begin{table}[H]
 \centering
 \begin{tabular}{lccc}
 \toprule
@@ -721,7 +750,7 @@ The p-value column helps assess the statistical significance of each covariate. 
 
 The intercept (lambda) with a coefficient of 2.112 and p-value of 0.00005, indicates a highly significant baseline increase in time to event and the intercept (rho) coefficient is 0.906 and a p-value of 0.00005 therefore indicating a highly significant baseline multiplicative effect on time to event.
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Figure 4/4.4.png}
     \caption{Weibull Coefficients}
@@ -734,7 +763,7 @@ The boxes (squares) in the plot represent the estimated coefficients for each fa
 In this section, the models used are compared based on the AIC and the concordance values. The higher the concordance, the better the model predictive value and the smaller the AIC, the better the model fit.
 
 %Table here
-\begin{table}[h!]
+\begin{table}[H]
 \centering
 \begin{tabular}{lcc}
 \toprule
@@ -771,6 +800,23 @@ Koranchirath, A. (2024). Customer Retention Strategies in Competitive Markets. \
 
 \bibitem{apnews2023} 
 AP News. (2023). Underwater Cable Disruptions Affect West Africa's Internet Services. Retrieved from AP News.
+
+\bibitem{Alqatani2020} Alqatani, A. \& Altarifi, A. (2020). Title of the paper. Journal Name, Volume(Issue), Pages.
+\bibitem{BoxSteffensmeier2020} Box-Steffensmeier, J. \& Jone, C. (2020). Title of the paper. Journal Name, Volume(Issue), Pages.
+\bibitem{Lai2021} Lai, T., et al. (2021). Title of the paper. Journal Name, Volume(Issue), Pages.
+\bibitem{SmithBrown2020} Smith, R. \& Brown, J. (2020). Title of the paper. Journal Name, Volume(Issue), Pages.
+\bibitem{Jerenz2008} Jerenz, A. (2008). Title of the paper. Journal Name, Volume(Issue), Pages.
+\bibitem{Kaplan1958} Kaplan, E. \& Meier, P. (1958). Title of the paper. Journal Name, Volume(Issue), Pages.
+\bibitem{Cox1972} Cox, D. (1972). Title of the paper. Journal Name, Volume(Issue), Pages.
+\bibitem{Lee2014} Lee, M. (2014). Business Bankruptcy Prediction Based on Survival Analysis Approach. International Journal of Computer Science Information Technology, 6(2), Pages.
+\bibitem{Pereira2014} Pereira, J. (2014). Survival Analysis Employed in Predicting Corporate Failure: A Forecasting Model Proposal. International Business Research, 7(6), Pages.
+\bibitem{Kumar2015} Kumar, K. \& Gepp, A. (2015). Predicting Financial Distress: A Comparison of Survival Analysis and Decision Tree Techniques. Procedia Computer Science, 54(2), 396-404.
+\bibitem{Iwasaki2014} Iwasaki, I. (2014). Global Financial Crisis, Corporate Governance, and Firm Survival: The Russian Experience. Journal of Comparative Economics, 42(1), 178-211.
+\bibitem{Leung2010} Leung, M. K., Rigby, D., \& Young, T. (2010). Entry of Foreign Banks in the People's Republic of China: A Survival Analysis. Journal of Applied Economics, 10, 21-31.
+\bibitem{Evrensel2008} Evrensel, A. Y. (2008). Banking Crisis and Financial Structure: A Survival-Time Analysis. International Review of Economics and Finance, 17(4), 589-602.
+\bibitem{Tsujitani2012} Tsujitani, M. \& Baesens, B. (2012). Survival Analysis for Personal Loan Data Using Generalized Additive Models. Behaviormetrika, 39(1), 1109, 9-23.
+\bibitem{Baesens2005} Baesens, B., Gestel, T. V., Stepanova, M., Poel, D. V., \& Vanthienen, J. (2005). Neural Network Survival Analysis for Personal Loan Data. Journal of the Operational Research Society, 56(9), 1089-109
+
 \end{thebibliography}
 
 \end{document}
