@@ -67,7 +67,7 @@ columns = ['Gender', 'College', 'Churn', 'Level', 'Education_Level', 'Residence'
 data = pd.DataFrame(responses, columns=columns)
 
 # Display the DataFrame
-data
+data.head()
 
 # Optional: Save the synthetic responses to a CSV file
-data.to_csv('newData.csv', index=False)
+# data.to_csv('newData.csv', index=False)

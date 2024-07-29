@@ -144,19 +144,20 @@ Regardless of efforts made by KNUST to partner with Telecel to provide affordabl
 
 \section{Research Objectives}
 
+The objectives of this study are in two folds. The first objective is to estimate customer survival function and customer hazard function to gain knowledge of customer churn over the time of customer tenure. The second objective is to demonstrate how survival analysis techniques are used to identify the customers who are at  high risk of churn and when they will churn.
 %\subsection{Main Objective}
 %\begin{itemize}
     %\item 
-To develop a survival analysis techniques model to detect at-risk students to improve student retention and reduce churn of Telecel at KNUST.
-%\end{itemize}
-
-\subsection{Specific Objectives}
-\begin{itemize}
-    \item Exploring the factors that influence student churn and retention.
-    \item Using survival analysis models to identify students at risk of churning.
-    \item Analyzing time-to-event data to understand the patterns and timing of student churn.
-    \item Identifying strategies to improve retention rates and reduce churn.
-\end{itemize}
+%	To develop a survival analysis techniques model to detect at-risk students to improve student retention and reduce churn of Telecel at KNUST.
+%	%\end{itemize}
+%	
+%	\subsection{Specific Objectives}
+%	\begin{itemize}
+%	    \item Exploring the factors that influence student churn and retention.
+%	    \item Using survival analysis models to identify students at risk of churning.
+%	    \item Analyzing time-to-event data to understand the patterns and timing of student churn.
+%	    \item Identifying strategies to improve retention rates and reduce churn.
+%	\end{itemize}
 
 %\section{Research Questions}
 %\begin{itemize}
@@ -345,9 +346,16 @@ Figure 3.2 illustrates the different types of censoring in a survival analysis s
 
 These functions are complementary in understanding the dynamics of survival data, namely survival function and hazard function. They are the building blocks for every survival analysis. They clearly have a defined relationship between the two. The \(S\left(t\right)\) can be derived from the \(h\left(t\right)\) complement one another such that, one can be derived from the other.
 
-\[S\left(t\right)=\ exp\left[-\int_{0}^{t}{h(x)dx}\right]\]
-
-\[h\left(t\right)=\ -\left[\frac{dS\left(t\right)/dt\ }{S(t)}\right]\]
+\begin{align}
+\lambda(t) &= \lim_{\Delta t \to 0} \frac{\Pr(t \leq T < t + \Delta t \mid T > t)}{\Delta t} \\
+&= \lim_{\Delta t \to 0} \left[ \frac{\Pr(t \leq T < t + \Delta t)}{\Delta t} \cdot \frac{\Delta t}{\Pr(T > t)} \right] \\
+&= \lim_{\Delta t \to 0} \left[ \frac{\Pr(t \leq T < t + \Delta t)}{\Delta t} \right] \cdot \lim_{\Delta t \to 0} \left[ \frac{1}{\Pr(T > t)} \right] \\
+&= \frac{1}{S(t)} \cdot \lim_{\Delta t \to 0} \left[ \frac{\Pr(t \leq T < t + \Delta t)}{\Delta t} \right] \\
+&= \frac{1}{S(t)} \cdot \lim_{\Delta t \to 0} \left[ \frac{F(t + \Delta t) - F(t)}{\Delta t} \right] \\
+&= \frac{f(t)}{S(t)}\\
+S(t) &= \exp\left[-\int_{0}^{t} h(x) \, dx\right]\\
+h(t) &= -\left[\frac{dS(t)/dt}{S(t)}\right]
+\end{align}
 
 
 
