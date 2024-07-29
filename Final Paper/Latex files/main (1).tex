@@ -1,4 +1,4 @@
-\documentclass[12pt]{report} %,doublespacing
+\documentclass[doublespacing]{report} %,doublespacing
 \usepackage{graphicx}
 \usepackage{tocbibind}
 \usepackage{hyperref}
@@ -144,10 +144,11 @@ Regardless of efforts made by KNUST to partner with Telecel to provide affordabl
 
 \section{Research Objectives}
 
-\subsection{Main Objective}
-\begin{itemize}
-    \item To develop a survival analysis techniques model to detect at-risk students to improve student retention and reduce churn of Telecel at KNUST.
-\end{itemize}
+%\subsection{Main Objective}
+%\begin{itemize}
+    %\item 
+To develop a survival analysis techniques model to detect at-risk students to improve student retention and reduce churn of Telecel at KNUST.
+%\end{itemize}
 
 \subsection{Specific Objectives}
 \begin{itemize}
@@ -157,14 +158,14 @@ Regardless of efforts made by KNUST to partner with Telecel to provide affordabl
     \item Identifying strategies to improve retention rates and reduce churn.
 \end{itemize}
 
-\section{Research Questions}
-\begin{itemize}
-    \item What factors influence student retention and churn for Telecel services at KNUST?
-    \item What is the relationship between student demographics (age, gender, year of study) and churn behavior?
-    \item How does the churn rate vary with different Telecel services (voice service, data service, internet service)?
-    \item How does the quality of Telecel network and services (coverage, internet speed) influence student retention and churn?
-    \item How can Telecel services be optimized to better meet the needs and preferences of KNUST students?
-\end{itemize}
+%\section{Research Questions}
+%\begin{itemize}
+%    \item What factors influence student retention and churn for Telecel services at KNUST?
+%    \item What is the relationship between student demographics (age, gender, year of study) and churn behavior?
+%    \item How does the churn rate vary with different Telecel services (voice service, data service, internet service)?
+%    \item How does the quality of Telecel network and services (coverage, internet speed) influence student retention and churn?
+%    \item How can Telecel services be optimized to better meet the needs and preferences of KNUST students?
+%\end{itemize}
 
 \section{Significance of the Study}
 
@@ -173,16 +174,11 @@ The study offers a comprehensive understanding of the factors impacting student 
 \section{Structure of the Study}
 
 The study on student retention and churn for Telecel services at KNUST aims to investigate the factors that drive students' decisions on Telecel services usage. The study follows a structured approach.
-
-Chapter one discusses the background information and the foundation for the research. The problem statement and goals are stated here.
-
-Chapter two of the study contains a literature review, including several studies related to the subject at hand.
-
-The third chapter focuses on the methodology and data collection techniques. There are several ways of approaching this problem, but the main focus of the study is using a survival analysis modeling tool.
-
-The fourth chapter presents the models and practical application to the dataset. Detailed analysis is presented here with the aid of figures and diagrams to determine the optimal model for the research.
-
-Chapter five delves into the conclusion and summarizes the results obtained. Based on the findings, recommendations are formulated.
+\\Chapter one discusses the background information and the foundation for the research. The problem statement and goals are stated here.
+\\Chapter two of the study contains a literature review, including several studies related to the subject at hand.
+\\The third chapter focuses on the methodology and data collection techniques. There are several ways of approaching this problem, but the main focus of the study is using a survival analysis modeling tool.
+\\The fourth chapter presents the models and practical application to the dataset. Detailed analysis is presented here with the aid of figures and diagrams to determine the optimal model for the research.
+\\Chapter five delves into the conclusion and summarizes the results obtained. Based on the findings, recommendations are formulated.
 
 \section{Limitation of the Study}
 
@@ -239,17 +235,14 @@ Before the actual statistics were carried out, a pilot survey was held to grasp 
 
 \section{Data Collection}
 
-The primary data source for this research was a survey conducted among students at Kwame Nkrumah University of Science and Technology (KNUST). The survey targeted students across different academic levels (from level 100 to 600) during the annual college elections. The dataset includes a variety of questions, each capturing specific aspects relevant to our study with the aid of Google Forms.
+The primary data source for this research was a survey conducted among students at Kwame Nkrumah University of Science and Technology (KNUST). The survey targeted students across different academic levels (from level 100 to 600) during the annual college elections. The dataset includes a variety of questions, each capturing specific aspects relevant to our study with the aid of Google Forms.
 
 The data collection process involved obtaining relevant information while ensuring confidentiality and ethical considerations.
 
 \section{Sample Size}
 
-The sample size of the research was determined through cluster sampling. Cluster sampling is a sampling technique in which the population is divided into groups known as clusters. A random sample is then selected from each cluster ensuring that, each cluster has an equal number of elements. It is therefore homogeneous within but heterogeneous around (clusters 
-
-are different from one another but the elements within it share common factors). This sampling is employed to determine the optimal sample size as it is a robust method that allows to efficiently estimate the population by selecting entire clusters (colleges within KNUST) rather than using individual students.
-
-The sample size for cluster sampling can be determined using the formula below:
+The sample size of the research was determined through cluster sampling. Cluster sampling is a sampling technique in which the population is divided into groups known as clusters. A random sample is then selected from each cluster ensuring that, each cluster has an equal number of elements. It is therefore homogeneous within but heterogeneous around (clusters are different from one another but the elements within it share common factors). This sampling is employed to determine the optimal sample size as it is a robust method that allows to efficiently estimate the population by selecting entire clusters (colleges within KNUST) rather than using individual students.
+\\The sample size for cluster sampling can be determined using the formula below:
 
 \[n_0=\frac{z^2\ast p\ast\left(1-p\right)}{E^2}\]
 \[n=\frac{n_0}{1+(\frac{n_0-1}{N})}\]
@@ -292,10 +285,9 @@ Parameter Justification:
 \end{itemize}
 \[n_{cluster}=384\ \ast\ 2\]
 \[n_{cluster}=768\]
-
-A cluster sample size of 768 students from the population of about 85000.
-
-Since there are 6 clusters from which each represents the colleges, the sample size is evenly allocated across the clusters. Each cluster would have approximately 128 students.
+\\
+\\A cluster sample size of 768 students from the population of about 85000.
+\\Since there are 6 clusters from which each represents the colleges, the sample size is evenly allocated across the clusters. Each cluster would have approximately 128 students.
 
 
 
@@ -321,20 +313,19 @@ It occurs when a subject has some loss to follow up or the study ends before the
 It occurs when the event of interest has occurred before the study starts, and thus the exact survival time is known only to be less than a certain value indicating that the true survival time is less than or equal to the observed survival time.
 
 \subsection{Interval-Censored}
-
 It can occur if a subject’s true but unobserved survival time is within a certain known specified time interval. 
-\begin{figure}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\linewidth]{Figure 3/3.1.png}
+    \includegraphics[width=0.4\linewidth]{Figure 3/3.1.png}
     \caption{Interval Censoring}
     \label{Figure 3.1}
 \end{figure}
 
-Interval-censoring incorporates both right-censoring and left-censoring. Left-censored data occurs whenever the value is 0 and  is a known upper bound on the true survival time. In contrast to the left-censored, right-censored data occurs whenever the value of  is infinity, and is a known lower bound on the true survival time.
+Interval-censoring incorporates both right-censoring and left-censoring. Left-censored data occurs whenever the value is 0 and  is a known upper bound on the true survival time. 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=01\linewidth]{Figure 3/3.2.png}
+    \includegraphics[width=0.5\linewidth]{Figure 3/3.2.png}
     \caption{Censoring Graph}
     \label{Figure 3.2}
 \end{figure}
@@ -371,9 +362,9 @@ The survival function \(S\left(t\right) \) is also known as the survival probabi
 The survival function is very fundamental to a survival analysis as it helps in determining survival probabilities for different values of time  to provide crucial summary information from the data.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.47\textwidth]{Figure 3/3.31.png}
+    \includegraphics[width=0.45\textwidth]{Figure 3/3.31.png}
     \hfill
-    \includegraphics[width=0.47\textwidth]{Figure 3/3.32.png}
+    \includegraphics[width=0.45\textwidth]{Figure 3/3.32.png}
     \caption{Survivor Curves}
     \label{Figure 3.3}
 \end{figure}
@@ -450,10 +441,10 @@ Where:
 An important assumption on the Cox PH is that it has a constant hazard function proportion for each time.
 
 
-
-                                                                \(H_0\): The Assumption of Proportional Hazard is fulfilled 
-
-                                                            \(H_1\): The Assumption of Proportional Hazard is not fulfilled 
+%
+%                                                                \(H_0\): The Assumption of Proportional Hazard is fulfilled 
+%
+%                                                            \(H_1\): The Assumption of Proportional Hazard is not fulfilled 
 
 
 \section{Accelerated Failure Time (AFT)}
