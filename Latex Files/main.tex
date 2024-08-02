@@ -314,15 +314,7 @@ It occurs when a subject has some loss to follow up or the study ends before the
 It occurs when the event of interest has occurred before the study starts, and thus the exact survival time is known only to be less than a certain value indicating that the true survival time is less than or equal to the observed survival time.
 
 \subsection{Interval-Censored}
-It can occur if a subject’s true but unobserved survival time is within a certain known specified time interval. 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.4\linewidth]{Figure 3/3.1.png}
-    \caption{Interval Censoring}
-    \label{Figure 3.1}
-\end{figure}
-
-Interval-censoring incorporates both right-censoring and left-censoring. 
+It can occur if a subject’s true but unobserved survival time is within a certain known specified time interval. Interval-censoring incorporates both right-censoring and left-censoring. 
 
 \begin{figure}[H]
     \centering
@@ -541,15 +533,12 @@ A Kaplan-Meier curve, also known as a survival curve, is a statistical tool used
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Figure 4/4.1.png}
-    \caption{Kaplan Meier Curve of students from levels 100–500}
+    \caption{Kaplan Meier Curve}
 \end{figure}
 
-The Kaplan-Meier survival curve provided is a tool to estimate the probability that students will remain enrolled over a given time period. The x-axis represents the timeline, which in this ranges from 1 to 5 levels or years. The 0 indicates when the study began. The y-axis represents survival probability and ranges from 0 to 1.
+The Kaplan-Meier survival curve above is a tool to estimate the probability that students will remain enrolled in the study over a given time period. The x-axis represents the event time. The 0 indicates when the study began whiles 4 represents when the study ends. The y-axis represents survival probability and ranges from 0 to 1. Each step down indicates an event, which decreases the overall survival probability.  The shaded area around the line suggests the confidence interval, giving a range within which the true survival curve is expected to lie.
 
-
-The KM estimate line graph shows the survival probability at various points along the study. Each step down indicates an event, which decreases the overall survival probability. The shaded area around the line suggests the confidence interval, giving a range within which the true survival curve is expected to lie.
-
-In churn prediction, this curve helps identify critical time points where student retention drops significantly and allows institutions to intervene proactively. For instance, if there’s a notable step down at a particular time point on the x-axis (3–4), it might indicate a period when students are more likely to leave and thus could be a target for retention efforts.
+In churn prediction, this curve helps identify critical time points where student retention drops significantly and allows institutions to intervene proactively. 
 
 
 
@@ -561,7 +550,7 @@ The provided Kaplan-Meier estimator output in Table 4.2 below summarizes the sur
     \centering
     \begin{tabular}{cccccc}
         \toprule
-        Event Time & Number of Individuals & Number of Events & Survival Probability & Lower CI & Upper CI \\
+        Event Time & Number at Risk& Number of Events & Survival Probability & Lower CI & Upper CI \\
         \midrule
         0 & 338 & 0 & 1.000000 & 1.000000 & 1.000000 \\
         1 & 338 & 3 & 0.991124 & 0.972736 & 0.997129 \\
@@ -575,15 +564,17 @@ The provided Kaplan-Meier estimator output in Table 4.2 below summarizes the sur
 \end{table}
 
 
-Initially, at time 0 (when students initially start the academic year), all 768 students are considered to be at risk. With no events (churns) recorded yet, the survival probability is 1.
-As the students ascend the academic ladder, the number at risk begins to gradually decrease as some begin to experience the event. The higher the number of events, the more the number at risk decreases. This can be seen for example, in the 2\(^{nd}\)  level where the initial 768 students from the beginning of the 1\(^{st}\) year decreased to 733 for the 2\(^{nd}\) year after 35 students churned at the end of the year. Subsequently, the survival probability declines gradually from 1 to 0.500583 by the 5\(^{th}\) year. The confidence intervals (Lower Cl and Upper CI) provide ranges within which the true survival probabilities lie with a certain level of confidence.
+Initially, at time 0 (when students initially start the academic year), all 338 students are considered to be at risk. With no events (churns) recorded yet, the survival probability is 1.
+As the students ascend the academic ladder, the number at risk begins to gradually decrease as some begin to experience the event. The higher the number of events, the more the number at risk decreases. 
+At the end of the first year, 3 students experienced the event of interest and therefore are ommited from the study at the beginning of the second year.  Anytime the event of interest is experienced, they are ommited from the study until the study duration ends.   
+The confidence intervals (Lower Cl and Upper CI) provide ranges within which the true survival probabilities lie with a certain level of confidence.
 
 
 \subsection{Cox Proportional Hazard (COX PH)}
 
-The analysis was continued by doing the Cox Proportional Hazard modeling. In the Cox Proportional Hazard modeling, there are two things that are done, namely partial testing for each predictor variable and testing the Cox Proportional Hazard assumption. 
+In the Cox Proportional Hazard modeling, there are two things that are done, namely, partial testing for each predictor variable and testing the Cox Proportional Hazard assumption. 
 
-The Cox Proportional hazards regression model can be expressed as follows:
+The Cox Proportional Hazard model can be expressed as follows:
 
 
 \begin{align*}
@@ -609,7 +600,7 @@ Furthermore, the results of parameter estimation and partial testing are present
 \caption{Coefficients, Confidence Intervals, and p-values}
 \begin{tabular}{lcccc}
 \hline
-Variable & Coefficient ($\beta$) & 95\% CI Left Bound & 95\% CI Right Bound & p-value \\
+Variable & Coefficient ($\beta$) & 95\% CI Left Bound & 95\% CI Right Bound & P-value\\
 \hline
 Gender & 0.87 & -0.26 & 2.00 & 0.13 \\
 Residence & 0.69 & -0.54 & 1.91 & 0.27 \\
@@ -631,19 +622,21 @@ Monthly\_Data\_Usage & 0.03 & -0.47 & 0.53 & 0.92 \\
 
 
 
-The coefficient and exp(coefficient) columns provide information about the relationship between each independent variable and the dependent variable. A positive coefficient or exp(coefficient) \(> \)1 (such as Network Strength and Voice Calls) indicates that an increase in the independent variable is associated with an increase in the odds of the outcome. These increase the hazard (risk) of churn. A higher value of these variables is associated with a higher likelihood of churn. 
+The coefficient columns provide information about the relationship between each independent variable and the dependent variable. A positive coefficient indicates an increase in the independent variable is associated with an increase in the hazard (risk) of churn (event). A higher value of these variables is associated with a higher likelihood of churn occuring. 
 
-Conversely, a negative coefficient or exp(coefficient)  \(<\) 1 (such as Poor Network Quality Coverage and Unsatisfactory Customer Service) suggests a decrease in the odds of the outcome. These decrease the hazard (risk) of churn. A higher value of these variables is associated with a lower likelihood of churn.
-The p-value column helps assess the statistical significance of each independent variable. A low p-value (typically  \(<\) 0.05) indicates that the variable is likely to have a meaningful impact on the outcome. This can be seen in Network Strength and Gender.
+Conversely, a negative coefficient suggests a decrease in the hazard (risk) of churn (event). A higher value of these variables is associated with a lower likelihood of churn occuring.
+
+The p-value column helps assess the statistical significance of each independent variable. A low p-value (typically  \(<\) 0.05) indicates that the variable is likely to have a meaningful impact on the event. This can be seen in Data Exhaustion.
 
 \begin{figure}{H}
     \centering
     \includegraphics[width=1\linewidth]{Figure 4/4.2.png}
-    \caption{Coefficients of Cox PH}
+    \caption{Cox PH Forest Plot}
 \end{figure}
 
-A coefficient to the right of zero (positive log hazard ratio) indicates that an increase in that variable is associated with a higher risk of student churn. A coefficient to the left of zero (negative log hazard ratio) indicates that an increase in that covariate is associated with a lower risk of student churn.
+The fidure above is a forest plot of the Cox PH. A coefficient to the right of zero (positive log hazard ratio) indicates that an increase in that variable is associated with a higher risk of a student churning. A coefficient to the left of zero (negative log hazard ratio) indicates that an increase in that covariate is associated with a lower risk of a student churning.
 The further a coefficient is from zero, the stronger the effect of that covariate on the hazard of churn.
+The horizontal lines extending from the boxes are the 95\% confidence intervals, showing the uncertainty around these estimates. If the confidence interval crosses zero, the covariate is not statistically significant.
 
 \subsection{\textbf{Cox PH assumption Test}
 }
@@ -704,7 +697,7 @@ Based on the visual inspection of the Schoenfeld residuals plot for High Costs P
 
 \section{Accelerated Failure Time (AFT) }
 
-The Accelerated Failure Time (AFT) model is often used when the Cox Proportional Hazard (PH) model does not hold. Although the null hypothesis of Cox PH was accepted, the study still uses the AFT in order to understand the direct effect of covariates on survival time and to make predictions about survival times.
+The Accelerated Failure Time (AFT) model is alternate used when the Cox Proportional Hazard (PH) model does not hold. Although the null hypothesis of Cox PH was accepted, the study still uses the AFT in order to understand the direct effect of covariates on survival time.
 
 \begin{table}[H]
     \centering
@@ -727,9 +720,9 @@ The AFT model with the lowest AIC is: \textit{LogNormalAFTFitter} \\
 The AFT model with the lowest BIC is: \textit{LogNormalAFTFitter} \\
 The AFT model with the lowest Hanna-Quinn is: \textit{WeibullAFTFitter}
 
-Among these models, the Weibull AFT Fitter has the lowest AIC value with 815.516, thereby providing the best fit to the data compared to the Lognormal and Loglogistic models. This means that, based on the AIC criterion, the Weibull distribution is the most appropriate for modeling your survival data in this context.
+The study compares three Accelerated Failure Time (AFT) models—Weibull, Log-Normal, and Log-Logistic—using AIC, BIC, and Hanna-Quinn criteria. The results reveal that the Log-Normal AFTFitter consistently has the lowest AIC and BIC, indicating a better overall fit despite the Weibull AFTFitter achieving the lowest Hanna-Quinn value.
 
-\subsection{Weibull Model}
+\subsection{Log-Normal Model}
 % Table here
 
 \begin{table}[H]
@@ -759,20 +752,21 @@ sigma\_Intercept & 0.421 & -0.053 & 0.894 & 0.082 \\
 \label{tab:LogNormal Coefficeints}
 \end{table}
 
-Just like the Cox PH analysis, the coefficient and exp(coefficient) columns in Table 4.4 provide information about the relationship between the covariates to churn. A positive coefficient or exp(coefficient) \(> \) 1 (such as Residence and Poor Network Quality Coverage) indicates that an increase in the covariate is associated with an increase in the time to the event. These increase the time to churn. A positive coefficient in a Weibull AFT model means the covariate increases the time to the event, indicating a protective effect against the event occurring sooner.
+Unlike the Cox PH analysis, the coefficient columns in Table 4.4 provide information about the relationship between the covariates to event time (Churn_Level). A positive coefficient indicates a decrease in the time it takes to the event. A negative coefficient suggests a decrease in the time to the event. 
 
- A negative coefficient or exp(coefficient)  \(< \) 1 (such as Data Exhaustion and Network Strength) suggests a decrease in the time to the event. These decrease the time to churn. A higher value of these covariates is associated with a higher likelihood of churn.
-The p-value column helps assess the statistical significance of each covariate. A low p-value (typically  \(< \) 0.05) indicates that the covariate is likely to have a meaningful impact on churn. This can be seen in Network Strength and Gender.
+ A higher value of these covariates is associated with a higher likelihood of the time to the event occuring.
+ 
+The p-value column helps assess the statistical significance of each covariate. A low p-value (typically  \(< \) 0.05) indicates that the covariate is likely to have a meaningful impact on Churn_Level. This can be seen in Data Exhaustion.
 
-The intercept (lambda) with a coefficient of 2.112 and p-value of 0.00005, indicates a highly significant baseline increase in time to event and the intercept (rho) coefficient is 0.906 and a p-value of 0.00005 therefore indicating a highly significant baseline multiplicative effect on time to event.
+The mu_intercept is the mean baseline when the covariates are 0 and the sigma_intercept is the standard deviation used to estimate the variance to determine the spread when the covariates are 0.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Figure 4/4.4.png}
-    \caption{Weibull Coefficients}
+    \caption{LogNormal Forest Plot}
 \end{figure}
 
-The boxes (squares) in the plot represent the estimated coefficients for each factor in the Weibull AFT mode in Figure 4.4. These coefficients indicate the effect size of each covariate on the accelerated failure rate (churn). The positive values suggest that the covariate speeds up the churn rate, while negative values suggest it slows down the event (decreases the churn rate). The horizontal lines extending from the boxes are the 95\% confidence intervals, showing the uncertainty around these estimates. If the confidence interval crosses zero, the covariate is not statistically significant.
+The boxes (squares) in the plot represent the estimated coefficients for each factor in the Lognormal AFT model in Figure 4.4. The positive values suggest that the covariate decrease the time to the event, while negative values suggest it increase the time to the event. The horizontal lines extending from the boxes are the 95\% confidence intervals, showing the uncertainty around these estimates. If the confidence interval crosses zero, the covariate is not statistically significant.
 
 \section{Model Comparison}
 
@@ -786,7 +780,7 @@ In this section, the models used are compared based on the AIC and the concordan
 				\textbf{Model} & \textbf{Concordance} & \textbf{AIC} \\
 				\midrule
 				LogNormal& 0.767& 169.052\\
-				Cox PH & 0.74& 1479.47 \\
+				Cox PH & 0.74& 174.41\\
 				\bottomrule
 			\end{tabular}
 			\caption{Model Concordance and AIC values}
@@ -794,41 +788,11 @@ In this section, the models used are compared based on the AIC and the concordan
 			
 		\end{table}
 
-Based on the comparison of the C-Index values and AIC in Table 4.5, it is known that the Weibull model shows a substantially lower AIC, indicating a better overall fit compared to the Cox PH model for churn modeling of telecommunication. The concordance index of the Weibull is slightly higher than that of the Cox PH thus implying that, the Weibull has a better predictive ability.
+Based on the comparison of the C-Index values and AIC in Table 4.5, it is known that the Lognormal model shows a substantially lower AIC  and a higher C-Index, indicating a better overall fit compared to the Cox PH model. 
 
 \newpage
 \chapter{Conclusion}
 
-\section{Summary of Findings}
-
-This study aimed to understand the factors influencing student retention and churn for Telecel services at KNUST. The objectives included investigating the relationship between student demographics and churn behavior, analyzing churn rates across different Telecel services, assessing the impact of network quality on student retention and churn, and exploring how Telecel services can be optimized to better meet student needs.
-
-\section{Research Questions Addressed}
-
-\subsection{Factors Influencing Student Retention and Churn}
-The analysis identified several key factors affecting retention and churn. High service costs, poor network coverage, and inadequate customer support were significant drivers of churn. On the other hand, competitive pricing, reliable network coverage, and responsive customer service positively influenced retention.
-
-\subsection{Relationship Between Student Demographics and Churn Behavior}
-Age, gender, and year of study were found to have varying impacts on churn behavior. Younger students and those in their final year of study exhibited higher churn rates. Gender differences were minimal, though female students showed a slightly higher tendency to switch services compared to their male counterparts.
-
-\subsection{Churn Rates Across Different Telecel Services}
-Churn rates varied significantly across different Telecel services. Data services experienced the highest churn rates, followed by voice and internet services. This indicates that students place a high value on reliable data services and may switch providers if their needs are not met.
-
-\subsection{Impact of Network Quality on Student Retention and Churn}
-Network quality, including coverage and internet speed, was a critical factor influencing retention and churn. Poor network performance led to higher churn rates, while consistent and high-quality service improved retention. Students valued seamless connectivity and fast internet speeds.
-
-\subsection{Optimizing Telecel Services for KNUST Students}
-Based on the findings, several recommendations were made to optimize Telecel services. These include improving network coverage on campus, offering competitive pricing plans tailored to student needs, enhancing customer support, and introducing loyalty programs to reward long-term customers.
-
-\section{Implications and Recommendations}
-
-The study's findings highlight the importance of addressing key factors that drive churn and retention. By focusing on network quality, competitive pricing, and customer support, Telecel can improve student retention rates. Specifically, efforts should be made to enhance data services, as they are crucial for student satisfaction.
-
-To further optimize services, Telecel could consider conducting regular surveys to gather student feedback and staying responsive to their evolving needs. Implementing targeted marketing strategies and offering personalized plans can also help in retaining students.
-
-\section{Conclusion}
-
-In conclusion, the study provides valuable insights into the factors influencing student retention and churn for Telecel services at KNUST. By leveraging these insights, Telecel can develop strategies to improve service quality, meet student expectations, and foster long-term customer loyalty. Continued efforts in these areas will not only reduce churn rates but also strengthen the relationship between Telecel and the student community at KNUST.
 
 \begin{table}[ht]
 \centering
