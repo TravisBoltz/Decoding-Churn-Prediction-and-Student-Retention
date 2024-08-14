@@ -11,6 +11,7 @@
 \usepackage{amsfonts}
 \usepackage{lmodern}
 \usepackage{setspace}
+\usepackage{natbib}
 \begin{document}
 
 \pagenumbering{gobble} % No page numbers 
@@ -125,7 +126,7 @@ This work is dedicated to my family and friends for their unwavering support and
 
 \section{Background of Study}
 
-Ghana's telecommunications industry has experienced significant growth in recent years, with companies such as Vodafone playing a crucial role in providing mobile and internet services to people across the country \cite{bandim2022}. The industry is highly competitive, making customer retention vital for sustaining market share and profitability. Obtaining new customers is more expensive than retaining existing ones due to marketing activities, incentives, and campaigns involved. Therefore, retaining a customer is preferable to acquiring a new one. Customer churn, also known as customer attrition, refers to the loss of subscribers or customers who cease using a company’s service or product within a given period \cite{koranchirath2024}. Understanding the reasons behind customer churn helps to develop strategies to improve customer retention and help reduce churn rates in the long run.
+Ghana's telecommunications industry has experienced significant growth in recent years, with companies such as Vodafone playing a crucial role in providing mobile and internet services to people across the country \cite{bandim2022}. The industry is highly competitive, making customer retention vital for sustaining market share and profitability. Obtaining new customers is more expensive than retaining existing ones due to marketing activities, incentives, and campaigns involved. Therefore, retaining a customer is preferable to acquiring a new one. Customer churn, also known as customer attrition, refers to the loss of subscribers or customers who cease using a company’s service or product within a given period \citeauthor{Koranchirath2024}. Understanding the reasons behind customer churn helps to develop strategies to improve customer retention and help reduce churn rates in the long run.
 
 Vodafone is one of the leading national telecommunications providers in Ghana. As of January 2020, it had over 9.3 million mobile voice subscribers, representing 13.81\% of Ghana's market share. Since becoming the majority shareholder, Vodafone Ghana has been operating the Ghana Satellite Earth Station (GSES) since 2008. GSES allows Ghana to access and utilize communications satellites orbiting the Earth for various applications, such as telephone services, internet connectivity, television broadcasting, data transmission, disaster management, and emergency communications. The operation of the earth station by Vodafone Ghana proves the company's commitment to investing in and upgrading Ghana's satellite communications capabilities.
 
@@ -135,13 +136,13 @@ In February 2023, Telecel acquired 70\% shares in Vodafone, rebranding the compa
 
 Student churn is a major issue every telecom company encounters. It leads to a loss of revenue and increases the cost of acquiring new customers. In the highly competitive telecom market, where customers have multiple service provider options, retaining customers becomes even more challenging. Companies use modern technology, computer software, and survival analysis approaches to identify at-risk students and devise strategies to enhance retention rates. This method of recognizing unsatisfied customers is known as churn prediction.
 
-On March 14, 2024, Vodafone, along with several other telecommunications companies, was hit by outages on several underwater fiber optic cables, leading to disruptions in services, particularly internet services \cite{ghanaweb2023}. It affected about 10 countries in West Africa, including Ghana. Initially, it was estimated that the problem would be fixed within 3 days; however, this was not the case. The damage was massive, affecting the West Coast route to Europe, West Africa Cable System (WACS), and the Africa Coast to Europe (ACE), resulting in MainOne and SAT3 going offline \cite{apnews2023}. The only network that was properly functioning at the moment in Ghana was AirtelTigo (AT). To quickly prevent the loss of valuable customers to AirtelTigo, Vodafone (Telecel) took the initiative to update its customers daily on their progress and offer various bonuses to prevent customers from defecting to their competitors. This continued until the problem was fixed on April 29, 2024, when the WACS cable was repaired.
+On March 14, 2024, Vodafone, along with several other telecommunications companies, was hit by outages on several underwater fiber optic cables, leading to disruptions in services, particularly internet services \citeauthor{ghanaweb2023}. It affected about 10 countries in West Africa, including Ghana. Initially, it was estimated that the problem would be fixed within 3 days; however, this was not the case. The damage was massive, affecting the West Coast route to Europe, West Africa Cable System (WACS), and the Africa Coast to Europe (ACE), resulting in MainOne and SAT3 going offline \citeauthor{apnews2023}. The only network that was properly functioning at the moment in Ghana was AirtelTigo (AT). To quickly prevent the loss of valuable customers to AirtelTigo, Vodafone (Telecel) took the initiative to update its customers daily on their progress and offer various bonuses to prevent customers from defecting to their competitors. This continued until the problem was fixed on April 29, 2024, when the WACS cable was repaired.
 
 Previous studies have explored various factors that influence customer churn in a telecommunications company. This study aims to focus on the KNUST student population, uncover and analyze data gathered from students, apply survival analysis models to identify patterns related to churn (such as demographics, usage patterns, etc.), develop retention strategies, evaluate the success of these efforts, and make informed decisions.
 
 \section{Problem Statement}
 
-Regardless of efforts made by KNUST to partner with Telecel to provide affordable and accessible mobile communications services to the university’s populace, churn still persists. There is a lack of understanding about the factors driving student churn and retention, making it difficult to develop effective strategies to address this issue \cite{kapur2018}. This research aims to investigate the factors contributing to student churn and develop a survival analysis model for detecting at-risk students and design specific strategies to improve retention rates. It also seeks to enhance Telecel’s services, improve student experience, and foster long-term relationships between Vodafone (Telecel) and KNUST.
+Regardless of efforts made by KNUST to partner with Telecel to provide affordable and accessible mobile communications services to the university’s populace, churn still persists. There is a lack of understanding about the factors driving student churn and retention, making it difficult to develop effective strategies to address this issue \citeauthor{kapur2018}. This research aims to investigate the factors contributing to student churn and develop a survival analysis model for detecting at-risk students and design specific strategies to improve retention rates. It also seeks to enhance Telecel’s services, improve student experience, and foster long-term relationships between Vodafone (Telecel) and KNUST.
 
 \section{Research Objectives}
 
@@ -191,19 +192,19 @@ The limitation of this research was that the data survey only included students 
 
 
 \section{Introduction}
-Mobile technology has become widely used, changing how students interact, communicate, and obtain information \cite{Alqatani2020}. Student retention and churn are critical issues for universities and telecom companies alike. In the context of Vodafone's services offered to students, understanding student behavior and preferences is crucial for effective retention strategies. This project addresses this gap using survival analysis, a statistical method for examining data over time \cite{BoxSteffensmeier2020}. In this context, the event of interest is student churn, defined as the discontinuation or cessation of Vodafone SIM cards. By applying survival analysis, this project will provide valuable insights into student retention and churn factors.
+Mobile technology has become widely used, changing how students interact, communicate, and obtain information \citeauthor{Alqatani2020}. Student retention and churn are critical issues for universities and telecom companies alike. In the context of Vodafone's services offered to students, understanding student behavior and preferences is crucial for effective retention strategies. This project addresses this gap using survival analysis, a statistical method for examining data over time \citeauthor{BoxSteffensmeier2020}. In this context, the event of interest is student churn, defined as the discontinuation or cessation of Vodafone SIM cards. By applying survival analysis, this project will provide valuable insights into student retention and churn factors.
 
 \subsection{Telecommunication Industry and Customer Behavior}
-The telecommunication industry is highly competitive, with customer acquisition and retention being pivotal to a company's success. Research indicates that factors such as service, pricing, customer support, and competitive offerings significantly influence customer churn \cite{Lai2021}.
+The telecommunication industry is highly competitive, with customer acquisition and retention being pivotal to a company's success. Research indicates that factors such as service, pricing, customer support, and competitive offerings significantly influence customer churn \citeauthor{Lai2021}.
 
 \subsection{Student Retention and Telecom Services}
-Students, as a demographic, exhibit unique usage patterns and service expectations. Studies show that reliable connectivity, affordable pricing, and additional benefits like educational resources influence their choice of telecom services \cite{SmithBrown2020}. For telecom companies, understanding these factors is crucial to tailoring services that meet students’ needs and enhance retention.
+Students, as a demographic, exhibit unique usage patterns and service expectations. Studies show that reliable connectivity, affordable pricing, and additional benefits like educational resources influence their choice of telecom services \citeauthor{SmithBrown2020}. For telecom companies, understanding these factors is crucial to tailoring services that meet students’ needs and enhance retention.
 
 \subsection{History of Survival Analysis (SA)}
-The origins of SA and its history spread far back to the early work on mortality by John Graunt, who published the book \textit{Natural and Political Observations on the Bills of Mortality} in 1662. The concept of “Life Tables” was introduced in this book. A new, modern era in SA started during World War II in the USA, where the reliability of military equipment was tested using SA. After World War II, SA became popular and spread to various other disciplines \cite{Jerenz2008}. The most influential papers on SA were published by Kaplan and Meier \cite{Kaplan1958} and Cox \cite{Cox1972}, in which the Kaplan-Meier product limit estimator and Cox proportional hazard model were introduced, respectively.
+The origins of SA and its history spread far back to the early work on mortality by John Graunt, who published the book \textit{Natural and Political Observations on the Bills of Mortality} in 1662. The concept of “Life Tables” was introduced in this book. A new, modern era in SA started during World War II in the USA, where the reliability of military equipment was tested using SA. After World War II, SA became popular and spread to various other disciplines \citeauthor{Jerenz2008}. The most influential papers on SA were published by Kaplan and Meier \citeauthor{Kaplan1958} and Cox \citeauthor{Cox1972}, in which the Kaplan-Meier product limit estimator and Cox proportional hazard model were introduced, respectively.
 
 \subsection{Application of Survival Analysis}
-Survival analysis (SA) has been successfully applied in diverse fields, including medical research, engineering (reliability analysis), finance, and economics. In finance, SA has been used to analyze a firm's vulnerability to global financial crises and identify firms at risk of failure, enabling timely interventions \cite{Lee2014, Pereira2014, Kumar2015, Iwasaki2014}. SA has also been employed to predict the optimal time to buy or sell stocks within the stock market \cite{Kumar2015}. In the banking sector, SA is utilized to assess banks' survival during financial crises, measure their strength when entering new markets \cite{Leung2010, Evrensel2008}, and conduct credit risk analysis \cite{Tsujitani2012, Baesens2005}. The widespread adoption of SA across these domains underscores its versatility and effectiveness in modeling time-to-event data and identifying the factors that influence outcomes of interest.
+Survival analysis (SA) has been successfully applied in diverse fields, including medical research, engineering (reliability analysis), finance, and economics. In finance, SA has been used to analyze a firm's vulnerability to global financial crises and identify firms at risk of failure, enabling timely interventions \citeauthor{Lee2014, Pereira2014, Kumar2015, Iwasaki2014}. SA has also been employed to predict the optimal time to buy or sell stocks within the stock market \citeauthor{Kumar2015}. In the banking sector, SA is utilized to assess banks' survival during financial crises, measure their strength when entering new markets \citeauthor{Leung2010, Evrensel2008}, and conduct credit risk analysis \citeauthor{Tsujitani2012, Baesens2005}. The widespread adoption of SA across these domains underscores its versatility and effectiveness in modeling time-to-event data and identifying the factors that influence outcomes of interest.
 
 \section{Conceptual Review}
 
@@ -295,6 +296,7 @@ Parameter Justification:
 \section{Data Pre-Processing}
 
 In the realm of data analysis, ensuring the quality and suitability of data is paramount for deriving meaningful insights and making informed decisions. The initial phase of the study involved a thorough examination of the dataset to identify and handle missing data appropriately to ensure that subsequent analyses were conducted on a complete and representative dataset. One of the critical preprocessing tasks involved the transformation of categorical variables into numeric format. This was achieved using label encoding, a technique that assigns unique integer labels to each category with the aid of Python. The transformation restructured the dataset to facilitate survival analysis. The data was then organized to facilitate essential components such as time duration, event indicators, and relevant covariates to the variables. 
+The lifelines package played a pivotal role in this section by providing essential survival analysis models in Python. The models are crucial for analyzing data where the time to student churn is important. 
 
 \section{Concept of Survival Analysis}
 
@@ -417,7 +419,7 @@ Where:
  \begin{itemize}
      \item \(t\) is a time
      \item \(d_i \) the number of events (churn) at time \(t_i\)
-     \item \(S\left(t\right)\ \)is the survi val probability at time \(t\)
+     \item \(S\left(t\right)\ \)is the survival probability at time \(t\)
      \item \(n_i\) is the number of individuals at risk just before time \(t_i\)
  \end{itemize}
 The estimator essentially calculates the probability of surviving from one time step to the next, and the product of these probabilities gives the overall survival probability up to time \(t\).
@@ -494,7 +496,7 @@ This section presents the study's findings and discusses what each output means 
 
 \section{Data Description}
 
-The dataset has a shape consisting of 768 rows and 18 columns from a sample in KNUST.
+The dataset has a shape consisting of 338 rows and 15 columns from a sample of students  in KNUST's College of Science.
 
 \begin{table}[H]
     \centering
@@ -522,9 +524,7 @@ The dataset has a shape consisting of 768 rows and 18 columns from a sample in K
     \caption{Description of Variables}
 \end{table}
 
-\section{Model Building}
-
-The lifelines package played a pivotal role in this section by providing essential survival analysis models in Python. These models are crucial for analyzing data where the time student churn event is important. 
+The Churn is assigned as the event while the Churn_Level is assigned as the time to the event (duration). The remaining covariates are used to explain the event and duration.
 
 
 \subsection{Kaplan Meier (KM) Curve}
@@ -828,37 +828,68 @@ sigma\_Intercept & -& & 0.421 & 0.082 \\
 
 
 \begin{thebibliography}{9}
+
 \bibitem{bandim2022} 
-Bandim, M. (2022). Growth of Ghana's Telecommunications Industry. \textit{Journal of African Telecommunications}, 45(2), 123-135.
+Bandim, M., 2022. Growth of Ghana's Telecommunications Industry. \textit{Journal of African Telecommunications}, 45(2), pp.123-135.
 
 \bibitem{ghanaweb2023} 
-Ghana Web. (2023). Underwater Fiber Optic Cable Outages Impact Telecommunications in West Africa. Retrieved from Ghana Web.
+Ghana Web, 2023. Underwater Fiber Optic Cable Outages Impact Telecommunications in West Africa. Available at: \url{https://www.ghanaweb.com} [Accessed 5 August 2024].
 
 \bibitem{kapur2018} 
-Kapur, R. (2018). Factors Driving Customer Churn in Telecom Industry. \textit{International Journal of Telecom Studies}, 22(4), 321-334.
+Kapur, R., 2018. Factors Driving Customer Churn in Telecom Industry. \textit{International Journal of Telecom Studies}, 22(4), pp.321-334.
 
 \bibitem{koranchirath2024} 
-Koranchirath, A. (2024). Customer Retention Strategies in Competitive Markets. \textit{Telecom Review}, 30(1), 56-72.
+Koranchirath, A., 2024. Customer Retention Strategies in Competitive Markets. \textit{Telecom Review}, 30(1), pp.56-72.
 
 \bibitem{apnews2023} 
-AP News. (2023). Underwater Cable Disruptions Affect West Africa's Internet Services. Retrieved from AP News.
+AP News, 2023. Underwater Cable Disruptions Affect West Africa's Internet Services. Available at: \url{https://www.apnews.com} [Accessed 5 August 2024].
 
-\bibitem{Alqatani2020} Alqatani, A. \& Altarifi, A. (2020). Title of the paper. Journal Name, Volume(Issue), Pages.
-\bibitem{BoxSteffensmeier2020} Box-Steffensmeier, J. \& Jone, C. (2020). Title of the paper. Journal Name, Volume(Issue), Pages.
-\bibitem{Lai2021} Lai, T., et al. (2021). Title of the paper. Journal Name, Volume(Issue), Pages.
-\bibitem{SmithBrown2020} Smith, R. \& Brown, J. (2020). Title of the paper. Journal Name, Volume(Issue), Pages.
-\bibitem{Jerenz2008} Jerenz, A. (2008). Title of the paper. Journal Name, Volume(Issue), Pages.
-\bibitem{Kaplan1958} Kaplan, E. \& Meier, P. (1958). Title of the paper. Journal Name, Volume(Issue), Pages.
-\bibitem{Cox1972} Cox, D. (1972). Title of the paper. Journal Name, Volume(Issue), Pages.
-\bibitem{Lee2014} Lee, M. (2014). Business Bankruptcy Prediction Based on Survival Analysis Approach. International Journal of Computer Science Information Technology, 6(2), Pages.
-\bibitem{Pereira2014} Pereira, J. (2014). Survival Analysis Employed in Predicting Corporate Failure: A Forecasting Model Proposal. International Business Research, 7(6), Pages.
-\bibitem{Kumar2015} Kumar, K. \& Gepp, A. (2015). Predicting Financial Distress: A Comparison of Survival Analysis and Decision Tree Techniques. Procedia Computer Science, 54(2), 396-404.
-\bibitem{Iwasaki2014} Iwasaki, I. (2014). Global Financial Crisis, Corporate Governance, and Firm Survival: The Russian Experience. Journal of Comparative Economics, 42(1), 178-211.
-\bibitem{Leung2010} Leung, M. K., Rigby, D., \& Young, T. (2010). Entry of Foreign Banks in the People's Republic of China: A Survival Analysis. Journal of Applied Economics, 10, 21-31.
-\bibitem{Evrensel2008} Evrensel, A. Y. (2008). Banking Crisis and Financial Structure: A Survival-Time Analysis. International Review of Economics and Finance, 17(4), 589-602.
-\bibitem{Tsujitani2012} Tsujitani, M. \& Baesens, B. (2012). Survival Analysis for Personal Loan Data Using Generalized Additive Models. Behaviormetrika, 39(1), 1109, 9-23.
-\bibitem{Baesens2005} Baesens, B., Gestel, T. V., Stepanova, M., Poel, D. V., \& Vanthienen, J. (2005). Neural Network Survival Analysis for Personal Loan Data. Journal of the Operational Research Society, 56(9), 1089-109
+\bibitem{Alqatani2020} 
+Alqatani, A. and Altarifi, A., 2020. Title of the paper. \textit{Journal Name}, Volume(Issue), pp.Pages.
+
+\bibitem{BoxSteffensmeier2020} 
+Box-Steffensmeier, J. and Jone, C., 2020. Title of the paper. \textit{Journal Name}, Volume(Issue), pp.Pages.
+
+\bibitem{Lai2021} 
+Lai, T. et al., 2021. Title of the paper. \textit{Journal Name}, Volume(Issue), pp.Pages.
+
+\bibitem{SmithBrown2020} 
+Smith, R. and Brown, J., 2020. Title of the paper. \textit{Journal Name}, Volume(Issue), pp.Pages.
+
+\bibitem{Jerenz2008} 
+Jerenz, A., 2008. Title of the paper. \textit{Journal Name}, Volume(Issue), pp.Pages.
+
+\bibitem{Kaplan1958} 
+Kaplan, E. and Meier, P., 1958. Title of the paper. \textit{Journal Name}, Volume(Issue), pp.Pages.
+
+\bibitem{Cox1972} 
+Cox, D., 1972. Title of the paper. \textit{Journal Name}, Volume(Issue), pp.Pages.
+
+\bibitem{Lee2014} 
+Lee, M., 2014. Business Bankruptcy Prediction Based on Survival Analysis Approach. \textit{International Journal of Computer Science Information Technology}, 6(2), pp.Pages.
+
+\bibitem{Pereira2014} 
+Pereira, J., 2014. Survival Analysis Employed in Predicting Corporate Failure: A Forecasting Model Proposal. \textit{International Business Research}, 7(6), pp.Pages.
+
+\bibitem{Kumar2015} 
+Kumar, K. and Gepp, A., 2015. Predicting Financial Distress: A Comparison of Survival Analysis and Decision Tree Techniques. \textit{Procedia Computer Science}, 54(2), pp.396-404.
+
+\bibitem{Iwasaki2014} 
+Iwasaki, I., 2014. Global Financial Crisis, Corporate Governance, and Firm Survival: The Russian Experience. \textit{Journal of Comparative Economics}, 42(1), pp.178-211.
+
+\bibitem{Leung2010} 
+Leung, M.K., Rigby, D. and Young, T., 2010. Entry of Foreign Banks in the People's Republic of China: A Survival Analysis. \textit{Journal of Applied Economics}, 10, pp.21-31.
+
+\bibitem{Evrensel2008} 
+Evrensel, A.Y., 2008. Banking Crisis and Financial Structure: A Survival-Time Analysis. \textit{International Review of Economics and Finance}, 17(4), pp.589-602.
+
+\bibitem{Tsujitani2012} 
+Tsujitani, M. and Baesens, B., 2012. Survival Analysis for Personal Loan Data Using Generalized Additive Models. \textit{Behaviormetrika}, 39(1), pp.9-23.
+
+\bibitem{Baesens2005} 
+Baesens, B., Gestel, T.V., Stepanova, M., Poel, D.V. and Vanthienen, J., 2005. Neural Network Survival Analysis for Personal Loan Data. \textit{Journal of the Operational Research Society}, 56(9), pp.1089-109.
 
 \end{thebibliography}
+
 
 \end{document}
