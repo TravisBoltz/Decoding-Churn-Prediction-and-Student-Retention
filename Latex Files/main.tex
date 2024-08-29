@@ -1,4 +1,4 @@
-\documentclass[doublespacing]{report} %,doublespacing
+\documentclass[doublespacing]{report} [12px]%,doublespacing
 \usepackage{graphicx}
 \usepackage{tocbibind}
 \usepackage{hyperref}
@@ -11,7 +11,7 @@
 \usepackage{amsfonts}
 \usepackage{lmodern}
 \usepackage{setspace}
-\usepackage{natbib}
+\usepackage{geometry}
 \begin{document}
 
 \pagenumbering{gobble} % No page numbers 
@@ -31,10 +31,10 @@
 
     \large{\textbf{Decoding Student Retention and Churn of
 Vodafone (Telecel) in Kwame Nkrumah University
-of Science and Technology (KNUST) }}
+of Science and Technology (KNUST)}}
 %\vspace{0.2cm}
    \\
-   \large{\textbf{A Survival Analysis Approach}}
+   %\large{\textbf{A Survival Analysis Approach}}
     \vspace{0.3cm}
     
 \large{Musah Faridu Oubda
@@ -47,8 +47,10 @@ Torsi Edmond Collins
 
 Asiamah Ezekiel}
 
-    \vspace{0.4cm}  
+    \vspace{0.2cm}  
     \small{A THESIS SUBMITTED TO THE DEPARTMENT OF STATISTICS AND ACTUARIAL SCIENCE, KWAME NKRUMAH UNIVERSITY OF SCIENCE AND TECHNOLOGY IN FULFILLMENT OF THE REQUIREMENT FOR THE AWARD OF THE DEGREE OF BACHELOR OF SCIENCE IN ACTUARIAL SCIENCE}\\
+    \vspace{0.2cm}
+    {August 20,2024}
 
 
 \end{titlepage}
@@ -59,22 +61,21 @@ Asiamah Ezekiel}
 
 \vspace{1cm}
 
-I hereby declare that this submission is my work towards the award of the undergraduate degree and that, to the best of my knowledge, it contains no material previously published by another person nor material that had been accepted for the award of any other degree of the university, except where due acknowledgment had been made in the text.
-
+We, therefore, affirm that this paper is entirely our own original work and has not been submitted in whole or in part for another degree award in any other university. Due credit has also been given to previously published works and online publications through referencing. 
 \vspace{2cm}
 
 \begin{tabbing}
     \hspace{6cm} \= \hspace{4cm} \= \hspace{5cm} \kill
     \textbf{Musah Faridu Oubda} \> \makebox[4cm]{\dotfill} \> \makebox[4cm]{\dotfill} \\
-    \textit{Student} \> \textit{Signature} \> \textit{Date} \\[1.5cm]
+    \textit{Student (4325620)} \> \textit{Signature} \> \textit{Date} \\[1.5cm]
     \textbf{Kassim Asana} \> \makebox[3cm]{\dotfill} \> \makebox[3cm]{\dotfill} \\
-    \textit{Student} \> \textit{Signature} \> \textit{Date} \\[1.5cm]
+    \textit{Student (4323020)} \> \textit{Signature} \> \textit{Date} \\[1.5cm]
     \textbf{Sarpong Linda} \> \makebox[3cm]{\dotfill} \> \makebox[3cm]{\dotfill} \\
-    \textit{Student} \> \textit{Signature} \> \textit{Date} \\[1.5cm]
+    \textit{Student (4330720)} \> \textit{Signature} \> \textit{Date} \\[1.5cm]
     \textbf{Torsi Edmond Collins} \> \makebox[3cm]{\dotfill} \> \makebox[3cm]{\dotfill} \\
-    \textit{Student} \> \textit{Signature} \> \textit{Date} \\[1.5cm]
+    \textit{Student (4331420)} \> \textit{Signature} \> \textit{Date} \\[1.5cm]
     \textbf{Asiamah Ezekiel} \> \makebox[3cm]{\dotfill} \> \makebox[3cm]{\dotfill} \\
-    \textit{Student} \> \textit{Signature} \> \textit{Date} \\[1.5cm]
+    \textit{Student (4316720)} \> \textit{Signature} \> \textit{Date} \\[1.5cm]
 \end{tabbing}
 This thesis has been submitted and we as university supervisors affirm our approval of
 its submission.\\
@@ -91,19 +92,16 @@ its submission.\\
 \end{tabbing}
 
 
-
- 
-\newpage
-\chapter*{Abstract}
-This study investigates student retention and churn of Vodafone (Telecel) services at Kwame Nkrumah University of Science and Technology (KNUST) using survival analysis approaches. By focusing on factors influencing student churn, the research aims to analyze patterns related to demographics and service usage. The study utilizes the Kaplan-Meier Estimator, Cox Proportional Hazards model and Accelerated Failure Time to identify at-risk students and develop strategies to enhance retention rates. The findings are intended to improve Telecel’s service offerings, enhance the student experience, and strengthen the partnership between Telecel and KNUST. This comprehensive analysis will provide valuable insights for reducing churn and improving customer satisfaction in the telecommunications sector.
-
 \newpage
 \chapter*{Dedication}
-This work is dedicated to my family and friends for their unwavering support and encouragement throughout my studies. Special thanks to my advisors and colleagues who provided invaluable insights and guidance during this research.
+
+We dedicate this project to the Almighty God, who has seen us through all of our challenges during this thesis period and has brought us this far. We also dedicate this effort to our families and friends, who have been there for us every step of the way with love and prayers. Finally, we dedicate this presentation to our supervisor, who stood by us through it all.  
 
 \newpage
 \chapter*{Acknowledgement}
-% Acknowlege lectures and Mrs. Sandra
+
+We are grateful to the Great and Mighty God for giving us the ability and fortitude to do this task. Our sincere gratitude also extends to Miss Sandra Addai-Henne, our supervisor, who acted as a beacon of hope for us as we set out on our path. We will always remember her kindness, comprehension, and level of tolerance. She always mentored and corrected us. We also want to express our gratitude to all of the instructors at Kwame Nkrumah University of Science and Technology(KNUST) who assisted us with our studies. We are grateful to you everyone.  
+
 
 \newpage
 \tableofcontents
@@ -116,6 +114,10 @@ This work is dedicated to my family and friends for their unwavering support and
 
 
 
+ 
+\newpage
+\chapter*{Abstract}
+
 
 
 \newpage
@@ -126,27 +128,29 @@ This work is dedicated to my family and friends for their unwavering support and
 
 \section{Background of Study}
 
-Ghana's telecommunications industry has experienced significant growth in recent years, with companies such as Vodafone playing a crucial role in providing mobile and internet services to people across the country \cite{bandim2022}. The industry is highly competitive, making customer retention vital for sustaining market share and profitability. Obtaining new customers is more expensive than retaining existing ones due to marketing activities, incentives, and campaigns involved. Therefore, retaining a customer is preferable to acquiring a new one. Customer churn, also known as customer attrition, refers to the loss of subscribers or customers who cease using a company’s service or product within a given period \citeauthor{Koranchirath2024}. Understanding the reasons behind customer churn helps to develop strategies to improve customer retention and help reduce churn rates in the long run.
+Ghana's telecommunications industry has experienced significant growth in recent years, with companies such as Vodafone playing a crucial role in providing mobile and internet services to people across the country \cite{bandim2022}. The industry is highly competitive, making customer retention vital for sustaining market share and profitability. Obtaining new customers is more expensive than retaining existing ones due to marketing activities, incentives, and campaigns involved. Therefore, retaining a customer is preferable to acquiring a new one. Customer churn, also known as customer attrition, refers to the loss of subscribers or customers who cease using a company’s service or product within a given period \cite{Koranchirath2024}. Understanding the reasons behind customer churn helps to develop strategies to improve customer retention and help reduce churn rates in the long run.
 
-Vodafone is one of the leading national telecommunications providers in Ghana. As of January 2020, it had over 9.3 million mobile voice subscribers, representing 13.81\% of Ghana's market share. Since becoming the majority shareholder, Vodafone Ghana has been operating the Ghana Satellite Earth Station (GSES) since 2008. GSES allows Ghana to access and utilize communications satellites orbiting the Earth for various applications, such as telephone services, internet connectivity, television broadcasting, data transmission, disaster management, and emergency communications. The operation of the earth station by Vodafone Ghana proves the company's commitment to investing in and upgrading Ghana's satellite communications capabilities.
+Vodafone is one of the leading national telecommunications providers in Ghana. As of January 2020, it had over 9.3 million mobile voice subscribers, representing 13.81\% of Ghana's market share. Since becoming the majority shareholder, Vodafone Ghana has been operating the Ghana Satellite Earth Station (GSES) since 2008 \cite{vodafone_ghana}. GSES allows Ghana to access and utilize communications satellites orbiting the Earth for various applications, such as telephone services, internet connectivity, television broadcasting, data transmission, disaster management, and emergency communications. The operation of the earth station by Vodafone Ghana proves the company's commitment to investing in and upgrading Ghana's satellite communications capabilities.
+%citation for this part
+In 2016, Vodafone partnered with Kwame Nkrumah University of Science and Technology (KNUST) to provide enhanced packages of services to the various faculties across the university's campuses to improve education services \cite{vodafone_knust}. This collaboration included telecommunications services such as SIM cards and data plans for the student and employee communities.
 
-In 2016, Vodafone partnered with Kwame Nkrumah University of Science and Technology (KNUST) to provide enhanced packages of services to the various faculties across the university's campuses to improve education services. This collaboration included telecommunications services such as SIM cards and data plans for the student and employee communities.
+In February 2023, Telecel acquired 70\% shares in Vodafone, rebranding the company name to Telecel in 2024 \cite{telecel_ghana}. This rebranding aimed to improve service offerings across voice and data services, money transfers, and business solutions. Telecel, founded in 1986, is an Africa-focused telecommunication company that operates primarily in Africa and converges telecommunications with fintech, e-commerce, and tech startups.
 
-In February 2023, Telecel acquired 70\% shares in Vodafone, rebranding the company name to Telecel in 2024. This rebranding aimed to improve service offerings across voice and data services, money transfers, and business solutions. Telecel, founded in 1986, is an Africa-focused telecommunication company that operates primarily in Africa and converges telecommunications with fintech, e-commerce, and tech startups.
+%citation for this part
 
 Student churn is a major issue every telecom company encounters. It leads to a loss of revenue and increases the cost of acquiring new customers. In the highly competitive telecom market, where customers have multiple service provider options, retaining customers becomes even more challenging. Companies use modern technology, computer software, and survival analysis approaches to identify at-risk students and devise strategies to enhance retention rates. This method of recognizing unsatisfied customers is known as churn prediction.
 
-On March 14, 2024, Vodafone, along with several other telecommunications companies, was hit by outages on several underwater fiber optic cables, leading to disruptions in services, particularly internet services \citeauthor{ghanaweb2023}. It affected about 10 countries in West Africa, including Ghana. Initially, it was estimated that the problem would be fixed within 3 days; however, this was not the case. The damage was massive, affecting the West Coast route to Europe, West Africa Cable System (WACS), and the Africa Coast to Europe (ACE), resulting in MainOne and SAT3 going offline \citeauthor{apnews2023}. The only network that was properly functioning at the moment in Ghana was AirtelTigo (AT). To quickly prevent the loss of valuable customers to AirtelTigo, Vodafone (Telecel) took the initiative to update its customers daily on their progress and offer various bonuses to prevent customers from defecting to their competitors. This continued until the problem was fixed on April 29, 2024, when the WACS cable was repaired.
+On March 14, 2024, Vodafone, along with several other telecommunications companies, was hit by outages on several underwater fiber optic cables, leading to disruptions in services, particularly internet services \cite{ghanaweb2023}. It affected about 10 countries in West Africa, including Ghana. Initially, it was estimated that the problem would be fixed within 3 days; however, this was not the case. The damage was massive, affecting the West Coast route to Europe, West Africa Cable System (WACS), and the Africa Coast to Europe (ACE), resulting in MainOne and SAT3 going offline \cite{apnews2023}. The only network that was properly functioning at the moment in Ghana was AirtelTigo (AT). To quickly prevent the loss of valuable customers to AirtelTigo, Vodafone (Telecel) took the initiative to update its customers daily on their progress and offer various bonuses to prevent customers from defecting to their competitors. This continued until the problem was fixed on April 29, 2024, when the WACS cable was repaired.
 
 Previous studies have explored various factors that influence customer churn in a telecommunications company. This study aims to focus on the KNUST student population, uncover and analyze data gathered from students, apply survival analysis models to identify patterns related to churn (such as demographics, usage patterns, etc.), develop retention strategies, evaluate the success of these efforts, and make informed decisions.
 
 \section{Problem Statement}
 
-Regardless of efforts made by KNUST to partner with Telecel to provide affordable and accessible mobile communications services to the university’s populace, churn still persists. There is a lack of understanding about the factors driving student churn and retention, making it difficult to develop effective strategies to address this issue \citeauthor{kapur2018}. This research aims to investigate the factors contributing to student churn and develop a survival analysis model for detecting at-risk students and design specific strategies to improve retention rates. It also seeks to enhance Telecel’s services, improve student experience, and foster long-term relationships between Vodafone (Telecel) and KNUST.
+Regardless of efforts made by KNUST to partner with Telecel to provide affordable and accessible mobile communications services to the university’s populace, churn still persists. There is a lack of understanding about the factors driving student churn and retention, making it difficult to develop effective strategies to address this issue \cite{kapur2018}. This research aims to investigate the factors contributing to student churn and develop a survival analysis model for detecting at-risk students and design specific strategies to improve retention rates. It also seeks to enhance Telecel’s services, improve student experience, and foster long-term relationships between Vodafone (Telecel) and KNUST.
 
 \section{Research Objectives}
 
-The study aims to use survival analysis to estimate student churn rates at various levels.
+The study aims to use survival analysis to estimate student churn rates at various levels. In addition, the paper aims to estimate which covariates affect the churn rate.
 %\subsection{Main Objective}
 %\begin{itemize}
     %\item 
@@ -192,32 +196,34 @@ The limitation of this research was that the data survey only included students 
 
 
 \section{Introduction}
-Mobile technology has become widely used, changing how students interact, communicate, and obtain information \citeauthor{Alqatani2020}. Student retention and churn are critical issues for universities and telecom companies alike. In the context of Vodafone's services offered to students, understanding student behavior and preferences is crucial for effective retention strategies. This project addresses this gap using survival analysis, a statistical method for examining data over time \citeauthor{BoxSteffensmeier2020}. In this context, the event of interest is student churn, defined as the discontinuation or cessation of Vodafone SIM cards. By applying survival analysis, this project will provide valuable insights into student retention and churn factors.
+Mobile technology has become widely used, changing how students interact, communicate, and obtain information \cite{Alqatani2020}. Student retention and churn are critical issues for universities and telecom companies alike. In the context of Vodafone's services offered to students, understanding student behavior and preferences is crucial for effective retention strategies. This project addresses this gap using survival analysis, a statistical method for examining data over time \cite{BoxSteffensmeier2020}. In this context, the event of interest is student churn, defined as the discontinuation or cessation of Vodafone SIM cards. By applying survival analysis, this project will provide valuable insights into student retention and churn factors.
 
 \subsection{Telecommunication Industry and Customer Behavior}
-The telecommunication industry is highly competitive, with customer acquisition and retention being pivotal to a company's success. Research indicates that factors such as service, pricing, customer support, and competitive offerings significantly influence customer churn \citeauthor{Lai2021}.
+The telecommunication industry is highly competitive, with customer acquisition and retention being pivotal to a company's success. Research indicates that factors such as service, pricing, customer support, and competitive offerings significantly influence customer churn \cite{Lai2021}.
 
 \subsection{Student Retention and Telecom Services}
-Students, as a demographic, exhibit unique usage patterns and service expectations. Studies show that reliable connectivity, affordable pricing, and additional benefits like educational resources influence their choice of telecom services \citeauthor{SmithBrown2020}. For telecom companies, understanding these factors is crucial to tailoring services that meet students’ needs and enhance retention.
+Students, as a demographic, exhibit unique usage patterns and service expectations. Studies show that reliable connectivity, affordable pricing, and additional benefits like educational resources influence their choice of telecom services \cite{SmithBrown2020}. For telecom companies, understanding these factors is crucial to tailoring services that meet students’ needs and enhance retention.
 
 \subsection{History of Survival Analysis (SA)}
-The origins of SA and its history spread far back to the early work on mortality by John Graunt, who published the book \textit{Natural and Political Observations on the Bills of Mortality} in 1662. The concept of “Life Tables” was introduced in this book. A new, modern era in SA started during World War II in the USA, where the reliability of military equipment was tested using SA. After World War II, SA became popular and spread to various other disciplines \citeauthor{Jerenz2008}. The most influential papers on SA were published by Kaplan and Meier \citeauthor{Kaplan1958} and Cox \citeauthor{Cox1972}, in which the Kaplan-Meier product limit estimator and Cox proportional hazard model were introduced, respectively.
+The origins of SA and its history spread far back to the early work on mortality by John Graunt, who published the book \textit{Natural and Political Observations on the Bills of Mortality} in 1662. The concept of “Life Tables” was introduced in this book. A new, modern era in SA started during World War II in the USA, where the reliability of military equipment was tested using SA. After World War II, SA became popular and spread to various other disciplines \cite{Jerenz2008}. The most influential papers on SA were published by Kaplan and Meier \cite{Kaplan1958} and Cox \cite{Cox1972}, in which the Kaplan-Meier product limit estimator and Cox proportional hazard model were introduced, respectively.
 
 \subsection{Application of Survival Analysis}
-Survival analysis (SA) has been successfully applied in diverse fields, including medical research, engineering (reliability analysis), finance, and economics. In finance, SA has been used to analyze a firm's vulnerability to global financial crises and identify firms at risk of failure, enabling timely interventions \citeauthor{Lee2014, Pereira2014, Kumar2015, Iwasaki2014}. SA has also been employed to predict the optimal time to buy or sell stocks within the stock market \citeauthor{Kumar2015}. In the banking sector, SA is utilized to assess banks' survival during financial crises, measure their strength when entering new markets \citeauthor{Leung2010, Evrensel2008}, and conduct credit risk analysis \citeauthor{Tsujitani2012, Baesens2005}. The widespread adoption of SA across these domains underscores its versatility and effectiveness in modeling time-to-event data and identifying the factors that influence outcomes of interest.
+Survival analysis (SA) has been successfully applied in diverse fields, including medical research, engineering (reliability analysis), finance, and economics. In finance, SA has been used to analyze a firm's vulnerability to global financial crises and identify firms at risk of failure, enabling timely interventions \cite{Lee2014, Pereira2014, Kumar2015, Iwasaki2014}. SA has also been employed to predict the optimal time to buy or sell stocks within the stock market \cite{Kumar2015}. In the banking sector, SA is utilized to assess banks' survival during financial crises, measure their strength when entering new markets \cite{Leung2010, Evrensel2008}, and conduct credit risk analysis \cite{Tsujitani2012, Baesens2005}. The widespread adoption of SA across these domains underscores its versatility and effectiveness in modeling time-to-event data and identifying the factors that influence outcomes of interest.
 
 \section{Conceptual Review}
 
 \subsubsection{Customer Retention and Churn}
-Customer retention refers to a company's capacity or ability to maintain or retain their customer base over a specific period. High retention rates are crucial for maintaining revenue streams, reducing marketing costs associated with acquiring new customers, and fostering a positive brand reputation. Customer churn, also known as customer attrition, is the rate at which customers stop using a company's product or service. It can be caused by various factors such as dissatisfaction with the service, better offers from competitors, or changes in personal circumstances. In the telecommunications industry, market competitiveness is measured by churn rate. Telephone, internet, and mobile services are all part of telecommunications.
+Customer retention refers to a company's capacity or ability to maintain or retain their customer base over a specific period. High retention rates are crucial for maintaining revenue streams, reducing marketing costs associated with acquiring new customers, and fostering a positive brand reputation. Customer churn, also known as customer attrition, is the rate at which customers stop using a company's product or service \cite{Masarifoglu2019} . It can be caused by various factors such as dissatisfaction with the service, better offers from competitors, or changes in personal circumstances. In the telecommunications industry, market competitiveness is measured by churn rate. Telephone, internet, and mobile services are all part of telecommunications.
 
 \section{Empirical Studies}
+%Include reference in the bibliography
+Imani, M. (2020). \textit{Customer Churn Prediction in Telecommunication Using Machine Learning: A Comparison Study}. This paper tackles customer churn in telecoms, emphasizing that retaining customers is cheaper than acquiring new ones. It evaluates various machine learning methods for predicting churn by comparing classifiers, target detectors, feature extraction, and feature selection techniques. The study finds that Random Forest and Feed-Forward Neural Networks with Genetic Algorithm showed high accuracy. Effective target detectors included Spectral wngle Mapper and Adaptive Subspace Detector. Clustering-Based Feature Extraction and Advanced Binary Ant Colony Optimization excelled in improving classification and feature selection. The study recommends implementing Random Forest and Neural Networks for effective churn prediction.
 
-Imani, M. (2020) \textit{Customer Churn Prediction in Telecommunication Using Machine Learning: A Comparison Study}. The paper tackles customer churn in telecoms, emphasizing that retaining customers is cheaper than acquiring new ones. It evaluates various machine learning methods for predicting churn by comparing classifiers, target detectors, feature extraction, and feature selection techniques. The study finds that Random Forest and Feed-Forward Neural Networks with Genetic Algorithm showed high accuracy. Effective target detectors included Spectral Angle Mapper and Adaptive Subspace Detector. Clustering-Based Feature Extraction and Advanced Binary Ant Colony Optimization excelled in improving classification and feature selection. The study recommends implementing Random Forest and Neural Networks for effective churn prediction.
+Melik Masarifoglu and Ali Hakan Buyuklu (2019). \textit{Applying Survival Analysis to Telecom Churn Data}. This paper emphasizes the importance of customer retention in telecoms, noting that retaining customers is more cost-effective than acquiring new ones. It employs survival analysis to estimate customer survival and hazard functions, focusing on factors like campaigns, tariffs, tenure, age, and auto-payment. The paper introduces survival analysis (SA) as a statistical method to analyze time-to-event data. It describes the Cox Proportional Hazard Model (CPHM), a widely used technique for quantifying the risk of an event occurring during the observation period. The paper uses Kaplan-Meier estimates and the Cox model to analyze the impact of various predictors on customer churn. The results show how different factors, such as campaigns and tariffs, affect customer survival probabilities. The study finds that survival analysis is effective for predicting churn and recommends its use for targeting at-risk customers and improving retention strategies.
 
-Melik Masarifoglu and Ali Hakan Buyuklu \textit{Applying Survival Analysis to Telecom Churn Data}. This paper emphasizes the importance of customer retention in telecoms, noting that retaining customers is more cost-effective than acquiring new ones. It employs survival analysis to estimate customer survival and hazard functions, focusing on factors like campaigns, tariffs, tenure, age, and auto-payment. The paper introduces survival analysis (SA) as a statistical method to analyze time-to-event data. It describes the Cox Proportional Hazard Model (CPHM), a widely used technique for quantifying the risk of an event occurring during the observation period. The paper uses Kaplan-Meier estimates and the Cox model to analyze the impact of various predictors on customer churn. The results show how different factors, such as campaigns and tariffs, affect customer survival probabilities. The study finds that survival analysis is effective for predicting churn and recommends its use for targeting at-risk customers and improving retention strategies.
+Sitti Nurhaliza et al (2022). \textit{A comparison of cox proportional}
+The research paper conducts a comparative analysis of the Cox Proportional Hazard (CPH) model and Random Survival Forest (RSF) to evaluate their effectiveness in survival analysis. The CPH model, a well-established method, is known for its interpretability, allowing researchers to understand the relationship between covariates and survival time. However, it assumes proportional hazards, which may not hold in all cases. In contrast, RSF is a non-parametric ensemble method that can handle complex, non-linear relationships and does not require the proportional hazards assumption. The study uses data from various domains, such as medicine and engineering, to assess the performance of both models. The findings suggest that while RSF generally offers better predictive accuracy, especially in cases with non-linear relationships, CPH remains valuable for its simplicity and interpretability. The paper concludes that the choice between CPH and RSF should be based on the specific requirements of the analysis, balancing the need for interpretability against predictive accuracy.
 
-Kavitha, V., Kumar, G. H., Kumar, S. M., \& Harish, M. (2020) \textit{Churn prediction of customer in telecom industry using machine learning algorithms}. This paper highlights the importance of customer churn in the telecommunications industry, noting its impact on revenue and customer lifetime value. It stresses the need for predictive models to identify potential churners and improve retention by enhancing service offerings. The methodology involves collecting data from Kaggle, preprocessing it by filtering and standardizing, and selecting relevant features. The prediction and classification phase uses Random Forest, Logistic Regression, and XGBoost algorithms, with each trained and tested to evaluate performance. The results reveal that Random Forest outperforms Logistic Regression and XGBoost in accuracy and performance. Visualizations, including confusion matrices and accuracy graphs, support these findings. The paper concludes by emphasizing that churn prediction is crucial for telecoms and suggests exploring lazy learning and AI techniques for future research.
 
 
 
@@ -242,55 +248,56 @@ The primary data source for this research was a survey conducted among students 
 
 
 \section{Sample Size}
+The sample size of the research was determined through simple random sampling. Simple random sampling is a sampling technique in which each member of the population has an equal chance of being selected. This method ensures that the sample is representative of the population, as every individual has an equal probability of being included. This sampling technique is employed to determine the optimal sample size as it is a straightforward method that allows for unbiased estimation of the population parameters.
 
-The sample size of the research was determined through cluster sampling. Cluster sampling is a sampling technique in which the population is divided into groups known as clusters. A random sample is then selected from each cluster ensuring that, each cluster has an equal number of elements. It is therefore homogeneous within but heterogeneous around (clusters are different from one another but the elements within it share common factors). This sampling is employed to determine the optimal sample size as it is a robust method that allows to efficiently estimate the population by selecting entire clusters (colleges within KNUST) rather than using individual students.
-\\The sample size for cluster sampling can be determined using the formula below:
+The sample size for simple random sampling can be determined using the formula below:
 
-\[n_0=\frac{z^2\ast p\ast\left(1-p\right)}{E^2}\]
-\[n=\frac{n_0}{1+(\frac{n_0-1}{N})}\]
-\[n_{cluster}=n\ \ast\ DEFF\]
+\begin{equation}
+n_0=\frac{z^2 \ast p \ast \left(1-p\right)}{E^2}
+\end{equation}
+\begin{equation}
+n=\frac{n_0}{1+(\frac{n_0-1}{N})}
+\end{equation}
 
 Where:
 \begin{itemize}
-    \item \((N)\ \)is the population size.
-    \item \((n_0)\) is the sample size for simple random sampling
-    \item \((n)\)\ is the sample size for the population.
-    \item \((n_{cluster})\) is the sample size of the clusters.
-    \item \((z) \)represents the critical value.
-    \item \((p)\) is the estimated proportion of the population (e.g., proportion of students with a certain behavior).
-    \item \((DEFF) \) is the design effect, which accounts for the correlation among observations within the same cluster.
-    \item \((E) \) is the margin of error.
+    \item \((N)\) is the population size.
+    \item \((n_0)\) is the initial sample size for simple random sampling.
+    \item \((n)\) is the adjusted sample size for the population.
+    \item \((z)\) represents the critical value.
+    \item \((p)\) is the estimated proportion of the population
+    \item \((E)\) is the margin of error.
 \end{itemize}
 
 Parameter Justification:
 
 \begin{itemize}
-    \item \textbf{Z-score} \((z)\): A confidence level of 95\% is chosen therefore resulting to a Z-score of 1.96.
-    \item \textbf{Population}\( (N)\): The population size of KNUST students is about 85000.
-    \item \textbf{Estimated Proportion \((p)\)}: To maximize sample size, we use 0.5.
-    \item \textbf{Margin of Error }\((E)\): 5\% since the confidence Level is 95\%.
-
-
+    \item \textbf{Z-score} \((z)\): A confidence level of 95\% is chosen, resulting in a Z-score of 1.96.
+    \item \textbf{Population} \((N)\): The population size of the College of Science students is about 2,835.
+    \item \textbf{Estimated Proportion} \((p)\): To maximize sample size, we use 0.5.
+    \item \textbf{Margin of Error} \((E)\): 5\% since the confidence level is 95\%.
 \end{itemize}
 
+\begin{equation}
+n_0 = \frac{\left(1.96^2 \times 0.5 \times 0.5\right)}{0.05^2}
+\end{equation}
+\begin{equation}
+n_0 \approx 383.82
+\end{equation}
+\begin{equation}
+n_0 \approx 384
+\end{equation}
+\begin{equation}
+n = \frac{384}{1 + \left(\frac{384 - 1}{2835}\right)}
+\end{equation}
+\begin{equation}
+n \approx 338.297
+\end{equation}
+\begin{equation}
+n \approx 338
+\end{equation}
 
-\[n_0\ =\frac{\left({1.96}^2\ast\ 0.5\ \ast\ 0.5\ \right)}{{0.05}^2}\]
-\[n_0\approx383.82\]
-\[n_0\approx384\]
-\[n=\frac{384}{1+(\frac{384-1}{85000})}\]
-\[n\approx384.16\]
-\[n\approx384\]
-
-\begin{itemize}
-    \item \textbf{Design Effect} (\({DEFF})\): The design effect of 2 is used as the benchmark.
-
-\end{itemize}
-\[n_{cluster}=384\ \ast\ 2\]
-\[n_{cluster}=768\]
-\\
-\\A cluster sample size of 768 students from the population of about 85000.
-\\Since there are 6 clusters from which each represents the colleges, the sample size is evenly allocated across the clusters. Each cluster would have approximately 128 students.
-
+A simple random sample size of 354 students from the population of about 2,835.
 
 
 \section{Data Pre-Processing}
@@ -316,6 +323,7 @@ It occurs when a subject has some loss to follow up or the study ends before the
 It occurs when the event of interest has occurred before the study starts, and thus the exact survival time is known only to be less than a certain value indicating that the true survival time is less than or equal to the observed survival time.
 
 \subsection{Interval-Censored}
+
 It can occur if a subject’s true but unobserved survival time is within a certain known specified time interval. Interval-censoring incorporates both right-censoring and left-censoring. 
 
 \begin{figure}[H]
@@ -335,33 +343,34 @@ It can occur if a subject’s true but unobserved survival time is within a cert
 \end{itemize}
 
 
+
 \section{Fundamental Concepts of Survival Analysis}
 
-These functions are complementary in understanding the dynamics of survival data, namely survival function and hazard function. They are the building blocks for every survival analysis. They clearly have a defined relationship between the two. The \(S\left(t\right)\) can be derived from the \(h\left(t\right)\) complement one another such that, one can be derived from the other.
-
-\begin{align}
-\lambda(t) &= \lim_{\Delta t \to 0} \frac{\Pr(t \leq T < t + \Delta t \mid T > t)}{\Delta t} \\
-&= \lim_{\Delta t \to 0} \left[ \frac{\Pr(t \leq T < t + \Delta t)}{\Delta t} \cdot \frac{\Delta t}{\Pr(T > t)} \right] \\
-&= \lim_{\Delta t \to 0} \left[ \frac{\Pr(t \leq T < t + \Delta t)}{\Delta t} \right] \cdot \lim_{\Delta t \to 0} \left[ \frac{1}{\Pr(T > t)} \right] \\
-&= \frac{1}{S(t)} \cdot \lim_{\Delta t \to 0} \left[ \frac{\Pr(t \leq T < t + \Delta t)}{\Delta t} \right] \\
-&= \frac{1}{S(t)} \cdot \lim_{\Delta t \to 0} \left[ \frac{F(t + \Delta t) - F(t)}{\Delta t} \right] \\
-&= \frac{f(t)}{S(t)}\\
-S(t) &= \exp\left[-\int_{0}^{t} h(x) \, dx\right]\\
-h(t) &= -\left[\frac{dS(t)/dt}{S(t)}\right]
-\end{align}
-
-
-
-The first formula describes how the survival function \(S\left(t\right)\) can be written in terms of an integral involving the hazard function. The formula states that \(S\left(t\right) \)equals the exponential of the negative integral of the hazard function \(h\left(t\right) \) between integration limits of 0 and t. 
-The second formula describes how the hazard function \(h\left(t\right) \) can be written in terms of a derivative involving the survival function. The formula states that \( h\left(t\right)\) equals minus the derivative of \(S\left(t\right) \) with respect to t divided by \(S\left(t\right)\).
-
-
 \subsection{\texorpdfstring{Survival Function \( S(t) \)}{Survival Function S(t)}}
-The survival function \(S\left(t\right) \) also known as the survival probability function, gives the probability that a person survives longer than some specified time.
+The survival function \(S\left(t\right) \) also known as the survival probability function, gives the probability that a person survives longer than some specified time.  Let \(T\) be a non-negative continuous random variable representing the elapsed time until an event occurs. The probability density function (pdf) of \(T\) is denoted by \(f(t)\), and the cumulative distribution function (cdf) is denoted by \(F(t)\). The cdf \(F(t)\) is defined as:
+\begin{equation}
+F(t) = \Pr\{T < t\}
+\end{equation}
+The survival function \(S(t)\) is the complement of the cummulative distribution function and is given by:
+\begin{equation}
+S(t) = 1 - F(t)
+\end{equation}
+\begin{equation}
+S(t) = \Pr\{T \geq t\}
+\end{equation}
+\begin{equation}
+S(t) = \int_t^\infty f(u) \, du
+\end{equation}
+The derivative of \(S(t)\) with respect to \(t\) is:
+\begin{equation}
+S'(t) = -F'(t)
+\end{equation}
+\begin{equation}
+S'(t) = -f(t)
+\end{equation}
+In figure \ref{Figure 3.3} below, the curve on the left is a theoretical curve of the survival function\ \(S\left(t\right) \) which ranges from 0 up to infinity. It is non-increasing and therefore slopes downward as \(t\) increases. At \(t= 0\), \(S\left(0\right)=1\) and when \( t\ =\ \infty , S\left(\infty\right)\ =\ 0.\) 
+When actual data is used, the survivor curve does not result in a smooth curve but rather obtains a step function graph. The step function is illustrated on the right in \ref{Figure 3.3}.  The study period is never infinite in duration as there may be competing risks for failure, it is possible that not everyone obtains the event of interest. The estimated survivor function \(\hat{S}\left(t\right)\), thus may not go all the way down to 0 at the end of the study.
 
-\[S(t)\ =\ P(T\ >\ t)\]
-\\In equation (3), \(T\) represents the random variable for a person's survival time and \(t\) represents the specific value of interest for the random variable \(T\).
-\\The survival function is  fundamental to a survival analysis as it helps in determining survival probabilities for different values of time to provide crucial summary information from the data.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.45\textwidth]{Figure 3/3.31.png}
@@ -371,27 +380,48 @@ The survival function \(S\left(t\right) \) also known as the survival probabilit
     \label{Figure 3.3}
 \end{figure}
 
-The figure on the left in Figure 3.3 is a theoretical curve of the survival function\ \(S\left(t\right) \) which ranges from 0 up to infinity. It is non-increasing and therefore slopes downward as \(t\) increases. At \(t= 0\), \(S\left(0\right)=1\) and when \( t\ =\ \infty , S\left(\infty\right)\ =\ 0.\) 
-When actual data is used, the survivor curve does not result in a smooth curve but rather obtains a step function graph. The step function is illustrated on the right in Figure 3.3.  The study period is never infinite in duration as there may be competing risks for failure, it is possible that not everyone obtains the event of interest. The estimated survivor function \(\hat{S}\left(t\right)\), thus may not go all the way down to 0 at the end of the study.
-
 \subsection{\texorpdfstring{Hazard Function \( h(t) \)}{Hazard Function h(t)}}
 
 The hazard function \( h(t)\ \)denotes the instantaneous rate of failure at time \(t\), given that the subject has survived up to time\( (t).\)
 
-\[
+\begin{equation}
 h(t) = \lim_{\Delta t \to 0} \frac{P(t \le T < t + \Delta t \mid T \geq t)}{\Delta t}
-\]
-
-\[h\left(t\right)\geq0\]
+\end{equation}
+\begin{equation}
+h\left(t\right)\geq0
+\end{equation}
 
 
 The hazard function \( h\left(t\right)\), is given by the formula: \(h\left(t\right)\ \)equals the limit, as \(\Delta t \) approaches zero, of a probability statement about survival, divided by \(\Delta t\), where \(\Delta t\) denotes a small interval of time.
 
+\begin{align}
+h(t) &= \lim_{\Delta t \to 0} \frac{\Pr(t \leq T < t + \Delta t \mid T > t)}{\Delta t} \\
+&= \lim_{\Delta t \to 0} \left[ \frac{\Pr(t \leq T < t + \Delta t)}{\Delta t} \cdot \frac{\Delta t}{\Pr(T > t)} \right] \\
+&= \lim_{\Delta t \to 0} \left[ \frac{\Pr(t \leq T < t + \Delta t)}{\Delta t} \right] \cdot \lim_{\Delta t \to 0} \left[ \frac{1}{\Pr(T > t)} \right] \\
+&= \frac{1}{S(t)} \cdot \lim_{\Delta t \to 0} \left[ \frac{\Pr(t \leq T < t + \Delta t)}{\Delta t} \right] \\
+&= \frac{1}{S(t)} \cdot \lim_{\Delta t \to 0} \left[ \frac{F(t + \Delta t) - F(t)}{\Delta t} \right] \\
+&= \frac{f(t)}{S(t)} \\
+\end{align}
+
 The hazard function is also known as the conditional failure rate. It is a rate rather than a probability. In the hazard function formula, the expression to the right of the limit sign gives the ratio of two quantities. The numerator is a conditional probability while the denominator, \(\Delta t\) denotes a small-time interval. By the division, a probability per unit of time is obtained, which is no longer a probability but a rate. In particular, the scale for this ratio is not 0 to 1 like a probability but rather ranges between 0 and infinity while depending on whether time is measured in days, weeks, months, or years. 
 
-\[H(t)=\int_{0}^{t}{h(x)dx}\]
+\begin{equation}
+H(t)=\int_{0}^{t}{h(x)dx}
+\end{equation}
 
 The cumulative hazard function \(H(t)\) can be derived from the hazard function. It is the integral of the hazard function up to time \(t\). It represents the total hazard experienced up to time \( t. H(t)\) provides a straightforward cumulative measure of risk or failure over time.
+
+\begin{equation}
+S(t) = \exp\left[-\int_{0}^{t} h(x) \, dx\right]
+\label{eq:survival_function}
+\end{equation}
+
+\begin{equation}
+h(t) = -\left[\frac{dS(t)/dt}{S(t)}\right]
+\end{equation}
+
+The equations above clearly defines the relation between the hazard function and survival function. This can be seen in (3.25) and (3.26) in which the $h(t)$ gives the $S(t)$ and vice versa.
+
 
 \section{Approaches in Survival Analysis}
 
@@ -412,9 +442,9 @@ Semi-parametric models combine parametric elements (the effect of covariates) wi
 \section{Kaplan Meier}
 The Kaplan-Meier estimator is employed in survival analysis to analyze the time until an event occurs. The Kaplan-Meier estimator calculates the survival probability at a specific time step by multiplying the probability of surviving each previous time step.
 The estimator is computed as
-
-\[S\left(t\right)=\prod_{i:t_i\le t}\left(1-\frac{d_i}{n_i}\right)\]
-
+\begin{equation}
+S\left(t\right)=\prod_{i:t_i\le t}\left(1-\frac{d_i}{n_i}\right)
+\end{equation}
 Where:
  \begin{itemize}
      \item \(t\) is a time
@@ -428,9 +458,9 @@ The estimator essentially calculates the probability of surviving from one time 
 
 The Cox Proportional Hazards model is a popular semi-parametric model to check the relationship between the survival time and a set of predictors.
 
-\[
+\begin{equation}
 h\left(t \mid x\right) = h_0(t) \exp(\beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_p x_p)
-\]
+\end{equation}
 
 Where:
  \begin{itemize}
@@ -440,41 +470,108 @@ Where:
  \end{itemize}
 
  The coefficients \(\beta\) are estimated using maximum likelihood estimation, and the model assumes a proportional hazard ratio, meaning the effect of the predictors on the hazard is constant over time.
-An important assumption on the Cox PH is that it has a constant hazard function proportion for each time.
-
-
-%
-%                                                                \(H_0\): The Assumption of Proportional Hazard is fulfilled 
-%
-%                                                            \(H_1\): The Assumption of Proportional Hazard is not fulfilled 
-
+An important assumption on the Cox PH is that it has a constant hazard function proportion for each time. The Hypothesis of the assumption is as follows: 
+                 \begin{equation}
+\begin{array}{c}
+H_0: \text{The Assumption of Proportional Hazard is fulfilled} \\
+H_1: \text{The Assumption of Proportional Hazard is not fulfilled}
+\end{array}
+\end{equation}
+with rejection test $H_0$ if the $p-value < 0.05$.
 
 \section{Accelerated Failure Time (AFT)}
 
-In situations where the Cox proportional is not satisfied, the parametric model approach can be used. Accelerated Failure Time (AFT) is one of the popular parametric models used in survival analysis. The model assumes that the survival function \(S(t)\) follows a parametric continuous distribution. This implies that the distribution is following a Weibull, lognormal or exponential distribution. The aim of an AFT is to account for the influence of multiple covariates on the survival time by either accelerating or decelerating it.
+In situations where the Cox proportional hazards assumption is not satisfied, the parametric model approach can be used. Accelerated Failure Time (AFT) is one of the popular parametric models used in survival analysis. The model assumes that the survival function \(S(t)\) follows a parametric continuous distribution. This implies that the distribution is following a Weibull, lognormal, or log-logistic distribution. An AFT model aims to account for the influence of multiple covariates on the survival time by either accelerating or decelerating it.
 
-\[\lambda(x)\ =\ exp(b_0\ +\ \sum_{i=1}^{n}{b_ix_i)}\]
-
+\begin{equation}
+\lambda(x) = \exp(b_0 + \sum_{i=1}^{n}{b_i x_i})
+\end{equation}
 Where:
- \begin{itemize}
-     \item \(\lambda(x)\) is the accelerating factor
-     \item \(b_0 \) is the baseline accelerating factor when all covariates are 0
-     \item \(b_i\) is the regression coefficient
-     \item \(x_i\) are the covariates
+\begin{itemize}
+    \item \(\lambda(x)\) is the accelerating factor
+    \item \(b_0\) is the baseline accelerating factor when all covariates are 0
+    \item \(b_i\) is the regression coefficient for the \(i\)-th covariate
+    \item \(x_i\) are the covariates
+\end{itemize}
 
- \end{itemize}
+
+\subsection{Weibull AFT}
+The Weibull distribution is flexible and can model increasing or decreasing hazard rates, making it suitable for a wide range of survival data.
+
+\begin{equation}
+    S(t) = \exp\left(-\left(\frac{t}{\lambda}\right)^\gamma\right)
+\end{equation}
+
+where \(\lambda\) is the scale parameter and \(\gamma\) is the shape parameter.
+
+\subsection{Lognormal AFT}
+Assumes that the logarithm of the survival time follows a normal distribution. It's suitable for data where the event time is skewed to the right.
+
+\begin{equation}
+    S(t) = 1 - \Phi\left(\frac{\log(t) - \mu}{\sigma}\right)
+\end{equation}
+
+where \(\mu = b_0 + \sum_{i=1}^{n}{b_i x_i}\) is the location parameter, \(\sigma\) is the scale parameter, and \(\Phi\) is the cumulative distribution function of the standard normal distribution.
+
+\subsection{Log-logistic AFT}
+ Assumes that the logarithm of the survival time follows a logistic distribution. It can handle both increasing and decreasing hazard rates, similar to the Weibull model.
+
+\begin{equation}
+    S(t) = \left(1 + \left(\frac{t}{\lambda}\right)^\gamma\right)^{-1}
+\end{equation}
+
+where \(\lambda\) is the scale parameter and \(\gamma\) is the shape parameter.
+
+
  
-\section{Akaike Information Criterion (AIC)}
+\section{Information Criteria}
 
-The Akaike Information Criterion (AIC) is a measure of the relative quality of statistical models for a given dataset. It aids in model selection in survival analysis. It contributes by penalizing models with more parameters to avoid the problem of overfitting. The lower the AIC value, the better the model is considered to fit the data.
+Information criteria are used to evaluate and compare the relative quality of statistical models. They help in model selection by balancing model fit with complexity, penalizing models that use more parameters to avoid overfitting. The three most commonly used criteria are the Akaike Information Criterion (AIC), Bayesian Information Criterion (BIC), and Hannan-Quinn Criterion.
 
-\[AIC=2k-2ln(L),\]
+\subsection{Akaike Information Criterion (AIC)}
+
+The Akaike Information Criterion (AIC) is a widely used measure that balances the goodness of fit of the model with the number of parameters. A lower AIC indicates a better model fit.
+
+\begin{equation}
+AIC = 2k - 2\ln(L),
+\end{equation}
 
 Where:
- \begin{itemize}
-     \item \(k \) is the number of parameters in the model.
-     \item \(L\) is the likelihood of the model
- \end{itemize}
+\begin{itemize}
+    \item \(k\) is the number of parameters in the model.
+    \item \(L\) is the likelihood of the model.
+\end{itemize}
+
+\subsection{Bayesian Information Criterion (BIC)}
+
+The Bayesian Information Criterion (BIC) is another criterion for model selection, similar to AIC but with a stronger penalty for the number of parameters. This makes BIC more conservative when choosing models.
+
+\begin{equation}
+BIC = k\ln(n) - 2\ln(L),
+\end{equation}
+
+Where:
+\begin{itemize}
+    \item \(k\) is the number of parameters in the model.
+    \item \(n\) is the number of observations in the dataset.
+    \item \(L\) is the likelihood of the model.
+\end{itemize}
+
+\subsection{Hannan-Quinn Criterion (HQ)}
+
+The Hannan-Quinn Criterion (HQ) is used less frequently than AIC and BIC but provides another option for model selection. HQ lies between AIC and BIC in terms of penalization strength.
+
+\begin{equation}
+HQ = 2k\ln(\ln(n)) - 2\ln(L),
+\end{equation}
+
+Where:
+\begin{itemize}
+    \item \(k\) is the number of parameters in the model.
+    \item \(n\) is the number of observations in the dataset.
+    \item \(L\) is the likelihood of the model.
+\end{itemize}
+
 
 \section{Concordance Index in Survival Analysis}
 
@@ -482,7 +579,9 @@ The Concordance Index, often referred to as the C-index or Harrell's C-index, is
 
 The Concordance Index measures the model's ability to correctly rank the predicted risks of individuals based on their actual event times. The Concordance Index evaluates whether the model's predicted risks align with the observed event times.
 
-\[C=\frac{Number\ of\ Concordant\ Pairs}{Number\ of\ Concordant\ Pairs\ +Number\ of\ Discordant\ Pairs}\]
+\begin{equation}
+C=\frac{Number\ of\ Concordant\ Pairs}{Number\ of\ Concordant\ Pairs\ +Number\ of\ Discordant\ Pairs}
+\end{equation}
 
 A \(C\) value above 0.5 suggests that the model has predictive ability better than random chance. A higher \(C\) value implies a better model performance and more accurate risk predictions.
 
@@ -496,47 +595,74 @@ This section presents the study's findings and discusses what each output means 
 
 \section{Data Description}
 
-The dataset has a shape consisting of 338 rows and 15 columns from a sample of students  in KNUST's College of Science.
+The dataset has a shape consisting of 338 rows and 14 columns from a sample of students in KNUST's College of Science. The Churn covariate is assigned as the event while the Churn\_Level is assigned as the time to the event (duration). The remaining covariates are used to explain the event and duration.
 
 \begin{table}[H]
     \centering
     \begin{tabular}{ll}
         \toprule
-        Variable & Description \\
+        \textbf{Variable}& \textbf{Description} \\
         \midrule
-        Gender & Gender of the individual (Male/Female) \\
-        Churn & Whether the individual has churned (Yes/No) \\
-        Residence & Type of residence (Off-campus/On-campus) \\
-        Usage Frequency & Frequency of service usage  \\
-        Network Strength & Strength of network (1 to 5) \\
-        Voice Calls & Usage of voice calls (Yes/No) \\
-        Mobile Data Internet & Usage of mobile data/internet (Yes/No) \\
-        SMS Text Messaging & Usage of SMS/text messaging (Yes/No) \\
-        Data Exhaustion & Whether data allowance is exhausted (Yes/No) \\
-        Other Networks & Use of other networks (Yes/No) \\
-        Poor Network Quality Coverage & Perception of poor network quality/coverage (Yes/No) \\
-        Unsatisfactory Customer Service & Perception of unsatisfactory customer service (Yes/No) \\
-        High Costs Pricing & Perception of high costs/pricing (Yes/No) \\
-        Monthly Data Usage & Monthly data usage category  \\
-        Churn Level & Level of churn (1 to 3 if churned, 4 if not churned) \\
+        Gender & Gender of the student\\
+        Churn & Whether the student has churned\\
+        Residence & Place of residence in school\\
+        Usage Frequency & Frequency of vodafone sim usage\\
+        Voice Calls & Usage of voice calls \\
+        Mobile Data Internet & Usage of mobile data/internet \\
+        SMS Text Messaging & Usage of SMS/text messaging \\
+        Data Exhaustion & Whether monthly data allowance (5GB) is exhausted\\
+        Multiple Networks & Use of other networks \\
+        Poor Network Quality Coverage & Perception of poor network quality/coverage \\
+        Unsatisfactory Customer Service & Perception of unsatisfactory customer service \\
+        High Costs Pricing & Perception of high costs/pricing \\
+        Monthly Data Usage & Monthly Data Usage\\
+        Churn Level & Level at which the student churn\\
         \bottomrule
     \end{tabular}
     \caption{Description of Variables}
+    \label{tab: 4.1}
 \end{table}
 
-The Churn is assigned as the event while the Churn_Level is assigned as the time to the event (duration). The remaining covariates are used to explain the event and duration.
+
+
+\section{Descriptive Analysis}
+\begin{table}[H]
+\centering
+\begin{tabular}{cccc}
+\hline
+\textbf{Variable} & \textbf{Unique} & \textbf{Mode}& \textbf{Frequency} \\
+\hline
+Gender & 2 & Female & 233 \\
+Churn & 2 & No & 320 \\
+Residence & 2 & Off-campus & 280 \\
+Usage Frequency & 5 & Daily & 157 \\
+Voice Calls & 2 & Yes & 272 \\
+Mobile Data Internet & 2 & Yes & 295 \\
+SMS Text Messaging & 2 & Yes & 183 \\
+Data Exhaustion & 2 & Yes & 280 \\
+Multiple Networks & 2 & Yes & 301 \\
+Poor Network Quality Coverage & 2 & Yes & 241 \\
+Unsatisfactory Customer Service & 2 & No & 216 \\
+High Costs Pricing & 2 & Yes & 190 \\
+Monthly Data Usage & 5 & 8 and more & 239 \\
+\hline
+\end{tabular}
+\caption{Summary Statistics of Categorical Variables}
+\label{table:summary_statistics}
+\end{table}
+
 
 
 \subsection{Kaplan Meier (KM) Curve}
 
-A Kaplan-Meier curve, also known as a survival curve, is a statistical tool used in survival analysis to estimate the survival function from timeline data. It provides a way to visualize the proportion of individuals surviving over time, taking into account censored data (individuals who have not experienced the event by the end of the observation period).
+The Kaplan-Meier survival curve below is a tool to estimate the probability that students will remain enrolled in the study over a given time period. 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Figure 4/4.1.png}
     \caption{Kaplan Meier Curve}
 \end{figure}
 
-The Kaplan-Meier survival curve above is a tool to estimate the probability that students will remain enrolled in the study over a given time period. The x-axis represents the event time. The 0 indicates when the study began whiles 4 represents when the study ends. The y-axis represents survival probability and ranges from 0 to 1. Each step down indicates an event, which decreases the overall survival probability.  The shaded area around the line suggests the confidence interval, giving a range within which the true survival curve is expected to lie.
+The x-axis represents the event time. The 0 indicates when the study began whiles 4 represents when the study ends. The y-axis represents survival probability and ranges from 0 to 1. Each step down indicates an event, which decreases the overall survival probability.  The shaded area around the line suggests the confidence interval, giving a range within which the true survival curve is expected to lie.
 
 In churn prediction, this curve helps identify critical time points where student retention drops significantly and allows institutions to intervene proactively. 
 
@@ -544,52 +670,36 @@ In churn prediction, this curve helps identify critical time points where studen
 
 \subsection{Kaplan Meier Analysis}
 
-The provided Kaplan-Meier estimator output in Table 4.2 below summarizes the survival curve in table 4.1 over level in KNUST.
+The provided Kaplan-Meier estimator output in Table 4.2 below summarizes the survival curve in Table 4.1 over the levels in KNUST.
 
-\begin{table}[ht]
-    \centering
-    \begin{tabular}{cccccc}
-        \toprule
-        Event Time & Number at Risk& Number of Events & Survival Probability & Lower CI & Upper CI \\
-        \midrule
-        0 & 338 & 0 & 1.000000 & 1.000000 & 1.000000 \\
-        1 & 338 & 3 & 0.991124 & 0.972736 & 0.997129 \\
-        2 & 335 & 6 & 0.973373 & 0.949452 & 0.986056 \\
-        3 & 329 & 3 & 0.964497 & 0.938330 & 0.979681 \\
-        4 & 326 & 0 & 0.964497 & 0.938330 & 0.979681 \\
-        \bottomrule
-    \end{tabular}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{cccccc}
+\toprule
+Event Time & Number of Individuals & Number of Events & Survival Probability & Lower CI & Upper CI \\
+\midrule
+0 & 338 & 0 & 1.000000 & 1.000000 & 1.000000 \\
+1 & 338 & 25 & 0.926036 & 0.892497 & 0.949406 \\
+2 & 313 & 22 & 0.860947 & 0.819283 & 0.893630 \\
+3 & 291 & 32 & 0.766272 & 0.717405 & 0.807836 \\
+4 & 259 & 0 & 0.766272 & 0.717405 & 0.807836 \\
+\bottomrule
+\end{tabular}
     \caption{Kaplan-Meier Survival Analysis Results}
     \label{tab:km_results}
 \end{table}
 
 
-Initially, at time 0 (when students initially start the academic year), all 338 students are considered to be at risk. With no events (churns) recorded yet, the survival probability is 1.
+Initially, at time 0 in \ref{tab:km_results} (when students initially start the academic year), all 338 students are considered to be at risk. With no events (churns) recorded yet, the survival probability is 1.
 As the students ascend the academic ladder, the number at risk begins to gradually decrease as some begin to experience the event. The higher the number of events, the more the number at risk decreases. 
-At the end of the first year, 3 students experienced the event of interest and therefore are ommited from the study at the beginning of the second year.  Anytime the event of interest is experienced, they are ommited from the study until the study duration ends.   
+At the end of the first year, 25 students experienced the event of interest and therefore are omitted from the study at the beginning of the second year.  Anytime the event of interest is experienced, they are omitted from the study until the study duration ends.   
 The confidence intervals (Lower Cl and Upper CI) provide ranges within which the true survival probabilities lie with a certain level of confidence.
 
 
-\subsection{Cox Proportional Hazard (COX PH)}
+\section{Cox Proportional Hazard (COX PH)}
 
-In the Cox Proportional Hazard modeling, there are two things that are done, namely, partial testing for each predictor variable and testing the Cox Proportional Hazard assumption. 
-
-The Cox Proportional Hazard model can be expressed as follows:
-
-
-\begin{align*}
-h(t,x) = h_0(t) \exp(&-0.56 \cdot \text{Gender} - 0.03 \cdot \text{College} - 0.09 \cdot \text{Residence} \\
-&- 0 \cdot \text{Usage\_Freq} + 0.23 \cdot \text{Network\_Strength} \\
-&+ 0.16 \cdot \text{Voice\_Calls} \\
-&+ 0.32 \cdot \text{Mobile\_Data\_Internet} - 0.1 \cdot \text{SMS\_Text\_Messaging} \\
-&+ 0.41 \cdot \text{Data\_Exhaustion} - 0.21 \cdot \text{Multiple\_Networks} \\
-&+ 0.13 \cdot \text{Other\_Networks\_Better\_Services} \\
-&- 0.17 \cdot \text{Poor\_Network\_Quality\_Coverage} \\
-&- 0.12 \cdot \text{Insufficient\_Data\_Allowance} \\
-&- 0.15 \cdot \text{Unsatisfactory\_Customer\_Service} \\
-&+ 0.16 \cdot \text{High\_Costs\_Pricing} - 0.06 \cdot \text{Monthly\_Data\_Usage})
-\end{align*}
-
+In the Cox Proportional Hazard modeling, two things are mostly done, namely, partial testing for each predictor variable and testing the Cox Proportional Hazard assumption. 
  
 Furthermore, the results of parameter estimation and partial testing are presented in the Table below.
 
@@ -597,122 +707,105 @@ Furthermore, the results of parameter estimation and partial testing are present
 
 \begin{table}[H]
 \centering
-\caption{Coefficients, Confidence Intervals, and p-values}
-\begin{tabular}{lcccc}
-\hline
-Variable & Coefficient ($\beta$) & 95\% CI Left Bound & 95\% CI Right Bound & P-value\\
-\hline
-Gender & 0.87 & -0.26 & 2.00 & 0.13 \\
-Residence & 0.69 & -0.54 & 1.91 & 0.27 \\
-Usage\_Freq & -0.10 & -0.46 & 0.27 & 0.60 \\
-Network\_Strength & 0.04 & -0.45 & 0.53 & 0.88 \\
-Voice\_Calls & -0.63 & -1.77 & 0.51 & 0.28 \\
-Mobile\_Data\_Internet & 0.64 & -1.44 & 2.72 & 0.55 \\
-SMS\_Text\_Messaging & 0.21 & -0.92 & 1.34 & 0.71 \\
-Data\_Exhaustion & -1.34 & -2.42 & -0.26 & 0.02 \\
-Multiple\_Networks & 0.57 & -1.51 & 2.66 & 0.59 \\
-Poor\_Network\_Quality\_Coverage & 0.95 & -0.38 & 2.29 & 0.16 \\
-Unsatisfactory\_Customer\_Service & -0.62 & -1.81 & 0.58 & 0.31 \\
-High\_Costs\_Pricing & 0.49 & -0.67 & 1.65 & 0.41 \\
-Monthly\_Data\_Usage & 0.03 & -0.47 & 0.53 & 0.92 \\
-\hline
+\begin{tabular}{lccc}
+\toprule
+Variable & Coefficient ($\beta$) & Standard Error & P-value\\
+\midrule
+Gender & 0.33 & 0.28 & 0.24 \\
+Residence & 0.32 & 0.27 & 0.25 \\
+Usage Frequency & -0.08 & 0.07 & 0.27 \\
+Voice Calls & -0.57 & 0.32 & 0.08 \\
+Mobile Data Internet & 0.32 & 0.46 & 0.48 \\
+SMS Text Messaging & 0.48 & 0.25 & 0.06 \\
+Data Exhaustion & -0.20 & 0.38 & 0.61 \\
+Multiple Networks & -0.13 & 0.44 & 0.78 \\
+Poor Network Quality Coverage & 2.60 & 0.35 & <0.005 \\
+Unsatisfactory Customer Service & -1.40 & 0.30 & <0.005 \\
+High Costs Pricing & -1.13 & 0.29 & <0.005 \\
+Monthly Data Usage & 0.21 & 0.09 & 0.02 \\
+\bottomrule
 \end{tabular}
-\label{tab:Cox-ph Coefficeint}
+\caption{Cox Proportional Hazards Model Results}
+\label{tab:cox_ph_results}
 \end{table}
 
 
+The coefficient columns in \ref{tab:cox_ph_results} provides information about the relationship between each independent variable and the dependent variable. A positive coefficient indicates an increase in the independent variable is associated with an increase in the hazard (risk) of churn (event). A higher value of these variables is associated with a higher likelihood of churn occurring. 
 
-The coefficient columns provide information about the relationship between each independent variable and the dependent variable. A positive coefficient indicates an increase in the independent variable is associated with an increase in the hazard (risk) of churn (event). A higher value of these variables is associated with a higher likelihood of churn occuring. 
+Conversely, a negative coefficient suggests a decrease in the hazard (risk) of churn (event). A higher value of these variables is associated with a lower likelihood of churn occurring.
 
-Conversely, a negative coefficient suggests a decrease in the hazard (risk) of churn (event). A higher value of these variables is associated with a lower likelihood of churn occuring.
-
-The p-value column helps assess the statistical significance of each independent variable. A low p-value (typically  \(<\) 0.05) indicates that the variable is likely to have a meaningful impact on the event. This can be seen in Data Exhaustion.
+The p-value column helps assess the statistical significance of each independent variable. A low p-value (typically  \(<\) 0.05) indicates that the covariate is likely to have a meaningful impact on the event. This can be seen in Monthly Data Usage, Poor Network Quality Coverage and High Costs Pricing.
 
 \begin{figure}{H}
     \centering
     \includegraphics[width=1\linewidth]{Figure 4/4.2.png}
     \caption{Cox PH Forest Plot}
+    \label{cox ph forest}
 \end{figure}
 
-The fidure above is a forest plot of the Cox PH. A coefficient to the right of zero (positive log hazard ratio) indicates that an increase in that variable is associated with a higher risk of a student churning. A coefficient to the left of zero (negative log hazard ratio) indicates that an increase in that covariate is associated with a lower risk of a student churning.
+\ref{cox ph forest} above is a forest plot of the Cox PH. A coefficient to the right of zero (positive log hazard ratio) indicates that an increase in that variable is associated with a higher risk of a student churning. A coefficient to the left of zero (negative log hazard ratio) indicates that an increase in that covariate is associated with a lower risk of a student churning.
 The further a coefficient is from zero, the stronger the effect of that covariate on the hazard of churn.
 The horizontal lines extending from the boxes are the 95\% confidence intervals, showing the uncertainty around these estimates. If the confidence interval crosses zero, the covariate is not statistically significant.
 
-\subsection{\textbf{Cox PH assumption Test}
-}
+\subsection{Cox PH Assumption Test}
 This test checks if the impact of the predictor variables on the hazard rate is constant over time. Covariates violating this assumption might need further investigation or transformation.	
 
 The null hypothesis states that there is a significant relationship between the predictor variables (such as College and Voice Calls) and the likelihood of a student churning.
 
 The alternative hypothesis suggests that there is no significant association between the predictor variables and the likelihood of churn.
 
-%insert table
 
 \begin{table}[H]
 \centering
+
 \begin{tabular}{lcc}
 \toprule
-\textbf{Covariates} & \textbf{Test statistic} & \textbf{p} \\
+Covariate& Test Statistic & p-value \\
 \midrule
-College & 0.26 & 0.61 \\
-Data Exhaustion & 0.28 & 0.60 \\
-Gender & 0.25 & 0.62 \\
-High Costs Pricing & 3.61 & 0.06 \\
-Insufficient Data Allowance & 1.45 & 0.23 \\
-Mobile Data Internet & 0.21 & 0.64 \\
-Monthly Data Usage & 0.10 & 0.75 \\
-Multiple Networks & 1.48 & 0.22 \\
-Network Strength & 1.43 & 0.23 \\
-Other Networks Better Services & 0.39 & 0.53 \\
-Poor Network Quality Coverage & 0.60 & 0.44 \\
-Residence & 0.09 & 0.77 \\
-SMS Text Messaging & 1.13 & 0.29 \\
-Unsatisfactory Customer Service & 0.26 & 0.61 \\
-Usage Freq & 0.03 & 0.86 \\
-Voice Calls & 1.60 & 0.21 \\
+Data Exhaustion & 0.46 & 0.50 \\
+Gender & 0.26 & 0.61 \\
+High Costs Pricing & 1.74 & 0.19 \\
+Mobile Data Internet & 0.63 & 0.43 \\
+Monthly Data Usage & 1.49 & 0.22 \\
+Multiple Networks & 0.09 & 0.77 \\
+Poor Network Quality Coverage & 2.36 & 0.12 \\
+Residence & 0.01 & 0.93 \\
+SMS Text Messaging & 0.04 & 0.84 \\
+Unsatisfactory Customer Service & 0.10 & 0.76 \\
+Usage Frequency & 0.04 & 0.84 \\
+Voice Calls & 2.70 & 0.10 \\
 \bottomrule
 \end{tabular}
-\caption{Cox PH assumption test}
+\caption{Test statistics of Cox-PH Assumption Test}
+\label{tab:test_statistics}
 \end{table}
 
-The Cox Proportional Hazard method has a weakness which is that the proportional hazard assumption must be met. In Table 4.3, it can be seen that the covariate meets the assumptions as none of the covariates have p-values below 0.05, which suggests that there is strong evidence for the proportional hazard’s assumption for any single covariate.
 
-This means that, based on this test, the assumption that the hazard ratios are constant over time holds for these covariates.
+The Cox Proportional Hazard method has a weakness in that the proportional hazard assumption must be met. In \ref{tab:test_statistics}, it can be seen that most covariates meet the assumptions as their p-values are above 0.05 meaning that there is no strong evidence against the proportional hazard’s assumption for these covariates.
 
-\subsection{Schoenfeld Residuals for High Costs Pricing}
+This means that the assumption of the hazard ratios are constant over time holds for all the covariates.
 
-Despite all covariates having p-values above 0.05, indicating no strong evidence against the proportional hazard’s assumption, High Costs Pricing (p = 0.06) tends to be very close to the threshold of 0.05 thus implying that, the Schoenfeld residual plot for this covariate is necessary to determine if there is any visible pattern over time. 
-
-Schoenfeld residuals are a diagnostic tool used in survival analysis to test the proportional hazards assumption of the Cox Proportional Hazards model. They are the differences between observed event times and the expected event times, under the model, at each event time.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.4\linewidth]{Figure 4/4.3.png}
-    \caption{Schoenfeld residuals of High Costs Pricing}
-    \label{Figure 4.3}
-\end{figure}
-
-Based on the visual inspection of the Schoenfeld residuals plot for High Costs Pricing, there does not appear to be a strong violation of the proportional hazard’s assumption since the p-value for High Costs Pricing was not less than the threshold (0.05). The visual inspection further supports that there might not be a significant violation as there is no obvious trend or pattern in the residuals over time, which suggests that the proportional hazards assumption might hold for this covariate.
 
 
 \section{Accelerated Failure Time (AFT) }
 
-The Accelerated Failure Time (AFT) model is alternate used when the Cox Proportional Hazard (PH) model does not hold. Although the null hypothesis of Cox PH was accepted, the study still uses the AFT in order to understand the direct effect of covariates on survival time.
+The Accelerated Failure Time (AFT) model is a possible alternative that can be used when the Cox Proportional Hazard (PH) model does not hold. The study uses the AFT in order to understand the direct effect of covariates on survival time.
 
 \begin{table}[H]
     \centering
     \begin{tabular}{lccc}
-        \toprule
+        \hline
         Model & AIC & BIC & Hanna-Quinn \\
-        \midrule
-        WeibullAFTFitter & 182.568721 & 187.779061 & 32.486525 \\
-        LogNormalAFTFitter & 175.138211 & 180.348551 & 32.486525 \\
-        LogLogisticAFTFitter & 176.518119 & 181.728460 & 32.486525 \\
-        \bottomrule
+        \hline
+        WeibullAFTFitter & 316.433303  & 300.079395& 306.67379\\
+        \textbf{LogNormalAFTFitter}& \textbf{305.805320}& \textbf{289.451411}& \textbf{306.67379}\\
+        LogLogisticAFTFitter & 307.510343& 291.156435& 306.67379\\
+        \hline
     \end{tabular}
-    \caption{Model Comparison Metrics}
+    \caption{Comparison of AIC, BIC, and Hanna-Quinn values for different AFT models}
     \label{tab:model_comparison}
 \end{table}
+
 
 \noindent
 \textbf{Results:} \\
@@ -720,53 +813,54 @@ The AFT model with the lowest AIC is: \textit{LogNormalAFTFitter} \\
 The AFT model with the lowest BIC is: \textit{LogNormalAFTFitter} \\
 The AFT model with the lowest Hanna-Quinn is: \textit{WeibullAFTFitter}
 
-The study compares three Accelerated Failure Time (AFT) models—Weibull, Log-Normal, and Log-Logistic—using AIC, BIC, and Hanna-Quinn criteria. The results reveal that the Log-Normal AFTFitter consistently has the lowest AIC and BIC, indicating a better overall fit despite the Weibull AFTFitter achieving the lowest Hanna-Quinn value.
+The study compares three Accelerated Failure Time (AFT) models—Weibull, Log-Normal, and Log-Logistic—using AIC, BIC, and Hanna-Quinn criteria in \ref{tab:model_comparison}. The results reveal that the Log-Normal AFTFitter consistently has the lowest AIC and BIC, indicating a better overall fit despite the Weibull AFTFitter achieving the lowest Hanna-Quinn value.
 
 \subsection{Log-Normal Model}
 % Table here
 
+
 \begin{table}[H]
 \centering
-\caption{Coefficients, Confidence Intervals, and p-values}
-\begin{tabular}{lcccc}
-\hline
-Variable & Coefficient ($\beta$) & 95\% CI Left Bound & 95\% CI Right Bound & p-value \\
-\hline
-Data\_Exhaustion & 1.031 & 0.071 & 1.991 & 0.035 \\
-Gender & -0.493 & -1.363 & 0.378 & 0.267 \\
-High\_Costs\_Pricing & -0.375 & -1.236 & 0.486 & 0.393 \\
-Mobile\_Data\_Internet & -0.462 & -1.918 & 0.994 & 0.534 \\
-Monthly\_Data\_Usage & -0.001 & -0.353 & 0.351 & 0.996 \\
-Multiple\_Networks & -0.354 & -1.820 & 1.111 & 0.636 \\
-Network\_Strength & -0.093 & -0.447 & 0.261 & 0.605 \\
-Poor\_Network\_Quality\_Coverage & -0.413 & -1.311 & 0.486 & 0.368 \\
-Residence & -0.561 & -1.559 & 0.436 & 0.270 \\
-SMS\_Text\_Messaging & -0.095 & -0.906 & 0.717 & 0.819 \\
-Unsatisfactory\_Customer\_Service & 0.458 & -0.433 & 1.350 & 0.314 \\
-Usage\_Freq & 0.106 & -0.162 & 0.373 & 0.439 \\
-Voice\_Calls & 0.556 & -0.321 & 1.434 & 0.214 \\
-mu\_Intercept & 4.388 & 1.182 & 7.595 & 0.007 \\
-sigma\_Intercept & 0.421 & -0.053 & 0.894 & 0.082 \\
-\hline
+\begin{tabular}{lccc}
+\toprule
+Variable & Coefficient ($\hat{\beta}$) & Standard Error (SE) & P-value\\
+\midrule
+Data Exhaustion& 0.102 & 0.148 & 0.493 \\
+Gender & 0.032 & 0.118 & 0.785 \\
+High Costs Pricing & 0.515 & 0.122 & <0.0005 \\
+Mobile Data Internet & -0.287 & 0.207 & 0.165 \\
+Monthly Data Usage & -0.069 & 0.044 & 0.113 \\
+Multiple Networks & -0.104 & 0.202 & 0.607 \\
+Poor Network Quality Coverage & -1.041 & 0.123 & <0.0005 \\
+Residence & -0.146 & 0.124 & 0.239 \\
+SMS Text Messaging & -0.228 & 0.108 & 0.036 \\
+Unsatisfactory Customer Service & 0.809 & 0.122 & <0.0005 \\
+Usage Frequency & -0.002 & 0.033 & 0.940 \\
+Voice Calls & 0.132 & 0.135 & 0.329 \\
+Intercept (for $\mu$) & 1.626 & 0.393 & <0.0005 \\
+Intercept (for $\sigma$) & -0.616 & 0.084 & <0.0005 \\
+\bottomrule
 \end{tabular}
-\label{tab:LogNormal Coefficeints}
+\caption{Lognormal Model Coefficients}
+\label{table:lognormal_coefficients}
 \end{table}
 
-Unlike the Cox PH analysis, the coefficient columns in Table 4.4 provide information about the relationship between the covariates to event time (Churn_Level). A positive coefficient indicates a decrease in the time it takes to the event. A negative coefficient suggests a decrease in the time to the event. 
+Unlike the Cox PH analysis, the coefficient columns in \ref{table:lognormal_coefficients} provide information about the relationship between the covariates to event time (Churn\_Level). A positive coefficient indicates a decrease in the time it takes to the event. A negative coefficient suggests an increase in the time to the event. 
 
- A higher value of these covariates is associated with a higher likelihood of the time to the event occuring.
+ A higher value of these covariates is associated with a higher  likelihood of the time to the event occurring if positive and lower chance of occurring if negative.
  
-The p-value column helps assess the statistical significance of each covariate. A low p-value (typically  \(< \) 0.05) indicates that the covariate is likely to have a meaningful impact on Churn_Level. This can be seen in Data Exhaustion.
+The p-value column helps assess the statistical significance of each covariate. A low p-value (typically  \(< \) 0.05) indicates that the covariate is likely to have a meaningful impact on Churn\_Level. 
 
-The mu_intercept is the mean baseline when the covariates are 0 and the sigma_intercept is the standard deviation used to estimate the variance to determine the spread when the covariates are 0.
+The mu\_intercept is the mean baseline when the covariates are 0 and the sigma\_intercept is the standard deviation used to estimate the variance to determine the spread when the covariates are 0.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Figure 4/4.4.png}
+    \includegraphics[width=0.8\linewidth]{Figure 4/4.4.png}
     \caption{LogNormal Forest Plot}
+    \label{LogNormal}
 \end{figure}
 
-The boxes (squares) in the plot represent the estimated coefficients for each factor in the Lognormal AFT model in Figure 4.4. The positive values suggest that the covariate decrease the time to the event, while negative values suggest it increase the time to the event. The horizontal lines extending from the boxes are the 95\% confidence intervals, showing the uncertainty around these estimates. If the confidence interval crosses zero, the covariate is not statistically significant.
+The boxes (squares) in the plot represent the estimated coefficients for each factor in the Lognormal AFT model in \ref{LogNormal}. The positive values suggest that the covariate decrease the time to the event, while negative values suggest it increases the time to the event. The horizontal lines extending from the boxes are the 95\% confidence intervals, showing the uncertainty around these estimates. If the confidence interval crosses zero, the covariate is not statistically significant.
 
 \section{Model Comparison}
 
@@ -777,10 +871,10 @@ In this section, the models used are compared based on the AIC and the concordan
 			\centering
 			\begin{tabular}{lcc}
 				\toprule
-				\textbf{Model} & \textbf{Concordance} & \textbf{AIC} \\
+				\textbf{Model} & \textbf{Concordance} & \textbf{Loglike hood}\\
 				\midrule
-				LogNormal& 0.767& 169.052\\
-				Cox PH & 0.74& 174.41\\
+				LogNormal& 0.958& 	290.678\\
+				Cox PH & 0.96& 	266.68\\
 				\bottomrule
 			\end{tabular}
 			\caption{Model Concordance and AIC values}
@@ -788,108 +882,15 @@ In this section, the models used are compared based on the AIC and the concordan
 			
 		\end{table}
 
-Based on the comparison of the C-Index values and AIC in Table 4.5, it is known that the Lognormal model shows a substantially lower AIC  and a higher C-Index, indicating a better overall fit compared to the Cox PH model. 
+Based on the comparison of the concordance values and log-likelihood in Table \ref{Table 2}, it is evident that the Cox PH model shows a higher concordance compared to the LogNormal model, indicating a better predictive value. However, the log-likelihood values suggest that the LogNormal model has a better fit. 
 
 \newpage
 \chapter{Conclusion}
 
 
-\begin{table}[ht]
-\centering
-\caption{Coefficients and p-values from Two Sets of Data}
-\begin{tabular}{lcccc}
-\hline
-Covariates& Cox PH ($\beta$)& P-value & LogNormal ($\beta$)& P-value\\
-\hline
-Gender & 0.87 & 0.13 & -0.493 & 0.267 \\
-Residence & 0.69 & 0.27 & -0.561 & 0.270 \\
-Usage\_Freq & -0.10 & 0.60 & 0.106 & 0.439 \\
-Network\_Strength & 0.04 & 0.88 & -0.093 & 0.605 \\
-Voice\_Calls & -0.63 & 0.28 & 0.556 & 0.214 \\
-Mobile\_Data\_Internet & 0.64 & 0.55 & -0.462 & 0.534 \\
-SMS\_Text\_Messaging & 0.21 & 0.71 & -0.095 & 0.819 \\
-Data\_Exhaustion & -1.34 & 0.02 & 1.031 & 0.035 \\
-Multiple\_Networks & 0.57 & 0.59 & -0.354 & 0.636 \\
-Poor\_Network\_Quality\_Coverage & 0.95 & 0.16 & -0.413 & 0.368 \\
-Unsatisfactory\_Customer\_Service & -0.62 & 0.31 & 0.458 & 0.314 \\
-High\_Costs\_Pricing & 0.49 & 0.41 & -0.375 & 0.393 \\
-Monthly\_Data\_Usage & 0.03 & 0.92 & -0.001 & 0.996 \\
-Intercept & -& & 4.388 & 0.007 \\
-sigma\_Intercept & -& & 0.421 & 0.082 \\
-\hline
-\end{tabular}
-\label{tab:combined_coefficients}
-\end{table}
-
-
-
-
-
-
-
-\begin{thebibliography}{9}
-
-\bibitem{bandim2022} 
-Bandim, M., 2022. Growth of Ghana's Telecommunications Industry. \textit{Journal of African Telecommunications}, 45(2), pp.123-135.
-
-\bibitem{ghanaweb2023} 
-Ghana Web, 2023. Underwater Fiber Optic Cable Outages Impact Telecommunications in West Africa. Available at: \url{https://www.ghanaweb.com} [Accessed 5 August 2024].
-
-\bibitem{kapur2018} 
-Kapur, R., 2018. Factors Driving Customer Churn in Telecom Industry. \textit{International Journal of Telecom Studies}, 22(4), pp.321-334.
-
-\bibitem{koranchirath2024} 
-Koranchirath, A., 2024. Customer Retention Strategies in Competitive Markets. \textit{Telecom Review}, 30(1), pp.56-72.
-
-\bibitem{apnews2023} 
-AP News, 2023. Underwater Cable Disruptions Affect West Africa's Internet Services. Available at: \url{https://www.apnews.com} [Accessed 5 August 2024].
-
-\bibitem{Alqatani2020} 
-Alqatani, A. and Altarifi, A., 2020. Title of the paper. \textit{Journal Name}, Volume(Issue), pp.Pages.
-
-\bibitem{BoxSteffensmeier2020} 
-Box-Steffensmeier, J. and Jone, C., 2020. Title of the paper. \textit{Journal Name}, Volume(Issue), pp.Pages.
-
-\bibitem{Lai2021} 
-Lai, T. et al., 2021. Title of the paper. \textit{Journal Name}, Volume(Issue), pp.Pages.
-
-\bibitem{SmithBrown2020} 
-Smith, R. and Brown, J., 2020. Title of the paper. \textit{Journal Name}, Volume(Issue), pp.Pages.
-
-\bibitem{Jerenz2008} 
-Jerenz, A., 2008. Title of the paper. \textit{Journal Name}, Volume(Issue), pp.Pages.
-
-\bibitem{Kaplan1958} 
-Kaplan, E. and Meier, P., 1958. Title of the paper. \textit{Journal Name}, Volume(Issue), pp.Pages.
-
-\bibitem{Cox1972} 
-Cox, D., 1972. Title of the paper. \textit{Journal Name}, Volume(Issue), pp.Pages.
-
-\bibitem{Lee2014} 
-Lee, M., 2014. Business Bankruptcy Prediction Based on Survival Analysis Approach. \textit{International Journal of Computer Science Information Technology}, 6(2), pp.Pages.
-
-\bibitem{Pereira2014} 
-Pereira, J., 2014. Survival Analysis Employed in Predicting Corporate Failure: A Forecasting Model Proposal. \textit{International Business Research}, 7(6), pp.Pages.
-
-\bibitem{Kumar2015} 
-Kumar, K. and Gepp, A., 2015. Predicting Financial Distress: A Comparison of Survival Analysis and Decision Tree Techniques. \textit{Procedia Computer Science}, 54(2), pp.396-404.
-
-\bibitem{Iwasaki2014} 
-Iwasaki, I., 2014. Global Financial Crisis, Corporate Governance, and Firm Survival: The Russian Experience. \textit{Journal of Comparative Economics}, 42(1), pp.178-211.
-
-\bibitem{Leung2010} 
-Leung, M.K., Rigby, D. and Young, T., 2010. Entry of Foreign Banks in the People's Republic of China: A Survival Analysis. \textit{Journal of Applied Economics}, 10, pp.21-31.
-
-\bibitem{Evrensel2008} 
-Evrensel, A.Y., 2008. Banking Crisis and Financial Structure: A Survival-Time Analysis. \textit{International Review of Economics and Finance}, 17(4), pp.589-602.
-
-\bibitem{Tsujitani2012} 
-Tsujitani, M. and Baesens, B., 2012. Survival Analysis for Personal Loan Data Using Generalized Additive Models. \textit{Behaviormetrika}, 39(1), pp.9-23.
-
-\bibitem{Baesens2005} 
-Baesens, B., Gestel, T.V., Stepanova, M., Poel, D.V. and Vanthienen, J., 2005. Neural Network Survival Analysis for Personal Loan Data. \textit{Journal of the Operational Research Society}, 56(9), pp.1089-109.
-
-\end{thebibliography}
+\bibliographystyle{apalike}
+\bibliography{references.bib}
 
 
 \end{document}
+ 

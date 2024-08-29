@@ -1,21 +1,59 @@
-\documentclass{beamer}
+\documentclass[12pt]{beamer}
+\usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{booktabs} % For better table rules
 \usepackage{amsmath} % For math symbols
 % Choose a theme
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \usetheme{Madrid}
+\setbeamersize{text margin left=12mm, text margin right=12mm} 
+\setbeamertemplate{frametitle}[default][left, leftskip=5mm] 
+\setbeamertemplate{frametitle continuation}{\frametitle{References}}
+\setbeamertemplate{bibliography item}[text] 
+\setbeamertemplate{page number in head/foot}[appendixframenumber]
+\setlength{\parskip}{5pt}
+\let\oldbib\bibentry
+\graphicspath{{gfx/}}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{xcolor}
+%\usepackage{array}
+\usetheme{Madrid}  
 
+\title[ KNUST]{\textbf{\small{Decoding Student Retention and Churn of Vodafone (Telecel) in KNUST: A Survival Analysis Approach}}}
+%\subtitle{Write the subtitle}
 
-\title{Decoding Student Retention and Churn of Vodafone (Telecel) in KNUST}
-\subtitle{A Survival Analysis Approach}
-\author{Musah Faridu Oubda
-	\\ Kassim Asana
-	\\ Sarpong Linda
-	\\ Torsi Edmond Collins
-	\\ Asiamah Ezekiel}
+\author[BSc. Actuarial Science]{
+{\footnotesize{
+\begin{tabular}{cc}
+    Musah Faridu Oubda & 4325620 \\
+    Kassim Asana  & 4323020  \\
 
-\institute{Kwame Nkrumah University of Science and Technology}
-\date{\today}
+   Sarpong Linda & 4330720  \\
+    Torsi Edmond Collins & 4331420  \\
+    Asiamah Ezekiel& 4316720  \\
+
+\end{tabular}
+\vspace{0.2cm} \\
+BSc. Actuarial Science
+\vspace{0.2cm} \\
+Supervised By: S. Addai-Henne
+}}
+\vspace{0.5cm} \\
+\includegraphics[scale=0.1]{logo.png}
+}
+
+\institute[COS]{Kwame Nkrumah University Of Science And Technology, KNUST \\ Kumasi, Ghana} 
+
+\date[\tiny \today]{\scriptsize \today}
+
+%\titlegraphic{\includegraphics[scale=0.08]{logo}}
+\logo{\includegraphics[scale=0.04]{logo.png}}
+
+\setbeamercovered{transparent}
+\setbeamertemplate{navigation symbols}{}
+
 
 \begin{document}
 	% Title page
@@ -24,165 +62,352 @@
 	\end{frame}
 	
 	% Table of contents
-	\begin{frame}{OUTLINE}
+	\begin{frame}{TABLE OF CONTENTS}
 		\tableofcontents
 	\end{frame}
-	
-	
-	\section{Introduction}
-	
+		
 	\begin{frame}
+ 	\section{BACKGROUND OF STUDY}
 		\frametitle{BACKGROUND OF STUDY}
-		\begin{itemize}
-			
-			
-			\item 	The Ghanaian telecommunications industry, particularly Vodafone (now Telecel), faces significant challenges with customer churn. 
-   \item Retaining customers is crucial for profitability, especially in a highly competitive market where acquiring new customers is more expensive than retaining existing ones.
+  		\begin{flushleft}
 
-			\item 	Telecel, which acquired Vodafone in early 2023, aims to enhance service offerings and improve customer retention. The study focuses on understanding and addressing student churn at KNUST using survival analysis methods to develop strategies for reducing churn and improving customer satisfaction.
-			
-		\end{itemize}
-	\end{frame}
-	
-	\begin{frame}
-		\frametitle{PROBLEM STATEMENT}
 		\begin{itemize}
-			\item This research aims to investigate the factors contributing to student churn develop a survival analysis model for detecting at-risk students and design specific strategies to improve retention rates. 
+			\item 	The telecommunication industry is a very competitive market which makes acquiring and retaining new customers challenging.
+   \vspace{0.3cm}
 
-			\item It also seeks to enhance Telecel’s services, improve student experience, and foster long-term relationships between Vodafone (Telecel) and KNUST.
-			
-			
-		\end{itemize}
-	\end{frame}
-	
-	\begin{frame}
-		\frametitle{RESEARCH OBJECTIVES}
-		\begin{itemize}
-			\item  To identify critical academic years when students are more likely to churn.
+               \item Customer churn is the loss of clients or customers \cite{sterne2008}. They include both voluntary and involuntary churn.
+               \vspace{0.3cm}
+               \item   Retention is the practices and strategies a company uses to keep its existing customers.
 
-			\item To provide Telecel insights into students' churn patterns.
-		\end{itemize}
-    
+   \end{itemize}
+   		\end{flushleft}
+
     \end{frame}
-	\section{Methodology}
+	
+	\begin{frame}
+ 		\section{PROBLEM STATEMENT}
+
+		\frametitle{PROBLEM STATEMENT}
+  \begin{itemize}
+      \item There is a lack of understanding about the factors driving student churn and retention thus making it difficult to develop effective strategies to address this issue \cite{kapur2018}.
+       % Despite the partnership with KNUST to provide mobile services to students, churn still persists.
+		
+  \end{itemize}
+     
+	\end{frame}
+	
+\begin{frame}
+%\begin{center}
+    \section{RESEARCH OBJECTIVES}
+
+    \frametitle{RESEARCH OBJECTIVES}
+    \begin{itemize}
+        \item To estimate churn rate at various levels.
+        \vspace{0.3cm}
+        \item To determine covariates that affect the churn rate.
+                \vspace{0.3cm}
+
+        \item To identify strategies to improve retention rate and reduce churn.
+                \vspace{0.3cm}
+
+    \end{itemize}
+    
+    %\vfill
+   % \begin{flushright}
+   %     \includegraphics[width=0.05\textwidth]{logo.png}
+    %\end{flushright}
+   % \end{center}
+
+\end{frame}
+
+    
+ %   \begin{frame}
+    	%	\section{SIGNIFICANCE}
+
+	%	\frametitle{SIGNIFICANCE}
+            %\begin{itemize}
+%The study will pinpoint factors driving student churn from Vodafone, helping KNUST develop strategies to boost retention, improve telecom services, and strengthen the KNUST-Telecel partnership by better meeting students' needs.             %\end{itemize}
+%    \end{frame}
+    
 	
 	
 	
 	\begin{frame}
+ 	\section{METHODOLOGY}
+
 		\frametitle{METHODOLOGY}
 		\begin{itemize}
-			\item The data was collected via a survey, through Google Forms capturing specific aspects relevant to the study while ensuring confidentiality and ethical consideration
-		
-			\item Level 400 students in College of Science are the targeted audience. 
-			\item The sample size was determined through simple random sampling targeting approximately 338 students from a population of about 2835.
+			\item \textbf{Data collection}\\
+The data used for the study was obtained through simple random sampling of level 400 students in College of Science. The dataset consisted of  338 observations and 14 variables. 
+	
+   		\vspace{0.3cm}
+
+			\item \textbf{Data pre-processing}\\
+The data was then encoded to transform all categorical data into a numerical format to facilitate the analysis.
+
    	\end{itemize}
     \end{frame}
 
 
-	\begin{frame}
-		\frametitle{METHODOLOGY}
-\begin{figure}
-    \centering
-      \caption{Methodology}
-    \includegraphics[width=0.65\linewidth]{Presentation/Methodology.png}
-  
-    \label{fig:enter-label}
-\end{figure}
+\begin{frame}
 
-	\end{frame}
+		\frametitle{METHODOLOGY}
+    \framesubtitle{Fundamental Concept of Survival Analysis}  
+		\begin{itemize}
+            \item  \textbf{Survival Function $S(t)$ }\\
+This is a general framework in survival analysis to determine the probability that a person survives longer than some specified time.
+\begin{equation}\scriptsize
+    S(t) = Pr{(T \geq t)}
+\end{equation}
+    \item \textbf{Hazard Function $h(t)$}\\
+   The hazard function denotes the instantaneous rate of failure at time $t$, given that the subject has survived up to time $(t)$. 
+ \begin{equation} \scriptsize
+h(t) = \lim_{\Delta t \to 0} \frac{P(t \le T < t + \Delta t \mid T \geq t)}{\Delta t}
+\end{equation}
+\scriptsize $$h\left(t\right)\geq0$$
+
+   	\end{itemize}
+
+    \end{frame}
+ 
+
+\begin{frame}
+
+
+		\frametitle{METHODOLOGY}
+      \framesubtitle{Survival Models}  
+
+		\begin{itemize}
+            \item  \textbf{Kaplan Meier }\\
+It is to analyze the survival probability of the time until an event occurs.
+\begin{equation} \scriptsize
+S\left(t\right)=\prod_{i:t_i\le t}\left(1-\frac{d_i}{n_i}\right)
+\end{equation}
+    \item \textbf{Cox Proportional (Cox PH) Hazard Model}\\
+  It is used to study the impact of different covariates on survival time.
+\begin{equation} \scriptsize
+h\left(t \mid x\right) = h_0(t) \exp(\beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_p x_p)
+\end{equation}
+
+    \item \textbf{Accelerated Failure Time (AFT)}\\
+ It is used to analyze the time until an event occurs by assuming a specific distribution for survival time. 
+\begin{equation} \scriptsize
+\lambda(x) = \exp(b_0 + \sum_{i=1}^{n}{b_i x_i})
+\end{equation}
+
+
+   	\end{itemize}
+
+    \end{frame}
+ 
+
+\begin{frame}
+    \frametitle{METHODOLOGY}
+        \framesubtitle{Model Comparison}  
+
+    \begin{itemize}
+        \item \textbf{Concordance Index (C-Index)}\\
+        It is used to evaluate the predictive accuracy of a survival model. 
+        \begin{equation} \scriptsize
+        C=\frac{Number\ of\ Concordant\ Pairs}{Number\ of\ Concordant\ Pairs\ +Number\ of\ Discordant\ Pairs}
+        \end{equation}
+        \item \textbf{Information Criteria}\\
+        It is used to evaluate how well a survival model fits the dataset.
+        \begin{table}[H]
+        \centering
+        \begin{tabular}{|c|c|c|}
+        \hline
+         \textbf{AIC} & \textbf{HQIC} & \textbf{BIC} \\
+        \hline
+         \(2k - 2\ln(L)\) & \(-2\ln(L) + 2k\ln(\ln(n))\) & \(k\ln(n) - 2\ln(L)\) \\
+        \hline
+        \end{tabular}
+        \caption{Information Criteria Formulas}
+        \label{table:info_criteria}
+        \end{table}
+    \end{itemize}
+\end{frame}
+	%\begin{frame}
+	%	\frametitle{METHODOLOGY}
+%\begin{figure}
+    %\centering
+     % \caption{Methodology}
+   % \includegraphics[width=0.65\linewidth]{Presentation/Methodology.png}
+  
+   % \label{fig:enter-label}
+%\end{figure}
+
+	%\end{frame}
 	
 	\begin{frame}
-    \frametitle{DATA DESCRIPTION}
-  \begin{figure}
-      \centering
-      \includegraphics[width=0.75\linewidth]{Presentation/Description of Variables.png}
-      \caption{Description of Variables}
-      \label{fig:enter-label}
-  \end{figure}
+  	\section{ANALYSIS AND FINDINGS}
+
+    \frametitle{DESCRIPTIVE  STATISTICS}
+\begin{table}[H]
+\centering
+\begin{tabular}{ll}
+\toprule
+\textbf{Statistic} & \textbf{Result} \\ 
+\midrule
+\textbf{Frequency }& No: 259 \\
+                         & Yes: 79 \\ 
+\midrule
+\textbf{Proportion} & No: 76.63\% \\ 
+                    & Yes: 23.37\% \\ 
+\midrule
+\textbf{Mode}& No \\ 
+\bottomrule
+\end{tabular}
+\caption{Descriptive Analysis of Churn Data}
+\label{tab:churn_summary}
+\end{table}
+
   
 \end{frame}
 
  
-	
-	
-	\section{Analysis and Findings}
-	\begin{frame}
-		\frametitle{KAPLAN  MEIER}
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=0.47\textwidth]{Figure 4/4.1.png}
-			\hfill
-			\caption{KM Curve}
-			\label{Table 1}
-			\includegraphics[width=0.7\textwidth]{Presentation/ana.png}
-			
-			\caption{KM Analysis}
-			\label{Figure 1}
-		\end{figure}
-	\end{frame}
-	\begin{frame}
- 		\frametitle{ACCELATED FAILURE RIME}
-        
-\begin{table}[H]
-    \centering
-    \begin{tabular}{lccc}
-        \toprule
-        Model & AIC & BIC & Hanna-Quinn \\
-        \midrule
-        WeibullAFTFitter & 182.568721 & 187.779061 & 32.486525 \\
-        LogNormalAFTFitter & 175.138211 & 180.348551 & 32.486525 \\
-        LogLogisticAFTFitter & 176.518119 & 181.728460 & 32.486525 \\
-        \bottomrule
-    \end{tabular}
-    \caption{Model Comparison Metrics}
-    \label{tab:model_comparison}
+\begin{frame}
+
+    \frametitle{KAPLAN MEIER}
+    
+    \begin{block}{}
+     \vspace{0.5cm}  
+        The Kaplan-Meier survival analysis shows a gradual decrease in survival probability over time, with significant events impacting the survival rates at various academic years.
+    \end{block}
+    
+   % Add some vertical space between the block and the content
+    
+   \begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Event Time} & \textbf{Number of Events} & \textbf{Survival Probability} \\
+\hline
+0& 0  & 1.000000 \\
+1& 25 & 0.926036 \\
+2& 22 & 0.860947 \\
+3& 32 & 0.766272 \\ \hline
+\end{tabular}
+\caption{Survival Analysis Summary}
+\label{Kaplan Meier Table}
 \end{table}
 
-\noindent
-\textbf{Results:} \\
-The AFT model with the lowest AIC is: \textit{LogNormalAFTFitter} \\
-The AFT model with the lowest BIC is: \textit{LogNormalAFTFitter} \\
-The AFT model with the lowest Hanna-Quinn is: \textit{WeibullAFTFitter}
+
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{KAPLAN MEIER }
+     \framesubtitle{Kaplan Meier Curve}
+
+    
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\textwidth]{Figure 4/4.1.png}
+			\hfill
+			\caption{Kaplan Meier Curve}
+			
+		\end{figure}
+
+\end{frame}
+
+	\begin{frame}
+ 		\frametitle{ACCELERATED FAILURE TIME}
+   \framesubtitle{Selection of parametric distribution}
+            \begin{block}{}
+The LogNormal model is the best based on AIC and BIC values, showing the best fit among the distributions.
+\end{block}
+
+  \begin{table}[H]
+        \centering
+        \begin{tabular}{lccc}
+            \hline
+            Model & AIC & BIC & Hannan-Quinn \\
+            \hline
+            Weibull & 316.43 & 300.08 & 306.67 \\
+            \textbf{LogNormal} & \textbf{305.81} & \textbf{289.45} & \textbf{306.67} \\
+            LogLogistic & 307.51 & 291.16 & 306.67 \\
+            \hline
+        \end{tabular}
+        \caption{Information Criteria on AFT Models}
+        \label{tab:model_comparison}
+    \end{table}
 
     \end{frame}
 	
 	\begin{frame}
-		\frametitle{ANALYSIS AND FINDINGS}
-		\begin{figure}
-			\centering
-			\includegraphics[width=0.75\linewidth]{Presentation/cox and weilbull.png}
-			\caption{Cox and Lognormal Analysis}
-			\label{Figure 2}
-		\end{figure}
-	\end{frame}
-	
+    \frametitle{ANALYSIS AND FINDINGS}
+        \framesubtitle{Comparison between Cox PH and AFT}  
+
+    \begin{table}[H]
+    \centering
+    \scriptsize
+    \setlength{\tabcolsep}{3pt} % Reduce column separation
+    \begin{tabular}{lcc|cc}
+    \toprule
+    Variable & \multicolumn{2}{c}{Cox PH Model} & \multicolumn{2}{c}{Lognormal Model} \\
+    \cmidrule(lr){2-3} \cmidrule(lr){4-5}
+     &   \scriptsize{$\beta$}& \scriptsize{P-values}& \scriptsize{$\beta$}& \scriptsize{P-values}\\
+    \midrule
+    Gender & 0.33 & 0.24 & 0.032 & 0.785 \\
+    Residence & 0.32 & 0.25 & -0.146 & 0.239 \\
+    Usage Freq. & -0.08 & 0.27 & -0.002 & 0.940 \\
+    Voice Calls & -0.57 & 0.08 & 0.132 & 0.329 \\
+    Mobile Data & 0.32 & 0.48 & -0.287 & 0.165 \\
+    SMS & 0.48 & 0.06 & -0.228 & 0.036*\\
+    Data Exhaust. & -0.20 & 0.61 & 0.102 & 0.493 \\
+    Multi. Networks & -0.13 & 0.78 & -0.104 & 0.607 \\
+    Poor Network & 2.60 & <0.005* & -1.041 & <0.0005*\\
+    Cust. Service & -1.40 & <0.005* & 0.809 & <0.0005*\\
+    High Costs & -1.13 & <0.005* & 0.515 & <0.0005*\\
+    Monthly Data & 0.21 & 0.02* & -0.069 & 0.113 \\
+    \midrule
+    Intercept $\mu$ & -- & -- & 1.626 & <0.0005 \\
+    Intercept $\sigma$ & -- & -- & -0.616 & <0.0005 \\
+    \bottomrule
+    \end{tabular}
+    \scriptsize{\caption{Cox PH and LogNormal Models}}
+    
+    \label{tab:combined_model_results}
+    \end{table}
+    \scriptsize{* indicates significant covariate.}
+    \end{frame}
+
 	
 	\begin{frame}
-		\frametitle{ANALYSIS AND FINDINGS CON'T}
+		\frametitle{ANALYSIS AND FINDINGS}
+        \framesubtitle{Selection of distribution}
+      \framesubtitle{Cox PH Plot}  
+
 		\begin{figure}[H]
 			\centering
 			\begin{minipage}{0.8\textwidth}
 				\centering
 				\includegraphics[width=\textwidth]{Figure 4/4.2.png}
-				\caption{Cox Coefficients}
+				\caption{Cox PH Forest Plot}
 				\label{Figure 3}
-			\end{minipage}\hfill
+			\end{minipage}
 		
 		\end{figure}
-	\end{frame}
-		\begin{frame}
+A positive covariate indicates an increase in churn rate while the negative covariate indicates a decrease in churn rate.
+ \end{frame}
+ 
+	\begin{frame}
 		\frametitle{ANALYSIS AND FINDINGS CON'T}
+      \framesubtitle{AFT Plot}  
+
 		\begin{figure}[H]
 			\centering
 			\begin{minipage}{0.8\textwidth}
 				\centering
-				\includegraphics[width=\textwidth]{Figure 4/4.4.png}
-				\caption{LogNormal Coefficients}
+				\includegraphics[width=0.8\textwidth]{Figure 4/4.4.png}
+				\caption{LogNormal Forest Plot}
 				\label{Figure 4}
 				
 			\end{minipage}
-    
-		\end{frame}
+        \end{figure}
+A positive covariate indicates an decrease in the time to event while the negative covariate indicates an increase in the time to event.	
+ \end{frame}
   
 
 	\begin{frame}
@@ -192,10 +417,10 @@ The AFT model with the lowest Hanna-Quinn is: \textit{WeibullAFTFitter}
 			\centering
 			\begin{tabular}{lcc}
 				\toprule
-				\textbf{Model} & \textbf{Concordance} & \textbf{AIC} \\
+				\textbf{Model} & \textbf{Concordance} & \textbf{AIC}\\
 				\midrule
-				LogNormal& 0.767& 169.052\\
-				Cox PH & 0.74& 174.41\\
+				LogNormal& 0.958& 	305.81\\
+				Cox PH & 0.96& 	266.68\\
 				\bottomrule
 			\end{tabular}
 			\caption{Model Concordance and AIC values}
@@ -205,39 +430,53 @@ The AFT model with the lowest Hanna-Quinn is: \textit{WeibullAFTFitter}
 		
 	\end{frame}
 	
-	\section{Conclusion}
 	
 	\begin{frame}
+ 	\section{CONCLUSION}
+
 		\frametitle{CONCLUSION}
 		\begin{itemize}
-			\item The research shows that Lognormal AFT is the best model.
-			\item Poor Network Quality is the covariate that tends to increase the rate at which students churn the most 
-   \item  Residence increases the time to the event of churn happening the most.
-   \item Data Exhaustion is the covariate that is most significant to the study.
-			\item Students tend to churn at the end of their second year.
+			\item The research shows that Cox PH is the best model.
+            \vspace{0.3cm}
+
+           \item Poor Network, Customer Service, High Costs, Monthly Data and SMS are most significant to the study.
+           \vspace{0.3cm}
+           
+			\item Poor Network Quality tends to increase both the churn rate and time to churn the most.
+            \vspace{0.3cm}
+			\item Students tend to churn at the end of their 1st and 3rd academic years.
 		\end{itemize}
 	\end{frame}
  
 	
 	\begin{frame}
 		\frametitle{RECOMMENDATIONS}
+  \section{RECOMMENDATIONS}
 		\begin{itemize}
 			\item Conduct regular surveys.
-			\item Enhance the quality and reliability of network coverage across KNUST to reduce churn rates.
-			\item Improve the responsiveness and quality of customer support to address student concerns more effectively.
+\vspace{0.3cm}
 
-			
-		\end{itemize}
-	\end{frame}
- 
+			\item Enhance the quality and reliability of network coverage across KNUST to reduce churn rates.
+\vspace{0.3cm}
+
+			\item Establishment of avenues and platforms to address students' concerns more effectively.
+    
+    \end{itemize}	
+ \end{frame}
 	
 	\begin{frame}
-		%\frametitle{}
-		\centering{ THANK YOU}
+ \section{REFERENCES}
+		\frametitle{REFERENCES}
+ \bibliography{references_presentation}
+ \bibliographystyle{apalike}
+ \end{frame}
+	
+	\begin{frame}
+		\frametitle{}
+		
+  \centering\Large{ THANK YOU}
 		
 		
 		
 	\end{frame}
-	
 \end{document}
-

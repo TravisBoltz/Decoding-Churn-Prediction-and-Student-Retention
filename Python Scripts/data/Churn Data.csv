@@ -1,0 +1,339 @@
+Gender,Churn,Residence,Usage_Freq,Voice_Calls,Mobile_Data_Internet,SMS_Text_Messaging,Data_Exhaustion,Multiple_Networks,Poor_Network_Quality_Coverage,Unsatisfactory_Customer_Service,High_Costs_Pricing,Monthly_Data_Usage,Churn_Level
+Female,No,Off-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Several times a week,Yes,No,No,Yes,Yes,No,Yes,Yes,6-8,4
+Female,Yes,On-campus,Never,Yes,Yes,No,Yes,Yes,No,No,No,8 and more,3
+Female,No,Off-campus,Occasionally,Yes,Yes,Yes,No,Yes,No,Yes,Yes,6-8,4
+Male,No,Off-campus,Several times a week,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,No,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Daily,Yes,No,Yes,Yes,Yes,No,Yes,Yes,2-4,4
+Male,Yes,On-campus,Occasionally,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more,2
+Female,No,Off-campus,Daily,Yes,No,No,Yes,Yes,No,Yes,Yes,2-4,4
+Male,No,Off-campus,Occasionally,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Occasionally,No,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,Yes,Off-campus,Rarely,Yes,Yes,Yes,No,Yes,No,No,Yes,8 and more,1
+Female,Yes,Off-campus,Daily,Yes,Yes,No,No,Yes,Yes,Yes,No,8 and more,3
+Male,No,On-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,Yes,Off-campus,Daily,Yes,Yes,Yes,Yes,No,Yes,No,Yes,8 and more,2
+Female,No,Off-campus,Daily,No,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Several times a week,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,Yes,On-campus,Daily,Yes,Yes,No,Yes,Yes,No,No,No,6-8,1
+Male,No,Off-campus,Daily,Yes,No,Yes,No,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Occasionally,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,Yes,No,Yes,No,Yes,Yes,8 and more,4
+Female,Yes,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,No,No,8 and more,3
+Female,No,Off-campus,Several times a week,Yes,No,Yes,No,Yes,No,Yes,Yes,6-8,4
+Female,No,Off-campus,Rarely,No,Yes,No,Yes,No,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Rarely,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,On-campus,Daily,No,Yes,No,Yes,Yes,No,Yes,Yes,6-8,4
+Male,Yes,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,8 and more,3
+Female,No,Off-campus,Rarely,Yes,No,Yes,No,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Several times a week,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,0-2,4
+Male,No,Off-campus,Occasionally,Yes,Yes,Yes,No,Yes,No,Yes,Yes,2-4,4
+Female,No,Off-campus,Occasionally,No,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,Yes,Off-campus,Daily,Yes,Yes,No,Yes,Yes,Yes,No,Yes,8 and more,2
+Female,No,Off-campus,Rarely,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,Yes,Off-campus,Daily,No,Yes,No,No,Yes,Yes,No,Yes,2-4,3
+Female,No,On-campus,Daily,No,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,Yes,Off-campus,Daily,Yes,No,Yes,Yes,Yes,Yes,No,No,8 and more,1
+Male,No,Off-campus,Several times a week,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,Yes,On-campus,Never,Yes,Yes,No,Yes,Yes,Yes,Yes,No,8 and more,3
+Male,No,Off-campus,Several times a week,No,Yes,No,Yes,Yes,No,Yes,Yes,0-2,4
+Female,No,Off-campus,Daily,Yes,No,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,No,No,Yes,No,Yes,Yes,6-8,4
+Male,No,Off-campus,Several times a week,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,2-4,4
+Female,No,Off-campus,Several times a week,Yes,Yes,No,Yes,Yes,No,Yes,Yes,0-2,4
+Male,No,Off-campus,Occasionally,No,Yes,No,No,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Several times a week,Yes,No,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Never,No,Yes,Yes,Yes,Yes,No,Yes,Yes,6-8,4
+Male,No,Off-campus,Occasionally,Yes,Yes,Yes,Yes,No,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Occasionally,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,Yes,Off-campus,Daily,Yes,Yes,No,Yes,Yes,Yes,No,No,8 and more,2
+Female,Yes,Off-campus,Occasionally,No,Yes,Yes,Yes,No,Yes,Yes,No,8 and more,2
+Female,No,Off-campus,Daily,No,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,Yes,Off-campus,Daily,Yes,Yes,No,Yes,Yes,Yes,No,Yes,8 and more,1
+Male,Yes,Off-campus,Daily,No,Yes,No,No,Yes,Yes,Yes,Yes,8 and more,3
+Female,No,Off-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,Yes,On-campus,Never,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,4-6,2
+Female,No,Off-campus,Daily,Yes,Yes,No,No,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,6-8,4
+Male,Yes,On-campus,Several times a week,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,6-8,3
+Male,No,On-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Several times a week,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,Yes,No,Yes,No,Yes,Yes,6-8,4
+Female,No,Off-campus,Several times a week,No,Yes,Yes,No,Yes,No,Yes,Yes,6-8,4
+Male,No,Off-campus,Several times a week,Yes,No,Yes,Yes,Yes,No,Yes,Yes,6-8,4
+Male,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,6-8,4
+Male,No,Off-campus,Rarely,Yes,Yes,No,Yes,Yes,No,Yes,Yes,2-4,4
+Male,Yes,Off-campus,Daily,No,Yes,No,Yes,Yes,Yes,No,Yes,2-4,2
+Female,Yes,On-campus,Daily,Yes,Yes,No,Yes,Yes,Yes,Yes,No,8 and more,1
+Male,Yes,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,0-2,3
+Female,Yes,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,Yes,No,No,8 and more,3
+Female,Yes,Off-campus,Daily,Yes,Yes,No,Yes,Yes,Yes,Yes,No,8 and more,3
+Female,No,Off-campus,Several times a week,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,6-8,4
+Female,No,Off-campus,Several times a week,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Several times a week,No,No,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Several times a week,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,No,Yes,No,No,Yes,Yes,6-8,4
+Female,Yes,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,8 and more,1
+Female,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,Yes,Off-campus,Several times a week,Yes,Yes,No,Yes,Yes,Yes,Yes,No,8 and more,1
+Female,No,Off-campus,Several times a week,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,6-8,4
+Female,No,Off-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,On-campus,Occasionally,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Several times a week,Yes,Yes,Yes,Yes,No,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,No,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Occasionally,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,4-6,4
+Male,No,Off-campus,Occasionally,Yes,Yes,Yes,No,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Rarely,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,On-campus,Occasionally,Yes,Yes,No,No,Yes,No,Yes,Yes,2-4,4
+Female,Yes,On-campus,Daily,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,8 and more,2
+Female,No,Off-campus,Daily,No,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Daily,Yes,No,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,On-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,Yes,Off-campus,Daily,No,Yes,No,Yes,Yes,No,No,No,8 and more,1
+Male,No,Off-campus,Occasionally,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,6-8,4
+Male,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Occasionally,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,2-4,4
+Female,Yes,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,Yes,No,No,6-8,1
+Male,No,Off-campus,Several times a week,Yes,Yes,Yes,No,Yes,No,Yes,Yes,0-2,4
+Female,No,Off-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,2-4,4
+Female,No,Off-campus,Occasionally,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,On-campus,Daily,Yes,Yes,Yes,No,No,No,Yes,Yes,8 and more,4
+Female,Yes,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,No,Yes,8 and more,1
+Female,Yes,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,2-4,2
+Female,Yes,Off-campus,Rarely,Yes,Yes,No,Yes,Yes,Yes,Yes,No,8 and more,2
+Female,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,Yes,On-campus,Several times a week,Yes,No,Yes,Yes,Yes,Yes,No,Yes,8 and more,1
+Female,No,Off-campus,Occasionally,Yes,Yes,No,No,Yes,No,Yes,Yes,6-8,4
+Female,No,Off-campus,Several times a week,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,2-4,4
+Male,No,On-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Rarely,Yes,Yes,No,No,Yes,No,Yes,Yes,6-8,4
+Female,No,Off-campus,Never,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,4-6,4
+Female,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Occasionally,No,No,No,No,Yes,No,Yes,Yes,2-4,4
+Male,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,4-6,4
+Female,Yes,On-campus,Daily,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,8 and more,3
+Female,Yes,Off-campus,Daily,Yes,Yes,Yes,Yes,No,Yes,No,No,8 and more,1
+Female,No,Off-campus,Daily,Yes,Yes,Yes,No,Yes,No,Yes,Yes,2-4,4
+Female,No,Off-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,On-campus,Daily,No,Yes,No,No,Yes,No,Yes,Yes,6-8,4
+Female,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,0-2,4
+Male,Yes,On-campus,Several times a week,Yes,Yes,No,Yes,Yes,No,No,No,8 and more,2
+Female,No,Off-campus,Several times a week,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,No,No,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Occasionally,No,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,Yes,Off-campus,Several times a week,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,8 and more,2
+Female,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Never,No,No,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,No,No,No,Yes,Yes,No,Yes,Yes,4-6,4
+Male,No,Off-campus,Occasionally,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,On-campus,Several times a week,No,Yes,Yes,Yes,No,No,Yes,Yes,8 and more,4
+Female,Yes,Off-campus,Several times a week,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,6-8,1
+Female,No,Off-campus,Occasionally,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,Yes,Off-campus,Never,Yes,Yes,No,Yes,Yes,Yes,No,No,0-2,3
+Female,No,On-campus,Daily,Yes,No,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Never,Yes,Yes,No,Yes,Yes,No,Yes,Yes,2-4,4
+Female,No,Off-campus,Daily,Yes,No,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,Yes,Off-campus,Daily,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,8 and more,1
+Female,Yes,Off-campus,Daily,No,Yes,Yes,Yes,Yes,No,No,Yes,8 and more,1
+Female,Yes,Off-campus,Daily,Yes,Yes,No,Yes,No,Yes,No,No,8 and more,2
+Male,No,Off-campus,Several times a week,Yes,Yes,Yes,No,Yes,No,Yes,Yes,8 and more,4
+Female,Yes,On-campus,Daily,No,Yes,No,Yes,Yes,Yes,No,No,6-8,2
+Female,No,Off-campus,Occasionally,Yes,No,No,No,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,No,Yes,No,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Rarely,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,No,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Occasionally,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,On-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,On-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,Yes,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,No,No,8 and more,2
+Female,No,Off-campus,Never,No,Yes,Yes,Yes,No,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,On-campus,Never,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,2-4,4
+Female,No,Off-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,Yes,On-campus,Several times a week,Yes,Yes,Yes,Yes,Yes,No,Yes,No,8 and more,2
+Female,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,0-2,4
+Female,No,Off-campus,Occasionally,No,Yes,Yes,Yes,Yes,No,Yes,Yes,2-4,4
+Female,No,Off-campus,Rarely,Yes,Yes,No,Yes,Yes,No,Yes,Yes,0-2,4
+Male,No,Off-campus,Occasionally,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,2-4,4
+Female,Yes,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more,3
+Female,Yes,On-campus,Several times a week,Yes,Yes,Yes,Yes,No,Yes,Yes,No,8 and more,2
+Female,Yes,Off-campus,Several times a week,Yes,No,Yes,Yes,Yes,Yes,No,No,8 and more,3
+Female,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,6-8,4
+Female,Yes,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,8 and more,3
+Male,No,Off-campus,Several times a week,No,Yes,Yes,No,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Daily,Yes,Yes,No,No,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,Yes,Off-campus,Daily,No,Yes,Yes,Yes,Yes,No,No,No,0-2,3
+Female,No,Off-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,2-4,4
+Male,No,Off-campus,Occasionally,Yes,Yes,No,Yes,Yes,No,Yes,Yes,0-2,4
+Female,No,Off-campus,Occasionally,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,2-4,4
+Female,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,No,Yes,No,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,6-8,4
+Female,No,Off-campus,Several times a week,Yes,Yes,Yes,No,Yes,No,Yes,Yes,8 and more,4
+Female,No,On-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,6-8,4
+Female,No,Off-campus,Several times a week,Yes,Yes,No,No,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,Yes,On-campus,Occasionally,Yes,Yes,Yes,Yes,Yes,Yes,No,No,0-2,3
+Male,Yes,Off-campus,Rarely,Yes,Yes,Yes,No,Yes,No,No,No,4-6,3
+Male,Yes,On-campus,Occasionally,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,4-6,3
+Male,No,On-campus,Several times a week,No,Yes,No,No,Yes,No,Yes,Yes,8 and more,4
+Female,Yes,Off-campus,Several times a week,Yes,Yes,Yes,Yes,Yes,Yes,No,No,8 and more,1
+Female,No,On-campus,Several times a week,No,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Occasionally,Yes,No,Yes,No,Yes,No,Yes,Yes,2-4,4
+Male,No,Off-campus,Several times a week,Yes,Yes,Yes,Yes,No,No,Yes,Yes,8 and more,4
+Female,Yes,Off-campus,Daily,No,Yes,Yes,Yes,Yes,Yes,No,Yes,8 and more,1
+Male,Yes,On-campus,Daily,Yes,Yes,No,Yes,No,Yes,Yes,No,2-4,1
+Male,No,Off-campus,Several times a week,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Occasionally,Yes,No,No,Yes,No,No,Yes,Yes,8 and more,4
+Male,No,On-campus,Occasionally,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Occasionally,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,Yes,Off-campus,Occasionally,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,6-8,2
+Female,Yes,Off-campus,Daily,Yes,Yes,No,Yes,Yes,Yes,No,No,8 and more,1
+Male,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,4-6,4
+Female,No,Off-campus,Occasionally,Yes,Yes,No,Yes,No,No,Yes,Yes,2-4,4
+Female,No,Off-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Occasionally,No,Yes,Yes,Yes,Yes,No,Yes,Yes,2-4,4
+Female,No,Off-campus,Rarely,Yes,Yes,No,No,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Never,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Occasionally,Yes,Yes,Yes,Yes,No,No,Yes,Yes,8 and more,4
+Female,Yes,Off-campus,Daily,No,Yes,Yes,Yes,Yes,No,Yes,No,2-4,3
+Female,No,Off-campus,Occasionally,Yes,Yes,No,Yes,Yes,No,Yes,Yes,6-8,4
+Male,No,Off-campus,Several times a week,No,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,Yes,Off-campus,Daily,Yes,No,Yes,Yes,Yes,Yes,No,Yes,8 and more,2
+Female,Yes,Off-campus,Several times a week,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,6-8,1
+Male,No,On-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Several times a week,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,6-8,4
+Female,No,Off-campus,Daily,Yes,Yes,No,No,Yes,No,Yes,Yes,8 and more,4
+Female,Yes,Off-campus,Several times a week,No,Yes,Yes,Yes,Yes,Yes,No,Yes,8 and more,3
+Female,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,Yes,Off-campus,Never,Yes,Yes,No,Yes,Yes,Yes,No,No,6-8,3
+Female,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,Yes,Off-campus,Occasionally,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,2-4,2
+Male,No,Off-campus,Occasionally,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,No,No,No,No,Yes,No,Yes,Yes,8 and more,4
+Male,Yes,Off-campus,Daily,Yes,No,No,Yes,Yes,Yes,No,Yes,0-2,3
+Female,No,Off-campus,Occasionally,Yes,Yes,No,Yes,No,No,Yes,Yes,8 and more,4
+Female,Yes,On-campus,Daily,No,Yes,No,Yes,Yes,Yes,No,Yes,8 and more,2
+Male,No,Off-campus,Occasionally,Yes,Yes,No,Yes,Yes,No,Yes,Yes,0-2,4
+Female,No,On-campus,Rarely,No,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,Yes,Off-campus,Daily,Yes,Yes,No,No,Yes,Yes,No,No,2-4,3
+Female,No,Off-campus,Several times a week,No,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,0-2,4
+Female,No,Off-campus,Daily,Yes,Yes,Yes,No,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Occasionally,Yes,Yes,No,Yes,Yes,No,Yes,Yes,2-4,4
+Female,Yes,Off-campus,Several times a week,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,8 and more,3
+Female,No,Off-campus,Several times a week,Yes,Yes,Yes,No,Yes,No,Yes,Yes,8 and more,4
+Female,No,On-campus,Occasionally,Yes,No,No,Yes,Yes,No,Yes,Yes,2-4,4
+Female,Yes,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,No,No,0-2,1
+Male,No,Off-campus,Several times a week,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Never,Yes,Yes,No,Yes,No,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Occasionally,Yes,Yes,Yes,No,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Several times a week,Yes,Yes,Yes,No,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Never,No,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,On-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,Yes,Off-campus,Daily,No,Yes,No,No,Yes,Yes,No,Yes,8 and more,1
+Male,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,On-campus,Daily,Yes,No,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,On-campus,Never,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Never,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,No,Yes,Yes,Yes,Yes,No,Yes,Yes,4-6,4
+Female,No,On-campus,Several times a week,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Occasionally,Yes,Yes,No,No,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Several times a week,Yes,No,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Daily,Yes,Yes,No,No,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,4-6,4
+Female,No,On-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Never,No,Yes,No,Yes,Yes,No,Yes,Yes,6-8,4
+Female,No,Off-campus,Daily,Yes,Yes,No,Yes,No,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Rarely,Yes,Yes,Yes,Yes,No,No,Yes,Yes,8 and more,4
+Female,Yes,Off-campus,Occasionally,Yes,Yes,No,Yes,Yes,Yes,No,Yes,8 and more,1
+Female,No,Off-campus,Daily,No,Yes,Yes,Yes,Yes,No,Yes,Yes,0-2,4
+Female,No,On-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Daily,Yes,Yes,No,No,Yes,No,Yes,Yes,8 and more,4
+Male,Yes,Off-campus,Several times a week,Yes,Yes,No,Yes,Yes,Yes,No,No,4-6,3
+Male,No,Off-campus,Rarely,Yes,Yes,No,Yes,Yes,No,Yes,Yes,6-8,4
+Male,No,Off-campus,Daily,Yes,Yes,No,No,Yes,No,Yes,Yes,6-8,4
+Female,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,0-2,4
+Male,No,On-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,Yes,Off-campus,Occasionally,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,8 and more,3
+Female,No,Off-campus,Daily,No,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Several times a week,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Several times a week,Yes,Yes,Yes,No,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,2-4,4
+Female,No,Off-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,6-8,4
+Male,No,Off-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Occasionally,Yes,Yes,No,Yes,Yes,No,Yes,Yes,2-4,4
+Male,No,Off-campus,Daily,Yes,No,No,No,Yes,No,Yes,Yes,8 and more,4
+Female,No,On-campus,Never,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Several times a week,No,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,On-campus,Occasionally,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Never,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Occasionally,Yes,Yes,No,No,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Several times a week,Yes,Yes,Yes,Yes,No,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Occasionally,Yes,No,Yes,Yes,Yes,No,Yes,Yes,0-2,4
+Male,Yes,On-campus,Several times a week,No,Yes,No,No,Yes,No,No,No,8 and more,2
+Female,No,Off-campus,Several times a week,Yes,Yes,No,Yes,No,No,Yes,Yes,2-4,4
+Female,No,On-campus,Several times a week,Yes,No,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Never,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,6-8,4
+Female,Yes,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,No,No,8 and more,3
+Female,Yes,Off-campus,Several times a week,Yes,No,No,Yes,Yes,No,No,No,8 and more,3
+Female,Yes,Off-campus,Several times a week,Yes,Yes,No,Yes,Yes,Yes,No,Yes,8 and more,1
+Male,No,Off-campus,Occasionally,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Occasionally,No,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Several times a week,No,Yes,No,Yes,Yes,No,Yes,Yes,6-8,4
+Male,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Never,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Occasionally,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Occasionally,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,Yes,Yes,No,No,Yes,Yes,0-2,4
+Female,No,Off-campus,Never,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,On-campus,Daily,Yes,Yes,Yes,No,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,Yes,No,Yes,No,Yes,Yes,6-8,4
+Female,No,Off-campus,Rarely,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,0-2,4
+Male,No,On-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,6-8,4
+Female,Yes,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,8 and more,3
+Male,No,Off-campus,Occasionally,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Rarely,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,Yes,On-campus,Several times a week,Yes,Yes,No,Yes,Yes,Yes,No,No,8 and more,3
+Female,No,On-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,6-8,4
+Female,No,On-campus,Occasionally,No,Yes,No,Yes,Yes,No,Yes,Yes,2-4,4
+Female,Yes,On-campus,Daily,Yes,Yes,Yes,Yes,Yes,Yes,No,No,8 and more,1
+Female,No,Off-campus,Daily,Yes,No,No,Yes,Yes,No,Yes,Yes,6-8,4
+Female,No,On-campus,Several times a week,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Daily,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
+Female,No,Off-campus,Several times a week,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,Off-campus,Daily,Yes,Yes,No,Yes,Yes,No,Yes,Yes,0-2,4
+Female,No,Off-campus,Several times a week,Yes,Yes,No,Yes,Yes,No,Yes,Yes,8 and more,4
+Male,No,On-campus,Never,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,8 and more,4
