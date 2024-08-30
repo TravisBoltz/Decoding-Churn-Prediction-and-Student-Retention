@@ -1,0 +1,641 @@
+\documentclass[12pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usetheme{EastLansing}
+\usepackage{ragged2e} \justifying
+\setbeamersize{text margin left=12mm, text margin right=12mm} 
+\setbeamertemplate{frametitle}[default][left, leftskip=5mm] 
+\setbeamertemplate{frametitle continuation}{\frametitle{References}}
+\setbeamertemplate{bibliography item}[text] 
+\setbeamertemplate{page number in head/foot}[appendixframenumber]
+\setlength{\parskip}{5pt}
+\let\oldbib\bibentry
+\graphicspath{{gfx/}}	
+\usepackage{xcolor}
+	\usepackage{amsmath}
+	\usepackage{array}
+	\usepackage{booktabs}
+	
+\title[ KNUST]{\textbf{\small{Inflation Rate, Exchange Rate and GSE Composite Index Interactions in Ghana: A VAR Analysis.}}}
+%\subtitle{Write the subtitle}
+
+\author[BSc. Actuarial Science]{{\footnotesize{Anokye Emmanuel\\Gyan Dorcas Ameyaw \\ Gyasi Jane Frances Ntiwaa Gyamfi\\ Eklu Benjamin\\ \vspace{0.2cm}Supervisor: S. Addai-Henne }}\vspace{0.2cm} \\ BSc. Actuarial Science\\[5mm] \includegraphics[scale=0.1]{knust_logo_f}}
+\institute[COS]{ Kwame Nkrumah University Of Science And Technology, KNUST \\ Kumasi, Ghana} 
+
+\date[\tiny \today]{\scriptsize \today}
+
+%\titlegraphic{\includegraphics[scale=0.08]{logo}}
+\logo{\includegraphics[scale=0.04]{knust_logo_f}}
+
+
+\setbeamercovered{transparent}
+\setbeamertemplate{navigation symbols}{}
+
+
+
+
+\begin{document}
+
+
+
+
+% Topic Slide
+
+	%\subject{}
+	%\setbeamercovered{transparent}
+	%\setbeamertemplate{navigation symbols}{}
+	\begin{frame}[plain]
+		\maketitle
+	\end{frame}
+	
+	
+	\frame{ \frametitle{Table of Content}
+		\tableofcontents
+	}
+	
+	% Background
+
+	\begin{frame}
+		\section{Background} 
+		\frametitle{Background}
+		\begin{flushleft}
+				\begin{itemize}
+		
+				
+		
+\item The stock market is a vital component of a nation's economic growth and development.
+\vspace{0.3cm}
+\item Inflation rate, exchange rate, and composite index are crucial indicators of Ghana's economic health.
+\vspace{0.3cm}
+\item Understanding the interconnections between these macroeconomic indicators is essential, as changes in one can significantly influence the others.
+	\end{itemize}
+		\end{flushleft}	
+	\end{frame}
+
+	
+	%Problem statement 
+	\begin{frame}
+		\section{Problem Statement} 
+	\frametitle{Problem Statement}
+
+	
+
+
+		\begin{itemize}
+	\item Understanding the dynamic interplay between these macroeconomic variables is crucial for policymakers aiming to stabilize the economy and promote sustainable growth\cite{kyereboah2008} 
+	
+
+	\end{itemize}	
+ \end{frame}		
+
+\begin{frame}
+	\section{Objective of Study}
+	\frametitle{Objective of Study}
+	\framesubtitle{}
+\begin{itemize}
+\item The objective of this study is to examine the dynamic interaction between inflation rate, exchange rate, and composite index using Vector Autoregression (VAR) analysis in Ghana. 
+	
+	
+
+\end{itemize}
+
+\end{frame}	
+
+
+
+	
+		\begin{frame}
+	%	\section{Methodology}
+	%	\subsection{Model Specification}
+			
+		\frametitle{Methodology}
+		\framesubtitle{ Model Specification} 
+		\begin{itemize} \scriptsize
+		\item Vector Autoregression is a general regular framework used to describe the interrelations among multivariate time series data.
+		
+		\item Vector Error Correction Model (VECM) is a specialized type of multivariate time series model used to analyze co-integrated data.
+		\vspace{0.1cm} 
+		\item The regression equation form for VECM is as follows:
+		\tiny
+		 \begin{equation}
+	  \Delta GCI_t= \sum_{i=1}^{n-1} \beta_i \Delta GCI_{t-i} + \sum_{i=0}^{n-1} \Psi_i \Delta INF_{t-i} + \sum_{i=0}^{n-1} \eta_i \Delta EXC_{t-i} + \lambda_{1}ECT_{t-1} +\epsilon_{1,t} \end{equation}
+		 		\begin{equation} \Delta  EXC_t= \sum_{i=0}^{n-1} \gamma_i \Delta GCI_{t-i} + \sum_{i=0}^{n-1} \Theta_i \Delta INF_{t-i} + \sum_{i=1}^{n-1} \phi_i \Delta EXC_{t-i} + \lambda_{2}ECT_{t-1} + \epsilon_{2,t} \end{equation} 	 			
+		\begin{equation}  \Delta INF_t= \sum_{i=0}^{n-1} \Gamma_i \Delta GCI_{t-i} + \sum_{i=1}^{n-1} \zeta_i \Delta INF_{t-i} + \sum_{i=0}^{n-1} \Omega_i \Delta EXC_{t-i} + \lambda_{3}ECT_{t-1} + \epsilon_{3,t} \end{equation} 		 
+		 
+	%	\includegraphics[width=0.96\textwidth] {}	
+		
+	\end{itemize}
+	\end{frame}
+
+
+	
+
+			\begin{frame}
+			
+			\section{Methodology}
+	%	\subsection{Description of Variables}
+			
+		\frametitle{Methodology}
+		\framesubtitle{ }
+	Our study is based on monthly data from three time
+		series namely Stock prices(GSE-Composite Index), Inflation
+		rate, and cedi-dollar exchange rate index. The time series
+		spans from January 2003 to April 2023 for a total of 244
+		monthly observations taken from Bank of Ghana 	(Bank of Ghana – Central Bank, 2024) 
+	
+	
+
+		
+		
+		  {} % A brief description of the variables is
+%		given in the Table below:\\
+%		\includegraphics[width=0.96\textwidth] {variable_describe}	\\
+		
+	%	The software R was used to investigate the viability of variables assuming the intercept at 5\% probability level
+		
+	\end{frame}
+	
+	%	\begin{frame}
+	%	\frametitle{Methodology}
+	%	\framesubtitle{Unit Roots Test }
+		
+	%	 Augmented Dickey-Fuller (ADF), Kwiatkowski–Phillips\\
+	%	Schmidt–Shin (KPSS), and Philips-Perron (PP) Unit root
+	%	tests are used to find the stationarity in the time series:\\
+		%\includegraphics[width=0.96\textwidth] {adf_equation}	
+	%		The present research uses Johansen’s cointegration test to
+	%	measure the cointegration vectors among the time series.\\
+%	\end{frame}
+	
+	
+	
+	
+%\begin{frame}
+%		\frametitle{Results and Empirical Analysis}
+%		\framesubtitle{Summary Statistics }
+%		\includegraphics[width=0.96\textwidth, height=0.7\textheight] %{sum_stat}\\	
+%		\caption{<image title>}
+	%	\label{<image_label>}
+		
+%	\end{frame}
+		\begin{frame}
+			
+		
+	%	\section{Methodology}
+	%	\subsection{VAR Model Algorithm }
+			
+		\frametitle{Methodology}
+		\framesubtitle{VAR Model Algorithm }
+		
+		\begin{figure}[H]
+		\centering
+		
+		\includegraphics[width=0.96\textwidth, height=0.7\textheight] {steps_vecm}	
+		\caption{VAR Model Algorithm}
+	\label{fig:ts_plot}
+	\end{figure}
+		
+	\end{frame}
+	
+	
+\begin{frame}
+	
+	\section{Results and Empirical Analysis}
+%\subsection{Summary Statistics}
+	
+		\frametitle{Results and Empirical Analysis}
+		\framesubtitle{Summary Statistics}
+	
+	
+	
+	
+	\begin{table}[h]
+		\centering
+		\resizebox{\textwidth}{!}{
+			\begin{tabular}{lccc}
+				\hline
+				& \textbf{Exchange Rate} & \textbf{GSE-CI} & \textbf{Inflation Rate} \\	
+				\hline
+				Mean & 3.0315 & 3621 & 15.261 \\
+				Median & 1.9251 & 2491 & 12.805 \\
+				Maximum & 13.0730 & 10891 & 54.100 \\
+				Minimum & 0.8416 & 969 & 7.500 \\
+				Skewness & 1.332257 & 1.215132 & 2.414548 \\
+				Kurtosis & 1.992329 & 0.7498104 & 6.827719 \\
+				\hline
+			\end{tabular}
+		}
+		\caption{Descriptive Statistics Results of the data}
+		\label{tab:statistics}
+		
+	\end{table}
+	
+	%	\begin{figure}
+	%		\includegraphics[width=0.96\textwidth, height=0.7\textheight] {sum_stat}\\	
+	%	\caption{Summary Statistics}
+	%	\label{<image_label>}
+%	\end{figure}
+
+
+
+\end{frame}
+
+
+		\begin{frame}
+			
+		%		\section{Results and Empirical Analysis}
+		%	\subsection{Plot of the Datasets}
+						
+		\frametitle{Results and Empirical Analysis}
+		\framesubtitle{Plot of the Datasets}
+		
+		\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{ts_plot}  % Use the correct path for your image
+		\caption{Time Plot of the dataset}
+		\label{fig:ts_plot}
+	\end{figure}
+		
+	\end{frame}
+	
+	
+	
+\begin{frame}
+	
+	%\section{Results and Empirical Analysis}
+%\subsection{Unit Root Tests for Stationarity}
+	
+	\frametitle{Results and Empirical Analysis}
+	\framesubtitle{Unit Root Tests for Stationarity}
+	
+	
+	\begin{table}[h]
+		\centering
+		\resizebox{\textwidth}{!}{
+			\begin{tabular}{lcccc}
+				\toprule
+				&&&&\\
+				&\multicolumn{3}{c}{Stationarity Test at level}&\\
+				&&&&\\
+				\textbf{Variables} & \textbf{P-value of ADF test} & \textbf{P-value of PP test} & \textbf{P-value of KPSS} &  \textbf{Stationarity Status} \\
+				&&&&\\
+				\midrule
+				log(Exchange Rate) & 0.3783 & 0.8897 & value \textless\  0.01 & Non-stationary \\
+				log(GSE-CI) & 0.2789 & 0.4435 & value \textless\  0.01 & Non-stationary \\
+				log(Inflation Rate) & 0.3394 & 0.8603 & 0.09147 & Non-stationary \\
+				&&&&\\
+				& \multicolumn{3}{c}{Stationarity Test after First Difference} & \\
+				&&&&\\
+				log(Exchange Rate) & value \textless\ 0.01 & value \textless\ 0.01 & value \textgreater\  0.1 & Stationary \\
+				log(GSE-CI) & value \textless\ 0.01 & value \textless\ 0.01 & value \textgreater\ 0.1 & Stationary \\
+				log(Inflation Rate) & value \textless\ 0.01 & value \textless\ 0.01 & value \textgreater\ 0.1 & Stationary \\
+				\bottomrule
+			\end{tabular}
+			
+		}
+		\caption{Unit Root Tests for Stationarity Results }
+	\end{table}
+	
+
+
+\end{frame}	
+
+	\begin{frame}
+	\frametitle{Results and Empirical Analysis}
+	\framesubtitle{Optimal Lag Length }
+	
+	
+	\begin{table}[h]
+	\centering
+	\resizebox{\textwidth}{!}{
+		\begin{tabular}{ccccc}
+			\hline
+			\textbf{Lag} & \textbf{AIC} & \textbf{HC} & \textbf{SC} & \textbf{FPE} \\
+			\hline
+			1  & -15.86946 & -15.79779 & -15.69172 & 0.0000001282289 \\
+			2  & -15.82580 & -15.70037 & -15.51476 & 0.0000001339573 \\
+			3  & -15.78998 & -15.61081 & -15.34564 & 0.0000001388565 \\
+			4  & -15.72802 & -15.49509 & -15.15038 & 0.0000001477601 \\
+			5  & -15.69675 & -15.41006 & -14.98580 & 0.0000001525009 \\
+			6  & -15.67114 & -15.33071 & -14.82690 & 0.0000001565242 \\
+			7  & -15.65626 & -15.26207 & -14.67872 & 0.0000001589669 \\
+			8  & -15.60880 & -15.16086 & -14.49796 & 0.0000001668256 \\
+			9  & -15.59887 & -15.09717 & -14.35472 & 0.0000001686622 \\
+			10 & -15.54914 & -14.99369 & -14.17169 & 0.0000001774846 \\
+			\hline
+		\end{tabular}
+	}
+\caption{Optimal Lag Length Selection Criteria}
+\label{tab:lag_length}
+\end{table}
+
+		
+\end{frame}
+
+
+		\begin{frame}
+			
+%			\section{Results and Empirical Analysis}
+%		\subsection{Cointegration Test}
+			
+		\frametitle{Results and Empirical Analysis}
+		\framesubtitle{Cointegration Test }
+
+			\begin{table}[h]
+			\centering
+			\resizebox{\textwidth}{!}{
+				\begin{tabular}{ccccc}
+					\hline
+					&&&&\\
+					\textbf{Null} & \textbf{\textbf{Alternative}} & \textbf{Test Statistic} & \textbf{Critical Value (5pct)} & \textbf{Decision} \\
+						&&&&\\
+					\hline
+						&&&&\\
+					r = 0  & r \textgreater\ 0 & 291.27 & 34.91			& Cointegration \\
+						&&&&\\
+					r $\leq$ 1  & r \textgreater\ 1 & 	163.79 & 			19.96 & Cointegration \\
+						&&&&\\
+					r $\leq$ 2 & r \textgreater\ 2 & 	75.86 & 	9.24 & Cointegration \\
+						&&&&\\
+					\hline
+				\end{tabular}
+			}
+			\caption{Cointegration Test}
+		\end{table}
+		
+	\end{frame}
+	
+	
+
+	\begin{frame}
+	
+	%			\section{Results and Empirical Analysis}
+	%		\subsection{The VECM Results}
+	
+	\frametitle{Results and Empirical Analysis}
+	\framesubtitle{ The VECM Results}
+	
+	\begin{table}[h]
+		\centering
+		\resizebox{\textwidth}{!}{
+			\begin{tabular}{lccc}
+				
+				\hline
+					&&&\\
+				&\multicolumn{3}{c}{\textbf{Dependent Variables}} \\
+				&&&\\
+				&	\textbf{Exchange Rate } & \textbf{ GSE Composite Index} & \textbf{Inflation Rate}  \\ 	&&&\\
+				\hline 
+					&&&\\
+				ECT1 & -0.5580(0.0764)*** & -0.3179(0.2776) & 1.0955(0.1582)*** \\
+					&&&\\
+				ECT2 & -0.0234(0.0244) & -0.8932(0.0888)*** & -0.0052(0.0506) \\
+					&&&\\
+				Exchange Rate (-1) & -0.0699(0.0681) & 0.1922(0.2474) & -0.3792(0.1409)** \\
+					&&&\\
+				GSE Composite Index (-1) & 0.0028(0.0181) & -0.0257(0.0657) & -0.0035(0.0374) \\
+					&&&\\
+				Inflation Rate (-1) & -0.1056(0.0278)*** & 0.0496(0.1011) & -0.1714(0.0576)** \\
+					&&&\\
+				\hline
+		\end{tabular} }
+		\caption{The VECM Results}
+		\label{tab:summary-stats}
+	\end{table}
+	
+\end{frame}
+
+
+\begin{frame}
+	
+	%			\section{Results and Empirical Analysis}
+	%		\subsection{The VECM Results}
+	
+	\frametitle{Results and Empirical Analysis}
+	\framesubtitle{ Cointegrating vector for VECM }
+	
+	\begin{table}[h]
+		\centering
+		\resizebox{\textwidth}{!}{
+			\begin{tabular}{lccc}
+				\hline
+				&&&\\
+				&\multicolumn{3}{c}{\textbf{Variables}} \\
+				&&&\\
+				\textbf{Ranks}&	\textbf{Exchange Rate } & \textbf{ GSE Composite Index} & \textbf{Inflation Rate}  \\
+				 	&&&\\
+				\hline
+				&&&\\
+				r1 & 1 & 0 & -0.3838513 \\
+				&&&\\
+				r2 & 0 & 1 & 0.2517048 \\
+				&&&\\
+				\hline
+		\end{tabular} }
+		\caption{Cointegrating vector for VECM }
+		\label{tab:summary-stats}
+	\end{table}
+	
+\end{frame}
+
+
+
+
+	
+	
+	\begin{frame}
+		\frametitle{Results and Empirical Analysis}
+		\framesubtitle{VECM Equations}
+		\tiny
+		\begin{equation}
+			\begin{aligned}
+				\text{Equation for Exchange Rate} \\
+				\Delta EXC_t &= -0.5580 \cdot (EXC_{t-1} - 0.3838513 \cdot INF_{t-1}) \\
+				&\quad - 0.0234 \cdot GSE_{t-1} + 0.2517048 \cdot INF_{t-1} \\
+				&\quad - 0.0699 \cdot \Delta EXC_{t-1} + 0.0028 \cdot \Delta GSE_{t-1} \\
+				&\quad - 0.1056 \cdot \Delta INF_{t-1} + \epsilon_{1,t}
+			\end{aligned}
+		\end{equation}
+		\begin{equation}
+			\begin{aligned}
+				\text{Equation for GSE Composite Index} \\
+				\Delta GSE_t &= -0.3197 \cdot (EXC_{t-1} - 0.3838513 \cdot INF_{t-1}) \\
+				&\quad - 0.8932 \cdot (GSE_{t-1} + 0.2517048 \cdot INF_{t-1}) \\
+				&\quad + 0.1922 \cdot \Delta EXC_{t-1} - 0.0257 \cdot \Delta GSE_{t-1} \\
+				&\quad + 0.0409 \cdot \Delta INF_{t-1} + \epsilon_{2,t}
+			\end{aligned}
+		\end{equation}
+		\begin{equation}
+			\begin{aligned}
+				\text{Equation for Inflation Rate} \\
+				\Delta INF_t &= 1.0955 \cdot (EXC_{t-1} - 0.3838513 \cdot INF_{t-1}) \\
+				&\quad - 0.0052 \cdot (GSE_{t-1} + 0.2517048 \cdot INF_{t-1}) \\
+				&\quad - 0.3792 \cdot \Delta EXC_{t-1} - 0.0035 \cdot \Delta GSE_{t-1} \\
+				&\quad - 0.1714 \cdot \Delta INF_{t-1} + \epsilon_{3,t}
+			\end{aligned}
+		\end{equation}
+	\end{frame}
+
+
+
+	
+	
+	\begin{frame}
+		
+%			\section{Results and Empirical Analysis}
+%		\subsection{Granger Causality Test Results}
+		
+	\frametitle{Results and Empirical Analysis}
+	\framesubtitle{Granger Causality Test Results }
+	
+	\begin{table}[h]
+		\centering
+		\resizebox{\textwidth}{!}{
+			\begin{tabular}{lcccc}
+				\hline
+				Null & F-statistic & P-value & Decision \\
+				\hline
+				&&& \\
+				Exchange Rate does not granger cause 	GSE-CI & 1.0183 & 0.3139 & No Causality \\
+				& & & \\
+				
+				Exchange Rate does not granger cause Inflation Rate & 0.4001 & 0.5277 & No Causality \\
+				& & & \\
+				
+				GSE-CI does not granger cause Exchange Rate  & 0.0033 & 0.9542 & No Causality \\
+				& & & \\
+				& & & \\
+				GSE-CI does not granger cause Inflation Rate& 0.1631 & 0.6867 & No Causality \\
+				& & & \\
+				
+				Inflation does not granger cause Exchange Rate & 8.2102 & 0.004537 ** & Causality \\
+				& & & \\
+				
+				Inflation does not granger cause GSE-CI& 0.0504 & 0.8226 & No Causality \\
+				& & & \\
+				
+				\hline
+		\end{tabular} }
+		\caption{Granger Causality Test Results}
+		\label{tab:granger-causality}
+		
+		
+	\end{table}
+	
+	
+\end{frame}	
+	
+	
+		\begin{frame}
+			
+%			\section{Results and Empirical Analysis}
+%			\subsection{Impulse Response Functions}
+		\frametitle{Results and Empirical Analysis}
+		\framesubtitle{ Impulse Response Functions }
+		
+	\begin{figure}[H]
+		\resizebox{\textwidth}{!}{
+			\centering
+			\begin{tabular}{ccc}
+				\includegraphics[width=0.34\textwidth]{irf_ex2ex.png} &
+				\includegraphics[width=0.34\textwidth]{irf_ex2gse.png} &
+				\includegraphics[width=0.34\textwidth]{irf_ex2inf.png} \\
+				\includegraphics[width=0.34\textwidth]{irf_gse2ex.png} &
+				\includegraphics[width=0.34\textwidth]{irf_gse2gse.png} &
+				\includegraphics[width=0.34\textwidth]{irf_gse2inf.png} \\
+				\includegraphics[width=0.34\textwidth]{irf_inf2ex.png} &
+				\includegraphics[width=0.34\textwidth]{irf_inf2gse.png} &
+				\includegraphics[width=0.34\textwidth]{irf_inf2inf.png}
+			\end{tabular}
+		}
+		\caption{Impulse Response Function}
+		\label{fig:grid}
+	\end{figure}
+	
+	\end{frame}
+	
+	
+		\begin{frame}
+		\frametitle{Results and Empirical Analysis}
+		\framesubtitle{Variance Decomposition }
+	
+\begin{figure}[H]
+	\centering
+	
+	\includegraphics[width=0.89\textwidth]{FEVD.png} 
+	
+	\caption{FEVD}
+	\label{fig:FEVD}
+\end{figure}
+	
+	
+	
+	\end{frame}
+
+	
+		\begin{frame}
+			
+%			\section{Results and Empirical Analysis}
+%			\subsection{Forecast of the Data}
+		\frametitle{Results and Empirical Analysis}
+		\framesubtitle{ Forecast of the Data }
+		\begin{figure}[H]
+			\centering
+				\resizebox{\textwidth}{!}{
+			\begin{tabular}{ccc}
+				\includegraphics[width=0.9\textwidth, height=0.9\textheight]{forecast_exchange.png} &
+				
+				\includegraphics[width=0.9\textwidth, height=0.9\textheight]{forecast_gse.png} &
+				
+				\includegraphics[width=0.9\textwidth, height=0.9\textheight]{forecast_inflation.png} 
+				
+			\end{tabular}
+		}
+			\caption{Fan chart of the data}
+			\label{fig:Fanchart}
+		\end{figure}
+		
+	\end{frame}
+	
+		\frame{\section{Conclusion}
+		\frametitle{Conclusion} \begin{itemize}
+	\item The primary finding that inflation rates significantly impact exchange rates highlights the crucial role of inflation in the economic stability of Ghana, as an increase in inflation rates leads to a substantial depreciation of the Ghana cedi.\\ \vspace{0.3cm} \item The analysis indicated that shocks to the exchange rate and inflation significantly impact the composite index in both the short and long term.
+		\end{itemize}
+	}	
+	
+	
+	
+	\frame{	\section{Recommendation}
+		\frametitle{Recommendation}
+	\begin{itemize}
+	
+	%	5.3: Recommendations
+		\item Policymakers should prioritize strategies to monitor and control inflation\\
+	 \item	Government should consider using monetary policies that target inflation control as a means to stabilize exchange rates\\
+		\item Informing investors about the strong relationship between inflation and exchange rates can help them make more informed investment decisions\\
+	\item  Further research should be encouraged to monitor these relationships over time\\
+	\item  Efforts should also be made to diversify the economy to reduce dependency on factors that are highly sensitive to inflation and exchange rates
+		
+			\end{itemize}
+	}	
+	
+	\frame{\frametitle{Reference}
+\bibliographystyle{plain} % or another style of your choice
+\bibliography{ref} % as
+		}
+
+	\definecolor{customGreen}{RGB}{153, 194, 173}
+\begin{frame}[plain]
+	
+	
+	\centering
+	\huge
+%	\textbf{\textcolor{green}{Thank You}} 
+	{\color{customGreen} \textbf{Thank You}}
+	
+\end{frame}
+
+
+
+\end{document}

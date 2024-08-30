@@ -26,25 +26,9 @@
 
 \author[BSc. Actuarial Science]{
 {\footnotesize{
-\begin{tabular}{cc}
-    Musah Faridu Oubda & 4325620 \\
-    Kassim Asana  & 4323020  \\
-
-   Sarpong Linda & 4330720  \\
-    Torsi Edmond Collins & 4331420  \\
-    Asiamah Ezekiel& 4316720  \\
-
-\end{tabular}
-\vspace{0.2cm} \\
-BSc. Actuarial Science
-\vspace{0.2cm} \\
-Supervised By: S. Addai-Henne
-}}
-\vspace{0.5cm} \\
-\includegraphics[scale=0.1]{logo.png}
-}
-
-\institute[COS]{Kwame Nkrumah University Of Science And Technology, KNUST \\ Kumasi, Ghana} 
+Musah Faridu Oubda (4325620)\\ Kassim Asana     (4323020)\\ Sarpong Linda    (4330720) \\ Torsi Edmond Collins (4331420) \\ Asiamah Ezekiel (4316720)  }} \\[4mm] \includegraphics[scale=0.1]{logo.png} \\Supervisor By: S. Addai-Henne}
+\institute
+[COS]{ Kwame Nkrumah University Of Science And Technology, KNUST \\ Kumasi, Ghana} 
 
 \date[\tiny \today]{\scriptsize \today}
 
@@ -151,7 +135,7 @@ The data was then encoded to transform all categorical data into a numerical for
 
 \begin{frame}
 
-		\frametitle{METHODOLOGY}
+		\frametitle{METHODOLOGY CONT'D}
     \framesubtitle{Fundamental Concept of Survival Analysis}  
 		\begin{itemize}
             \item  \textbf{Survival Function $S(t)$ }\\
@@ -174,7 +158,7 @@ h(t) = \lim_{\Delta t \to 0} \frac{P(t \le T < t + \Delta t \mid T \geq t)}{\Del
 \begin{frame}
 
 
-		\frametitle{METHODOLOGY}
+		\frametitle{METHODOLOGY CONT'D}
       \framesubtitle{Survival Models}  
 
 		\begin{itemize}
@@ -202,7 +186,7 @@ h\left(t \mid x\right) = h_0(t) \exp(\beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_
  
 
 \begin{frame}
-    \frametitle{METHODOLOGY}
+    \frametitle{METHODOLOGY CONT'D}
         \framesubtitle{Model Comparison}  
 
     \begin{itemize}
@@ -211,7 +195,7 @@ h\left(t \mid x\right) = h_0(t) \exp(\beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_
         \begin{equation} \scriptsize
         C=\frac{Number\ of\ Concordant\ Pairs}{Number\ of\ Concordant\ Pairs\ +Number\ of\ Discordant\ Pairs}
         \end{equation}
-        \item \textbf{Information Criteria}\\
+        \item \textbf{Information Criteria and Loglikelihood}\\
         It is used to evaluate how well a survival model fits the dataset.
         \begin{table}[H]
         \centering
@@ -242,44 +226,36 @@ h\left(t \mid x\right) = h_0(t) \exp(\beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_
 	\begin{frame}
   	\section{ANALYSIS AND FINDINGS}
 
-    \frametitle{DESCRIPTIVE  STATISTICS}
-\begin{table}[H]
-\centering
-\begin{tabular}{ll}
-\toprule
-\textbf{Statistic} & \textbf{Result} \\ 
-\midrule
-\textbf{Frequency }& No: 259 \\
-                         & Yes: 79 \\ 
-\midrule
-\textbf{Proportion} & No: 76.63\% \\ 
-                    & Yes: 23.37\% \\ 
-\midrule
-\textbf{Mode}& No \\ 
-\bottomrule
-\end{tabular}
-\caption{Descriptive Analysis of Churn Data}
-\label{tab:churn_summary}
-\end{table}
+    \frametitle{ANALAYSIS AND FINDINGS}
+    \framesubtitle{Descriptive Analysis}
+    \begin{block}{}
+        Out of the 338 students, 79 were recorded to have churned over the years while 259 had not churned.
+    \end{block}
 
-  
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.68\linewidth, height=0.5\textheight]{Figure 4/distribution.png}
+    \caption{Descriptive Analysis of Churn Data}
+    \label{fig:enter-label}
+\end{figure}
+
+
 \end{frame}
 
  
 \begin{frame}
 
-    \frametitle{KAPLAN MEIER}
+    \frametitle{ANALAYSIS AND FINDINGS CONT'D}
     
-    \begin{block}{}
-     \vspace{0.5cm}  
-        The Kaplan-Meier survival analysis shows a gradual decrease in survival probability over time, with significant events impacting the survival rates at various academic years.
+    \begin{block}{Kaplan Meier}
+        The Kaplan-Meier survival analysis below estimates the survival probability at the end of various academic years.
     \end{block}
     
    % Add some vertical space between the block and the content
     
-   \begin{table}[h!]
+   \begin{table}[H]
 \centering
-\begin{tabular}{|c|c|c|}
+\begin{tabular}{ccc}
 \hline
 \textbf{Event Time} & \textbf{Number of Events} & \textbf{Survival Probability} \\
 \hline
@@ -297,7 +273,7 @@ h\left(t \mid x\right) = h_0(t) \exp(\beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_
 
 
 \begin{frame}
-    \frametitle{KAPLAN MEIER }
+    \frametitle{ANALAYSIS AND FINDINGS CONT'D}
      \framesubtitle{Kaplan Meier Curve}
 
     
@@ -312,9 +288,10 @@ h\left(t \mid x\right) = h_0(t) \exp(\beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_
 \end{frame}
 
 	\begin{frame}
- 		\frametitle{ACCELERATED FAILURE TIME}
-   \framesubtitle{Selection of parametric distribution}
-            \begin{block}{}
+     \frametitle{ANALAYSIS AND FINDINGS CONT'D}
+
+ 		\framesubtitle{Accelerated Failure Time}
+            \begin{block}{Selection of parametric distribution}
 The LogNormal model is the best based on AIC and BIC values, showing the best fit among the distributions.
 \end{block}
 
@@ -336,13 +313,15 @@ The LogNormal model is the best based on AIC and BIC values, showing the best fi
     \end{frame}
 	
 	\begin{frame}
-    \frametitle{ANALYSIS AND FINDINGS}
+    \frametitle{ANALYSIS AND FINDINGS CONT'D}
         \framesubtitle{Comparison between Cox PH and AFT}  
 
     \begin{table}[H]
     \centering
     \scriptsize
     \setlength{\tabcolsep}{3pt} % Reduce column separation
+        \scriptsize{* indicates significant covariate.}
+
     \begin{tabular}{lcc|cc}
     \toprule
     Variable & \multicolumn{2}{c}{Cox PH Model} & \multicolumn{2}{c}{Lognormal Model} \\
@@ -354,13 +333,13 @@ The LogNormal model is the best based on AIC and BIC values, showing the best fi
     Usage Freq. & -0.08 & 0.27 & -0.002 & 0.940 \\
     Voice Calls & -0.57 & 0.08 & 0.132 & 0.329 \\
     Mobile Data & 0.32 & 0.48 & -0.287 & 0.165 \\
-    SMS & 0.48 & 0.06 & -0.228 & 0.036*\\
+    \textbf{SMS}& 0.48 & 0.06 & -0.228 & 0.036*\\
     Data Exhaust. & -0.20 & 0.61 & 0.102 & 0.493 \\
-    Multi. Networks & -0.13 & 0.78 & -0.104 & 0.607 \\
-    Poor Network & 2.60 & <0.005* & -1.041 & <0.0005*\\
-    Cust. Service & -1.40 & <0.005* & 0.809 & <0.0005*\\
-    High Costs & -1.13 & <0.005* & 0.515 & <0.0005*\\
-    Monthly Data & 0.21 & 0.02* & -0.069 & 0.113 \\
+    Multiple Networks& -0.13 & 0.78 & -0.104 & 0.607 \\
+    \textbf{Poor Network}& 2.60 & <0.005* & -1.041 & <0.0005*\\
+    \textbf{Customer Service}& -1.40 & <0.005* & 0.809 & <0.0005*\\
+    \textbf{High Costs}& -1.13 & <0.005* & 0.515 & <0.0005*\\
+    \textbf{Monthly Data}& 0.21 & 0.02* & -0.069 & 0.113 \\
     \midrule
     Intercept $\mu$ & -- & -- & 1.626 & <0.0005 \\
     Intercept $\sigma$ & -- & -- & -0.616 & <0.0005 \\
@@ -377,7 +356,7 @@ The LogNormal model is the best based on AIC and BIC values, showing the best fi
 	\begin{frame}
 		\frametitle{ANALYSIS AND FINDINGS}
         \framesubtitle{Selection of distribution}
-      \framesubtitle{Cox PH Plot}  
+      \framesubtitle{Cox Proportional Hazard Plot}  
 
 		\begin{figure}[H]
 			\centering
@@ -393,20 +372,20 @@ A positive covariate indicates an increase in churn rate while the negative cova
  \end{frame}
  
 	\begin{frame}
-		\frametitle{ANALYSIS AND FINDINGS CON'T}
-      \framesubtitle{AFT Plot}  
+		\frametitle{ANALYSIS AND FINDINGS CONT'D}
+      \framesubtitle{Accelerated Failure Time Plot}  
 
 		\begin{figure}[H]
 			\centering
 			\begin{minipage}{0.8\textwidth}
 				\centering
-				\includegraphics[width=0.8\textwidth]{Figure 4/4.4.png}
+				\includegraphics[width=\textwidth]{Figure 4/4.4.png}
 				\caption{LogNormal Forest Plot}
 				\label{Figure 4}
 				
 			\end{minipage}
         \end{figure}
-A positive covariate indicates an decrease in the time to event while the negative covariate indicates an increase in the time to event.	
+A positive covariate indicates a decrease in the time to event while the negative covariate indicates an increase in the time to event.	
  \end{frame}
   
 
@@ -417,13 +396,13 @@ A positive covariate indicates an decrease in the time to event while the negati
 			\centering
 			\begin{tabular}{lcc}
 				\toprule
-				\textbf{Model} & \textbf{Concordance} & \textbf{AIC}\\
+				\textbf{Model} & \textbf{Concordance} & \textbf{Loglikelihood}\\
 				\midrule
-				LogNormal& 0.958& 	305.81\\
+				LogNormal& 0.958& 	290.678 \\
 				Cox PH & 0.96& 	266.68\\
 				\bottomrule
 			\end{tabular}
-			\caption{Model Concordance and AIC values}
+			\caption{Model Concordance and Loglikelihood values}
 			\label{Table 2}
 			
 		\end{table}
@@ -436,15 +415,15 @@ A positive covariate indicates an decrease in the time to event while the negati
 
 		\frametitle{CONCLUSION}
 		\begin{itemize}
-			\item The research shows that Cox PH is the best model.
+			\item The research indicates that the Cox PH model provides the best predictions for the data, while the LogNormal model offers the best fit. 
             \vspace{0.3cm}
 
-           \item Poor Network, Customer Service, High Costs, Monthly Data and SMS are most significant to the study.
+           \item Poor Network, Customer Service, High Costs, Monthly Data, and SMS are the most significant covariates in the study.
            \vspace{0.3cm}
            
 			\item Poor Network Quality tends to increase both the churn rate and time to churn the most.
             \vspace{0.3cm}
-			\item Students tend to churn at the end of their 1st and 3rd academic years.
+			\item Students tend to churn most in their 3rd year.
 		\end{itemize}
 	\end{frame}
  
@@ -453,8 +432,7 @@ A positive covariate indicates an decrease in the time to event while the negati
 		\frametitle{RECOMMENDATIONS}
   \section{RECOMMENDATIONS}
 		\begin{itemize}
-			\item Conduct regular surveys.
-\vspace{0.3cm}
+
 
 			\item Enhance the quality and reliability of network coverage across KNUST to reduce churn rates.
 \vspace{0.3cm}
@@ -472,9 +450,8 @@ A positive covariate indicates an decrease in the time to event while the negati
  \end{frame}
 	
 	\begin{frame}
-		\frametitle{}
-		
-  \centering\Large{ THANK YOU}
+\frametitle{\phantom{ }}  		
+  \centering\Large{\textbf{ THANK YOU}}
 		
 		
 		
