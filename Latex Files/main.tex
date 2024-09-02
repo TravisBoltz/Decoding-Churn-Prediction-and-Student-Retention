@@ -17,6 +17,7 @@
 \usepackage{geometry}
 \usepackage{titlesec} % Add this package
 
+
 % Customizing chapter titles
 \titleformat{\chapter}[display]
   {\normalfont\Huge\bfseries\centering} % Increased font size to \Huge and centered
@@ -49,16 +50,16 @@
    %\large{\textbf{A Survival Analysis Approach}}
     \vspace{0.4cm}
     
-\large{Musah Faridu Oubda\\
-Kassim Asana\\
-Sarpong Linda\\
-Torsi Edmond Collins\\
-Asiamah Ezekiel}
+\large{MUSAH FARIDU OUBDA\\
+KASSIM ASANA\\
+SARPONG LINDA\\
+TORSI EDMOND COLLINS\\
+ASIAMAH EZEKIEL}
 
-    \vspace{0.4cm}  
+    \vspace{1cm}  
     \small{A THESIS SUBMITTED TO THE DEPARTMENT OF STATISTICS AND ACTUARIAL SCIENCE, KWAME NKRUMAH UNIVERSITY OF SCIENCE AND TECHNOLOGY IN FULFILLMENT OF THE REQUIREMENT FOR THE AWARD OF THE DEGREE OF BACHELOR OF SCIENCE IN ACTUARIAL SCIENCE}\\
     \vspace{0.4cm}
-    {AUGUST , 2024}
+    {AUGUST, 2024}
 \end{titlepage}
 \end{singlespace} % End single spacing
 
@@ -77,22 +78,19 @@ We, therefore, affirm that this paper is entirely our own original work and has 
 \newpage
 \begin{tabbing}
     \hspace{6cm} \= \hspace{4cm} \= \hspace{5cm} \kill
-    \textbf{Musah Faridu Oubda} \> \makebox[4cm]{\dotfill} \> \makebox[4cm]{\dotfill} \\
-    {Index No. (4325620)} \> {Signature} \> {Date} \\[1.5cm]
+    \textbf{Musah Faridu Oubda} \> \makebox[3cm]{\dotfill} \> \makebox[3cm]{\dotfill} \\
+    {Index Number (4325620)} \> {Signature} \> {Date} \\[1.5cm]
     \textbf{Kassim Asana} \> \makebox[3cm]{\dotfill} \> \makebox[3cm]{\dotfill} \\
-    {Index No. (4323020)} \> {Signature} \> {Date} \\[1.5cm]
+    {Index Number (4323020)} \> {Signature} \> {Date} \\[1.5cm]
     \textbf{Sarpong Linda} \> \makebox[3cm]{\dotfill} \> \makebox[3cm]{\dotfill} \\
-    {Index No. (4330720)} \> {Signature} \> {Date} \\[1.5cm]
+    {Index Number (4330720)} \> {Signature} \> {Date} \\[1.5cm]
     \textbf{Torsi Edmond Collins} \> \makebox[3cm]{\dotfill} \> \makebox[3cm]{\dotfill} \\
-    {Index No. (4331420)} \> {Signature} \> {Date} \\[1.5cm]
+    {Index Number (4331420)} \> {Signature} \> {Date} \\[1.5cm]
     \textbf{Asiamah Ezekiel} \> \makebox[3cm]{\dotfill} \> \makebox[3cm]{\dotfill} \\
-    {Index No. (4316720)} \> {Signature} \> {Date} \\[1.5cm]
-\end{tabbing}
-
-\begin{tabbing}
+    {Index Number (4316720)} \> {Signature} \> {Date} \\[1.5cm]
     \hspace{6cm} \= \hspace{4cm} \= \hspace{5cm} \kill
     \textbf{Certified by:}\\ 
-    \textbf{Miss Sandra Addai-Henne} \> \makebox[3cm]{\dotfill} \> \makebox[3cm]{\dotfill} \\
+    \textbf{Sandra Addai-Henne} \> \makebox[3cm]{\dotfill} \> \makebox[3cm]{\dotfill} \\
     {Supervisor} \> {Signature} \> {Date} \\[1.5cm]
     \textbf{Certified by:}\\ 
     \textbf{Prof. Gabriel Asare Okyere} \> \makebox[3cm]{\dotfill} \> \makebox[3cm]{\dotfill} \\
@@ -105,14 +103,14 @@ We, therefore, affirm that this paper is entirely our own original work and has 
 \chapter*{Abstract}
 \addcontentsline{toc}{chapter}{Abstract}
 
-This study examines the factors influencing student churn at Kwame Nkrumah University of Science and Technology (KNUST), with a particular focus on the telecommunications services provided by Vodafone (now Telecel). Utilizing survival analysis methods, including the Cox Proportional Hazards (PH) model and the Lognormal Accelerated Failure Time (AFT) model, the research identifies key predictors of churn and analyzes survival rates across different academic levels. The findings indicate that poor network quality significantly increases both the churn rate and the time to churn. While the Cox PH model demonstrates superior predictive value, the Lognormal AFT model offers a better overall fit. The result has important implications for both Telecel and KNUST, suggesting that enhancements in network quality could improve student retention. The study concludes with recommendations for reducing churn and outlines directions for future research.
+This study examines the factors influencing student churn at Kwame Nkrumah University of Science and Technology (KNUST), with a particular focus on the telecommunications services provided by Vodafone (now Telecel). The study was centered on students in their 4th year in the College of Science. Utilizing survival analysis methods, the Cox Proportional Hazards (PH) model and the Lognormal Accelerated Failure Time (AFT) model were used to identify key predictors of churn and analyze the survival rates of the 4th year students across different academic levels. The findings indicate that poor network quality significantly increases both the churn rate and the time to churn. While the Cox PH model demonstrates superior predictive value (0.96 concordance value), the Lognormal AFT model offers a better overall fit (290.678 loglikehood ratio). It was also noticed that, students churned more at the end of their 3rd year. Poor Network Quality was the covariate that affected the increase in churn rate and accelerated the time to churn the most. The study concludes with recommendations for reducing churn and outlines directions for future research.
 
 
 \newpage
 \chapter*{Acknowledgment}
 \addcontentsline{toc}{chapter}{Acknowledgement}
 
-We are grateful to the Great and Mighty God for giving us the ability and fortitude to do this task. Our sincere gratitude also extends to Miss Sandra Addai-Henne, our supervisor, who acted as a beacon of hope for us as we set out on our path. We will always remember her kindness, comprehension and level of tolerance. She always mentored and corrected us. We also want to express our gratitude to all of the instructors at Kwame Nkrumah University of Science and Technology(KNUST) who assisted us with our studies. We are grateful to you everyone.  
+We are grateful to the Great and Mighty God for giving us the ability and fortitude to do this task. Our sincere gratitude also extends to Sandra Addai-Henne, our supervisor, who acted as a beacon of hope for us as we set out on our path. We will always remember her kindness, comprehension level of tolerance. She always mentored and corrected us. We also want to express our gratitude to all of the instructors at Kwame Nkrumah University of Science and Technology(KNUST) who assisted us with our studies. We are grateful to you everyone.  
 
 
 
@@ -121,7 +119,19 @@ We are grateful to the Great and Mighty God for giving us the ability and fortit
 \addcontentsline{toc}{chapter}{Dedication}
 
 
-We dedicate this project to the Almighty God, who has seen us through all of our challenges during this thesis period and has brought us this far. We also dedicate this effort to our families and friends, who have been there for us every step of the way with love and prayers. Finally, we dedicate this presentation to our supervisor, who stood by us through it all.  
+We dedicate this project to the Almighty God and our parents, who have seen us through all of our challenges during this thesis period and has brought us this far. We also dedicate this effort to our families and friends, who have been there for us every step of the way with love and prayers. Finally, we dedicate this presentation to our supervisor, who stood by us through it all.  
+
+
+
+\newpage
+\renewcommand{\contentsname}{Table of Content} % Rename the Table of Contents
+\tableofcontents % Generate the Table of Contents
+
+\newpage
+\listoftables
+
+\newpage
+\listoffigures
 
 \newpage
 \chapter*{List of Abbreviations}
@@ -145,25 +155,13 @@ We dedicate this project to the Almighty God, who has seen us through all of our
     \textbf{PH} \> Proportional Hazards \\
     \textbf{RSF} \> Random Survival Forest \\
     \textbf{SA} \> Survival Analysis \\
+    \textbf{SAT3} \> South Atlantic 3 \\
     \textbf{S(t)} \> Survival Function \\
     \textbf{SMS} \> Short Message Service \\
     \textbf{UITS} \> University Information Technology Services \\
     \textbf{WACS} \> West Africa Cable System \\
     \textbf{h(t)} \> Hazard Function \\
 \end{tabbing}
-
-
-
-\newpage
-\renewcommand{\contentsname}{Table of Content} % Rename the Table of Contents
-\tableofcontents % Generate the Table of Contents
-
-
-\newpage
-\listoffigures
-
-\newpage
-\listoftables
 
 
 
@@ -180,21 +178,21 @@ We dedicate this project to the Almighty God, who has seen us through all of our
 
 \section{Background of Study}
 
-Ghana's telecommunications industry has experienced significant growth in recent years, with companies such as Vodafone playing a crucial role in providing mobile and internet services to people across the country [Bandim, 2022]. The industry is highly competitive, making customer retention vital for sustaining market share and profitability. Obtaining new customers is more expensive than retaining existing ones due to marketing activities, incentives and campaigns involved. Therefore, retaining a customer is preferable to acquiring a new one. Customer churn, also known as customer attrition, refers to the loss of subscribers or customers who cease using a company’s service or product within a given period [Koranchirath, 2024]. Understanding the reasons behind customer churn helps to develop strategies to improve customer retention and help reduce churn rates in the long run.\\
-Vodafone is one of the leading national telecommunications providers in Ghana. As of January 2020, it had over 9.3 million mobile voice subscribers, representing 13.81\% of Ghana's market share. Since becoming the majority shareholder, Vodafone Ghana has been operating the Ghana Satellite Earth Station (GSES) since 2008 [Wikipedia, 2020]. GSES allows Ghana to access and utilize communications satellites orbiting the Earth for various applications, such as telephone services, internet connectivity, television broadcasting, data transmission, disaster management and emergency communications. The operation of the earth station by Vodafone Ghana proves the company's commitment to investing in and upgrading Ghana's satellite communications capabilities.\\
+Ghana's telecommunications industry has experienced significant growth in recent years, with companies such as Vodafone playing a crucial role in providing mobile and internet services to people across the country [Bandim, 2022]. The industry is highly competitive, making customer retention vital for sustaining market share and profitability. Obtaining new customers is more expensive than retaining existing ones due to marketing activities, incentives and campaigns involved. Therefore, retaining a customer is preferable to acquiring a new one. Customer churn, also known as customer attrition, refers to the loss of subscribers or customers who cease using a company’s service or product within a given period. Understanding the reasons behind customer churn helps to develop strategies to improve customer retention and help reduce churn rates in the long run.\\
+Vodafone is one of the leading national telecommunications providers in Ghana. As of January 2020, it had over 9.3 million mobile voice subscribers, representing 13.81\% of Ghana's market share. Since becoming the majority shareholder, Vodafone Ghana has been operating the Ghana Satellite Earth Station (GSES) since 2008 [Wikipedia, 2020]. GSES allows Ghana to access and utilize communications satellites orbiting the Earth for various applications, such as telephone services, internet connectivity, television broadcasting, data transmission, disaster management emergency communications. The operation of the earth station by Vodafone Ghana proves the company's commitment to investing in and upgrading Ghana's satellite communications capabilities.\\
 In 2016, Vodafone partnered with Kwame Nkrumah University of Science and Technology (KNUST) to provide enhanced packages of services to the various faculties across the university's campuses to improve education services [Wikipedia, 2020]. This collaboration included telecommunications services such as SIM cards and data plans for the student and employee communities.\\
-In February 2023, Telecel acquired 70\% shares in Vodafone, rebranding the company name to Telecel in 2024 [Wikipedia, 2024]. This rebranding aimed to improve service offerings across voice and data services, money transfers and business solutions. Telecel, founded in 1986, is an Africa-focused telecommunication company that operates primarily in Africa and converges telecommunications with fintech, e-commerce and tech startups.\\
-Student churn is a major issue every telecom company encounters. It leads to a loss of revenue and increases the cost of acquiring new customers. In the highly competitive telecom market, where customers have multiple service provider options, retaining customers becomes even more challenging. Companies use modern technology, computer software and survival analysis approaches to identify at-risk students and devise strategies to enhance retention rates. This method of recognizing unsatisfied customers is known as churn prediction.\\
-On March 14, 2024, Vodafone, along with several other telecommunications companies, was hit by outages on several underwater fiber optic cables, leading to disruptions in services, particularly internet services [Ghana Web, 2024]. It affected about 10 countries in West Africa, including Ghana. Initially, it was estimated that the problem would be fixed within 3 days; however, this was not the case. The damage was massive, affecting the West Coast route to Europe, West Africa Cable System (WACS) and the Africa Coast to Europe (ACE), resulting in MainOne and SAT3 going offline [AP News, 2024]. The only network that was properly functioning at the moment in Ghana was AirtelTigo (AT). To quickly prevent the loss of valuable customers to AirtelTigo, Vodafone (Telecel) took the initiative to update its customers daily on their progress and offer various bonuses to prevent customers from defecting to their competitors. This continued until the problem was fixed on April 29, 2024, when the WACS cable was repaired.\\
-Previous studies have explored various factors that influence customer churn in a telecommunications company. This study aims to focus on the KNUST student population, uncover and analyze data gathered from students, apply survival analysis models to identify patterns related to churn (such as demographics, usage patterns, etc.), develop retention strategies, evaluate the success of these efforts and make informed decisions.
+In February 2023, Telecel acquired 70\% shares in Vodafone, rebranding the company name to Telecel in 2024 [Wikipedia, 2024]. This rebranding aimed to improve service offerings across voice and data services, money transfers business solutions. Telecel, founded in 1986, is an Africa-focused telecommunication company that operates primarily in Africa and converges telecommunications with fintech, e-commerce tech startups.\\
+Student churn is a major issue every telecom company encounters. It leads to a loss of revenue and increases the cost of acquiring new customers. In the highly competitive telecom market, where customers have multiple service provider options, retaining customers becomes even more challenging. Companies use modern technology, computer software survival analysis approaches to identify at-risk students and devise strategies to enhance retention rates. This method of recognizing unsatisfied customers is known as churn prediction.\\
+On March 14, 2024, Vodafone, along with several other telecommunications companies, was hit by outages on several underwater fiber optic cables, leading to disruptions in services, particularly internet services [Ghana Web, 2024]. It affected about 10 countries in West Africa, including Ghana. Initially, it was estimated that the problem would be fixed within 3 days; however, this was not the case. The damage was massive, affecting the West Coast route to Europe, the West Africa Cable System (WACS) the Africa Coast to Europe (ACE), resulting in MainOne and South Atlantic 3 (SAT3) going offline [AP News, 2024]. The only network that was properly functioning at the moment in Ghana was AirtelTigo (AT). To quickly prevent the loss of valuable customers to AirtelTigo, Vodafone (Telecel) took the initiative to update its customers daily on their progress and offer various bonuses to prevent customers from defecting to their competitors. This continued until the problem was fixed on April 29, 2024, when the WACS cable was repaired.\\
+This study aims to focus on the KNUST student population, uncover and analyze data gathered from students, apply survival analysis models to identify patterns related to churn (such as demographics, usage patterns, etc.), develop retention strategies, evaluate the success of these efforts and make informed decisions.
 
 \section{Problem Statement}
 
-Despite KNUST's efforts to partner with Telecel for affordable and accessible mobile communication services, student churn remains a persistent issue. The core problem lies in the insufficient understanding of the factors influencing student churn and retention, which hampers the development of effective strategies to tackle the issue [Kapur, 2018]. This research aims to address this gap by investigating the factors contributing to student churn and developing a survival analysis model to identify students at risk. The goal is to create targeted strategies that improve retention rates based on the model's insights.\\
-The existing gap in knowledge regarding the precise reasons behind student churn undermines the ability to devise targeted interventions that could effectively address the issue. As a result, the strategies that have been implemented so far have not achieved the desired outcomes in reducing churn rates. This research seeks to bridge this gap by thoroughly investigating the various factors contributing to student churn and by developing a robust survival analysis model to accurately identify students who are at risk of churning. The objective is to leverage the insights gained from this model to design and implement targeted strategies aimed at improving retention rates. By addressing these issues, the research aims to facilitate understanding of churn dynamics and ultimately enhance the effectiveness of retention efforts.
+Despite KNUST's efforts to partner with Telecel for affordable and accessible mobile communication services, student churn remains a persistent issue. The core problem lies in the insufficient understanding of the factors influencing student churn and retention, which hampers the development of effective strategies to tackle the issue. This research aims to address this gap by investigating the factors contributing to student churn and developing a survival analysis model to identify students at risk. The goal is to create targeted strategies that improve retention rates based on the model's insights.\\
+The existing gap in knowledge regarding the precise reasons behind student churn undermines the ability to devise targeted interventions that could effectively address the issue. As a result, the strategies that have been implemented so far have not achieved the desired outcomes in reducing churn rates. This research seeks to bridge this gap by thoroughly investigating the various factors contributing to student churn and by developing a robust survival analysis model to accurately identify students who are at risk of churning. The objective is to leverage the insights gained from this model to design and implement targeted strategies aimed at improving retention rates. By addressing these issues, the research aims to facilitate an understanding of churn dynamics and ultimately enhance the effectiveness of retention efforts.
 
 \section{Research Objectives}
-The objectives of the research is ;
+The objectives of the research are;
 \begin{enumerate}
 \item To use survival analysis to estimate student churn rates at various academic years.
 \item To determine which covariates affect the churn rate.
@@ -225,7 +223,7 @@ The objectives of the research is ;
 
 \section{Significance of the Study}
 
-The study offers a comprehensive understanding of the factors impacting student churn from Vodafone. This will enable the development of precise strategies to enhance retention rates, thereby minimizing churn. The study will empower KNUST to improve the telecom services offered to its students. By identifying the factors influencing student retention and churn, KNUST can work closely with Telecel to guarantee the delivery of top-notch, dependable services to its students, thereby solidifying the partnership between KNUST and Telecel. The study is all about understanding what the populace expects from Vodafone (Telecel). By knowing their specific needs and preferences, the services can be improved upon. This means improved connectivity, service plans and less hassle from switching providers. Ultimately, it ensures a more stable and reliable service for students.
+The study offers a comprehensive understanding of the factors impacting student churn from Vodafone. This will enable the development of precise strategies to enhance retention rates, thereby minimizing churn. The study will empower KNUST to improve the telecom services offered to its students. By identifying the factors influencing student retention and churn, KNUST can work closely with Telecel to guarantee the delivery of top-notch, dependable services to its students, thereby solidifying the partnership between KNUST and Telecel. The study is all about understanding what the populace expects from Vodafone (Telecel). By knowing their specific needs and preferences, the services can be improved upon. This means improved connectivity, service plans less hassle from switching providers. Ultimately, it ensures a more stable and reliable service for students.
 
 \section{Organization of the Study}
 
@@ -233,26 +231,26 @@ The study on student retention and churn for Telecel services at KNUST aims to i
 
 \section{Limitation of the Study}
 
-The research is specifically concentrated on students within the College of Science at KNUST. As a result, it does not encompass students from other colleges within the university. This limitation means that the findings and insights derived from this study are relevant primarily to the College of Science and may not be fully applicable to students in other colleges.
+The research specifically concentrates on students at the College of Science at KNUST. As a result, it does not encompass students from other colleges within the university. This limitation means that the findings and insights derived from this study are relevant primarily to the College of Science and may not be fully applicable to students in other colleges.
 
 \newpage
 \chapter{Literature Review}
 
 
 \section{Introduction}
-Mobile technology has become widely used, changing how students interact, communicate and obtain information [Kapur, 2018]. Student retention and churn are critical issues for universities and telecom companies alike. In the context of Vodafone's services offered to students, understanding student behavior and preferences is crucial for effective retention strategies. This project addresses this gap using survival analysis, a statistical method for examining data over time [Box-Steffensmeier and Jone, 2020]. In this context, the event of interest is student churn, defined as the discontinuation or cessation of Vodafone SIM cards. By applying survival analysis, this project will provide valuable insights into student retention and churn factors.
+Mobile technology has become widely used, changing how students interact, communicate obtain information. Student retention and churn are critical issues for universities and telecom companies alike. In the context of Vodafone's services offered to students, understanding student behavior and preferences is crucial for effective retention strategies. This project addresses this gap using survival analysis, a statistical method for examining data over time [Box-Steffensmeier and Jone, 2020]. In this context, the event of interest is student churn, defined as the discontinuation or cessation of Vodafone SIM cards. By applying survival analysis, this project will provide valuable insights into student retention and churn factors.
 
 \subsection{Telecommunication Industry and Customer Behavior}
-The telecommunication industry is highly competitive, with customer acquisition and retention being pivotal to a company's success. Research indicates that factors such as service, pricing, customer support and competitive offerings significantly influence customer churn [Lai, 2021].
+The telecommunication industry is highly competitive, with customer acquisition and retention being pivotal to a company's success. Research indicates that factors such as service, pricing, customer support competitive offerings significantly influence customer churn [Lai, 2021].
 
 \subsection{Student Retention and Telecom Services}
-Students, as a demographic, exhibit unique usage patterns and service expectations. Studies show that reliable connectivity, affordable pricing and additional benefits like educational resources influence their choice of telecom services [Smith and Brown, 2020]. For telecom companies, understanding these factors is crucial to tailoring services that meet students’ needs and enhance retention.
+Students, as a demographic, exhibit unique usage patterns and service expectations. Studies show that reliable connectivity, affordable pricing additional benefits like educational resources influence their choice of telecom services [Smith and Brown, 2020]. For telecom companies, understanding these factors is crucial to tailoring services that meet students’ needs and enhance retention.
 
 \subsection{History of Survival Analysis (SA)}
-The origins of SA and its history spread far back to the early work on mortality by John Graunt, who published the book "Natural and Political Observations on the Bills of Mortality" in 1977. The concept of “Life Tables” was introduced in this book [Graunt, 1977]. A new, modern era in SA started during World War II in the USA, where the reliability of military equipment was tested using SA. After World War II, SA became popular and spread to various other disciplines [Jerenz, 2008]. The most influential papers on SA were published by Kaplan and Meier [Kaplan and Meier, 1958] and Cox [Cox et al., 1972], in which the Kaplan-Meier product limit estimator and Cox proportional hazard model were introduced, respectively.
+The origins of SA and its history spread far back to the early work on mortality by John Graunt, who published the book “Natural and Political Observations on the Bills of Mortality" in 1977. The concept of “Life Tables” was introduced in this book [Graunt, 1977]. A new, modern era in SA started during World War II in the USA, where the reliability of military equipment was tested using SA. After World War II, SA became popular and spread to various other disciplines [Jerenz, 2008]. The most influential papers on SA were published by Kaplan and Meier [Kaplan and Meier, 1958] and Cox [Cox et al., 1972], in which the Kaplan-Meier product limit estimator and Cox proportional hazard model were introduced, respectively.
 
 \subsection{Application of Survival Analysis}
-Survival analysis (SA) has been successfully applied in diverse fields, including medical research, engineering (reliability analysis), finance and economics. In finance, SA has been used to analyze a firm's vulnerability to global financial crises and identify firms at risk of failure, enabling timely interventions [Lee, 2014, Pereira, 2014, Kumar and Gepp, 2015, Iwasaki, 2014]. SA has also been employed to predict the optimal time to buy or sell stocks within the stock market [Kumar and Gepp, 2015]. In the banking sector, SA is utilized to assess banks' survival during financial crises, measure their strength when entering new markets [Leung et al., 2010, Evrensel, 2008] and conduct credit risk analysis [Tsujitani and Baesens, 2012, Baesens et al., 2005]. The widespread adoption of SA across these domains underscores its versatility and effectiveness in modeling time-to-event data and identifying the factors that influence outcomes of interest.
+Survival analysis (SA) has been successfully applied in diverse fields, including medical research, engineering (reliability analysis), finance and economics. In finance, SA has been used to analyze a firm's vulnerability to global financial crises and identify firms at risk of failure, enabling timely interventions [Lee, 2014, Pereira, 2014, Kumar and Gepp, 2015, Iwasaki, 2014]. SA has also been employed to predict the optimal time to buy or sell stocks within the stock market [Kumar and Gepp, 2015]. In the banking sector, SA is utilized to assess banks' survival during financial crises, measure their strength when entering new markets [Leung et al., 2003, Evrensel, 2008] and conduct credit risk analysis [Tsujitani and Baesens, 2012, Baesens et al., 2005]. The widespread adoption of SA across these domains underscores its versatility and effectiveness in modeling time-to-event data and identifying the factors that influence outcomes of interest.
 
 \section{Conceptual Review}
 
@@ -283,7 +281,7 @@ The study employs quantitative research. This type of research aims to establish
 Before the actual study was carried out, a pilot survey was held to grasp the scope of students’ understanding of the topic. It was carried out using final year students in Actuarial Science. Out of 50 questionnaires sent out, a total of 46 answered the questions.
 \section{Data Collection}
 
-The primary data source for this research was a survey conducted among students at Kwame Nkrumah University of Science and Technology (KNUST) in College of Science. The survey targeted students in final years (Level 400). The dataset includes a variety of questions, each capturing specific aspects relevant to the study with the aid of Google Forms.
+The primary data source for this research was a survey conducted among students at Kwame Nkrumah University of Science and Technology (KNUST) in the College of Science. The survey targeted students in their final years (Level 400). The dataset includes a variety of questions, each capturing specific aspects relevant to the study with the aid of Google Forms.
 
 
 \section{Sample Size}
@@ -293,6 +291,7 @@ The sample size for simple random sampling can be determined using the formula b
 \begin{equation}
 n_0=\frac{z^2 \ast p \ast \left(1-p\right)}{E^2}
 \end{equation}
+\vspace{0.1cm}
 \begin{equation}
 n=\frac{n_0}{1+(\frac{n_0-1}{N})}
 \end{equation}\\
@@ -309,7 +308,7 @@ Where:\\
 
 \section{Data Pre-Processing}
 
-In the realm of data analysis, ensuring the quality and suitability of data is paramount for deriving meaningful insights and making informed decisions. The initial phase of the study involved a thorough examination of the dataset to identify and handle missing data appropriately to ensure that subsequent analyses were conducted on a complete and representative dataset. One of the critical preprocessing tasks involved the transformation of categorical variables into numeric format. This was achieved using label encoding, a technique that assigns unique integer labels to each category with the aid of Python. The transformation restructured the dataset to facilitate survival analysis. The data was then organized to facilitate essential components such as time duration, event indicators and relevant covariates to the variables. 
+In the realm of data analysis, ensuring the quality and suitability of data is paramount for deriving meaningful insights and making informed decisions. The initial phase of the study involved a thorough examination of the dataset to identify and handle missing data appropriately to ensure that subsequent analyses were conducted on a complete and representative dataset. One of the critical pre-processing tasks involved the transformation of categorical variables into numeric format. This was achieved using label encoding, a technique that assigns unique integer labels to each category with the aid of Python. The transformation restructured the dataset to facilitate survival analysis. The data was then organized to facilitate essential components such as time duration, event indicators and relevant covariates to the variables. 
 The lifelines package played a pivotal role in this section by providing essential survival analysis models in Python. The models are crucial for analyzing data where the time to student churn is important. 
 
 \section{Concept of Survival Analysis}
@@ -327,14 +326,14 @@ Right-censoring occurs when a subject experiences some loss to follow-up, or the
 
 \subsection{Left-Censored}
 
-Left-censoring happens when the event of interest has already occurred before the subject enters the study. Thus, the exact survival time is only known to be less than a certain value, indicating that the true survival time is less than or equal to the observed survival time. Left-censoring can be more challenging to handle because it typically requires additional assumptions or data about the time before the study began.
+Left censoring happens when the event of interest has already occurred before the subject enters the study. Thus, the exact survival time is only known to be less than a certain value, indicating that the true survival time is less than or equal to the observed survival time. Left-censoring can be more challenging to handle because it typically requires additional assumptions or data about the time before the study begins.
 
 \subsection{Interval-Censored}
 
-Interval-censoring arises when the exact time of the event of interest is unknown, but it is known to have occurred within a specific time interval. This type of censoring incorporates aspects of both right-censoring and left-censoring. For example, if a subject is only observed periodically, and the event occurs between two observation points, the exact timing is unknown but constrained within the interval. Interval-censoring requires specialized methods to analyze because it involves handling data within a range rather than a specific time point.
+Interval censoring arises when the exact time of the event of interest is unknown, but it is known to have occurred within a specific time interval. This type of censoring incorporates aspects of both right-censoring and left-censoring. For example, if a subject is only observed periodically and the event occurs between two observation points, the exact timing is unknown but constrained within the interval. Interval censoring requires specialized methods to analyze because it involves handling data within a range rather than a specific time point.
 \subsection{Type I Censoring}
 
-Type I censoring occurs when the study ends at a predetermined time, and subjects who have not experienced the event by that time are censored. This is a form of right-censoring. For example, in a clinical trial with a fixed duration, all patients who do not experience the event by the end of the study are censored at the study's conclusion.
+Type I censoring occurs when the study ends at a predetermined time and subjects who have not experienced the event by that time are censored. This is a form of right-censoring. For example, in a clinical trial with a fixed duration, all patients who do not experience the event by the end of the study are censored at the study's conclusion.
 
 \subsection{Type II Censoring}
 
@@ -346,7 +345,7 @@ Random censoring occurs when the censoring times are random and independent of t
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Figure 3/3.2.png}
+    \includegraphics[width=0.85\linewidth]{Figure 3/3.2.png}
     \caption{Censoring Graph}
     \label{Figure 3.2}
 \end{figure}
@@ -386,7 +385,7 @@ S'(t) = -F'(t)
 \begin{equation}
 S'(t) = -f(t)
 \end{equation}
-In Figure \ref{Figure 3.3} below, the curve on the left is a theoretical curve of the survival function\ \(S\left(t\right) \) which ranges from 0 up to infinity. It is non-increasing and therefore slopes downward as \(t\) increases. At \(t= 0\), \(S\left(0\right)=1\) and when \( t\ =\ \infty , S\left(\infty\right)\ =\ 0.\) When actual data is used, the survivor curve does not result in a smooth curve but rather obtains a step function graph. The step function is illustrated on the right in Figure \ref{Figure 3.3}.  The study period is never infinite in duration as there may be competing risks for failure, not everyone may obtain the event of interest. The estimated survivor function \(\hat{S}\left(t\right)\), thus may not go all the way down to 0 at the end of the study.
+In Figure \ref{Figure 3.3} below, the curve on the left is a theoretical curve of the survival function\ \(S\left(t\right) \) which ranges from 0 up to infinity. It is non-increasing and therefore slopes downward as \(t\) increases. At \(t= 0\), \(S\left(0\right)=1\) and when \( t\ =\ \infty, S\left(\infty\right)\ =\ 0.\) When actual data is used, the survivor curve does not result in a smooth curve but rather obtains a step function graph. The step function is illustrated on the right in Figure \ref{Figure 3.3}.  The study period is never infinite in duration as there may be competing risks for failure, not everyone may obtain the event of interest. The estimated survivor function \(\hat{S}\left(t\right)\), thus may not go all the way down to 0 at the end of the study.
 
 \begin{figure}[H]
     \centering
@@ -419,12 +418,12 @@ h(t) &= \lim_{\Delta t \to 0} \frac{\Pr(t \leq T < t + \Delta t \mid T > t)}{\De
 &= \frac{1}{S(t)} \cdot \lim_{\Delta t \to 0} \left[ \frac{F(t + \Delta t) - F(t)}{\Delta t} \right] \\
 &= \frac{f(t)}{S(t)} 
 \end{align}\\
-The hazard function is also known as the conditional failure rate. It is a rate rather than a probability. In the hazard function formula, the expression to the right of the limit sign gives the ratio of two quantities. The numerator is a conditional probability while the denominator, \(\Delta t\) denotes a small-time interval. By the division, a probability per unit of time is obtained, which is no longer a probability but a rate. In particular, the scale for this ratio is not 0 to 1 like a probability but rather ranges between 0 and infinity while depending on whether time is measured in days, weeks, months, or years. 
+The hazard function is also known as the conditional failure rate. It is a rate rather than a probability. In the hazard function formula, the expression to the right of the limit sign gives the ratio of two quantities. The numerator is a conditional probability while the denominator, \(\Delta t\) denotes a small-time interval. By the division, a probability per unit of time is obtained, which is no longer a probability but a rate. In particular, the scale for this ratio is not 0 to 1 like a probability but rather ranges between 0 and infinity depending on whether time is measured in days, weeks, months, or years. 
 
 \begin{equation}
 H(t)=\int_{0}^{t}{h(x)dx}
 \end{equation}\\
-The cumulative hazard function \(H(t)\) can be derived from the hazard function. It is the integral of the hazard function up to time \(t\). It represents the total hazard experienced up to time \( t. H(t)\) provides a straightforward cumulative measure of risk or failure over time.
+The cumulative hazard function \(H(t)\) can be derived from the hazard function. It is the integral of the hazard function up to time \(t\). It represents the total hazard experienced up to time \( t.\) \( H(t)\) and provides a straightforward cumulative measure of risk or failure over time.
 
 \begin{equation}
 S(t) = \exp\left[-\int_{0}^{t} h(x) \, dx\right]
@@ -434,7 +433,7 @@ S(t) = \exp\left[-\int_{0}^{t} h(x) \, dx\right]
 \begin{equation}
 h(t) = -\left[\frac{dS(t)/dt}{S(t)}\right]
 \end{equation}\\
-The equations above clearly defines the relation between the hazard function and survival function. This can be seen in (3.25) and (3.26) in which the $h(t)$ gives the $S(t)$ and vice versa.
+The equations above clearly define the relation between the hazard function and survival function. This can be seen in equation (3.18) and equation (3.19) in which the $h(t)$ gives the $S(t)$ and vice versa.
 
 
 \section{Approaches in Survival Analysis}
@@ -443,7 +442,7 @@ The approaches to use in survival analysis are underlined by their strengths and
 
 \subsection{Parametric Methods}
 
-Parametric survival analysis is based on the assumption that survival times conform to a particular statistical distribution. The exponential, weibull, log-normal, and gamma distributions are common models that can be applied to various kinds of survival data [Aalen, 2002]. Maximum likelihood estimation, which finds the values that best fit the observed data, is commonly used for parameter estimation. As an alternative, Bayesian techniques can be applied, which refine estimates based on data by combining previous knowledge.
+Parametric survival analysis is based on the assumption that survival times conform to a particular statistical distribution. The exponential, Weibull, log-normal and gamma distributions are common models that can be applied to various kinds of survival data [Aalen, 2004]. Maximum likelihood estimation, which finds the values that best fit the observed data, is commonly used for parameter estimation. As an alternative, Bayesian techniques can be applied, which refine estimates based on data by combining previous knowledge.
 
 \subsection{Non-Parametric Methods}
 
@@ -478,11 +477,11 @@ h\left(t \mid x\right) = h_0(t) \exp(\beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_
 \end{equation}\\
 Where:\\
 \vspace{0.1in}
-   \(h(t\mid x)\) is the hazard function, i.e., the instantaneous rate of the event occurring at time \(t\) given the predictor variables \(x\).\\
+ \noindent  \(h(t\mid x)\) is the hazard function, i.e., the instantaneous rate of the event occurring at time \(t\) given the predictor variables \(x\).\\
 \vspace{0.1in}
-   \(h_0\left(t\right)\) is the baseline hazard function, representing the hazard for individuals with all predictor variables equal to zero,\\
+ \noindent  \(h_0\left(t\right)\) is the baseline hazard function, representing the hazard for individuals with all predictor variables equal to zero,\\
 \vspace{0.1in}
-     \(\beta_1,\beta_2,\ldots,\beta_p\) are the coefficients for the predictor variables.\\
+ \noindent    \(\beta_1,\beta_2,\ldots,\beta_p\) are the coefficients for the predictor variables.\\
 \vspace{0.1in}
 \\ The coefficients \(\beta\) are estimated using maximum likelihood estimation and the model assumes a proportional hazard ratio, meaning the effect of the predictors on the hazard is constant over time.
 An important assumption on the Cox PH is that it has a constant hazard function proportion for each time. The Hypothesis of the assumption is as follows: 
@@ -535,7 +534,7 @@ In the case of right-skewed data, the model assumes that the survival time has a
 where \(\mu = b_0 + \sum_{i=1}^{n}{b_i x_i}\) is the location parameter, \(\sigma\) is the scale parameter and \(\Phi\) is the cumulative distribution function of the standard normal distribution.
 
 \subsection{Log-logistic AFT}
-The model can handle both growing and decreasing hazard rates, and it assumes that the survival time follows a logistic distribution. Like the Weibull model, it is adaptable and diverse, which makes it helpful for simulating various risk patterns across time.
+The model can handle both growing and decreasing hazard rates and it assumes that the survival time follows a logistic distribution. Like the Weibull model, it is adaptable and diverse, which makes it helpful for simulating various risk patterns across time.
 
 
 \begin{equation}
@@ -551,7 +550,7 @@ Information criteria are used to evaluate and compare the relative quality of st
 
 \subsection{Log-Likelihood}
 
-The log-likelihood function is used in measuring how well a model explains the observed data. It is the logarithm of the likelihood function, which represents the probability of observing the given data under a specific model.
+The log-likelihood function is used to measure how well a model explains the observed data. It is the logarithm of the likelihood function, which represents the probability of observing the given data under a specific model.
 
 \begin{equation}
 \ln(L) = \sum_{i=1}^{n} \ln(f(y_i \mid \theta)),
@@ -564,7 +563,7 @@ Where:\\
 \vspace{0.1in}
    \(f(y_i \mid \theta)\) is the probability density function of the data given the parameters \(\theta\). \\
 \vspace{0.1in} \\
-A higher log-likelihood value indicates that the model provides a better fit to the data. When comparing different models, the one with the highest log-likelihood is typically preferred, as it suggests that the model is more likely to have generated the observed data. However, it's important to balance this with model complexity, which is where information criteria like  Akaike Information Criterion (AIC), Bayesian Information Criterion (BIC) and Hannan-Quinn Criterion.
+A higher log-likelihood value indicates that the model provides a better fit to the data. When comparing different models, the one with the highest log-likelihood is typically preferred, as it suggests that the model is more likely to have generated the observed data. However, it's important to balance this with model complexity, which is where information criteria like Akaike Information Criterion (AIC), Bayesian Information Criterion (BIC) and Hannan-Quinn Criterion.
 
 \subsection{Akaike Information Criterion (AIC)}
 
@@ -626,7 +625,7 @@ This metric is particularly valuable in survival analysis because it provides a 
 \newpage
 \chapter{Results and Analysis}
 \section{Introduction}
-This section presents the study's findings and discusses what each output means toward the research goals. It includes tables, graphs and computer results based on the methods used. The analysis closely examines details of the model building, diagnostics and evaluation. The information here was obtained from using python for computer analysis during the research. This chapter seeks to explain the use of survival models in the methodology to determine the Vodafone (Telecel) churn rate among students.
+This section presents the study's findings and discusses what each output means toward the research goals. It includes tables, graphs and computer results based on the methods used. The analysis closely examines details of the model building, diagnostics and evaluation. The information here was obtained from using Python for computer analysis during the research. This chapter seeks to explain the use of survival models in the methodology to determine the Vodafone (Telecel) churn rate among students.
 
 
 \section{Sample Size Calculation}
@@ -662,7 +661,7 @@ n \approx 338.297
 n \approx 338
 \end{equation}\\
 
-\noindent From a population of 2,835 students in college of Science, a sample size of 338 students were selected.
+\noindent From a population of 2,835 students in College of Science, a sample size of 338 students were selected.
 
 \section{Data Description}
 
@@ -692,7 +691,7 @@ The dataset has a shape consisting of 338 rows and 14 columns from a sample of s
     \caption{Description of Variables}
     \label{tab: 4.1}
 \end{table}
-\noindent Table \ref{tab: 4.1} contains behavioral data like usage frequency, voice calls, and mobile data internet usage, in addition to demographic data like gender and place of residence.
+\noindent Table \ref{tab: 4.1} contains behavioral data like usage frequency, voice calls and mobile data internet usage, in addition to demographic data like gender and place of residence.
 
 
 
@@ -762,7 +761,7 @@ In Figure \ref{fig: Descriptive Analysis} above, out of the 338 students, 79 wer
     \caption{Numbers of Responses for each Variable}
     \label{tab: description}
 \end{table}
-\noindent The response for the number of student in each variable is shown in Table \ref{tab: description}. The number of students who choose each response category is indicated next to it, giving a clear picture of the distribution of data across several variables.
+\noindent The response for the number of students in each variable is shown in Table \ref{tab: description}. The number of students who choose each response category is indicated next to it, giving a clear picture of the distribution of data across several variables.
 
 
 
@@ -841,7 +840,8 @@ Monthly Data Usage & 0.21 & 0.09 & 0.02*\\
 \vspace{0.4cm}\\
 \normalsize{\noindent The coefficient columns in Table \ref{tab:cox_ph_results} provide information about the relationship between each independent variable and the dependent variable. A positive coefficient indicates an increase in the independent variable is associated with an increase in the hazard (risk) of churn (event). A higher value of these variables is associated with a higher likelihood of churn occurring. \\
 Conversely, a negative coefficient suggests a decrease in the hazard (risk) of churn (event). A higher value of these variables is associated with a lower likelihood of churn occurring.\\
-The p-value column helps assess the statistical significance of each independent variable. A low p-value ( \(<\) 0.05) indicates that the covariate is likely to have a meaningful impact on the event. This can be seen in Monthly Data Usage, Poor Network Quality Coverage and High Costs Pricing.
+\noindent If the model were to be fitted on a new random sample from the same population, the standard error would show how much the predicted coefficient is likely to change. A smaller standard error denotes greater precision in the coefficient estimate, whereas a bigger standard error denotes less precision.\\
+\noindent The p-value column helps assess the statistical significance of each independent variable. A low p-value ( \(<\) 0.05) indicates that the covariate is likely to have a meaningful impact on the event. This can be seen in Monthly Data Usage, Poor Network Quality Coverage and High Costs Pricing.
 
 \begin{figure}[H]
     \centering
@@ -906,7 +906,7 @@ This means that the assumption that the hazard ratios are constant over time hol
         LogLogistic & 307.510343 & 291.156435 & 306.67379 \\
         \bottomrule
     \end{tabularx}
-    \caption{Comparison of AIC, BIC, and Hanna-Quinn values for different AFT models}
+    \caption{Comparison of AIC, BIC and Hanna-Quinn values for different AFT models}
     \label{tab:model_comparison}
 \end{table}
 
@@ -918,7 +918,7 @@ The AFT model with the lowest AIC is: \textit{LogNormal} \\
 The AFT model with the lowest BIC is: \textit{LogNormal} \\
 The AFT model with the lowest Hanna-Quinn is: \textit{Weibull}
 
-\noindent The study compares three Accelerated Failure Time (AFT) models—Weibull, Log-Normal and Log-Logistic—using AIC, BIC and Hanna-Quinn criteria in Table \ref{tab:model_comparison}. The results reveal that the Log-Normal  consistently has the lowest AIC and BIC, indicating a better overall fit despite the Weibull  achieving the lowest Hanna-Quinn value.}
+\noindent The study compares three Accelerated Failure Time (AFT) models—Weibull, Log-Normal and Log-Logistic—using AIC, BIC and Hanna-Quinn criteria in Table \ref{tab:model_comparison}. The results reveal that the Log-Normal consistently has the lowest AIC and BIC, indicating a better overall fit despite the Weibull achieving the lowest Hanna-Quinn value.}
 
 \subsection{Log-Normal Model}
 % Table here
@@ -953,9 +953,9 @@ Intercept (for $\sigma$) & -0.616 & 0.084 & $<$0.0005\\
 \vspace{0.4cm}\\
 \normalsize{\noindent Unlike the Cox PH analysis, the coefficient columns in Table \ref{table:lognormal_coefficients} provide information about the relationship between the covariates to event time (Churn\_Level). A positive coefficient indicates a decrease in the time it takes to the event. A negative coefficient suggests an increase in the time to the event. }
 
-\normalsize{\noindent A higher value of these covariates is associated with a higher  likelihood of the time to the event occurring if positive and a lower chance of occurring if negative.}
- 
-\normalsize{\noindent The p-value column helps assess the statistical significance of each covariate. A low p-value ( \(< \) 0.05) indicates that the covariate is likely to have a meaningful impact on Churn Level. }
+\normalsize{\noindent A higher value of these covariates is associated with a higher likelihood of the time to the event occurring if positive and a lower chance of occurring if negative.}
+ \noindent The standard error quantifies the variation in the calculated coefficients among several population samples. A lower standard error (SE) suggests a more accurate approximation, implying that the coefficient is probably nearer the actual value in the population.\\
+\normalsize{\noindent The p-value column helps assess the statistical significance of each covariate. A low p-value ( \(< \) 0.05) indicates that the covariate is likely to have a meaningful impact on the Churn Level. }
 
 \normalsize{\noindent The mu\_intercept is the mean baseline when the covariates are 0 and the sigma\_intercept is the standard deviation used to estimate the variance to determine the spread when the covariates are 0.}
 
@@ -994,13 +994,13 @@ Intercept (for $\sigma$) & -0.616 & 0.084 & $<$0.0005\\
 \chapter{Summary of findings, conclusion and recommendations}
 
 \section{Introduction}
-\normalsize{ This section provides a comprehensive overview of the findings, conclusions, and recommendations derived from the study. The primary objective of the research was to investigate student churn of Telecel in KNUST, aiming to provide actionable insights and guidance based on the data analyzed.}
+\normalsize{ This section provides a comprehensive overview of the findings, conclusions and recommendations derived from the study. The primary objective of the research was to investigate student churn of Telecel in KNUST, aiming to provide actionable insights and guidance based on the data analyzed.}
 
 \section{Summary of finding}
-Poor network quality, poor customer service, high costs pricing, monthly data usage, and SMS text messaging were found to be important indicators of student churn. While the Lognormal Accelerated Failure Time (AFT) model provided a higher and better log-likelihood value, the Cox Proportional Hazards (PH) model showed a higher and better concordance value. Furthermore, students churned more at the end of their 3rd year.
+Poor network quality, poor customer service, high costs pricing, monthly data usage and SMS text messaging were found to be important indicators of student churn. While the Lognormal Accelerated Failure Time (AFT) model provided a higher and better log-likelihood value, the Cox Proportional Hazards (PH) model showed a higher and better concordance value. Furthermore, students churned more at the end of their 3rd year.
 
 \section{Conclusion}
-\normalsize{The analysis identified that out of the significant covariates—Poor network quality, poor customer service, high costs pricing, monthly data usage, and SMS text messaging —Poor Network Quality Coverage was the most significant covariate to increase both the churn rate and time to churn. The Cox Proportional Hazards model showed a higher predictive value, while the Lognormal Accelerated Failure Time (AFT) model provided a better fit for the data. Additionally, students in their 3rd year had the highest churn rate, with 35 out of 79 churners coming from this group.}
+\normalsize{The analysis identified that out of the significant covariates—Poor network quality, poor customer service, high costs pricing, monthly data usage and SMS text messaging —Poor Network Quality Coverage was the most significant covariate to increase both the churn rate and time to churn. The Cox Proportional Hazards model showed a higher predictive value, while the Lognormal Accelerated Failure Time (AFT) model provided a better fit for the data. Additionally, students in their 3rd year had the highest churn rate, with 35 out of 79 churners coming from this group.}
 
  
 
@@ -1011,7 +1011,7 @@ Poor network quality, poor customer service, high costs pricing, monthly data us
 \begin{enumerate}
         \item \normalsize{Improving network coverage at KNUST can reduce churn rates by ensuring consistent and reliable connectivity. This enhances students' access to online resources, supports smooth communication and minimizes technical issues, leading to a better overall academic experience and higher student satisfaction. Investing in better infrastructure and regular maintenance will help achieve these improvements}.
 
-    \item  \normalsize{Establishing diverse communication channels and feedback systems through digital platforms ensures that students can get timely and efficient help. This 	approach addresses concerns effectively and improves overall student satisfaction.}
+    \item  \normalsize{Establishing diverse communication channels and feedback systems through digital platforms ensures that students can get timely and efficient help. This approach addresses concerns effectively and improves overall student satisfaction.}
  
 	\item \normalsize{Future research could expand on this study by including other Colleges in KNUST to obtain a more diverse student population. Using data from the UITS will capture student sentiments more deeply in understanding the churn of Telecel.}
 
@@ -1030,69 +1030,63 @@ Poor network quality, poor customer service, high costs pricing, monthly data us
 
 
 \begin{enumerate}[label=\textbf{[\arabic*]}]
+    \item Aalen, O. O. (2004). 1. The statistical analysis of failure time data (2nd edn). JD Kalbfleisch and RL Prentice, Wiley‐Interscience, Hoboken, New Jersey, 2002. No. of pages: 439. Price:£ 62.95. ISBN: 0‐471‐36357‐X. 
+    
+\item AP News. (2024). Underwater cable disruptions affect West Africa’s internet services. \textit{Retrieved from:} \\
+\url{https://apnews.com/article/africa-internet-outage-undersea-cables-failure-ac67fd11b4d9ae7cb3959622c5e9e78b}. \\
+Accessed: 2024-06-05.
+
+    
+    \item Baesens, B., Van Gestel, T., Stepanova, M., Van den Poel, D., \& Vanthienen, J. (2005). Neural network survival analysis for personal loan data. \textit{Journal of the Operational Research Society}, \textit{56}(9), 1089-1098. 
+    
+    \item Bandim, A. N. A. (2022). \textit{Managing stakeholder communication in the Ghanaian telecommunication industry} (Doctoral dissertation, University of Pretoria). 
+    
+    \item Box-Steffensmeier, J. M., \& Zorn, C. J. (2001). Duration models and proportional hazards in political science. \textit{American Journal of Political Science}, 972-988. 
+    
+    \item Cox, D. R., \& Lewis, P. A. W. (1972, January). Multivariate point processes. In \textit{Proceedings of the Sixth Berkeley Symposium on Mathematical Statistics and Probability} (Vol. 3, pp. 401-448). 
+    
+    \item Evrensel, A. Y. (2008). Banking crisis and financial structure: A survival-time analysis. \textit{International Review of Economics \& Finance}, \textit{17}(4), 589-602. 
+    
+    \item Ghana Web. (2024). Underwater fiber optic cable outages impact telecommunications in West Africa. \textit{Retrieved from:} \url{https://www.ghanaweb.com/GhanaHomePage/business/Details-of-the-outages-on-multiple-submarine-optic-fibre-cables-that-hit-MTN-Ghana-others-1921650}. Accessed: 2024-06-05.
+    
+    \item Graunt, J. (1977). Natural and political observations mentioned in a following index and made upon the bills of mortality. \textit{Mathematical demography}, \textit{6}, 11-20. 
+    
+    \item Harrell, F. E., Califf, R. M., Pryor, D. B., Lee, K. L., \& Rosati, R. A. (1982). Evaluating the yield of medical tests. \textit{Jama}, \textit{247}(18), 2543-2546. 
+    
+    \item Imani, M. (2020). Customer Churn Prediction in Telecommunication Using Machine Learning: A Comparison Study. \textit{AUT Journal of Modeling and Simulation}, \textit{52}(2), 229-250. 
+    
+    \item Iwasaki, I. (2014). Global financial crisis, corporate governance and firm survival:: The Russian experience. \textit{Journal of comparative economics}, \textit{42}(1), 178-211. 
+
+    \item Jerenz, A. (2008). \textit{Revenue management and survival analysis in the automobile industry}. Betriebswirtschaftlicher Verlag Gabler. 
+    
+    \item Kaplan, E. L., \& Meier, P. (1958). Nonparametric estimation from incomplete observations. \textit{Journal of the American statistical association}, \textit{53}(282), 457-481. 
 
 
-\item Bandim, M. (2022). Growth of Ghana's telecommunications industry. \textit{Journal of African Telecommunications}, 45(2), 123-135.
+    
+    \item Gepp, A., \& Kumar, K. (2015). Predicting financial distress: A comparison of survival analysis and decision tree techniques. \textit{Procedia Computer Science}, \textit{54}, 396-404. 
+    
 
-\item Ghana Web. (2024). Underwater fiber optic cable outages impact telecommunications in West Africa. \textit{Retrieved from:} \url{https://www.ghanaweb.com/GhanaHomePage/business/Details-of-the-outages-on-multiple-submarine-optic-fibre-cables-that-hit-MTN-Ghana-others-1921650}. Accessed: 2024-06-05.
-
-\item Kapur, R. (2018). Factors driving customer churn in telecom industry. \textit{International Journal of Telecom Studies}, 22(4), 321-334.
-
-\item Koranchirath, A. (2024). Customer retention strategies in competitive markets. \textit{Telecom Review}, 30(1), 56-72.
-
-\item Masarifoglu, M., \& Buyuklu, A. H. (2019). Applying survival analysis to telecom churn data. \textit{American Journal of Theoretical and Applied Statistics}, 8(6), 261-275.
-
-\item Nurhaliza, S., Sadik, K., \& Saefuddin, A. (2022). A comparison of Cox proportional hazard and random survival forest models in predicting churn of the telecommunication industry customer. \textit{BAREKENG: Jurnal Ilmu Matematika dan Terapan}, 16(4), 1433-1440.
-
-\item Graunt, J. (1977). Natural and political observations mentioned in a following index, and made upon the bills of mortality. \textit{Mathematical Demography}, 6, 11-20.
-
-\item Imani, M. (2020). Customer churn prediction in telecommunication using machine learning: A comparison study. \textit{AUT Journal of Modeling and Simulation}, 52(2), 229-250.
-
-\item AP News. (2024). Underwater cable disruptions affect West Africa's internet services. \textit{Retrieved from:} \url{https://apnews.com/article/africa-internet-outage-undersea-cables-failure-ac67fd11b4d9ae7cb3959622c5e9e78b}. Accessed: 2024-06-05.
-
-\item Alqatani, A., \& Altarifi, A. (2020). Title of the paper. \textit{Journal Name}, Volume(Issue), Pages.
-
-\item Box-Steffensmeier, J., \& Jone, C. (2020). Title of the paper. \textit{Journal Name}, Volume(Issue), Pages.
-
-\item Lai, T., et al. (2021). Title of the paper. \textit{Journal Name}, Volume(Issue), Pages.
-
-\item Smith, R., \& Brown, J. (2020). Title of the paper. \textit{Journal Name}, Volume(Issue), Pages.
-
-\item Jerenz, A. (2008). Title of the paper. \textit{Journal Name}, Volume(Issue), Pages.
-
-\item Kaplan, E., \& Meier, P. (1958). Title of the paper. \textit{Journal Name}, Volume(Issue), Pages.
-
-\item Cox, D. (1972). Title of the paper. \textit{Journal Name}, Volume(Issue), Pages.
-
-\item Lee, M. (2014). Business bankruptcy prediction based on survival analysis approach. \textit{International Journal of Computer Science Information Technology}, 6(2), Pages.
-
-\item Pereira, J. (2014). Survival analysis employed in predicting corporate failure: A forecasting model proposal. \textit{International Business Research}, 7(6), Pages.
-
-\item Kumar, K., \& Gepp, A. (2015). Predicting financial distress: A comparison of survival analysis and decision tree techniques. \textit{Procedia Computer Science}, 54(2), 396-404.
-
-\item Iwasaki, I. (2014). Global financial crisis, corporate governance, and firm survival: The Russian experience. \textit{Journal of Comparative Economics}, 42(1), 178-211.
-
-\item Leung, M.K., Rigby, D., \& Young, T. (2010). Entry of foreign banks in the People's Republic of China: A survival analysis. \textit{Journal of Applied Economics}, 10, 21-31.
-
-\item Evrensel, A.Y. (2008). Banking crisis and financial structure: A survival-time analysis. \textit{International Review of Economics and Finance}, 17(4), 589-602.
-
-\item Tsujitani, M., \& Baesens, B. (2012). Survival analysis for personal loan data using generalized additive models. \textit{Behaviormetrika}, 39(1), 9-23.
-
-\item Baesens, B., Gestel, T.V., Stepanova, M., Poel, D.V., \& Vanthienen, J. (2005). Neural network survival analysis for personal loan data. \textit{Journal of the Operational Research Society}, 56(9), 1089-109.
-
-\item Cox, D.R., \& Lewis, P.A.W. (1972). Multivariate point processes. In \textit{Proceedings of the Sixth Berkeley Symposium on Mathematical Statistics and Probability}, Vol. 3, pp. 401-448.
-
-\item Harrell, F.E., Califf, R.M., Pryor, D.B., Lee, K.L., \& Rosati, R.A. (1982). Evaluating the yield of medical tests. \textit{JAMA}, 247(18), 2543-2546.
-
-\item Aalen, O.O. (2002). 1. The statistical analysis of failure time data (2nd edn). \textit{Prentice LR, Wiley-Interscience, Hoboken, New Jersey.}
-
-\item Wikipedia. (2020). Vodafone Ghana. \textit{Retrieved from:} \url{https://en.wikipedia.org/wiki/Vodafone_Ghana#:~:text=As%20of%20January%202020%2C%20it,of%20the%20Ghanaian%20market%20shares}. Accessed: 2024-05-24.
-
-\item Wikipedia. (2020). Vodafone KNUST. \textit{Retrieved from:} \url{https://en.m.wikipedia.org/wiki/Vodafone_Ghana#:~:text=In%202016%2C%20Vodafone%20made%20a,the%20university's%20campuses%20in%20Ghana}. Accessed: 2024-07-02.
-
-\item Wikipedia. (2024). Telecel Ghana. \textit{Retrieved from:} \url{https://en.m.wikipedia.org/wiki/Telecel_Ghana#:~:text=They%20are%20the%20leading%20total,Vodafone%20Ghana%20into%20Telecel%20Ghana}. Accessed: 2024-05-19.
-
+    
+    \item Lee, M. C. (2014). Business bankruptcy prediction based on survival analysis approach. \textit{International Journal of Computer Science \& Information Technology}, \textit{6}(2), 103. 
+    \item Leung, M. K., Rigby, D., \& Young, T. (2003). Entry of foreign banks in the People's Republic of China: a survival analysis. \textit{Applied Economics}, \textit{35}(1), 21-31. 
+    
+    \item Masarifoglu, M., \& Buyuklu, A. H. (2019). Applying survival analysis to telecom churn data. \textit{American Journal of Theoretical and Applied Statistics}, \textit{8}(6), 261-275. 
+    
+    
+    \item Nurhaliza, S., Sadik, K., \& Saefuddin, A. (2022). A COMPARISON OF COX PROPORTIONAL HAZARD AND RANDOM SURVIVAL FOREST MODELS IN PREDICTING CHURN OF THE TELECOMMUNICATION INDUSTRY CUSTOMER. \textit{BAREKENG: Jurnal Ilmu Matematika dan Terapan}, \textit{16}(4), 1433-1440.
+    \item Pereira, J. (2014). Survival analysis employed in predicting corporate failure: A forecasting model proposal. \textit{International Business Research}, \textit{7}(5), 9. 
+    
+    \item Smith, R. A., \& Brown, M. G. (2020). Far beyond postsecondary: Longitudinal analyses of topical and citation networks in the field of higher education studies. \textit{The Review of Higher Education}, \textit{44}(2), 237-264. 
+    
+    \item Tsujitani, M., \& Baesens, B. (2012). Survival analysis for personal loan data using generalized additive models. \textit{Behaviormetrika}, \textit{39}(1), 9-23. 
+    
+    \item Wikipedia. (2020). Vodafone Ghana. \textit{Retrieved from:} \url{https://en.wikipedia.org/wiki/Vodafone_Ghana#:~:text=As%20of%20January%202020%2C%20it,of%20the%20Ghanaian%20market%20shares}. Accessed: 2024-05-24.
+    
+    \item Wikipedia. (2020). Vodafone KNUST. \textit{Retrieved from:} \url{https://en.m.wikipedia.org/wiki/Vodafone_Ghana#:~:text=In%202016%2C%20Vodafone%20made%20a,the%20university's%20campuses%20in%20Ghana}. Accessed: 2024-07-02.
+    
+    \item  Wikipedia. (2024). Telecel Ghana. \textit{Retrieved from:} \url{https://en.m.wikipedia.org/wiki/Telecel_Ghana#:~:text=They%20are%20the%20leading%20total,Vodafone%20Ghana%20into%20Telecel%20Ghana}. Accessed: 2024-05-19.
 \end{enumerate}
+
 
 
 
